@@ -1,10 +1,44 @@
 ---
-import '../styles/global.css';
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = 'About Us';
-
-const textColor = 'rgb(124, 13, 13)';
 ---
+
+<BaseLayout pageTitle={pageTitle}>
+    <p><strong>Who We Are</strong></p>
+    <p>
+        The Saint Louis Unix Users Group (SLUUG) is an IRS 501c(6) designated not-for-profit professional association
+        dedicated to education and communication among computer users. SLUUG members include many Linux and UNIX
+        professionals, Networking experts, System experts, hobbyists, and students. Also, many who are interested in
+        Unix, Unix-like Operating Systems, Linux, BSD and other Free Open Source Software (FOSS) applications, products,
+        projects and services.
+    </p>
+    <p>
+        We have met continuously since we incorporated in July 1992. All of our meetings are free and open to the
+        public. There is no individual membership fee.
+    </p>
+    <p><strong>What We Do</strong></p>
+    <p>SLUUG hosts <strong>5</strong> monthly meetings.</p>
+    <ul>
+        <li>
+            The <em>SLUUG Steering Committee (STEERCOM)</em> meets on the <strong>first Monday</strong> of each month.
+        </li>
+        <li>
+            The <em>St. Louis Area Computer Club (SLACC)</em> meets on the <strong>first Thursday</strong> of each month.
+        </li>
+        <li>
+            The <em>St. Louis Unix Users Group (STLLUG)</em> meets on the <strong>second Wednesday</strong> of each month.
+        </li>
+        <li>
+            The <a href="/sluug/">St. Louis Linux Users Group (SLUUG)</a> meets on the <strong>third Thursday</strong> of
+            each month.
+        </li>
+        <li>
+            The <em>New Linux Users Group (NEWLUG)</em> meets on the <strong>fourth Tuesday</strong> of each month.
+        </li>
+    </ul>
+</BaseLayout>
+<!-- --- import '../styles/global.css'; import Header from '../components/Header.astro'; import Footer from '../components/Footer.astro';
+const pageTitle = 'About Us'; const textColor = 'rgb(124, 13, 13)'; ---
 
 <html lang="en">
     <head>
@@ -19,10 +53,7 @@ const textColor = 'rgb(124, 13, 13)';
         </style>
     </head>
     <body>
-        <a href="/">Home</a>
-        <a href="/sluug/">SLUUG</a>
-        <a href="/about/">About</a>
-
+        <Header />
         <h1>{pageTitle}</h1>
         <p><strong>Who We Are</strong></p>
         <p>
@@ -57,5 +88,9 @@ const textColor = 'rgb(124, 13, 13)';
                 The <em>New Linux Users Group (NEWLUG)</em> meets on the <strong>fourth Tuesday</strong> of each month.
             </li>
         </ul>
+        <Footer />
+        <script>
+            import '../scripts/menu.js';
+        </script>
     </body>
-</html>
+</html> -->

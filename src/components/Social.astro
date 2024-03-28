@@ -1,0 +1,15 @@
+---
+const { platform, username } = Astro.props;
+const textColor = 'rgb(124, 13, 13)';
+---
+
+<style define:vars={{ textColor }}>
+    a {
+        padding: 0.5rem 1rem;
+        color: white;
+        background-color: var(--textColor);
+        text-decoration: none;
+    }
+</style>
+
+<a href={`https://www.${platform}.com/${username}`}>{platform}</a>

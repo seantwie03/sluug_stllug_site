@@ -1,0 +1,33 @@
+---
+import SluugListing from '../../components/SluugListing.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+    const allSluugMeetings = await Astro.glob('../sluug/*-sluug.md');
+    const uniqueTags = [...new Set(allSluugMeetings.map((meeting) => meeting.frontmatter.tags).flat())];
+    return uniqueTags.map((tag) => {
+        const filteredPosts = allSluugMeetings.filter((meeting) => meeting.frontmatter.tags.includes(tag));
+        return {
+            params: { tag },
+            props: { meetings: filteredPosts },
+        };
+    });
+}
+
+const { tag } = Astro.params;
+const { meetings } = Astro.props;
+---
+
+<BaseLayout pageTitle={tag}>
+    <p>Posts tagged with {tag}</p>
+    <ul>
+        {
+            meetings.map((meeting) => (
+                <SluugListing
+                    url={meeting.url}
+                    meetingDate={new Date(meeting.frontmatter.meetingDate).toISOString().slice(0, 10)}
+                />
+            ))
+        }
+    </ul>
+</BaseLayout>
