@@ -1,7 +1,8 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-const allSluugMeetings = await Astro.glob('../sluug/*-sluug.md');
-const uniqueTags = [...new Set(allSluugMeetings.map((meeting) => meeting.frontmatter.tags).flat())];
+const allSluugMeetings = await getCollection('sluug');
+const uniqueTags = [...new Set(allSluugMeetings.map((meeting) => meeting.data.tags).flat())];
 const pageTitle = 'Tag Index';
 ---
 

@@ -1,12 +1,13 @@
 ---
+import { getCollection } from 'astro:content';
 import SluugListing from '../../components/SluugListing.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 export async function getStaticPaths() {
-    const allSluugMeetings: any = await Astro.glob('../sluug/*-sluug.md');
-    const uniqueTags = [...new Set(allSluugMeetings.map((meeting: any) => meeting.frontmatter.tags).flat())];
+    const allSluugMeetings: any = await getCollection('sluug');
+    const uniqueTags = [...new Set(allSluugMeetings.map((meeting: any) => meeting.data.tags).flat())];
     return uniqueTags.map((tag) => {
-        const filteredPosts = allSluugMeetings.filter((meeting: any) => meeting.frontmatter.tags.includes(tag));
+        const filteredPosts = allSluugMeetings.filter((meeting: any) => meeting.data.tags.includes(tag));
         return {
             params: { tag },
             props: { meetings: filteredPosts },
@@ -24,8 +25,8 @@ const { meetings } = Astro.props;
         {
             meetings.map((meeting: any) => (
                 <SluugListing
-                    url={meeting.url}
-                    meetingDate={new Date(meeting.frontmatter.meetingDate).toISOString().slice(0, 10)}
+                    url={`/sluug/${meeting.slug}/`}
+                    meetingDate={new Date(meeting.data.meetingDate).toISOString().slice(0, 10)}
                 />
             ))
         }

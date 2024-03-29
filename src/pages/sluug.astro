@@ -1,11 +1,12 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SluugListing from '../components/SluugListing.astro';
-const allSluugMeetings = await Astro.glob('../pages/sluug/*-sluug.md');
+const allSluugMeetings = await getCollection("sluug");
 const pageTitle = 'St. Louis Unix Users Group';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
     <h2>Meetings</h2>
-    {allSluugMeetings.map((meeting) => <SluugListing url={meeting.url} meetingDate={new Date(meeting.frontmatter.meetingDate).toISOString().slice(0, 10)} />)}
+    {allSluugMeetings.map((meeting) => <SluugListing url={`/sluug/${meeting.slug}/`} meetingDate={new Date(meeting.data.meetingDate).toISOString().slice(0, 10)} />)}
 </BaseLayout>
