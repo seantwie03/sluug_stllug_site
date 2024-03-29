@@ -1,13 +1,13 @@
 ---
+import { fade } from 'astro:transitions';
 import BaseLayout from './BaseLayout.astro';
 const { frontmatter } = Astro.props;
 const formattedMeetingDate = new Date(frontmatter.meetingDate).toISOString().slice(0, 10);
 ---
 
 <BaseLayout pageTitle={'St. Louis Unix Users Group - ' + formattedMeetingDate}>
-    <h1></h1>
     <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
-    <div class="tags">
+    <div transition:animate={fade({ duration: '0.5s' })} class="tags">
         {
             frontmatter.tags.map((tag: any) => (
                 <p class="tag">

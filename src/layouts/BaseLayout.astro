@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
@@ -13,10 +14,11 @@ const { pageTitle } = Astro.props;
         <meta name="generator" content={Astro.generator} />
         <link rel="alternate" type="application/rss+xml" title="Your Site's Title" href={`${Astro.site}rss.xml`} />
         <title>{pageTitle}</title>
+        <ViewTransitions />
     </head>
     <body>
         <Header />
-        <h1>{pageTitle}</h1>
+        <h1 transition:animate="slide">{pageTitle}</h1>
         <slot />
         <Footer />
         <script>
