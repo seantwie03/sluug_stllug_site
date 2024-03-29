@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import MeetingListing from '../components/MeetingListing.astro';
+const stllugMeetings = await getCollection('meetings', ({ data }) => {
+    return data.meetingType === 'STLLUG';
+});
+const pageTitle = 'St. Louis Linux Users Group';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    <h2>Meeting Times</h2>
+    <p>
+        The <em>St. Louis Linux Users Group (STLLUG)</em> meets <strong>eight days after SLUUG</strong>. This is
+        typically the <em>third Thursday</em> of each month. The meeting begins at 6:30p.m. Central Time.
+    </p>
+
+    <h2>Meeting Agenda</h2>
+    <p>
+        At <strong>6:00p.m. Central Time</strong> the meeting opens. Participants are encouraged to join at this time to
+        if they need to test their microphone, screen sharing, and video camera.
+    </p>
+    <p>
+        At <strong>6:30p.m. Central Time</strong> we attempt a quick welcome, introductions, announcements, current events
+        of interest, and a general CALL FOR HELP (Questions and Answers) segment.
+    </p>
+    <p>
+        At <strong>6:45p.m. Central Time</strong> the presentation begins.
+    </p>
+
+    <h2>STLLUG Meetings</h2>
+    {
+        stllugMeetings.map((meeting) => (
+            <MeetingListing
+                url={`/meetings/${meeting.slug}/`}
+                meetingType={meeting.data.meetingType}
+                meetingDate={meeting.data.meetingDate}
+                main={meeting.data.main}
+                base={meeting.data.base}
+            />
+        ))
+    }
+</BaseLayout>

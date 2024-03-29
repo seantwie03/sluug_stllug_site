@@ -1,6 +1,22 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = 'St. Louis Unix/Linux Users Group';
+import MeetingListing from '../components/MeetingListing.astro';
+const allMeetings = await getCollection('meetings');
+const pageTitle = 'St. Louis Unix Users Group';
 ---
 
-<BaseLayout pageTitle={pageTitle} />
+<BaseLayout pageTitle={pageTitle}>
+    <h2>Meetings</h2>
+    {
+        allMeetings.map((meeting) => (
+            <MeetingListing
+                url={`/meetings/${meeting.slug}/`}
+                meetingType={meeting.data.meetingType}
+                meetingDate={meeting.data.meetingDate}
+                main={meeting.data.main}
+                base={meeting.data.base}
+            />
+        ))
+    }
+</BaseLayout>

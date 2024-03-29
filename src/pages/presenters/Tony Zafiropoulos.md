@@ -1,0 +1,8 @@
+---
+layout: ../../layouts/PresenterLayout.astro
+presenter: Tony Zafiropoulos
+pubDate: 2018-09-12
+---
+Tony's bio is updated here https://fixvirus.com/about-us-full-story/
+
+After many years as a sysadmin with Unix/Linux/Cisco/Microsoft devices, in 2014 focused on Cybersecurity projects including [obtaining] a CEH (Certified Ethical Hacker) that year. In 2017 earned a CISA (Certified Information Systems Auditor) certificate which means he does compliance audits now. 

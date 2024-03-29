@@ -1,0 +1,45 @@
+---
+import { type Presentation, type MeetingType } from '../models';
+interface Props {
+    url: string;
+    meetingType: MeetingType;
+    meetingDate: Date;
+    main: Presentation;
+    base?: Presentation;
+}
+const { url, meetingType, meetingDate, main, base } = Astro.props;
+---
+
+<li>
+    <a href={url}>{meetingType} - {meetingDate.toDateString().slice(4)}</a>
+    <p>{main.title}</p>
+    <ul>
+        <li>{main.presenter}</li>
+    </ul>
+    <p class="tags">
+        {
+            main.tags.map((tag) => (
+                <span class="tag">
+                    <a href={`/tags/${tag}`}>{tag}</a>
+                </span>
+            ))
+        }
+    </p>
+    {
+        base && (
+            <>
+                <p>{base.title}</p>
+                <ul>
+                    <li>{base.presenter}</li>
+                </ul>
+                <p class="tags">
+                    {base.tags.map((tag) => (
+                        <span class="tag">
+                            <a href={`/tags/${tag}`}>{tag}</a>
+                        </span>
+                    ))}
+                </p>
+            </>
+        )
+    }
+</li>

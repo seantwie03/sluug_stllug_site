@@ -1,12 +1,52 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import SluugListing from '../components/SluugListing.astro';
-const allSluugMeetings = await getCollection("sluug");
+import MeetingListing from '../components/MeetingListing.astro';
+const sluugMeetings = await getCollection('meetings', ({ data }) => {
+    return data.meetingType === 'SLUUG';
+});
 const pageTitle = 'St. Louis Unix Users Group';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-    <h2>Meetings</h2>
-    {allSluugMeetings.map((meeting) => <SluugListing url={`/sluug/${meeting.slug}/`} meetingDate={new Date(meeting.data.meetingDate).toISOString().slice(0, 10)} />)}
+    <h2>Meeting Times</h2>
+    <p>
+        The <em>St. Louis Unix Users Group (SLUUG)</em> meets on the <strong>second Wednesday</strong> of each month. The
+        meeting begins at 6:30p.m. Central Time.
+    </p>
+
+    <h2>Meeting Agenda</h2>
+    <p>
+        At <strong>6:00p.m. Central Time</strong> the meeting opens. Participants are encouraged to join at this time to
+        if they need to test their microphone, screen sharing, and video camera.
+    </p>
+    <p>
+        At <strong>6:30p.m. Central Time</strong> we begin with our <em>BASE</em> presentation. The <em>BASE</em> presentation
+        is intended to be an introductory level session ( often focused on personal computing ); which may include either
+        amazing graphical packages, blinking lights, command line wonders, demonstrations of useful applications, displays
+        of newly discovered web sites, major resolution of long standing anomalies, quantum discoveries, smoke and mirrors,
+        superb tutorials, or shifts in both time and space.
+    </p>
+    <p>
+        At <strong>7:00p.m. Central Time</strong> we attempt a quick welcome, introductions, announcements, current events
+        of interest, and a general CALL FOR HELP (Questions and Answers) segment.
+    </p>
+    <p>
+        At <strong>7:15p.m. Central Time</strong> the <em>MAIN</em> presentation begins. The <em>MAIN</em> presentation is
+        intended to be something more advanced, detailed, important, new, profound, significant, timely or useful and is
+        often focused on enterprise computing.
+    </p>
+
+    <h2>SLUUG Meetings</h2>
+    {
+        sluugMeetings.map((meeting) => (
+            <MeetingListing
+                url={`/meetings/${meeting.slug}/`}
+                meetingType={meeting.data.meetingType}
+                meetingDate={meeting.data.meetingDate}
+                main={meeting.data.main}
+                base={meeting.data.base}
+            />
+        ))
+    }
 </BaseLayout>

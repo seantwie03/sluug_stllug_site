@@ -2,16 +2,15 @@ import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 
 export async function GET(context) {
-    const sluugMeetings = await getCollection('sluug');
+    const allMeetings = await getCollection('meetings');
     return rss({
         title: 'St. Louis Unix/Linux Users Group',
-        description: 'My journey learning Astro',
+        description: 'RSS Feed of our monthly SLUUG and STLLUG meetings',
         site: context.site,
-        items: sluugMeetings.map((meeting) => ({
-            title: meeting.data.title,
-            pubDate: meeting.data.pubDate,
-            description: meeting.data.description,
-            link: `/sluug/${meeting.slug}/`,
+        items: allMeetings.map((meeting) => ({
+            title: meeting.slug,
+            pubDate: meeting.data.meetingDate,
+            link: `/meetings/${meeting.slug}/`,
         })),
         customData: `<language>en-us</language>`,
     });

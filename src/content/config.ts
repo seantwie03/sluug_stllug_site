@@ -1,19 +1,21 @@
 import { z, defineCollection } from 'astro:content';
 
-const sluugCollection = defineCollection({
+const meetingCollection = defineCollection({
     type: 'content',
     schema: z.object({
-        title: z.string(),
+        meetingType: z.enum(['SLUUG', 'STLLUG']),
         meetingDate: z.date(),
-        pubDate: z.date(),
-        image: z.object({
-            url: z.string(),
-            alt: z.string(),
-        }),
-        tags: z.array(z.string()),
+        main: z.object({ title: z.string(), presenter: z.string(), tags: z.array(z.string()) }),
+        base: z.object({ title: z.string(), presenter: z.string(), tags: z.array(z.string()) }).optional(),
+        image: z
+            .object({
+                url: z.string(),
+                alt: z.string(),
+            })
+            .optional(),
     }),
 });
 
 export const collections = {
-    sluug: sluugCollection,
+    meetings: meetingCollection,
 };
