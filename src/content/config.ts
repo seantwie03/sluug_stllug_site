@@ -13,9 +13,21 @@ const meetingCollection = defineCollection({
                 alt: z.string(),
             })
             .optional(),
+        youtubeUrl: z.string().optional(),
+        meetupUrl: z.string().optional(),
+    }),
+});
+
+const presenterCollection = defineCollection({
+    type: 'content',
+    schema: z.object({
+        presenterName: z.string(),
+        lastUpdated: z.date(),
+        links: z.array(z.string()),
     }),
 });
 
 export const collections = {
     meetings: meetingCollection,
+    presenters: presenterCollection,
 };

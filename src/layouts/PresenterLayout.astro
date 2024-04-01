@@ -1,29 +1,13 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-const { frontmatter } = Astro.props;
+interface Props {
+    presenter: string;
+    lastUpdated: Date;
+}
+const { presenter, lastUpdated } = Astro.props;
 ---
 
-<BaseLayout pageTitle={frontmatter.presenter}>
-    Last Updated: {frontmatter.pubDate.slice(0, 10)}
+<BaseLayout pageTitle={presenter}>
+    Last Updated: {lastUpdated.toISOString().slice(0, 10)}
     <slot />
 </BaseLayout>
-
-<style>
-    a {
-        color: #00539f;
-    }
-
-    .tags {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .tag {
-        margin: 0.25em;
-        border: dotted 1px #a1a1a1;
-        border-radius: 0.5em;
-        padding: 0.5em 1em;
-        font-size: 1.15em;
-        background-color: #f8fcfd;
-    }
-</style>

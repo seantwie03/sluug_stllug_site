@@ -6,8 +6,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 export async function getStaticPaths() {
     const allMeetings = await getCollection('meetings');
     const uniqueTags = [
-        ...new Set(allMeetings.map((meeting) => meeting.data.main.tags).flat()),
-        ...new Set(...allMeetings.map((meeting) => meeting.data.base?.tags).flat()),
+        ...new Set([
+            ...allMeetings.map((meeting) => meeting.data.main.tags).flat(),
+            ...allMeetings
+                .map((meeting) => meeting.data.base)
+                .filter((base): base is Exclude<typeof base, null | undefined> => Boolean(base))
+                .map((base) => base.tags)
+                .flat(),
+        ]),
     ];
     return uniqueTags.map((tag) => {
         const filteredPosts = allMeetings.filter(
@@ -35,6 +41,8 @@ const { meetings } = Astro.props;
                     meetingDate={meeting.data.meetingDate}
                     main={meeting.data.main}
                     base={meeting.data.base}
+                    meetupUrl={meeting.data.meetupUrl}
+                    youtubeUrl={meeting.data.youtubeUrl}
                 />
             ))
         }

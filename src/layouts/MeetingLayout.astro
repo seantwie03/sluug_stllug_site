@@ -1,7 +1,9 @@
 ---
-import PageTitle from '../components/MeetingTitle.astro';
 import type { Presentation, MeetingType, Image } from '../models';
 import BaseLayout from './BaseLayout.astro';
+import MeetingTitle from '../components/MeetingTitle.astro';
+import { getMeetingName, getMeetingImage } from '../buildTimeUtils';
+
 interface Props {
     meetingType: MeetingType;
     meetingDate: Date;
@@ -9,13 +11,14 @@ interface Props {
     base?: Presentation;
     image?: Image;
 }
-const { meetingType, meetingDate, main, base, image } = Astro.props;
-const meetingName = meetingType === 'SLUUG' ? `St. Louis Unix Users Group` : `St. Louis Linux Users Group`;
+const { meetingType, meetingDate, image } = Astro.props;
+const meetingName = getMeetingName(meetingType);
+const meetingImage = image ? image : getMeetingImage(meetingType);
 ---
 
-<BaseLayout>
-    <PageTitle meetingName={meetingName} meetingDate={meetingDate} />
-    {image && <img src={image?.url} width="300" alt={image?.alt} />}
+<BaseLayout pageTitle=`${meetingType} - ${meetingDate.toDateString().slice(0,10)}`>
+    <MeetingTitle meetingName={meetingName} meetingDate={meetingDate} } />
+    <img src={meetingImage.url} width="300" alt={meetingImage.alt} />
     <slot />
 </BaseLayout>
 

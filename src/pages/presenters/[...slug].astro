@@ -1,0 +1,41 @@
+---
+import type { InferGetStaticPropsType } from 'astro';
+import { getCollection } from 'astro:content';
+import PresenterLayout from '../../layouts/PresenterLayout.astro';
+import MeetingListing from '../../components/MeetingListing.astro';
+
+export async function getStaticPaths() {
+    const presenterEntries = await getCollection('presenters');
+    return presenterEntries.map((entry) => ({
+        params: { slug: entry.slug },
+        props: { entry },
+    }));
+}
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const meetings = await getCollection('meetings', ({ data }) => {
+    return data.main.presenter === entry.data.presenterName || data.base?.presenter == entry.data.presenterName;
+});
+---
+
+<PresenterLayout presenter={entry.data.presenterName} lastUpdated={entry.data.lastUpdated}>
+    <Content />
+
+    <h2>Presentations</h2>
+    {
+        meetings.map((meeting) => (
+            <MeetingListing
+                url={`/meetings/${meeting.slug}/`}
+                meetingType={meeting.data.meetingType}
+                meetingDate={meeting.data.meetingDate}
+                main={meeting.data.main}
+                base={meeting.data.base}
+                meetupUrl={meeting.data.meetupUrl}
+                youtubeUrl={meeting.data.youtubeUrl}
+            />
+        ))
+    }
+</PresenterLayout>

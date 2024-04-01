@@ -4,14 +4,18 @@ meetingDate: 2021-01-21
 main:
     title: 'openVAS ~ Major Upgrade'
     presenter: 'Tony Zafiropoulos'
-    tags: ['openVAS', 'vulnerability scanner', 'security']
-image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
-    alt: 'The full Astro logo.'
+    tags: ['openVAS', 'vulnerability-scanner', 'security']
+youtubeUrl: 'https://youtu.be/7gcAaU-JgV0?si=hP1fbw2KLzVLsURH'
+meetupUrl: 'https://www.meetup.com/saint-louis-unix-users-group/events/271259443/'
 ---
+
+import MeetingPresenter from '../../components/MeetingPresenter.astro';
+import Tags from '../../components/Tags.astro';
 
 ## **MAIN:** {frontmatter.mainTitle}
 
-**By:** <a href="/presenters/{frontmatter.mainPresenter}">{frontmatter.mainPresenter}</a>
+<MeetingPresenter presenterName={frontmatter.main.presenter} />
 
 OpenVAS (Open Vulnerability Assessment Scanner) is a full-featured vulnerability scanner. Its capabilities include unauthenticated testing, authenticated testing, various high level and low level Internet and industrial protocols, performance tuning for large-scale scans and a powerful internal programming language to implement any type of vulnerability test.
+
+<Tags tags={frontmatter.main.tags} />

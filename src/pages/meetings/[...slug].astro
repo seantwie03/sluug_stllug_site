@@ -1,8 +1,7 @@
 ---
-import type { InferGetStaticParamsType, InferGetStaticPropsType, GetStaticPaths } from 'astro';
+import type { InferGetStaticPropsType } from 'astro';
 import { getCollection } from 'astro:content';
 import MeetingLayout from '../../layouts/MeetingLayout.astro';
-// import type { MeetingType, Presentation, Image } from '../../models';
 
 export async function getStaticPaths() {
     const meetingEntries = await getCollection('meetings');
@@ -11,14 +10,7 @@ export async function getStaticPaths() {
         props: { entry },
     }));
 }
-// interface Props {
-//     meetingType: MeetingType;
-//     meetingDate: Date;
-//     main: Presentation;
-//     base: Presentation;
-//     image: Image;
-// }
-type Params = InferGetStaticParamsType<typeof getStaticPaths>;
+
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 const { entry } = Astro.props;
 const { Content } = await entry.render();

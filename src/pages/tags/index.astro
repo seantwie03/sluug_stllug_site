@@ -3,8 +3,14 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 const allMeetings = await getCollection('meetings');
 const uniqueTags = [
-    ...new Set(allMeetings.map((meeting) => meeting.data.main.tags).flat()),
-    ...new Set(allMeetings.map((meeting) => meeting.data.base?.tags).flat()),
+    ...new Set([
+        ...allMeetings.map((meeting) => meeting.data.main.tags).flat(),
+        ...allMeetings
+            .map((meeting) => meeting.data.base)
+            .filter((base): base is Exclude<typeof base, null | undefined> => Boolean(base))
+            .map((base) => base.tags)
+            .flat(),
+    ]),
 ];
 const pageTitle = 'Tag Index';
 ---

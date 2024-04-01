@@ -1,4 +1,6 @@
 ---
+import { Icon } from 'astro-icon/components';
+import { getMeetingImage } from '../buildTimeUtils';
 import { type Presentation, type MeetingType } from '../models';
 interface Props {
     url: string;
@@ -6,40 +8,39 @@ interface Props {
     meetingDate: Date;
     main: Presentation;
     base?: Presentation;
+    meetupUrl?: string;
+    youtubeUrl?: string;
 }
-const { url, meetingType, meetingDate, main, base } = Astro.props;
+const { url, meetingType, meetingDate, main, base, meetupUrl, youtubeUrl } = Astro.props;
+const meetingImage = getMeetingImage(meetingType);
 ---
 
-<li>
-    <a href={url}>{meetingType} - {meetingDate.toDateString().slice(4)}</a>
-    <p>{main.title}</p>
-    <ul>
-        <li>{main.presenter}</li>
-    </ul>
-    <p class="tags">
+<div class="flex items-start mb-4 rounded shadow-lg">
+    <div class="w-1/4">
+        <img alt={meetingImage.alt} class="rounded-md" height="100" src={meetingImage.url} width="175" />
+    </div>
+    <div class="w-3/4 pl-4">
+        <p class="text-gray-600 text-md mb-0">
+            {meetingDate.toLocaleDateString('default', { month: 'long', day: '2-digit', year: 'numeric' })}
+        </p>
+        <a href={url}><h4 class="font-bold text-lg mb-1"><strong>Main: </strong>{main.title}</h4></a>
+        <p>By: {main.presenter}</p>
         {
-            main.tags.map((tag) => (
-                <span class="tag">
-                    <a href={`/tags/${tag}`}>{tag}</a>
-                </span>
-            ))
+            base && (
+                <>
+                    <h4 class="font-bold text-lg mb-1 mt-2">
+                        <strong>Base: </strong>
+                        {base.title}
+                    </h4>
+                    <p>By: {base.presenter}</p>
+                </>
+            )
         }
-    </p>
-    {
-        base && (
-            <>
-                <p>{base.title}</p>
-                <ul>
-                    <li>{base.presenter}</li>
-                </ul>
-                <p class="tags">
-                    {base.tags.map((tag) => (
-                        <span class="tag">
-                            <a href={`/tags/${tag}`}>{tag}</a>
-                        </span>
-                    ))}
-                </p>
-            </>
-        )
-    }
-</li>
+        {youtubeUrl && <>
+            <a href={youtubeUrl}><Icon name="mdi:youtube" class="inline" />YouTube</a>
+        </>}
+                {meetupUrl &&
+            <a href={meetupUrl}><Icon name="mdi:meetup" class="inline" />Meetup</a>
+            }
+    </div>
+</div>

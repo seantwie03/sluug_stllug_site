@@ -1,31 +1,31 @@
 ---
+import { Icon } from 'astro-icon/components';
 interface Props {
     tags: string[];
 }
 const { tags } = Astro.props;
 ---
 
-<div class="tags">
+<span class="tags">
     {
         tags.map((tag) => (
-            <p class="tag">
-                <a href={`/tags/${tag}`}>{tag}</a>
-            </p>
+            <a class="tag" href={`/tags/${tag}`}>
+                <Icon name="mdi:tag-multiple" class="inline" />
+                {tag}
+            </a>
         ))
     }
-</div>
+</span>
 
 <style>
     a {
         color: #00539f;
+        text-decoration: none;
     }
 
     .tags {
         display: flex;
         flex-wrap: wrap;
-        margin-left: 1.5em;
-        margin-top: -0.5em;
-        margin-bottom: 1.5em;
     }
 
     .tag {

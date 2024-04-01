@@ -9,13 +9,13 @@ const pageTitle = 'St. Louis Unix Users Group';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-    <h2>Meeting Times</h2>
+    <h2 class="text-4xl font-normal leading-normal mt-0 mb-2">Meeting Times</h2>
     <p>
         The <em>St. Louis Unix Users Group (SLUUG)</em> meets on the <strong>second Wednesday</strong> of each month. The
         meeting begins at 6:30p.m. Central Time.
     </p>
 
-    <h2>Meeting Agenda</h2>
+    <h2 class="text-4xl font-normal leading-normal mt-0 mb-2 text">Meeting Agenda</h2>
     <p>
         At <strong>6:00p.m. Central Time</strong> the meeting opens. Participants are encouraged to join at this time to
         if they need to test their microphone, screen sharing, and video camera.
@@ -46,6 +46,8 @@ const pageTitle = 'St. Louis Unix Users Group';
                 meetingDate={meeting.data.meetingDate}
                 main={meeting.data.main}
                 base={meeting.data.base}
+                meetupUrl={meeting.data.meetupUrl}
+                youtubeUrl={meeting.data.youtubeUrl}
             />
         ))
     }

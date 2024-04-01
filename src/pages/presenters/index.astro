@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const allPresenters = await getCollection('presenters');
+const uniquePresenters = [...new Set(allPresenters)];
+const pageTitle = 'Presenter Index';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    <div>
+        {
+            uniquePresenters.map((presenter) => (
+                <ul>
+                    <li>
+                        <a href={`/presenters/${presenter.slug}`}>{presenter.data.presenterName}</a>
+                    </li>
+                </ul>
+            ))
+        }
+    </div>
+</BaseLayout>
