@@ -1,6 +1,6 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
-import { sortMeetingListByMeetingDate } from '../../buildTimeUtils';
+import { sortMeetingListByMeetingDate } from '../buildTimeUtils';
 
 export async function GET(context) {
     const allMeetings = sortMeetingListByMeetingDate(await getCollection('meetings'));
