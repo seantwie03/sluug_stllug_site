@@ -10,15 +10,34 @@ interface Props {
     main: Presentation;
     base?: Presentation;
     image?: Image;
+    meetupUrl?: string;
+    youtubeUrl?: string;
 }
-const { meetingType, meetingDate, image } = Astro.props;
+const { meetingType, meetingDate, image, meetupUrl, youtubeUrl } = Astro.props;
 const meetingName = getMeetingName(meetingType);
 const meetingImage = image ? image : getMeetingImage(meetingType);
+const regex = /^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?:i)?=|\&v(?:i)?=))([^#\&\?]+).*/
+const vidId = youtubeUrl?.match(regex)?.[1]
 ---
 
 <BaseLayout pageTitle=`${meetingType} - ${meetingDate.toDateString().slice(0,10)}`>
     <MeetingTitle meetingName={meetingName} meetingDate={meetingDate} } />
-    <img src={meetingImage.url} width="300" alt={meetingImage.alt} />
+    {
+        youtubeUrl ? (
+                <iframe
+                    width="560"
+                    height="315"
+                    src=`https://www.youtube-nocookie.com/embed/${vidId}`
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                />
+        ) : (
+            <img src={meetingImage.url} width="300" alt={meetingImage.alt} />
+        )
+    }
     <slot />
 </BaseLayout>
 
