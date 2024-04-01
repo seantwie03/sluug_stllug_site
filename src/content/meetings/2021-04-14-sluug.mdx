@@ -15,10 +15,17 @@ meetupUrl: 'https://www.meetup.com/saint-louis-unix-users-group/events/277439178
 
 import MeetingPresenter from '../../components/MeetingPresenter.astro';
 import Tags from '../../components/Tags.astro';
+import { Icon } from 'astro-icon/components';
 
 ## **MAIN:** {frontmatter.main.title}
 
 <MeetingPresenter presenterName={frontmatter.main.presenter} />
+{frontmatter.meetupUrl && (
+    <a href={frontmatter.meetupUrl}>
+        <Icon name="mdi:meetup" class="inline" />
+        Meetup
+    </a>
+)}
 
 This talk introduces COSI, the Common Operating System Interface, which defines an API for the configuration of container operating systems.
 

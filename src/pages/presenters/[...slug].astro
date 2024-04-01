@@ -3,6 +3,7 @@ import type { InferGetStaticPropsType } from 'astro';
 import { getCollection } from 'astro:content';
 import PresenterLayout from '../../layouts/PresenterLayout.astro';
 import MeetingListing from '../../components/MeetingListing.astro';
+import { sortMeetingListByMeetingDate } from '../../buildTimeUtils';
 
 export async function getStaticPaths() {
     const presenterEntries = await getCollection('presenters');
@@ -16,9 +17,11 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 
-const meetings = await getCollection('meetings', ({ data }) => {
-    return data.main.presenter === entry.data.presenterName || data.base?.presenter == entry.data.presenterName;
-});
+const meetings = sortMeetingListByMeetingDate(
+    await getCollection('meetings', ({ data }) => {
+        return data.main.presenter === entry.data.presenterName || data.base?.presenter == entry.data.presenterName;
+    }),
+);
 ---
 
 <PresenterLayout presenter={entry.data.presenterName} lastUpdated={entry.data.lastUpdated}>

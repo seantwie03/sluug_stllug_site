@@ -1,0 +1,32 @@
+---
+meetingType: 'STLLUG'
+meetingDate: 2021-06-17
+main:
+    title: 'Migrating from being an MS-Win desktop to Linux Mint, ...and keeping my games!'
+    presenter: 'Tyler Rudie'
+    tags: ['desktop', 'linux-mint', 'gaming', 'amd', 'ryzen']
+youtubeUrl: 'https://youtu.be/di_mwzCZOdI?si=CIdT5HdlXti09l-f'
+meetupUrl: 'https://www.meetup.com/saint-louis-unix-users-group/events/271259571/'
+---
+
+import MeetingPresenter from '../../components/MeetingPresenter.astro';
+import Tags from '../../components/Tags.astro';
+import { Icon } from 'astro-icon/components';
+
+## **MAIN:** {frontmatter.main.title}
+
+<MeetingPresenter presenterName={frontmatter.main.presenter} />
+{frontmatter.meetupUrl && (
+    <a href={frontmatter.meetupUrl}>
+        <Icon name="mdi:meetup" class="inline" />
+        Meetup
+    </a>
+)}
+
+Last month, I was able to get my hands on a new Ryzen 5900X processor and decided to rebuild my workstation. I decided that this time around that I would attempt to move my workflow to Linux. This is the story of my migration.
+
+Of course, there was the need to get stuff from work to work...automated scripts sftwr, cmds to replace MS-Win cmds. But also wanted to get games to work!
+
+That focus will be around games in the Steam, Epic Game Store & Good Old Games stores. I will also test the Blizzard Battle.net games.
+
+<Tags tags={frontmatter.main.tags} />

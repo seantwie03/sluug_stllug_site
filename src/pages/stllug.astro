@@ -2,9 +2,12 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import MeetingListing from '../components/MeetingListing.astro';
-const stllugMeetings = await getCollection('meetings', ({ data }) => {
-    return data.meetingType === 'STLLUG';
-});
+import { sortMeetingListByMeetingDate } from '../buildTimeUtils';
+const stllugMeetings = sortMeetingListByMeetingDate(
+    await getCollection('meetings', ({ data }) => {
+        return data.meetingType === 'STLLUG';
+    }),
+);
 const pageTitle = 'St. Louis Linux Users Group';
 ---
 

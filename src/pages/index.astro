@@ -2,7 +2,9 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import MeetingListing from '../components/MeetingListing.astro';
-const allMeetings = await getCollection('meetings');
+import { sortMeetingListByMeetingDate } from '../buildTimeUtils';
+
+const allMeetings = sortMeetingListByMeetingDate(await getCollection('meetings'));
 const pageTitle = 'St. Louis Unix Users Group';
 ---
 

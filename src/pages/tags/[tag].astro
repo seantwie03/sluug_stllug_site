@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import MeetingListing from '../../components/MeetingListing.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { sortMeetingListByMeetingDate } from '../../buildTimeUtils';
 
 export async function getStaticPaths() {
     const allMeetings = await getCollection('meetings');
@@ -16,8 +17,10 @@ export async function getStaticPaths() {
         ]),
     ];
     return uniqueTags.map((tag) => {
-        const filteredPosts = allMeetings.filter(
-            (meeting) => meeting.data.main.tags.includes(tag) || meeting.data.base?.tags.includes(tag),
+        const filteredPosts = sortMeetingListByMeetingDate(
+            allMeetings.filter(
+                (meeting) => meeting.data.main.tags.includes(tag) || meeting.data.base?.tags.includes(tag),
+            ),
         );
         return {
             params: { tag },

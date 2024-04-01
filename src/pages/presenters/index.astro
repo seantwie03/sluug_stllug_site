@@ -2,7 +2,9 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 const allPresenters = await getCollection('presenters');
-const uniquePresenters = [...new Set(allPresenters)];
+const uniquePresenters = [...new Set(allPresenters)].sort((a, b) =>
+    a.data.presenterName.localeCompare(b.data.presenterName),
+);
 const pageTitle = 'Presenter Index';
 ---
 

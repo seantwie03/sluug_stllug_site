@@ -18,10 +18,17 @@ meetupUrl: 'https://www.meetup.com/saint-louis-unix-users-group/events/276192063
 
 import MeetingPresenter from '../../components/MeetingPresenter.astro';
 import Tags from '../../components/Tags.astro';
+import { Icon } from 'astro-icon/components';
 
 ## **MAIN:** {frontmatter.main.title}
 
 <MeetingPresenter presenterName={frontmatter.main.presenter} />
+{frontmatter.meetupUrl && (
+    <a href={frontmatter.meetupUrl}>
+        <Icon name="mdi:meetup" class="inline" />
+        Meetup
+    </a>
+)}
 
 "Hypers and Gathers and Takes! Oh my!"
 

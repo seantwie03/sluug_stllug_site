@@ -1,0 +1,28 @@
+---
+meetingType: 'STLLUG'
+meetingDate: 2021-04-22
+main:
+    title: 'IBM Z and Linux - Updates and Strategy'
+    presenter: 'DeWayne Hughes'
+    tags: ['ibm', 'ibm-z', 'linux-one']
+youtubeUrl: 'https://youtu.be/iDtZKNg_fpI?si=mBABAta6Lw8lHki-'
+meetupUrl: 'https://www.meetup.com/saint-louis-unix-users-group/events/271259465/'
+---
+
+import MeetingPresenter from '../../components/MeetingPresenter.astro';
+import Tags from '../../components/Tags.astro';
+import { Icon } from 'astro-icon/components';
+
+## **MAIN:** {frontmatter.main.title}
+
+<MeetingPresenter presenterName={frontmatter.main.presenter} />
+{frontmatter.meetupUrl && (
+    <a href={frontmatter.meetupUrl}>
+        <Icon name="mdi:meetup" class="inline" />
+        Meetup
+    </a>
+)}
+
+IBM Z and Linux have run mission critical workloads for over 20 years, yet is seeing new interest and growth. The LinuxONE server family brings security, privacy, scalability, and availability to Linux workloads. This session will provide an update on this platform and its role in the hybrid cloud.
+
+<Tags tags={frontmatter.main.tags} />

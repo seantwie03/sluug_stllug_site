@@ -20,7 +20,7 @@ const regex = /^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?
 const vidId = youtubeUrl?.match(regex)?.[1]
 ---
 
-<BaseLayout pageTitle=`${meetingType} - ${meetingDate.toDateString().slice(0,10)}`>
+<BaseLayout pageTitle=`${meetingType} - ${meetingDate.toDateString().slice(4)}`>
     <MeetingTitle meetingName={meetingName} meetingDate={meetingDate} } />
     {
         youtubeUrl ? (

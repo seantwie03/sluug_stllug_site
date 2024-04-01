@@ -1,0 +1,28 @@
+---
+meetingType: 'STLLUG'
+meetingDate: 2021-05-20
+main:
+    title: 'Syncthing'
+    presenter: 'Tyler Rudie'
+    tags: ['files', 'syncthing']
+youtubeUrl: 'https://youtu.be/VDKW3QDXny8?si=24VvAnEMM_1jta1b'
+meetupUrl: 'https://www.meetup.com/saint-louis-unix-users-group/events/276369887/'
+---
+
+import MeetingPresenter from '../../components/MeetingPresenter.astro';
+import Tags from '../../components/Tags.astro';
+import { Icon } from 'astro-icon/components';
+
+## **MAIN:** {frontmatter.main.title}
+
+<MeetingPresenter presenterName={frontmatter.main.presenter} />
+{frontmatter.meetupUrl && (
+    <a href={frontmatter.meetupUrl}>
+        <Icon name="mdi:meetup" class="inline" />
+        Meetup
+    </a>
+)}
+
+It is a tale as old as computers. A Computer Wizard comes along and shows how they can make your life easier and all you have to do is pay them. Then a few years later, ok 6 years later, they up and say that some other Balrog is a better use of their time. This is how I replaced the Camera Upload function in Plex with the Syncthing Process.
+
+<Tags tags={frontmatter.main.tags} />
