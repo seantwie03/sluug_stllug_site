@@ -11,7 +11,7 @@ const uniqueTags = [
             .map((base) => base.tags)
             .flat(),
     ]),
-].toSorted();
+].sort((a, b) => a.localeCompare(b));
 const pageTitle = 'Tag Index';
 ---
 
