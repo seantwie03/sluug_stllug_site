@@ -1,13 +1,40 @@
 ---
-import Hamburger from './Hamburger.astro';
-import Navigation from './Navigation.astro';
+import { Icon } from 'astro-icon/components';
 import ThemeIcon from './ThemeIcon.astro';
 ---
 
-<header>
+<header class="w-full bg-slate-200">
     <nav>
-        <Hamburger />
-        <ThemeIcon />
-        <Navigation />
+        <div class="w-full flex justify-center">
+            <div class="h-16 w-[100ch]">
+                <div class="flex h-full flex-row items-center justify-between">
+                    <Icon name="mdi:hamburger-menu" size={40} class="ml-4 lg:hidden" />
+                    <img src="/SLUUG.png" alt="SLUUG Logo" width="140" />
+                    <ul class="hidden lg:shown w-full lg:flex flex-row justify-around">
+                        <li class="hover:cursor-pointer text-xl font-bold">
+                            <a class="no-underline" href="/">Home</a>
+                        </li>
+                        <li class="hover:cursor-pointer text-xl font-bold">
+                            <a class="no-underline" href="/sluug/">SLUUG</a>
+                        </li>
+                        <li class="hover:cursor-pointer text-xl font-bold">
+                            <a class="no-underline" href="/stllug/">STLLUG</a>
+                        </li>
+                        <li class="hover:cursor-pointer text-xl font-bold">
+                            <a class="no-underline" href="/about/">About</a>
+                        </li>
+                        <li class="hover:cursor-pointer text-xl font-bold">
+                            <a class="no-underline" href="/presenters/">Presenters</a>
+                        </li>
+                        <li class="hover:cursor-pointer text-xl font-bold">
+                            <a class="no-underline" href="/tags/">Tags</a>
+                        </li>
+                    </ul>
+                    <div class="mr-6 lg:mr-0">
+                        <ThemeIcon />
+                    </div>
+                </div>
+            </div>
+        </div>
     </nav>
 </header>

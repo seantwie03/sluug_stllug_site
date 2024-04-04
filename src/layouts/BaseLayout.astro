@@ -1,25 +1,32 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
-import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import '../styles/global.css';
 import '../styles/base.css';
+import Header from '../components/Header.astro';
 const { pageTitle } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="en" class="h-full">
     <head>
         <meta charset="utf-8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="generator" content={Astro.generator} />
-        <link rel="alternate" type="application/rss+xml" title="Your Site's Title" href={`${Astro.site}rss.xml`} />
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="St. Louis Unix/Linux Users Group"
+            href={`${Astro.site}rss.xml`}
+        />
         <title>{pageTitle}</title>
         <ViewTransitions />
     </head>
-    <body>
+    <body class="flex items-center flex-col min-h-screen bg-slate-100">
         <Header />
-        <slot />
+        <main class="grow w-full lg:w-[100ch]">
+            <h1>{pageTitle}</h1>
+            <slot />
+        </main>
         <Footer />
         <script>
             import '../scripts/menu.js';
