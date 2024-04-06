@@ -1,39 +1,54 @@
 ---
-import { Icon } from 'astro-icon/components';
-import ThemeIcon from './ThemeIcon.astro';
+import {Image} from 'astro:assets';
+import {Icon} from 'astro-icon/components';
+import sluugOrgLogo from '../images/SLUUG-Logo.png'
+import stllugLogo from '../images/STLLUG-Logo.png'
 ---
 
-<header class="w-full bg-slate-200">
-    <nav>
+<header class="w-full">
+    <div class="w-full hidden lg:flex items-center justify-evenly py-6">
+        <div class="w-[100ch] flex items-center justify-between">
+            <a href="/sluug">
+                <Image src={sluugOrgLogo} alt="SLUUG Org Logo" width="80" loading="lazy" decoding="async"/>
+            </a>
+            <h1>St. Louis Unix/Linux User Groups</h1>
+            <a href="/stllug">
+                <Image src={stllugLogo} alt="STLLUG Logo" width="80" loading="lazy" decoding="async"/>
+            </a>
+        </div>
+    </div>
+    <nav class="bg-slate-200 mb-2">
         <div class="w-full flex justify-center">
-            <div class="h-16 w-[100ch]">
-                <div class="flex h-full flex-row items-center justify-between">
-                    <Icon name="mdi:hamburger-menu" size={40} class="ml-4 lg:hidden" />
-                    <img src="/SLUUG.png" alt="SLUUG Logo" width="140" />
-                    <ul class="hidden lg:shown w-full lg:flex flex-row justify-around">
-                        <li class="hover:cursor-pointer text-xl font-bold">
-                            <a class="no-underline" href="/">Home</a>
-                        </li>
-                        <li class="hover:cursor-pointer text-xl font-bold">
-                            <a class="no-underline" href="/sluug/">SLUUG</a>
-                        </li>
-                        <li class="hover:cursor-pointer text-xl font-bold">
-                            <a class="no-underline" href="/stllug/">STLLUG</a>
-                        </li>
-                        <li class="hover:cursor-pointer text-xl font-bold">
-                            <a class="no-underline" href="/about/">About</a>
-                        </li>
-                        <li class="hover:cursor-pointer text-xl font-bold">
-                            <a class="no-underline" href="/presenters/">Presenters</a>
-                        </li>
-                        <li class="hover:cursor-pointer text-xl font-bold">
-                            <a class="no-underline" href="/tags/">Tags</a>
-                        </li>
-                    </ul>
-                    <div class="mr-6 lg:mr-0">
-                        <ThemeIcon />
-                    </div>
+            <div class="h-16 w-full lg:w-[100ch] flex items-center">
+                <div class="lg:hidden w-full flex flex-row items-center justify-between">
+                    <Icon name="mdi:hamburger-menu" size={40} class="ml-2"/>
+                    <a href="/sluug">
+                        <Image src={sluugOrgLogo} alt="St. Louis Unix Users Group Logo" width="60" loading="lazy" decoding="async"/>
+                    </a>
+                    <a href="/stllug" class="mr-2">
+                        <Image src={stllugLogo} alt="St. Louis Linux Users Group Logo" width="60" loading="lazy" decoding="async"/>
+                    </a>
                 </div>
+                <ul class="hidden w-full lg:flex flex-row items-center justify-around">
+                    <li class="hover:cursor-pointer text-xl font-bold">
+                        <a class="no-underline" href="/">Home</a>
+                    </li>
+                    <li class="hover:cursor-pointer text-xl font-bold">
+                        <a class="no-underline" href="/about/">About</a>
+                    </li>
+                    <li class="hover:cursor-pointer text-xl font-bold">
+                        <a class="no-underline" href="/sluug/">SLUUG</a>
+                    </li>
+                    <li class="hover:cursor-pointer text-xl font-bold">
+                        <a class="no-underline" href="/stllug/">STLLUG</a>
+                    </li>
+                    <li class="hover:cursor-pointer text-xl font-bold">
+                        <a class="no-underline" href="/presenters/">Presenters</a>
+                    </li>
+                    <li class="hover:cursor-pointer text-xl font-bold">
+                        <a class="no-underline" href="/tags/">Tags</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>

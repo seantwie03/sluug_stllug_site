@@ -12,10 +12,11 @@ const uniqueTags = [
             .flat(),
     ]),
 ].sort((a, b) => a.localeCompare(b));
-const pageTitle = 'Tag Index';
+const pageTitle = 'Tags';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
+    <h1 class="text-center">{pageTitle}</h1>
     <div class="tags">
         {
             uniqueTags.map((tag) => (
