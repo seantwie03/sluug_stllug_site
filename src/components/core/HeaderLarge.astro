@@ -1,12 +1,11 @@
 ---
+// Header for large and extra large devices
 import {Image} from 'astro:assets';
-import {Icon} from 'astro-icon/components';
-import sluugOrgLogo from '../images/SLUUG-Logo.png'
-import stllugLogo from '../images/STLLUG-Logo.png'
+import sluugOrgLogo from '../../images/SLUUG-Logo.png'
+import stllugLogo from '../../images/STLLUG-Logo.png'
 ---
-
-<header class="w-full">
-    <div class="w-full hidden lg:flex items-center justify-evenly py-6">
+<div class="w-full">
+    <div class="lg:flex items-center justify-evenly py-6">
         <div class="w-[100ch] flex items-center justify-between">
             <a href="/sluug">
                 <Image src={sluugOrgLogo} alt="SLUUG Org Logo" width="80" loading="lazy" decoding="async"/>
@@ -17,21 +16,9 @@ import stllugLogo from '../images/STLLUG-Logo.png'
             </a>
         </div>
     </div>
-    <nav class="bg-slate-200 mb-2">
+    <nav class="bg-slate-200 mb-3">
         <div class="w-full flex justify-center">
             <div class="h-16 w-full lg:w-[100ch] flex items-center">
-                <div class="lg:hidden w-full flex flex-row items-center justify-between">
-                    <a class="text-black" href="/">
-                        <Icon name="mdi:home" size={40} class="ml-2"/>
-                    </a>
-                    <a href="/sluug">
-                        <Image src={sluugOrgLogo} alt="St. Louis Unix Users Group Logo" width="60" loading="lazy" decoding="async"/>
-                    </a>
-                    <a href="/stllug">
-                        <Image src={stllugLogo} alt="St. Louis Linux Users Group Logo" width="75" loading="lazy" decoding="async"/>
-                    </a>
-                    <Icon name="mdi:hamburger-menu" size={40} class="mr-2"/>
-                </div>
                 <ul class="hidden w-full lg:flex flex-row items-center justify-around">
                     <li class="hover:cursor-pointer text-xl font-bold">
                         <a class="no-underline" href="/">Home</a>
@@ -55,4 +42,4 @@ import stllugLogo from '../images/STLLUG-Logo.png'
             </div>
         </div>
     </nav>
-</header>
+</div>

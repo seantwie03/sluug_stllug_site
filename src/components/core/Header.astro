@@ -1,0 +1,13 @@
+---
+import HeaderSmall from "./HeaderSmall.astro";
+import HeaderLarge from "./HeaderLarge.astro";
+---
+
+<header class="w-full">
+    <div class="lg:hidden">
+        <HeaderSmall />
+    </div>
+    <div class="hidden lg:flex">
+        <HeaderLarge />
+    </div>
+</header>

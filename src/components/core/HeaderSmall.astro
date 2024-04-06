@@ -1,0 +1,25 @@
+---
+// Header for small and medium devices
+import {Image} from 'astro:assets';
+import {Icon} from "astro-icon/components";
+import sluugOrgLogo from '../../images/SLUUG-Logo.png'
+import stllugLogo from '../../images/STLLUG-Logo.png'
+---
+<nav class="bg-slate-200 mb-2">
+    <div class="w-full flex justify-center">
+        <div class="h-16 w-full flex items-center">
+            <div class="w-full flex flex-row items-center justify-between">
+                <a class="text-black" href="/">
+                    <Icon name="mdi:home" size={40} class="ml-2"/>
+                </a>
+                <a href="/sluug">
+                    <Image src={sluugOrgLogo} alt="St. Louis Unix Users Group Logo" width="60" loading="lazy" decoding="async"/>
+                </a>
+                <a href="/stllug">
+                    <Image src={stllugLogo} alt="St. Louis Linux Users Group Logo" width="75" loading="lazy" decoding="async"/>
+                </a>
+                <Icon name="mdi:hamburger-menu" size={40} class="mr-2"/>
+            </div>
+        </div>
+    </div>
+</nav>
