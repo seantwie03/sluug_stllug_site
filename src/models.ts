@@ -1,12 +1,14 @@
+import type { ImageMetadata } from "astro";
+
 export interface Presentation {
-    title: string;
-    presenter: string;
-    tags: string[];
+  title: string;
+  presenter: string;
+  tags: string[];
 }
 
-export type MeetingType = 'SLUUG' | 'STLLUG';
+export type MeetingType = "SLUUG" | "STLLUG";
 
 export interface Image {
-    url: string;
-    alt: string;
+  src: ImageMetadata | string;
+  alt: string;
 }
