@@ -9,6 +9,6 @@ export interface Presentation {
 export type MeetingType = "SLUUG" | "STLLUG";
 
 export interface Image {
-  src: ImageMetadata | string;
+  src: ImageMetadata;
   alt: string;
 }

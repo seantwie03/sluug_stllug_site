@@ -1,5 +1,6 @@
 ---
-import type { Presentation, MeetingType, Image } from '../models';
+import {Image} from 'astro:assets';
+import type { Presentation, MeetingType } from '../models';
 import BaseLayout from './BaseLayout.astro';
 import MeetingTitle from '../components/MeetingTitle.astro';
 import { getMeetingName, getMeetingImage } from '../buildTimeUtils';
@@ -9,13 +10,12 @@ interface Props {
     meetingDate: Date;
     main: Presentation;
     base?: Presentation;
-    image?: Image;
     meetupUrl?: string;
     youtubeUrl?: string;
 }
-const { meetingType, meetingDate, image, meetupUrl, youtubeUrl } = Astro.props;
+const { meetingType, meetingDate, meetupUrl, youtubeUrl } = Astro.props;
 const meetingName = getMeetingName(meetingType);
-const meetingImage = image ? image : getMeetingImage(meetingType);
+const meetingImage = getMeetingImage(meetingType);
 const regex = /^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?:i)?=|\&v(?:i)?=))([^#\&\?]+).*/
 const vidId = youtubeUrl?.match(regex)?.[1]
 ---
@@ -35,7 +35,7 @@ const vidId = youtubeUrl?.match(regex)?.[1]
                     allowfullscreen
                 />
         ) : (
-            <img src={meetingImage.url} width="300" alt={meetingImage.alt} />
+                <Image src={meetingImage.src} alt={meetingImage.alt}  height="180" width="180" loading="lazy" decoding="async"/>
         )
     }
     <slot />

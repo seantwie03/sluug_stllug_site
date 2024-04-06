@@ -8,10 +8,10 @@ const { meetingName, meetingDate } = Astro.props;
 ---
 
 <div>
-    <p class="text-sm font-light leading-relaxed mt-3 mb-0">
+    <p class="text-sm font-medium leading-relaxed mt-3 mb-0">
         {meetingDate.toLocaleDateString('default', { month: 'long', day: '2-digit', year: 'numeric' })}
     </p>
-    <p class="text-2xl font-normal leading-normal mt-0 mb-2">
+    <h2 class="mt-0 mb-2">
         {meetingName}
-    </p>
+    </h2>
 </div>
