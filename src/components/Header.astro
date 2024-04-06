@@ -13,7 +13,7 @@ import stllugLogo from '../images/STLLUG-Logo.png'
             </a>
             <h1>St. Louis Unix/Linux User Groups</h1>
             <a href="/stllug">
-                <Image src={stllugLogo} alt="STLLUG Logo" width="80" loading="lazy" decoding="async"/>
+                <Image src={stllugLogo} alt="STLLUG Logo" width="100" loading="lazy" decoding="async"/>
             </a>
         </div>
     </div>
@@ -21,13 +21,16 @@ import stllugLogo from '../images/STLLUG-Logo.png'
         <div class="w-full flex justify-center">
             <div class="h-16 w-full lg:w-[100ch] flex items-center">
                 <div class="lg:hidden w-full flex flex-row items-center justify-between">
-                    <Icon name="mdi:hamburger-menu" size={40} class="ml-2"/>
+                    <a class="text-black" href="/">
+                        <Icon name="mdi:home" size={40} class="ml-2"/>
+                    </a>
                     <a href="/sluug">
                         <Image src={sluugOrgLogo} alt="St. Louis Unix Users Group Logo" width="60" loading="lazy" decoding="async"/>
                     </a>
-                    <a href="/stllug" class="mr-2">
-                        <Image src={stllugLogo} alt="St. Louis Linux Users Group Logo" width="60" loading="lazy" decoding="async"/>
+                    <a href="/stllug">
+                        <Image src={stllugLogo} alt="St. Louis Linux Users Group Logo" width="75" loading="lazy" decoding="async"/>
                     </a>
+                    <Icon name="mdi:hamburger-menu" size={40} class="mr-2"/>
                 </div>
                 <ul class="hidden w-full lg:flex flex-row items-center justify-around">
                     <li class="hover:cursor-pointer text-xl font-bold">

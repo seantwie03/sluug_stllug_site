@@ -9,6 +9,12 @@ const pageTitle = 'St. Louis Unix Users Group';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
+    <h1 class="text-center lg:hidden">St. Louis</h1>
+    <h1 class="text-center lg:hidden">Unix & Linux</h1>
+    <h1 class="text-center lg:hidden">User Groups</h1>
+    <p>
+        The St. Louis Unix and Linux User Groups hold regular meetings with technical presentations and discussions. Our topics frequently involve Unix, Unix-like Operating Systems, Linux, BSD, and other Free and Open Source Software (FOSS) applications, products, projects and services. All of our meetings are free and open to the public.
+    </p>
     <h2>Meetings</h2>
     {
         allMeetings.map((meeting) => (
