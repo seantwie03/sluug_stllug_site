@@ -18,8 +18,60 @@ import stllugLogo from '../../images/STLLUG-Logo.png'
                 <a href="/stllug">
                     <Image src={stllugLogo} alt="St. Louis Linux Users Group Logo" width="70" loading="lazy" decoding="async"/>
                 </a>
-                <Icon name="mdi:hamburger-menu" size={50} class="mr-2"/>
+                <Icon id="hamburger" name="mdi:hamburger-menu" size={50} class="mr-2"/>
             </div>
         </div>
     </div>
 </nav>
+<div id="sidenav" class="fixed top-0 right-0 h-full w-40 mt-14 bg-slate-200 overflow-auto z-50 transform translate-x-full transition-transform
+    duration-200" style="display: none;"  >
+    <ul class="w-full flex flex-col ml-8  mt-6 ">
+        <li class="hover:cursor-pointer text-xl font-bold mb-4">
+            <a class="no-underline" href="/">Home</a>
+        </li>
+        <li class="hover:cursor-pointer text-xl font-bold mb-4">
+            <a class="no-underline" href="/about/">About</a>
+        </li>
+        <li class="hover:cursor-pointer text-xl font-bold mb-4">
+            <a class="no-underline" href="/sluug/">SLUUG</a>
+        </li>
+        <li class="hover:cursor-pointer text-xl font-bold mb-4">
+            <a class="no-underline" href="/stllug/">STLLUG</a>
+        </li>
+        <li class="hover:cursor-pointer text-xl font-bold mb-4">
+            <a class="no-underline" href="/presenters/">Presenters</a>
+        </li>
+        <li class="hover:cursor-pointer text-xl font-bold mb-4">
+            <a class="no-underline" href="/tags/">Tags</a>
+        </li>
+    </ul>
+</div>
+<script>
+    document.addEventListener('astro:page-load', () => {
+        document.getElementById('hamburger')!.addEventListener('click', function() {
+            const sidenav = document.getElementById('sidenav')!;
+            if (sidenav.style.display === 'none' || sidenav.style.transform === 'translateX(100%)') {
+                sidenav.style.display = 'block';
+                sidenav.style.transform = 'translateX(0)';
+            } else {
+                sidenav.style.transform = 'translateX(100%)';
+                setTimeout(function(){ sidenav.style.display = 'none'; }, 200); // hide after slide animation is done
+            }
+        });
+    });
+    let outside=true;
+    document.addEventListener('click', function(event: MouseEvent) {
+        const sidenav = document.getElementById("sidenav")!;
+        const isClickInsideSidemenu = sidenav.contains(event.target as Node);
+        const isClickInsideHamburger = document.getElementById("hamburger")!.contains(event.target as Node);
+
+        if (isClickInsideHamburger){
+            outside = false;
+        }
+        if (!isClickInsideSidemenu && !isClickInsideHamburger && outside) {
+            sidenav.style.transform = 'translateX(100%)';
+            setTimeout(function(){ sidenav.style.display = 'none'; }, 200); // hide after slide animation is done
+        }
+        outside = true;
+    });
+</script>
