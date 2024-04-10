@@ -1,9 +1,9 @@
 ---
 import {getCollection} from 'astro:content';
-import { Icon } from 'astro-icon/components';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import MeetingListing from '../../../components/MeetingListing.astro';
 import {sortMeetingListByMeetingDate} from '../../../buildTimeUtils';
+import Pagination from "../../../components/Pagination.astro";
 
 export async function getStaticPaths({ paginate}: any) {
     const stllugMeetings = sortMeetingListByMeetingDate(await getCollection('meetings', ({data}) => {
@@ -17,26 +17,27 @@ const pageTitle = 'SLUUG - St. Louis Unix Users Group';
 const { page } = Astro.props as any;
 ---
 <BaseLayout pageTitle={pageTitle}>
-    <h2>St. Louis Linux Users Group</h2>
-    <p>
-        The <em>St. Louis Linux Users Group (STLLUG)</em> meets <strong>eight days after SLUUG</strong>. This is
-        typically the <em>third Thursday</em> of each month. The meeting begins at 6:30p.m. Central Time.
-    </p>
+    { page.currentPage === 1 &&
+        <h2>St. Louis Linux Users Group</h2>
+        <p>
+            The <em>St. Louis Linux Users Group (STLLUG)</em> meets <strong>eight days after SLUUG</strong>. This is
+            typically the <em>third Thursday</em> of each month. The meeting begins at 6:30p.m. Central Time.
+        </p>
 
-    <h2>Meeting Agenda</h2>
-    <p>
-        At <strong>6:00p.m. Central Time</strong> the meeting opens. Participants are encouraged to join at this time to
-        if they need to test their microphone, screen sharing, and video camera.
-    </p>
-    <p>
-        At <strong>6:30p.m. Central Time</strong> we attempt a quick welcome, introductions, announcements, current
-        events
-        of interest, and a general CALL FOR HELP (Questions and Answers) segment.
-    </p>
-    <p>
-        At <strong>6:45p.m. Central Time</strong> the presentation begins.
-    </p>
-
+        <h2>Meeting Agenda</h2>
+        <p>
+            At <strong>6:00p.m. Central Time</strong> the meeting opens. Participants are encouraged to join at this time to
+            if they need to test their microphone, screen sharing, and video camera.
+        </p>
+        <p>
+            At <strong>6:30p.m. Central Time</strong> we attempt a quick welcome, introductions, announcements, current
+            events
+            of interest, and a general CALL FOR HELP (Questions and Answers) segment.
+        </p>
+        <p>
+            At <strong>6:45p.m. Central Time</strong> the presentation begins.
+        </p>
+    }
     <h2>STLLUG Meetings</h2>
     {
         page.data.map((data: any) => (
@@ -50,16 +51,5 @@ const { page } = Astro.props as any;
                 youtubeUrl={data.data.youtubeUrl}
         />))
     }
-    <div class="flex flex-row justify-evenly mb-4">
-        <ul class="flex flex-row w-full justify-evenly">
-            <li>{page.url.prev ? <a href={"1"}><Icon name="mdi:arrow-collapse-left" size={25} /></a> : null}</li>
-            <li>{page.url.prev ? <a href={page.url.prev}><Icon name="mdi:arrow-left" size={25} /></a> : null}</li>
-            {[...Array(page.lastPage)].map((_, i) => (
-                 i+1 === page.currentPage ?  <li>{i+1}</li> : <li><a href=`/sluug/${i+1}`>{i+1}</a></li>)
-
-            )}
-            <li>{page.url.next ? <a href={page.url.next}><Icon name="mdi:arrow-right" size={25} /></a> : null}</li>
-            <li>{page.url.next ? <a href={`${page.lastPage}`}><Icon name="mdi:arrow-collapse-right" size={25} /></a> : null}</li>
-        </ul>
-    </div>
+    <Pagination url={page.url} currentPage={page.currentPage} lastPage={page.lastPage} />
 </BaseLayout>

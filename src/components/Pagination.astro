@@ -1,0 +1,33 @@
+---
+import {Icon} from "astro-icon/components";
+
+interface Props {
+    url: { current: string; prev: string | undefined; next: string | undefined },
+    currentPage: number,
+    lastPage: number,
+}
+
+const {url, lastPage, currentPage} = Astro.props;
+
+---
+<div class="hidden lg:flex flex-row justify-evenly mb-4">
+    <ul class="flex flex-row w-full justify-evenly">
+        <li>{url.prev ? <a href={"1"}><Icon name="mdi:arrow-collapse-left" size={25} /></a> : null}</li>
+        <li>{url.prev ? <a href={url.prev}><Icon name="mdi:arrow-left" size={25} /></a> : null}</li>
+        {[...Array(lastPage)].map((_, i) => (
+            i+1 === currentPage ?  <li>{i+1}</li> : <li><a href=`${i+1}`>{i+1}</a></li>)
+
+        )}
+        <li>{url.next ? <a href={url.next}><Icon name="mdi:arrow-right" size={25} /></a> : null}</li>
+        <li>{url.next ? <a href={`${lastPage}`}><Icon name="mdi:arrow-collapse-right" size={25} /></a> : null}</li>
+    </ul>
+</div>
+<div class="lg:hidden flex-row justify-evenly mb-4">
+    <ul class="flex flex-row w-full justify-evenly">
+        <li>{url.prev ? <a href={"1"}><Icon name="mdi:arrow-collapse-left" size={25} /></a> : null}</li>
+        <li>{url.prev ? <a href={url.prev}><Icon name="mdi:arrow-left" size={25} /></a> : null}</li>
+        <li>{currentPage} of {lastPage}</li>
+        <li>{url.next ? <a href={url.next}><Icon name="mdi:arrow-right" size={25} /></a> : null}</li>
+        <li>{url.next ? <a href={`${lastPage}`}><Icon name="mdi:arrow-collapse-right" size={25} /></a> : null}</li>
+    </ul>
+</div>
