@@ -4,7 +4,8 @@ import { Icon } from 'astro-icon/components';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import MeetingListing from '../../../components/MeetingListing.astro';
 import {sortMeetingListByMeetingDate} from '../../../buildTimeUtils';
-export async function getStaticPaths({ paginate}) {
+
+export async function getStaticPaths({ paginate}: any) {
     const stllugMeetings = sortMeetingListByMeetingDate(await getCollection('meetings', ({data}) => {
         return data.meetingType === 'STLLUG';
     }));
@@ -13,7 +14,7 @@ export async function getStaticPaths({ paginate}) {
 
 const pageTitle = 'SLUUG - St. Louis Unix Users Group';
 
-const { page } = Astro.props;
+const { page } = Astro.props as any;
 ---
 <BaseLayout pageTitle={pageTitle}>
     <h2>St. Louis Linux Users Group</h2>
@@ -38,7 +39,7 @@ const { page } = Astro.props;
 
     <h2>STLLUG Meetings</h2>
     {
-        page.data.map((data) => (
+        page.data.map((data: any) => (
         <MeetingListing
                 url={`/meetings/${data.slug}/`}
                 meetingType={data.data.meetingType}
