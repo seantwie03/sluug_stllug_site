@@ -1,0 +1,47 @@
+---
+import {getCollection} from 'astro:content';
+import { Icon } from 'astro-icon/components';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import MeetingListing from '../../components/MeetingListing.astro';
+import {sortMeetingListByMeetingDate} from '../../buildTimeUtils';
+export async function getStaticPaths({ paginate}) {
+    const allMeetings = sortMeetingListByMeetingDate(await getCollection('meetings'));
+    return paginate(allMeetings, {pageSize: 2});
+}
+
+const pageTitle = 'St. Louis Unix/Linux Users Group';
+
+const { page } = Astro.props;
+---
+<BaseLayout pageTitle={pageTitle}>
+    <h3 class="text-center lg:hidden m-0">St. Louis</h3>
+    <h1 class="text-center lg:hidden m-0">Unix & Linux</h1>
+    <h2 class="text-center lg:hidden m-0 mb-2">Users Groups</h2>
+    <p class="mb-6">
+        The St. Louis Unix and Linux Users Groups hold regular meetings with technical presentations and discussions. Our topics frequently involve Unix, Unix-like Operating Systems, Linux, BSD, and other Free and Open Source Software (FOSS) applications, products, projects and services. All of our meetings are free and open to the public.
+    </p>
+    {
+    page.data.map((data) => (
+        <MeetingListing
+                url={`/meetings/${data.slug}/`}
+                meetingType={data.data.meetingType}
+                meetingDate={data.data.meetingDate}
+                main={data.data.main}
+                base={data.data.base}
+                meetupUrl={data.data.meetupUrl}
+                youtubeUrl={data.data.youtubeUrl}
+        />))
+    }
+    <div class="flex flex-row justify-evenly mb-4">
+        <ul class="flex flex-row w-full justify-evenly">
+            <li>{page.url.prev ? <a href={"1"}><Icon name="mdi:arrow-collapse-left" size={25} /></a> : null}</li>
+            <li>{page.url.prev ? <a href={page.url.prev}><Icon name="mdi:arrow-left" size={25} /></a> : null}</li>
+            {[...Array(page.lastPage)].map((_, i) => (
+                 i+1 === page.currentPage ?  <li>{i+1}</li> : <li><a href=`/sluug/${i+1}`>{i+1}</a></li>)
+
+            )}
+            <li>{page.url.next ? <a href={page.url.next}><Icon name="mdi:arrow-right" size={25} /></a> : null}</li>
+            <li>{page.url.next ? <a href={`${page.lastPage}`}><Icon name="mdi:arrow-collapse-right" size={25} /></a> : null}</li>
+        </ul>
+    </div>
+</BaseLayout>
