@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro check && astro build && pagefind --site dist && node -e \"require('fs').cpSync('./dist/pagefind', './public/pagefind', {recursive: true});\"",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -22,6 +22,7 @@
     "typescript": "^5.4.3"
   },
   "devDependencies": {
+    "pagefind": "^1.1.0",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0"
   }

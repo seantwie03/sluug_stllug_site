@@ -14,10 +14,15 @@ const uniqueTags = [
 ].sort((a, b) => a.localeCompare(b));
 const pageTitle = 'Tags';
 ---
+<head>
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    <script is:inline src="/pagefind/pagefind-ui.js"></script>
+</head>
 
 <BaseLayout pageTitle={pageTitle}>
-    <h1 class="text-center">{pageTitle}</h1>
-    <div class="tags">
+    <h1 class="text-center mb-2">{pageTitle}</h1>
+    <div id="search"></div>
+    <div class="tags" data-pagefind-ignore>
         {
             uniqueTags.map((tag) => (
                 <p class="tag">
@@ -27,6 +32,14 @@ const pageTitle = 'Tags';
         }
     </div>
 </BaseLayout>
+
+<script is:inline>
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", () => {
+            new PagefindUI({element: "#search", showSubResults: true});
+        });
+    }
+</script>
 
 <style>
     a {

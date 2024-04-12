@@ -34,7 +34,7 @@ const { meetings } = Astro.props;
 ---
 
 <BaseLayout pageTitle={tag}>
-    <p>Posts tagged with {tag}</p>
+    <p data-pagefind-ignore>Presentations tagged with: <strong>{tag}</strong></p>
     <ul>
         {
             meetings.map((meeting: any) => (
