@@ -5,10 +5,12 @@ interface Props {
     presenterName: string;
 }
 const { presenterName } = Astro.props;
-const presenters = await getCollection('presenters', ({data}) => data.presenterName === presenterName);
+console.log(presenterName);
+const presenters = await getCollection('presenters', ({data}) => data.presenterName.toUpperCase() === presenterName.toUpperCase());
+console.log(presenters)
 const presenter = presenters[0]
 ---
 <p>
     <strong>By: </strong>
-    { presenter ? <a href=`../../presenters/${presenter.slug}`>{presenter.data.presenterName}</a> : presenterName }
+    { presenter ? <a href=`/presenters/${presenter.slug}`>{presenter.data.presenterName}</a> : presenterName }
 </p>

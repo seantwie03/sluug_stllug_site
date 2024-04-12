@@ -9,7 +9,7 @@ export async function getStaticPaths({ paginate}: any) {
     const stllugMeetings = sortMeetingListByMeetingDate(await getCollection('meetings', ({data}) => {
         return data.meetingType === 'STLLUG';
     }));
-    return paginate(stllugMeetings, {pageSize: 2});
+    return paginate(stllugMeetings, {pageSize: 12});
 }
 
 const pageTitle = 'SLUUG - St. Louis Unix Users Group';
