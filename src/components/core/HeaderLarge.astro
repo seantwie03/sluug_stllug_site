@@ -2,6 +2,7 @@
 // Header for large and extra large devices
 import {Image} from 'astro:assets';
 import {Icon} from "astro-icon/components";
+import {SLUUG_LOGO_ALT, STLLUG_LOGO_ALT} from "@/constants.ts";
 import sluugOrgLogo from '../../images/SLUUG-Logo.png'
 import stllugLogo from '../../images/STLLUG-Logo.png'
 ---
@@ -9,11 +10,11 @@ import stllugLogo from '../../images/STLLUG-Logo.png'
     <div class="lg:flex items-center justify-evenly py-6">
         <div class="w-[100ch] flex items-center justify-between">
             <a href="/meetings/sluug/1">
-                <Image src={sluugOrgLogo} alt="SLUUG Org Logo" width="80" loading="lazy" decoding="async"/>
+                <Image src={sluugOrgLogo} alt={SLUUG_LOGO_ALT} width="80" loading="lazy" decoding="async"/>
             </a>
             <h1>St. Louis Unix/Linux User Groups</h1>
             <a href="/meetings/stllug/1">
-                <Image src={stllugLogo} alt="STLLUG Logo" width="100" loading="lazy" decoding="async"/>
+                <Image src={stllugLogo} alt={STLLUG_LOGO_ALT} width="100" loading="lazy" decoding="async"/>
             </a>
         </div>
     </div>
