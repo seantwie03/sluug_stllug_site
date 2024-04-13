@@ -5,9 +5,7 @@ interface Props {
     presenterName: string;
 }
 const { presenterName } = Astro.props;
-console.log(presenterName);
 const presenters = await getCollection('presenters', ({data}) => data.presenterName.toUpperCase() === presenterName.toUpperCase());
-console.log(presenters)
 const presenter = presenters[0]
 ---
 <p>
