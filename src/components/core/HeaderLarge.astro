@@ -1,6 +1,7 @@
 ---
 // Header for large and extra large devices
 import {Image} from 'astro:assets';
+import {Icon} from "astro-icon/components";
 import sluugOrgLogo from '../../images/SLUUG-Logo.png'
 import stllugLogo from '../../images/STLLUG-Logo.png'
 ---
@@ -36,7 +37,7 @@ import stllugLogo from '../../images/STLLUG-Logo.png'
                         <a class="no-underline" href="/presenters/">Presenters</a>
                     </li>
                     <li class="hover:cursor-pointer text-xl font-bold">
-                        <a class="no-underline" href="/tags/">Tags</a>
+                        <a class="no-underline" href="/tags/"><Icon name="mdi:search" size={35} class="inline"/></a>
                     </li>
                 </ul>
             </div>
