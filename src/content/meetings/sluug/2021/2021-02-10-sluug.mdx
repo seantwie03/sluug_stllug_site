@@ -1,25 +1,27 @@
 ---
-meetingType: 'SLUUG'
+meetingType: "SLUUG"
 meetingDate: 2021-02-10
 main:
-    title: 'A Gentle Introduction to git'
-    presenter: 'Robert Citek'
-    tags: ['git', 'version-control']
+    title: "A Gentle Introduction to git"
+    presenterNames:
+        - "Robert Citek"
+    tags: ["git", "version-control"]
 base:
-    title: 'Speedbar'
-    presenter: 'Steve Stegman'
-    tags: ['emacs', 'speedbar']
-youtubeUrl: 'https://youtu.be/F4cVj1ZabFc?si=rsAqVkET1jUv5czp'
-meetupUrl: 'https://www.meetup.com/saint-louis-unix-users-group/events/275750179/'
+    title: "Speedbar"
+    presenterNames:
+        - "Steve Stegman"
+    tags: ["emacs", "speedbar"]
+youtubeUrl: "https://youtu.be/F4cVj1ZabFc?si=rsAqVkET1jUv5czp"
+meetupUrl: "https://www.meetup.com/saint-louis-unix-users-group/events/275750179/"
 ---
 
-import MeetingPresenter from '@/components/MeetingPresenter.astro';
-import Tags from '@/components/Tags.astro';
-import { Icon } from 'astro-icon/components';
+import MeetingPresenter from "@/components/MeetingPresenter.astro";
+import Tags from "@/components/Tags.astro";
+import { Icon } from "astro-icon/components";
 
 ## **MAIN:** {frontmatter.main.title}
 
-<MeetingPresenter presenterName={frontmatter.main.presenter} />
+<MeetingPresenter presenterNames={frontmatter.main.presenterNames} />
 {frontmatter.meetupUrl && (
     <a href={frontmatter.meetupUrl}>
         <Icon name="mdi:meetup" class="inline" />
@@ -33,7 +35,7 @@ From its inception in 2005, git has gone from a version-tracking tool used by Li
 
 ## **BASE:** {frontmatter.base.title}
 
-<MeetingPresenter presenterName={frontmatter.base.presenter} />
+<MeetingPresenter presenterNames={frontmatter.base.presenterNames} />
 
 Emacs' Speedbar for fast file access.
 

@@ -1,21 +1,22 @@
 ---
-meetingType: 'STLLUG'
+meetingType: "STLLUG"
 meetingDate: 2021-01-21
 main:
-    title: 'openVAS ~ Major Upgrade'
-    presenter: 'Tony Zafiropoulos'
-    tags: ['openVAS', 'vulnerability-scanner', 'security']
-youtubeUrl: 'https://youtu.be/7gcAaU-JgV0?si=hP1fbw2KLzVLsURH'
-meetupUrl: 'https://www.meetup.com/saint-louis-unix-users-group/events/271259443/'
+    title: "openVAS ~ Major Upgrade"
+    presenterNames:
+        - "Tony Zafiropoulos"
+    tags: ["openVAS", "vulnerability-scanner", "security"]
+youtubeUrl: "https://youtu.be/7gcAaU-JgV0?si=hP1fbw2KLzVLsURH"
+meetupUrl: "https://www.meetup.com/saint-louis-unix-users-group/events/271259443/"
 ---
 
-import MeetingPresenter from '@/components/MeetingPresenter.astro';
-import Tags from '@/components/Tags.astro';
-import { Icon } from 'astro-icon/components';
+import MeetingPresenter from "@/components/MeetingPresenter.astro";
+import Tags from "@/components/Tags.astro";
+import { Icon } from "astro-icon/components";
 
 ## **MAIN:** {frontmatter.main.title}
 
-<MeetingPresenter presenterName={frontmatter.main.presenter} />
+<MeetingPresenter presenterNames={frontmatter.main.presenterNames} />
 {frontmatter.meetupUrl && (
     <a href={frontmatter.meetupUrl}>
         <Icon name="mdi:meetup" class="inline" />

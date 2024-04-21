@@ -1,21 +1,22 @@
 ---
-meetingType: 'STLLUG'
+meetingType: "STLLUG"
 meetingDate: 2021-06-17
 main:
-    title: 'Migrating from being an MS-Win desktop to Linux Mint, ...and keeping my games!'
-    presenter: 'Tyler Rudie'
-    tags: ['desktop', 'linux-mint', 'gaming', 'amd', 'ryzen']
-youtubeUrl: 'https://youtu.be/di_mwzCZOdI?si=CIdT5HdlXti09l-f'
-meetupUrl: 'https://www.meetup.com/saint-louis-unix-users-group/events/271259571/'
+    title: "Migrating from being an MS-Win desktop to Linux Mint, ...and keeping my games!"
+    presenterNames:
+        - "Tyler Rudie"
+    tags: ["desktop", "linux-mint", "gaming", "amd", "ryzen"]
+youtubeUrl: "https://youtu.be/di_mwzCZOdI?si=CIdT5HdlXti09l-f"
+meetupUrl: "https://www.meetup.com/saint-louis-unix-users-group/events/271259571/"
 ---
 
-import MeetingPresenter from '@/components/MeetingPresenter.astro';
-import Tags from '@/components/Tags.astro';
-import { Icon } from 'astro-icon/components';
+import MeetingPresenter from "@/components/MeetingPresenter.astro";
+import Tags from "@/components/Tags.astro";
+import { Icon } from "astro-icon/components";
 
 ## **MAIN:** {frontmatter.main.title}
 
-<MeetingPresenter presenterName={frontmatter.main.presenter} />
+<MeetingPresenter presenterNames={frontmatter.main.presenterNames} />
 {frontmatter.meetupUrl && (
     <a href={frontmatter.meetupUrl}>
         <Icon name="mdi:meetup" class="inline" />

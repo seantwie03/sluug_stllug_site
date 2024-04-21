@@ -1,25 +1,27 @@
 ---
-meetingType: 'SLUUG'
+meetingType: "SLUUG"
 meetingDate: 2021-03-10
 main:
-    title: 'The Raku (Perl 6) Language'
-    presenter: 'Steven Lembark'
-    tags: ['raku', 'perl', 'programming-languages']
+    title: "The Raku (Perl 6) Language"
+    presenterNames:
+        - "Steven Lembark"
+    tags: ["raku", "perl", "programming-languages"]
 base:
-    title: '1Password'
-    presenter: 'Scott Granneman'
-    tags: ['1password', 'password manager']
+    title: "1Password"
+    presenterNames:
+        - "Scott Granneman"
+    tags: ["1password", "password manager"]
 #youtubeUrl: 'https://youtu.be/JptaX3v7yjI?si=kXYDiIWjFudAUqkZ'
-meetupUrl: 'https://www.meetup.com/saint-louis-unix-users-group/events/276192063/'
+meetupUrl: "https://www.meetup.com/saint-louis-unix-users-group/events/276192063/"
 ---
 
-import MeetingPresenter from '@/components/MeetingPresenter.astro';
-import Tags from '@/components/Tags.astro';
-import { Icon } from 'astro-icon/components';
+import MeetingPresenter from "@/components/MeetingPresenter.astro";
+import Tags from "@/components/Tags.astro";
+import { Icon } from "astro-icon/components";
 
 ## **MAIN:** {frontmatter.main.title}
 
-<MeetingPresenter presenterName={frontmatter.main.presenter} />
+<MeetingPresenter presenterNames={frontmatter.main.presenterNames} />
 {frontmatter.meetupUrl && (
     <a href={frontmatter.meetupUrl}>
         <Icon name="mdi:meetup" class="inline" />
@@ -35,7 +37,7 @@ Raku is the new name (since 2019) for Perl 6 (out since 2015). Perl 6 took YEARS
 
 ## **BASE:** {frontmatter.base.title}
 
-<MeetingPresenter presenterName={frontmatter.base.presenter} />
+<MeetingPresenter presenterNames={frontmatter.base.presenterNames} />
 
 A password manager that works on Android, Chrome OS, iOS, macOS, MS Windows, and works with browsers Firefox, Google Chrome, Opera, and Safari.
 

@@ -1,25 +1,27 @@
 ---
-meetingType: 'SLUUG'
+meetingType: "SLUUG"
 meetingDate: 2021-04-14
 main:
-    title: 'COSI, the Common Operating System Interface'
-    presenter: 'Steven Borrelli'
-    tags: ['COSI', 'kubernetes']
+    title: "COSI, the Common Operating System Interface"
+    presenterNames:
+        - "Steven Borrelli"
+    tags: ["COSI", "kubernetes"]
 base:
-    title: 'Create Your Own Shell Functions'
-    presenter: 'James Conroy'
-    tags: ['shell', 'bash']
-youtubeUrl: 'https://youtu.be/z54DPRwzGQE?si=hWm4pmAdMkhro6Ph'
-meetupUrl: 'https://www.meetup.com/saint-louis-unix-users-group/events/277439178/'
+    title: "Create Your Own Shell Functions"
+    presenterNames:
+        - "James Conroy"
+    tags: ["shell", "bash"]
+youtubeUrl: "https://youtu.be/z54DPRwzGQE?si=hWm4pmAdMkhro6Ph"
+meetupUrl: "https://www.meetup.com/saint-louis-unix-users-group/events/277439178/"
 ---
 
-import MeetingPresenter from '@/components/MeetingPresenter.astro';
-import Tags from '@/components/Tags.astro';
-import { Icon } from 'astro-icon/components';
+import MeetingPresenter from "@/components/MeetingPresenter.astro";
+import Tags from "@/components/Tags.astro";
+import { Icon } from "astro-icon/components";
 
 ## **MAIN:** {frontmatter.main.title}
 
-<MeetingPresenter presenterName={frontmatter.main.presenter} />
+<MeetingPresenter presenterNames={frontmatter.main.presenterNames} />
 {frontmatter.meetupUrl && (
     <a href={frontmatter.meetupUrl}>
         <Icon name="mdi:meetup" class="inline" />
@@ -35,7 +37,7 @@ While there has been innovation in the development of minimal Linux distribution
 
 ## **BASE:** {frontmatter.base.title}
 
-<MeetingPresenter presenterName={frontmatter.base.presenter} />
+<MeetingPresenter presenterNames={frontmatter.base.presenterNames} />
 
 Tired of your static aliases only doing the one thing?
 

@@ -19,7 +19,10 @@ const { Content } = await entry.render();
 
 const meetings = sortMeetingListByMeetingDate(
     await getCollection('meetings', ({ data }) => {
-        return data.main.presenter === entry.data.presenterName || data.base?.presenter == entry.data.presenterName;
+        return (
+            data.main.presenterNames.includes(entry.data.presenterName) ||
+            data.base?.presenterNames.includes(entry.data.presenterName)
+        );
     }),
 );
 ---

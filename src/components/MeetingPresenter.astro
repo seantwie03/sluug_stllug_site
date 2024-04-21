@@ -1,14 +1,40 @@
 ---
 import { getCollection } from 'astro:content';
 
-interface Props {
+interface PresenterLink {
+    slug: string | null
     presenterName: string;
 }
-const { presenterName } = Astro.props;
-const presenters = await getCollection('presenters', ({data}) => data.presenterName.toUpperCase() === presenterName.toUpperCase());
-const presenter = presenters[0]
+interface Props {
+    presenterNames: string[];
+}
+const { presenterNames } = Astro.props;
+
+// Find '/src/content/presenters/**' with presenterName frontmatter that matches the presetnerName passed in from props
+const presentersFromCollection = await getCollection('presenters', ({ data }) =>
+    presenterNames.map((name) => name.toUpperCase()).includes(data.presenterName.toUpperCase()),
+);
+// Map to a PresenterLink
+const presenterLinksFromCollection = presentersFromCollection.map((presenter) => ({
+    slug: presenter.slug,
+    presenterName: presenter.data.presenterName,
+}));
+
+// Map props to PresenterLink
+const presenterLinksFromProps = presenterNames.map((presenterName) => ({ slug: null, presenterName: presenterName }));
+
+// Merge two list of PresenterLinks
+const merge = (a: PresenterLink[], b: PresenterLink[], predicate = (a: string, b: string) => a === b) => {
+    const c = [...a];
+    b.forEach((bItem: PresenterLink) => (c.some((cItem) => predicate(bItem.presenterName, cItem.presenterName)) ? null : c.push(bItem)))
+    return c;
+}
+const presenters = merge(presenterLinksFromCollection, presenterLinksFromProps);
 ---
+
 <p>
     <strong>By: </strong>
-    { presenter ? <a href=`/presenters/${presenter.slug}`>{presenter.data.presenterName}</a> : presenterName }
+    <span class="[&>*:nth-child(even)]:ml-2">
+        {presenters.map((presenter) => (presenter.slug ? <a href=`/presenters/${presenter.slug}`>{presenter.presenterName}</a> : <span>{presenter.presenterName}</span>))}
+    </span>
 </p>

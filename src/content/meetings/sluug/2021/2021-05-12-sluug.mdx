@@ -1,21 +1,23 @@
 ---
-meetingType: 'SLUUG'
+meetingType: "SLUUG"
 meetingDate: 2021-05-12
 main:
-    title: 'RedHat Kickstart'
-    presenter: 'Steven Gomez'
-    tags: ['automation', 'redhat', 'kickstart']
+    title: "RedHat Kickstart"
+    presenterNames:
+        - "Steven Gomez"
+    tags: ["automation", "redhat", "kickstart"]
 base:
-    title: 'Upgrading RAID6 with Zero Downtime'
-    presenter: 'Lee Lammert'
-    tags: ['storage', 'raid']
-youtubeUrl: 'https://youtu.be/RKJsVSjgaGA?si=QaghusuG89KRq-gP'
-meetupUrl: 'https://www.meetup.com/saint-louis-unix-users-group/events/277908687/'
+    title: "Upgrading RAID6 with Zero Downtime"
+    presenterNames:
+        - "Lee Lammert"
+    tags: ["storage", "raid"]
+youtubeUrl: "https://youtu.be/RKJsVSjgaGA?si=QaghusuG89KRq-gP"
+meetupUrl: "https://www.meetup.com/saint-louis-unix-users-group/events/277908687/"
 ---
 
-import MeetingPresenter from '@/components/MeetingPresenter.astro';
-import Tags from '@/components/Tags.astro';
-import { Icon } from 'astro-icon/components';
+import MeetingPresenter from "@/components/MeetingPresenter.astro";
+import Tags from "@/components/Tags.astro";
+import { Icon } from "astro-icon/components";
 
 ## **MAIN:** {frontmatter.main.title}
 
@@ -27,7 +29,7 @@ import { Icon } from 'astro-icon/components';
 </a>
 )}
 
-<MeetingPresenter presenterName={frontmatter.main.presenter} />
+<MeetingPresenter presenterNames={frontmatter.main.presenterNames} />
 
 Red Hat's Kickstart installations offer a means to automate the installation process, either partially or fully. Kickstart files contain answers to all questions normally asked by the installation program, such as what time zone you want the system to use, how the drives should be partitioned, or which packages should be installed. Providing a prepared Kickstart file when the installation begins therefore allows you to perform the installation automatically, without need for any intervention from the user.
 
@@ -37,7 +39,7 @@ Kickstart features can be an Admin's best friend. This session will present exam
 
 ## **BASE:** {frontmatter.base.title}
 
-<MeetingPresenter presenterName={frontmatter.base.presenter} />
+<MeetingPresenter presenterNames={frontmatter.base.presenterNames} />
 
 There is a lot of hype about "zero downtime", and many vendors charge boucoup dinero for that sort of hardware RAID capability to have when upgrading a storage array.
 

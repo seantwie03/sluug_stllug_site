@@ -1,21 +1,22 @@
 ---
-meetingType: 'STLLUG'
+meetingType: "STLLUG"
 meetingDate: 2021-05-20
 main:
-    title: 'Syncthing'
-    presenter: 'Tyler Rudie'
-    tags: ['files', 'syncthing']
-youtubeUrl: 'https://youtu.be/VDKW3QDXny8?si=24VvAnEMM_1jta1b'
-meetupUrl: 'https://www.meetup.com/saint-louis-unix-users-group/events/276369887/'
+    title: "Syncthing"
+    presenterNames:
+        - "Tyler Rudie"
+    tags: ["files", "syncthing"]
+youtubeUrl: "https://youtu.be/VDKW3QDXny8?si=24VvAnEMM_1jta1b"
+meetupUrl: "https://www.meetup.com/saint-louis-unix-users-group/events/276369887/"
 ---
 
-import MeetingPresenter from '@/components/MeetingPresenter.astro';
-import Tags from '@/components/Tags.astro';
-import { Icon } from 'astro-icon/components';
+import MeetingPresenter from "@/components/MeetingPresenter.astro";
+import Tags from "@/components/Tags.astro";
+import { Icon } from "astro-icon/components";
 
 ## **MAIN:** {frontmatter.main.title}
 
-<MeetingPresenter presenterName={frontmatter.main.presenter} />
+<MeetingPresenter presenterNames={frontmatter.main.presenterNames} />
 {frontmatter.meetupUrl && (
     <a href={frontmatter.meetupUrl}>
         <Icon name="mdi:meetup" class="inline" />
