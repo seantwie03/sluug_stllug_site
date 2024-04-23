@@ -1,13 +1,12 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-interface Props {
-    presenter: string;
-    lastUpdated: Date;
-}
-const { presenter, lastUpdated } = Astro.props;
+import type { Presenter } from '@/models.ts';
+type Props = Presenter;
+
+const { presenterName, lastUpdated } = Astro.props;
 ---
 
-<BaseLayout pageTitle={presenter}>
+<BaseLayout pageTitle={presenterName}>
     Last Updated: {lastUpdated.toISOString().slice(0, 10)}
     <slot />
 </BaseLayout>

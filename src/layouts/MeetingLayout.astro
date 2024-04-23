@@ -1,18 +1,11 @@
 ---
 import {Image} from 'astro:assets';
-import type { Presentation, MeetingType } from '../models';
-import BaseLayout from './BaseLayout.astro';
-import MeetingTitle from '../components/MeetingTitle.astro';
+import type { Meeting } from '@/models';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import MeetingTitle from '@/components/MeetingTitle.astro';
 import { getMeetingName, getMeetingImage } from '../buildTimeUtils';
+type Props = Meeting;
 
-interface Props {
-    meetingType: MeetingType;
-    meetingDate: Date;
-    main: Presentation;
-    base?: Presentation;
-    meetupUrl?: string;
-    youtubeUrl?: string;
-}
 const { meetingType, meetingDate, meetupUrl, youtubeUrl } = Astro.props;
 const meetingName = getMeetingName(meetingType);
 const meetingImage = getMeetingImage(meetingType);

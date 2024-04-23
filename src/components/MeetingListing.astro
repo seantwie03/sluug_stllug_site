@@ -1,17 +1,10 @@
 ---
 import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
-import { getMeetingImage } from '../buildTimeUtils';
-import { type Presentation, type MeetingType } from '../models';
-interface Props {
-    url: string;
-    meetingType: MeetingType;
-    meetingDate: Date;
-    main: Presentation;
-    base?: Presentation;
-    meetupUrl?: string;
-    youtubeUrl?: string;
-}
+import { getMeetingImage } from '@/buildTimeUtils';
+import { type Meeting } from '@/models';
+type Props = { url: string } & Meeting;
+
 const { url, meetingType, meetingDate, main, base, meetupUrl, youtubeUrl } = Astro.props;
 const meetingImage = getMeetingImage(meetingType);
 ---
