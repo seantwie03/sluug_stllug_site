@@ -1,7 +1,7 @@
 ---
 import type { InferGetStaticPropsType } from 'astro';
 import { getCollection } from 'astro:content';
-import MeetingLayout from '../../layouts/MeetingLayout.astro';
+import MeetingLayout from '@/layouts/MeetingLayout.astro';
 
 export async function getStaticPaths() {
     const meetingEntries = await getCollection('meetings');

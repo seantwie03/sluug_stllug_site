@@ -1,6 +1,6 @@
 ---
-import {getCollection} from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
 const allPresenters = await getCollection('presenters');
 const uniquePresenters = [...new Set(allPresenters)].sort((a, b) =>
     a.data.presenterName.localeCompare(b.data.presenterName),
@@ -13,11 +13,11 @@ const pageTitle = 'Presenters';
     <div>
         {
             uniquePresenters.map((presenter) => (
-                    <ul class="flex items-center">
-                        <li>
-                            <a href={`/presenters/${presenter.slug}`}>{presenter.data.presenterName}</a>
-                        </li>
-                    </ul>
+                <ul class="flex items-center">
+                    <li>
+                        <a href={`/presenters/${presenter.slug}`}>{presenter.data.presenterName}</a>
+                    </li>
+                </ul>
             ))
         }
     </div>

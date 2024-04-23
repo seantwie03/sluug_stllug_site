@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Tags from "../../components/Tags.astro";
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Tags from '@/components/Tags.astro';
 const allMeetings = await getCollection('meetings');
 const uniqueTags = [
     ...new Set([
@@ -15,8 +15,9 @@ const uniqueTags = [
 ].sort((a, b) => a.localeCompare(b));
 const pageTitle = 'Search & Tags';
 ---
+
 <head>
-    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
     <script is:inline src="/pagefind/pagefind-ui.js"></script>
 </head>
 
@@ -28,8 +29,8 @@ const pageTitle = 'Search & Tags';
 </BaseLayout>
 
 <script>
-    document.addEventListener("astro:page-load", () => {
+    document.addEventListener('astro:page-load', () => {
         //@ts-ignore
-        new PagefindUI({element: "#search", showSubResults: true});
+        new PagefindUI({ element: '#search', showSubResults: true });
     });
 </script>
