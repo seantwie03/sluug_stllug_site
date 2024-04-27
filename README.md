@@ -61,3 +61,93 @@ Pagefind is called during the build script (`npm run build`). It scans all the s
 To get this to work in dev mode (`npm run dev`) the `/dist/pagefind` directory is copied to `/public/pagefind`. This copying is accomplished using `node -e` which "should" work cross-platform (Windows, Mac, Linux).
 
 One limitation to this implementation is that when you are running in dev mode (`npm run dev`) and you add a new markdown file, it will NOT be included in the Pagefind index. To have the new file included, you will need stop the dev server and run a build (`npm run build`).
+
+## Possible Options for adding AI content (Marketing Material, Images, etc.)
+
+### 1. YAML Content Collection
+
+Instead of having a Content Collection with `type: "content"`, I could have `type: data`. This would mean instead of using MDX files, we would just supply YAML or JSON files. These values would act as Frontmatter that could be passed into layouts and components.
+
+#### Workflow
+
+- Human
+    - Create YAML file
+- Script
+    - Parse YAML
+    - Send relevant prompts to AI
+    - Modify YAML file to add AI content
+- Astro notices changed YAML, updates page
+- Human
+    - Preview new page
+    - Tweak YAML file as needed.
+
+#### Pro
+
+- Less duplication than having dozens/hundreds of MDX files. 
+    - If we wanted to add/remove a component on every page, we would likely only need to change a single component or layout file.
+
+#### Con
+
+- Hard to style, add links to abstract body content.
+    - Body content would be written in YAML or JSON. Adding new lines, formatting, links, etc. would be finnicky.
+- Limited flexibility for styling of individual (one-off) pages.
+
+
+### 2. Script to parse MDX file and add AI content to frontmatter
+
+This option would have a human create the MDX file with YAML frontmatter and Markdown/JSX body. Then, a script could parse it to pull the relevant information to use in the AI prompts. Then, the script could modify the MDX file to add AI content.
+
+#### Workflow
+
+- Human
+    - Create MDX file
+- Script
+    - Parse YAML frontmatter of MDX file
+    - Parse Markdown body content of MDX file
+    - Send relevant prompts to AI
+    - Modify MDX file to add AI content
+- Astro notices changed MDX, updates page
+- Human
+    - Preview new page
+    - Tweak MDX file as needed.
+
+#### Pro
+
+- Easy to style, add links to abstract body content.
+    - Body content would be written in Markdown. Easy to add new lines, formatting, links, etc.
+- Does not need a YAML file that is thrown away after MDX is generated (compared option 3).
+
+#### Con
+
+- MDX is more difficult to parse than YAML alone. More parsing code to maintain.
+- Modifying the file to add AI content will be more difficult.
+- MDX files have a lot of duplication. 
+    - If we wanted to add/remove a component on every page, we would likely need to change every MDX file.
+
+
+### 3. Script to parse YAML and output entire MDX file
+
+#### Workflow
+
+- Human
+    - Create YAML file
+- Script
+    - Parse YAML
+    - Send relevant prompts to AI
+    - Generate MDX file with data from human and AI
+- Astro notices new MDX, creates page
+- Human
+    - Preview new page
+    - Tweak MDX file as needed.
+
+#### Pro
+
+- Easy to style, add links to abstract body content.
+    - Body content would be written in Markdown. Easy to add new lines, formatting, links, etc.
+
+#### Con
+
+- Would need to maintain code to generate MDX files.
+- MDX files have a lot of duplication. 
+    - If we wanted to add/remove a component on every page, we would likely need to change every MDX file **and** update the MDX generator code.
+
