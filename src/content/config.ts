@@ -39,7 +39,51 @@ const presenterCollection = defineCollection({
     schema: PresenterSchemaZod,
 });
 
+// Start: Option 1
+export const LinksYamlZod = z.object({
+    url: z
+        .string()
+        .describe(
+            "URL to the reference. Example: https://linux.die.net/man/1/whereis",
+        ),
+    linkText: z
+        .string()
+        .optional()
+        .describe("The name of the link. Example: whereis man page"),
+});
+
+export const PresentationYamlZod = z.object({
+    title: z.string(),
+    presenterNames: z.array(z.string()),
+    tags: z.array(z.string()),
+    abstract: z.string(),
+    references: z.array(LinksYamlZod).optional(),
+    tweets: z.array(z.string()).optional(),
+});
+
+export const ImageYamlZod = z.object({
+    src: z.string(),
+    alt: z.string(),
+});
+export const MeetingYamlSchemaZod = z.object({
+    meetingType: MeetingTypeZod,
+    meetingDate: z.date(),
+    main: PresentationYamlZod,
+    base: PresentationYamlZod.optional(),
+    youtubeUrl: z.string().optional(),
+    youtubeTitles: z.array(z.string()).optional(),
+    meetupUrl: z.string().optional(),
+    image: ImageYamlZod.optional(),
+});
+
+const meetingYamlCollection = defineCollection({
+    type: "data",
+    schema: MeetingYamlSchemaZod,
+});
+// END: Option 1
+
 export const collections = {
     meetings: meetingCollection,
+    meetingYaml: meetingYamlCollection,
     presenters: presenterCollection,
 };

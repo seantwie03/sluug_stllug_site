@@ -1,0 +1,62 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import MeetingListing from '@/components/MeetingListing.astro';
+import { sortMeetingListByMeetingDate } from '@/buildTimeUtils';
+import Pagination from '@/components/Pagination.astro';
+
+export async function getStaticPaths({ paginate }: any) {
+    const stllugMeetings = sortMeetingListByMeetingDate(
+        await getCollection('meetings', ({ data }) => {
+            return data.meetingType === 'STLLUG';
+        }),
+    );
+    return paginate(stllugMeetings, { pageSize: 12 });
+}
+
+const pageTitle = 'SLUUG - St. Louis Unix Users Group';
+
+const { page } = Astro.props as any;
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    {
+        page.currentPage === 1 && (
+            <>
+                <h2>St. Louis Linux Users Group</h2>
+                <p>
+                    The <em>St. Louis Linux Users Group (STLLUG)</em> meets <strong>eight days after SLUUG</strong>.
+                    This is typically the <em>third Thursday</em> of each month. The meeting begins at 6:30p.m. Central
+                    Time.
+                </p>
+                <h2>Meeting Agenda</h2>
+                <p>
+                    At <strong>6:00p.m. Central Time</strong> the meeting opens. Participants are encouraged to join at
+                    this time to if they need to test their microphone, screen sharing, and video camera.
+                </p>
+                <p>
+                    At <strong>6:30p.m. Central Time</strong> we attempt a quick welcome, introductions, announcements,
+                    current events of interest, and a general CALL FOR HELP (Questions and Answers) segment.
+                </p>
+                <p>
+                    At <strong>6:45p.m. Central Time</strong> the presentation begins.
+                </p>
+            </>
+        )
+    }
+    <h2>STLLUG Meetings</h2>
+    {
+        page.data.map((data: any) => (
+            <MeetingListing
+                url={`/meetings/${data.slug}/`}
+                meetingType={data.data.meetingType}
+                meetingDate={data.data.meetingDate}
+                main={data.data.main}
+                base={data.data.base}
+                meetupUrl={data.data.meetupUrl}
+                youtubeUrl={data.data.youtubeUrl}
+            />
+        ))
+    }
+    <Pagination url={page.url} currentPage={page.currentPage} lastPage={page.lastPage} />
+</BaseLayout>

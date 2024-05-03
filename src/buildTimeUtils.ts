@@ -29,3 +29,13 @@ export function sortMeetingListByMeetingDate(
         (a, b) => b.data.meetingDate.getTime() - a.data.meetingDate.getTime(),
     );
 }
+
+// START: Option 1
+export function sortMeetingListByMeetingDate2(
+    meetings: CollectionEntry<"meetingYaml">[],
+) {
+    return meetings.sort(
+        (a, b) => b.data.meetingDate.getTime() - a.data.meetingDate.getTime(),
+    );
+}
+// END: Option 1

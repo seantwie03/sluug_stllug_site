@@ -85,12 +85,25 @@ Instead of having a Content Collection with `type: "content"`, I could have `typ
 
 - Less duplication than having dozens/hundreds of MDX files. 
     - If we wanted to add/remove a component on every page, we would likely only need to change a single component or layout file.
+- YAML allows multi-line strings.
+    - This means a human typing the abstract in the YAML file can put new lines right in the YAML (assuming it is properly indented).
+- Content would be in rigorously structured data -- easier to maintain and adapt to future requirements.
+- Wouldn't need to worry about styling or formatting much, each meeting entry would have a uniform style.
 
 #### Con
 
-- Hard to style, add links to abstract body content.
-    - Body content would be written in YAML or JSON. Adding new lines, formatting, links, etc. would be finnicky.
-- Limited flexibility for styling of individual (one-off) pages.
+- Unable to style meeting pages individually
+- Hard to style abstract text
+    - Abstract would be written in YAML or JSON.
+    - In the `.astro` file we would need to splitting the abstract text on '\n' and putting each split in a `<p></p>` tag to avoid a wall of text.
+- Cannot add links in abstract text
+    - Rather than links in the abstract text, we could have a 'References' section at the end for links.
+- YAML format is very strict (white-space sensitive). It may be difficult to get AI to generate proper YAML.
+    - JSON does not have multi-line string. Human's creating the json datafile would need to type '\n' when they wanted a line break in the abstract text.
+
+#### Implementation
+
+Search the repo for 'meetingYaml' to find a test implementation.
 
 
 ### 2. Script to parse MDX file and add AI content to frontmatter
@@ -124,30 +137,6 @@ This option would have a human create the MDX file with YAML frontmatter and Mar
 - MDX files have a lot of duplication. 
     - If we wanted to add/remove a component on every page, we would likely need to change every MDX file.
 
+#### Implementation
 
-### 3. Script to parse YAML and output entire MDX file
-
-#### Workflow
-
-- Human
-    - Create YAML file
-- Script
-    - Parse YAML
-    - Send relevant prompts to AI
-    - Generate MDX file with data from human and AI
-- Astro notices new MDX, creates page
-- Human
-    - Preview new page
-    - Tweak MDX file as needed.
-
-#### Pro
-
-- Easy to style, add links to abstract body content.
-    - Body content would be written in Markdown. Easy to add new lines, formatting, links, etc.
-
-#### Con
-
-- Would need to maintain code to generate MDX files.
-- MDX files have a lot of duplication. 
-    - If we wanted to add/remove a component on every page, we would likely need to change every MDX file **and** update the MDX generator code.
-
+Not implemented yet.

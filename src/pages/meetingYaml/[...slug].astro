@@ -1,0 +1,25 @@
+---
+import type { InferGetStaticPropsType } from 'astro';
+import { getCollection } from 'astro:content';
+import MeetingYamlLayout from '@/layouts/MeetingYamlLayout.astro';
+
+export async function getStaticPaths() {
+    const meetingEntries = await getCollection('meetingYaml');
+    return meetingEntries.map((entry) => ({
+        params: { slug: entry.id },
+        props: { entry },
+    }));
+}
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+const { entry } = Astro.props;
+---
+
+<MeetingYamlLayout
+    meetingType={entry.data.meetingType}
+    meetingDate={entry.data.meetingDate}
+    main={entry.data.main}
+    base={entry.data.base}
+    meetupUrl={entry.data.meetupUrl}
+    youtubeUrl={entry.data.youtubeUrl}
+/>
