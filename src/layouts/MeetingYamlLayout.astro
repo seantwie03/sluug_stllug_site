@@ -11,6 +11,7 @@ const meetingName = getMeetingName(meetingType);
 const meetingImage = getMeetingImage(meetingType);
 const regex = /^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?:i)?=|\&v(?:i)?=))([^#\&\?]+).*/
 const vidId = youtubeUrl?.match(regex)?.[1]
+const mainAbstractParagraphs = main.abstract.split("\n");
 ---
 
 <BaseLayout pageTitle=`${meetingType} - ${meetingDate.toDateString().slice(4)}`>
@@ -32,7 +33,10 @@ const vidId = youtubeUrl?.match(regex)?.[1]
     }
     <p>{main.title}</p>
     <p>{main.presenterNames}</p>
-    <p>{main.abstract}</p>
+    {
+        mainAbstractParagraphs.map((paragraph) => <p>{paragraph}</p>)
+    }
+
     { 
         base ? (
                 <p>{base.title}</p>
