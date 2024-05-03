@@ -58,7 +58,7 @@ const { page } = Astro.props as any;
     {
         page.data.map((data: any) => (
             <MeetingListing
-                url={`${data.id}/`}
+                url={`/${data.collection}/${data.id}/`}
                 meetingType={data.data.meetingType}
                 meetingDate={data.data.meetingDate}
                 main={data.data.main}
