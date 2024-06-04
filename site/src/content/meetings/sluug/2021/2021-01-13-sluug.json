@@ -1,0 +1,37 @@
+{
+    "meetingType": "SLUUG",
+    "meetingDate": "2021-01-13",
+    "main": {
+        "title": "Customized \"whereis\" project",
+        "presenterNames": ["Robert C. Hansen"],
+        "tags": ["files", "whereis"],
+        "abstract": "'Where Is It?' a script base system to help you remember where you put your stuff and be able to retrieve it either by Number and/or Acronyms (of your choosing) Think of it as a customized Whereis cmd. Altho this custom command itself is useful, this talk will also demonstrate how such customization can be done.\nThis will be HANDS-ON with git repository provided.",
+        "references": [
+            {
+                "url": "https://www.geeksforgeeks.org/whereis-command-in-linux-with-examples/",
+                "linkText": "whereis command with examples"
+            },
+            {
+                "url": "https://linux.die.net/man/1/whereis"
+            }
+        ],
+        "tweets": [
+            "'Where Is It?' a script base system to help you remember where you put your stuff and be able to retrieve it either by Number and/or Acronyms (of your choosing) Think of it as a customized Whereis cmd. Altho this custom command itself is useful, this talk will also demonstrate how such customization can be done.\nThis will be HANDS-ON with git repository provided.",
+            "'Where Is It?' a script base system to help you remember where you put your stuff and be able to retrieve it either by Number and/or Acronyms (of your choosing) Think of it as a customized Whereis cmd. Altho this custom command itself is useful, this talk will also demonstrate how such customization can be done.\nThis will be HANDS-ON with git repository provided."
+        ]
+    },
+    "base": {
+        "title": "Hand Held Music Box",
+        "presenterNames": ["Lee Lammert"],
+        "tags": ["raspberry-pi", "mp3", "music"],
+        "abstract": "Ever wanted a multi-purpose stereo system that can be managed remotely? One built from that spare Raspberry Pi? Well, .. my answers were affirmative, so I grabbed a Pi and got to work. [google](google.com) <a href=\"www.google.com\">google</a>\nThis tutorial will follow my creation of a Pi based MP3 player that could also be used for things like YouTube.",
+        "tweets": ["abc"]
+    },
+    "youtubeTitles": ["abc"],
+    "youtubeUrl": "https://www.youtube.com/watch?v=tlmRyxjHORI",
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/275585456/",
+    "image": {
+        "src": "abc",
+        "alt": "123"
+    }
+}
