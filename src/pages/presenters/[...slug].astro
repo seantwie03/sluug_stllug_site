@@ -19,9 +19,8 @@ const { Content } = await entry.render();
 
 const meetings = sortMeetingListByMeetingDate(
     await getCollection('meetings', ({ data }) => {
-        return (
-            data.main.presenterNames.includes(entry.data.presenterName) ||
-            data.base?.presenterNames.includes(entry.data.presenterName)
+        return data.presentations.some((presentation) =>
+            presentation.presenterNames.includes(entry.data.presenterName),
         );
     }),
 );
@@ -34,11 +33,11 @@ const meetings = sortMeetingListByMeetingDate(
     {
         meetings.map((meeting) => (
             <MeetingListing
-                url={`/meetings/${meeting.slug}/`}
+                url={`/meetings/${meeting.id}/`}
                 meetingType={meeting.data.meetingType}
                 meetingDate={meeting.data.meetingDate}
-                main={meeting.data.main}
-                base={meeting.data.base}
+                presentations={meeting.data.presentations}
+                images={meeting.data.images}
                 meetupUrl={meeting.data.meetupUrl}
                 youtubeUrl={meeting.data.youtubeUrl}
             />

@@ -5,11 +5,9 @@ import Tags from '@/components/Tags.astro';
 const allMeetings = await getCollection('meetings');
 const uniqueTags = [
     ...new Set([
-        ...allMeetings.map((meeting) => meeting.data.main.tags).flat(),
         ...allMeetings
-            .map((meeting) => meeting.data.base)
-            .filter((base): base is Exclude<typeof base, null | undefined> => Boolean(base))
-            .map((base) => base.tags)
+            .map((meeting) => meeting.data.presentations.map((presentation) => presentation.tags))
+            .flat()
             .flat(),
     ]),
 ].sort((a, b) => a.localeCompare(b));

@@ -4,14 +4,18 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import MeetingListing from '@/components/MeetingListing.astro';
 import { sortMeetingListByMeetingDate } from '@/buildTimeUtils';
 import Pagination from '@/components/Pagination.astro';
-export async function getStaticPaths({ paginate }: any) {
+import type { GetStaticPaths, InferGetStaticPropsType } from 'astro';
+
+export const getStaticPaths = (async ({ paginate }) => {
     const allMeetings = sortMeetingListByMeetingDate(await getCollection('meetings'));
     return paginate(allMeetings, { pageSize: 24 });
-}
+}) satisfies GetStaticPaths;
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const pageTitle = 'St. Louis Unix/Linux Users Group';
 
-const { page } = Astro.props as any;
+const { page } = Astro.props;
 ---
 
 <BaseLayout pageTitle={pageTitle}>
@@ -29,15 +33,15 @@ const { page } = Astro.props as any;
         )
     }
     {
-        page.data.map((data: any) => (
+        page.data.map(({ collection, id, data }) => (
             <MeetingListing
-                url={`/meetings/${data.slug}/`}
-                meetingType={data.data.meetingType}
-                meetingDate={data.data.meetingDate}
-                main={data.data.main}
-                base={data.data.base}
-                meetupUrl={data.data.meetupUrl}
-                youtubeUrl={data.data.youtubeUrl}
+                url={`/${collection}/${id}/`}
+                meetingType={data.meetingType}
+                meetingDate={data.meetingDate}
+                presentations={data.presentations}
+                images={data.images}
+                meetupUrl={data.meetupUrl}
+                youtubeUrl={data.youtubeUrl}
             />
         ))
     }

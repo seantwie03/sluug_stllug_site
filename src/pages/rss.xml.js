@@ -11,9 +11,9 @@ export async function GET(context) {
         description: "RSS Feed of our monthly SLUUG and STLLUG meetings",
         site: context.site,
         items: allMeetings.map((meeting) => ({
-            title: meeting.slug,
+            title: meeting.id,
             pubDate: meeting.data.meetingDate,
-            link: `/meetings/${meeting.slug}/`,
+            link: `/meetings/${meeting.id}/`,
         })),
         customData: `<language>en-us</language>`,
     });

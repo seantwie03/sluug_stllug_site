@@ -1,8 +1,8 @@
-import type { CollectionEntry } from "astro:content";
-import { type Image, type MeetingType } from "@/models";
+import { SLUUG_LOGO_ALT, STLLUG_LOGO_ALT } from "@/constants.ts";
 import sluugLogo from "@/images/SLUUG-Logo.png";
 import stllugLogo from "@/images/STLLUG-Logo.png";
-import { SLUUG_LOGO_ALT, STLLUG_LOGO_ALT } from "@/constants.ts";
+import type { CollectionEntry } from "astro:content";
+import type { DisplayImage, MeetingType } from "./content/config";
 
 export function getMeetingName(meetingType: MeetingType) {
     return meetingType === "SLUUG"
@@ -10,7 +10,7 @@ export function getMeetingName(meetingType: MeetingType) {
         : `St. Louis Linux Users Group`;
 }
 
-export function getMeetingImage(meetingType: MeetingType): Image {
+export function getMeetingLogo(meetingType: MeetingType): DisplayImage {
     return meetingType === "SLUUG"
         ? {
               src: sluugLogo,

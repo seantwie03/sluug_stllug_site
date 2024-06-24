@@ -1,0 +1,43 @@
+{
+    "meetingDate": "2021-01-21T00:00:00.000Z",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "openVAS ~ Major Upgrade",
+            "presenterNames": ["Tony Zafiropoulos"],
+            "abstract": "'OpenVAS (Open Vulnerability Assessment Scanner) is a full-featured vulnerability scanner. Its capabilities include unauthenticated testing, authenticated testing, various high level and low level Internet and industrial protocols, performance tuning for large-scale scans and a powerful internal programming language to implement any type of vulnerability test.",
+            "tags": ["vulnerability"],
+            "tweets": [
+                "Get ready for an insightful presentation by Tony Zafiropoulos on January 21, 2021! Discover the new major upgrade in OpenVAS and learn about its powerful vulnerability scanning features. Don't miss it! #CyberSecurity #VulnerabilityScanner #OpenVAS @SLUUG_Org undefined",
+                "Join us on January 21, 2021, for Tony Zafiropoulos' talk on OpenVAS's major upgrade! Whether you are a pro or a newbie, this presentation will enhance your vulnerability assessment skills. See you there! #OpenVAS #Vulnerability #Meetup @SLUUG_Org @SluugOrg undefined",
+                "Exciting news for our next meeting on January 21, 2021! Tony Zafiropoulos will dive into the latest upgrade of OpenVAS. Learn about its unauthenticated and authenticated testing features. Mark your calendars! #Linux #Unix #FOSS @SLUUG_Org undefined"
+            ]
+        }
+    ],
+    "youTubeTitles": [
+        "STLLUG 2021-01-21 - OpenVAS Major Upgrade: Full-Featured Vulnerability Scanner",
+        "STLLUG 2021-01-21 - Exploring the OpenVAS Major Upgrade: Capabilities and Features",
+        "STLLUG 2021-01-21 - St. Louis Unix Users Group: OpenVAS Major Upgrade Presentation",
+        "STLLUG 2021-01-21 - OpenVAS Major Upgrade: Full-Featured Vulnerability Scanning Explained",
+        "STLLUG 2021-01-21 - Deep Dive into OpenVAS: Major Upgrade & New Capabilities",
+        "STLLUG 2021-01-21 - Exploring OpenVAS Major Upgrade: Enhancing Your Vulnerability Assessment",
+        "STLLUG 2021-01-21 - Unlocking OpenVAS: Major Upgrade Features",
+        "STLLUG 2021-01-21 - Deep Dive into OpenVAS: Major Upgrade Unveiled",
+        "STLLUG 2021-01-21 - Mastering Vulnerability Scanning with OpenVAS: The Major Upgrade"
+    ],
+    "images": [
+        {
+            "src": "./2021-01-21_stllug_create-an-image-that-focuses-on-a-futuristic-and-technology-.png",
+            "alt": "Create an image that focuses on a futuristic and technology-oriented theme. The center of the image should be adorned with the OpenVAS logo, surrounded by a detailed circuit board pattern simulating the inside of a technological device. Overlay this with a translucent network map that's illuminated in neon green, depicting nodes and connections. The circuit board should be set against a background composed of dark blue and black shades, while occasional hints of white and silver provide contrast. Holographic effects should add a cutting-edge feel to the OpenVAS logo and other elements, all of which emit a soft neon glow. The design is accentuated with faint, semi-transparent abstract hexagonal patterns filling the negative space subtly and a secure lock icon is subtly integrated into the circuit design. The overall image should communicate excitement, technological activity and ecosystems of cybersecurity."
+        },
+        {
+            "src": "./2021-01-21_stllug_create-an-image-with-a-sleek-modern-background-transitionin.png",
+            "alt": "Create an image with a sleek, modern background transitioning from dark blue to black, reminiscent of a high-tech environment. At the center, construct a swirling vortex of digital elements and binary code in neon blue and green hues, creating a sense of depth and motion. In the vortex's center, position a symbol representing vulnerability scanning technology, prominently visible. Surround this center symbol with circularly arranged symbols denoting various security and technology concepts (like open source, Unix-like operating systems, network diagnostics). They should blend subtly into the vortex. Enhance the futuristic ambiance by incorporating faint circuit board patterns radiating from the vortex towards the image edges. Add soft glows and neon effects for a cutting-edge atmosphere. Incorporate subtle abstract elements like floating holographic shields and locks as a symbol of security. The overall image should resonate with a high-tech, futuristic feel centred on security and vulnerability scanning technology."
+        },
+        {
+            "src": "./2021-01-21_stllug_a-high-tech-cybersecurity-image-to-announce-a-major-upgrade.png",
+            "alt": "A high-tech cybersecurity image to announce a major upgrade of OpenVAS. The backdrop is a complex digital network with pathways and nodes, colored in hues of blue and green. The central element in the foreground is the textless OpenVAS logo, subtly larger and glowing. It is surrounded by graphics representing vulnerability assessment tools like shields, padlocks, warning icons, and network nodes. Logos of HTTP/HTTPS to the left, FTP to the right, SSH below, and SMTP above hover around the OpenVAS logo without any text, adding to the complexity of the image. Layered on top of this are soft green digital matrix-like lines of code, creating additional depth and highlighting the theme of programming. All these elements combine to create a clean, modern flat design with slight gradients and shadows for depth, signifying OpenVAS's advanced features and capabilities."
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/271259443/"
+}

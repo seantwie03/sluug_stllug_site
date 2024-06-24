@@ -6,23 +6,20 @@ import MeetingLayout from '@/layouts/MeetingLayout.astro';
 export async function getStaticPaths() {
     const meetingEntries = await getCollection('meetings');
     return meetingEntries.map((entry) => ({
-        params: { slug: entry.slug },
+        params: { slug: entry.id },
         props: { entry },
     }));
 }
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 const { entry } = Astro.props;
-const { Content } = await entry.render();
 ---
 
 <MeetingLayout
     meetingType={entry.data.meetingType}
     meetingDate={entry.data.meetingDate}
-    main={entry.data.main}
-    base={entry.data.base}
+    presentations={entry.data.presentations}
+    images={entry.data.images}
     meetupUrl={entry.data.meetupUrl}
     youtubeUrl={entry.data.youtubeUrl}
->
-    <Content />
-</MeetingLayout>
+/>
