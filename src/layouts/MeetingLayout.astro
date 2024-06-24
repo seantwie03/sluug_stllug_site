@@ -1,5 +1,5 @@
 ---
-import { getMeetingLogo, getMeetingName } from '@/buildTimeUtils';
+import { getMeetingName } from '@/buildTimeUtils';
 import MeetingTitle from '@/components/MeetingTitle.astro';
 import type { Meeting } from '@/content/config';
 import BaseLayout from '@/layouts/BaseLayout.astro';
@@ -40,7 +40,7 @@ const vidId = youtubeUrl?.match(regex)?.[1]
         mainAbstractParagraphs.map((paragraph) => <p>{paragraph}</p>)
     }
 
-    { 
+    {
         base ? (
                 <p>{base.title}</p>
                 <p>{base.presenterNames}</p>

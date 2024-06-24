@@ -1,20 +1,17 @@
 ---
-import { Image } from 'astro:assets';
-import { Icon } from 'astro-icon/components';
-import { getMeetingLogo } from '@/buildTimeUtils';
 import type { Meeting } from '@/content/config';
+import { Icon } from 'astro-icon/components';
+import { Image } from 'astro:assets';
 type Props = { url: string } & Meeting;
 
 const { url, meetingType, meetingDate, presentations, meetupUrl, images, youtubeUrl } = Astro.props;
 // TODO: Fix this hack
 const main = presentations[0];
 const base = presentations[1];
-const meetingImage = getMeetingLogo(meetingType);
 ---
 
 <div class="flex items-start mb-4 rounded shadow-lg">
     <div class="w-1/4">
-        <!-- <Image src={meetingImage.src} alt={meetingImage.alt} height="180" width="180" loading="lazy" decoding="async" /> -->
         <Image src={images[0].src} alt={images[0].alt} height="240" width="240" loading="lazy" decoding="async" />
     </div>
     <div class="w-3/4 pl-4">

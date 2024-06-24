@@ -1,9 +1,9 @@
 ---
+import { sortMeetingListByMeetingDate } from '@/buildTimeUtils';
+import MeetingListing from '@/components/MeetingListing.astro';
+import PresenterLayout from '@/layouts/PresenterLayout.astro';
 import type { InferGetStaticPropsType } from 'astro';
 import { getCollection } from 'astro:content';
-import PresenterLayout from '@/layouts/PresenterLayout.astro';
-import MeetingListing from '@/components/MeetingListing.astro';
-import { sortMeetingListByMeetingDate } from '@/buildTimeUtils';
 
 export async function getStaticPaths() {
     const presenterEntries = await getCollection('presenters');

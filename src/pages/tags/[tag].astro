@@ -1,8 +1,8 @@
 ---
-import { getCollection } from 'astro:content';
+import { sortMeetingListByMeetingDate } from '@/buildTimeUtils';
 import MeetingListing from '@/components/MeetingListing.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { sortMeetingListByMeetingDate } from '@/buildTimeUtils';
+import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
     const allMeetings = await getCollection('meetings');
