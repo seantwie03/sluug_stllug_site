@@ -1,26 +1,27 @@
 ---
 // Header for large and extra large devices
-import {Image} from 'astro:assets';
-import {Icon} from "astro-icon/components";
-import {SLUUG_LOGO_ALT, STLLUG_LOGO_ALT} from "@/constants.ts";
-import sluugOrgLogo from '../../images/SLUUG-Logo.png'
-import stllugLogo from '../../images/STLLUG-Logo.png'
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
+import { SLUUG_LOGO_ALT, STLLUG_LOGO_ALT } from '@/constants.ts';
+import sluugOrgLogo from '../../images/SLUUG-Logo.png';
+import stllugLogo from '../../images/STLLUG-Logo.png';
 ---
+
 <div class="w-full">
     <div class="lg:flex items-center justify-evenly py-6">
-        <div class="w-[100ch] flex items-center justify-between">
+        <div class="w-[75rem] flex items-center justify-between">
             <a href="/meetings/sluug/1">
-                <Image src={sluugOrgLogo} alt={SLUUG_LOGO_ALT} width="80" loading="lazy" decoding="async"/>
+                <Image src={sluugOrgLogo} alt={SLUUG_LOGO_ALT} width="80" loading="lazy" decoding="async" />
             </a>
             <h1>St. Louis Unix/Linux User Groups</h1>
             <a href="/meetings/stllug/1">
-                <Image src={stllugLogo} alt={STLLUG_LOGO_ALT} width="100" loading="lazy" decoding="async"/>
+                <Image src={stllugLogo} alt={STLLUG_LOGO_ALT} width="100" loading="lazy" decoding="async" />
             </a>
         </div>
     </div>
     <nav class="bg-slate-200 mb-3">
         <div class="w-full flex justify-center">
-            <div class="h-16 w-full lg:w-[100ch] flex items-center">
+            <div class="h-16 w-full lg:w-[75rem] flex items-center">
                 <ul class="w-full flex flex-row items-center justify-around">
                     <li class="hover:cursor-pointer text-xl font-bold">
                         <a class="no-underline" href="/meetings/1">Home</a>
@@ -38,7 +39,7 @@ import stllugLogo from '../../images/STLLUG-Logo.png'
                         <a class="no-underline" href="/presenters/">Presenters</a>
                     </li>
                     <li class="hover:cursor-pointer text-xl font-bold">
-                        <a class="no-underline" href="/tags/"><Icon name="mdi:search" size={35} class="inline"/></a>
+                        <a class="no-underline" href="/tags/"><Icon name="mdi:search" size={35} class="inline" /></a>
                     </li>
                 </ul>
             </div>

@@ -29,3 +29,25 @@ export function sortMeetingListByMeetingDate(
         (a, b) => b.data.meetingDate.getTime() - a.data.meetingDate.getTime(),
     );
 }
+
+/**
+ *
+ * @param length Length of the array
+ * @returns A random number between 0 and length
+ */
+export function getRandomIndex(length: number): number {
+    return Math.floor(Math.random() * length);
+}
+
+/**
+ *
+ * @param date Date object
+ * @returns A string representing the date in the format "Month D, YYYY" Example: July 4, 2024"
+ */
+export function getDisplayDate(date: Date): string {
+    return date.toLocaleDateString("default", {
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+    });
+}

@@ -32,9 +32,11 @@ const merge = (a: PresenterLink[], b: PresenterLink[], predicate = (a: string, b
 const presenters = merge(presenterLinksFromCollection, presenterLinksFromProps);
 ---
 
-<p>
-    <strong>By: </strong>
+<strong>
+    Presented By:
     <span class="[&>*:nth-child(even)]:ml-2">
-        {presenters.map((presenter) => (presenter.slug ? <a href=`/presenters/${presenter.slug}`>{presenter.presenterName}</a> : <span>{presenter.presenterName}</span>))}
+        {
+            presenters.map((presenter) => (presenter.slug ? <a href=`/presenters/${presenter.slug}`>{presenter.presenterName}</a> : <span>{presenter.presenterName}</span>))
+        }
     </span>
-</p>
+</strong>

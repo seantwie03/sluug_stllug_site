@@ -1,0 +1,48 @@
+---
+import { getRandomIndex } from '@/buildTimeUtils';
+import Abstract from '@/components/presentation/Abstract.astro';
+import MockTweet from '@/components/presentation/MockTweet.astro';
+import Presenters from '@/components/presentation/Presenters.astro';
+import Tags from '@/components/presentation/Tags.astro';
+import type { Presentation } from '@/content/config';
+import { Icon } from 'astro-icon/components';
+
+type Props = Presentation;
+
+const { title, presenterNames, abstract, references, tags, tweets } = Astro.props;
+---
+
+<div class="flex flex-col lg:flex-row">
+    <div class="w-full lg:w-3/5 mt-2">
+        <h2 class="mt-0 mb-2">{title}</h2>
+        <Presenters presenterNames={presenterNames} />
+        <div class="mt-2 mr-6">
+            <Abstract abstract={abstract} />
+            {
+                (
+                    <div class="flex flex-col lg:flex-row mt-2">
+                        <ul class="w-full lg:w-1/2">
+                            {references &&
+                                references.length > 0 &&
+                                references.map((reference) => (
+                                    <li class="flex lg:justify-start">
+                                        <a href={reference.url} target="_blank" rel="noopener noreferrer">
+                                            {reference.linkText ? reference.linkText : reference.url}
+                                            <Icon class="inline" name="mdi:open-in-new" />
+                                        </a>
+                                    </li>
+                                ))}
+                        </ul>
+                        <div class="flex flex-col w-full lg:w-1/2 lg:items-end justify-center lg:justify-end">
+                            <Tags tags={tags} />
+                        </div>
+                    </div>
+                )
+            }
+        </div>
+    </div>
+    <div class="flex flex-col w-full lg:w-2/5 mt-4">
+        <h3>Spread the word</h3>
+        <MockTweet tweet={tweets ? tweets[getRandomIndex(tweets.length)] : ''} />
+    </div>
+</div>

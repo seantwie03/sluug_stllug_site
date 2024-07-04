@@ -1,0 +1,62 @@
+---
+import type { MeetingType } from '@/content/config';
+import { Icon } from 'astro-icon/components';
+
+type Props = {
+    meetingDate: Date;
+    meetingType: MeetingType;
+};
+
+const { meetingDate, meetingType } = Astro.props;
+---
+
+<!-- We need to determine if the meeting is Today. The comparison must be done client side, not at build 
+ time. The script directive at the bottom of the file will read data-meetingdate and hide the connection banner if the
+ meeting is not Today. This is the method suggested by the Astro documentation (6/30/2024).
+ https://docs.astro.build/en/guides/client-side-scripts/#pass-frontmatter-variables-to-scripts -->
+<connection-banner data-meetingdate={meetingDate}>
+    <div id="connection-banner" class="bg-yellow-100 border-l-8 border-yellow-500 p-4 mb-6">
+        <h2 class="font-bold">{meetingDate}</h2>
+        <h3 class="mb-4">
+            <strong>Join us on Zoom:</strong>
+            <a
+                href={meetingType === 'SLUUG' ? 'https://sluug.org/next.txt' : 'https://stllug.sluug.org/next.txt'}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Connection Info <Icon class="inline" name="mdi:open-in-new" />
+            </a>
+        </h3>
+        <p>
+            The meeting will open at <strong>6:00p.m. Central Time</strong>.
+        </p>
+        <p>
+            The presentations begin at <strong>6:30p.m. Central Time</strong>.
+        </p>
+    </div>
+</connection-banner>
+
+<script>
+    // Hide the connection banner if the meeting is not Today.
+    // By default, the connection banner is visible. This is intentional. It means the failure state is to show the
+    // connection banner. I would rather have the connection banner shown too much than not shown when it should be.
+    // Some people might have JavaScript disabled in their browser. I would rather have these people see the
+    // connection banner even if the meeting is not today than not see it ever.
+    class ConnectionBanner extends HTMLElement {
+        constructor() {
+            super();
+            const meetingDate = new Date(this.dataset.meetingdate!);
+            const today = new Date();
+
+            const isMeetingDateToday = meetingDate.getDate() === today.getDate();
+
+            if (!isMeetingDateToday) {
+                const connectionBanner = document.getElementById('connection-banner');
+                if (connectionBanner) {
+                    connectionBanner.classList.add('hidden');
+                }
+            }
+        }
+    }
+    customElements.define('connection-banner', ConnectionBanner);
+</script>

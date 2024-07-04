@@ -1,29 +1,29 @@
 {
-  "name": "sluug-stllug-site",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build && pagefind --site dist && node -e \"require('fs').cpSync('./dist/pagefind', './public/pagefind', {recursive: true});\"",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/check": "^0.5.10",
-    "@astrojs/mdx": "^2.2.2",
-    "@astrojs/rss": "^4.0.5",
-    "@astrojs/sitemap": "^3.1.2",
-    "@astrojs/tailwind": "^5.1.0",
-    "@iconify-json/mdi": "^1.1.64",
-    "astro": "^4.5.12",
-    "astro-icon": "^1.1.0",
-    "tailwindcss": "^3.4.3",
-    "typescript": "^5.4.3"
-  },
-  "devDependencies": {
-    "pagefind": "^1.1.0",
-    "prettier": "^3.2.5",
-    "prettier-plugin-astro": "^0.13.0"
-  }
+    "name": "sluug-stllug-site",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro check && astro build && pagefind --site dist && node -e \"require('fs').cpSync('./dist/pagefind', './public/pagefind', {recursive: true});\"",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "dependencies": {
+        "@astrojs/check": "^0.5.10",
+        "@astrojs/mdx": "^2.2.2",
+        "@astrojs/rss": "^4.0.5",
+        "@astrojs/sitemap": "^3.1.2",
+        "@astrojs/tailwind": "^5.1.0",
+        "@iconify-json/mdi": "^1.1.64",
+        "astro": "^4.5.12",
+        "astro-icon": "^1.1.0",
+        "tailwindcss": "^3.4.3",
+        "typescript": "^5.4.3"
+    },
+    "devDependencies": {
+        "pagefind": "^1.1.0",
+        "prettier": "^3.2.5",
+        "prettier-plugin-astro": "^0.13.0"
+    }
 }

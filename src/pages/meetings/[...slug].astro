@@ -1,6 +1,12 @@
 ---
-import MeetingLayout from '@/layouts/MeetingLayout.astro';
-import type { InferGetStaticPropsType } from 'astro';
+import ConnectionBanner from '@/components/ConnectionBanner.astro';
+import MeetingMaterials from '@/components/MeetingMaterials.astro';
+import MeetingTitle from '@/components/MeetingTitle.astro';
+import ResponsiveYouTubeEmbed from '@/components/ResponsiveYouTubeEmbed.astro';
+import PresentationSection from '@/components/presentation/PresentationSection.astro';
+import type { Presentation } from '@/content/config';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -11,15 +17,31 @@ export async function getStaticPaths() {
     }));
 }
 
-type Props = InferGetStaticPropsType<typeof getStaticPaths>;
-const { entry } = Astro.props;
+const {
+    entry: {
+        data: { meetingType, meetingDate, presentations, image, meetupUrl, youtubeUrl },
+    },
+} = Astro.props;
 ---
 
-<MeetingLayout
-    meetingType={entry.data.meetingType}
-    meetingDate={entry.data.meetingDate}
-    presentations={entry.data.presentations}
-    images={entry.data.images}
-    meetupUrl={entry.data.meetupUrl}
-    youtubeUrl={entry.data.youtubeUrl}
-/>
+<BaseLayout pageTitle=`${meetingType} - ${(meetingDate as Date).toISOString().slice(0, 10)}`>
+    <ConnectionBanner meetingType={meetingType} meetingDate={meetingDate} />
+    <div class="flex flex-col items-center">
+        <MeetingTitle meetingType={meetingType} meetingDate={meetingDate} meetupUrl={meetupUrl} />
+        {
+            youtubeUrl ? (
+                <ResponsiveYouTubeEmbed url={youtubeUrl} />
+            ) : (
+                <Image src={image.src} alt={image.alt} loading="lazy" decoding="async" />
+            )
+        }
+        {
+            presentations.map((presentation: Presentation) => (
+                <div class="mt-6">
+                    <PresentationSection {...presentation} />
+                </div>
+            ))
+        }
+        <MeetingMaterials meetingType={meetingType} meetingDate={meetingDate} />
+    </div>
+</BaseLayout>

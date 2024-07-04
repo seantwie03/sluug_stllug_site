@@ -1,0 +1,11 @@
+---
+type Props = {
+    abstract: string;
+};
+
+const { abstract } = Astro.props;
+
+const paragraphs = abstract.split('\n');
+---
+
+{paragraphs.map((paragraph) => <p>{paragraph}</p>)}

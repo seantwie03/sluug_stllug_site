@@ -1,0 +1,19 @@
+---
+type Props = {
+    url: string;
+};
+const { url } = Astro.props;
+const extractVideoIdFromUrl =
+    /^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?:i)?=|\&v(?:i)?=))([^#\&\?]+).*/;
+const videoId = url?.match(extractVideoIdFromUrl)?.[1];
+---
+
+<div class="relative w-full overflow-hidden pt-[56.25%]">
+    <iframe
+        class="absolute w-full h-full border-[none] top-0 inset-x-0"
+        src=`https://www.youtube-nocookie.com/embed/${videoId}`
+        allowfullscreen
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    >
+    </iframe>
+</div>

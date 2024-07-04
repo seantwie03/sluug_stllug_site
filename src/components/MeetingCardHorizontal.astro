@@ -1,0 +1,66 @@
+---
+import { getDisplayDate } from '@/buildTimeUtils';
+import type { Meeting } from '@/content/config';
+import { Icon } from 'astro-icon/components';
+import { Image } from 'astro:assets';
+type Props = { url: string } & Meeting;
+
+const { url, meetingType, meetingDate, presentations, meetupUrl, image, youtubeUrl } = Astro.props;
+// TODO: Fix this hack
+const main = presentations[0];
+const base = presentations[1];
+---
+
+<div class="flex mb-4 rounded shadow-lg">
+    <div class="w-1/4">
+        <Image src={image.src} alt={image.alt} height="240" width="240" loading="lazy" decoding="async" />
+    </div>
+    <div class="w-3/4 pl-4">
+        <p class="text-gray-600 text-md">
+            {meetingType} - {getDisplayDate(meetingDate)}
+        </p>
+        <div class="flex">
+            <div class="w-1/2">
+                <h4 class="font-bold text-lg mb-1">{main.title}</h4>
+                <p>
+                    By:
+                    {main.presenterNames.join(' & ')}
+                </p>
+            </div>
+            {
+                base && (
+                    <>
+                        <div class="border-r border-gray-300 mx-1" style="height: auto;" />
+                        <div class="w-1/2 pl-4">
+                            <h4 class="font-bold text-lg">{base.title}</h4>
+                            <p>
+                                By:
+                                {base.presenterNames.join(' & ')}
+                            </p>
+                        </div>
+                    </>
+                )
+            }
+        </div>
+
+        <div class="flex justify-around mt-2 pb-1">
+            {
+                youtubeUrl && (
+                    <a href={youtubeUrl}>
+                        <Icon name="mdi:youtube" class="inline" />
+                        YouTube
+                    </a>
+                )
+            }
+            {
+                meetupUrl && (
+                    <a href={meetupUrl}>
+                        <Icon name="mdi:meetup" class="inline" />
+                        Meetup
+                    </a>
+                )
+            }
+            <a href={url}>Read More <Icon name="mdi:arrow-right-thin" class="inline" /></a>
+        </div>
+    </div>
+</div>

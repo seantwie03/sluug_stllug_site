@@ -4,15 +4,15 @@ export const meetingTypeSchema = z.enum(["SLUUG", "STLLUG"]);
 export type MeetingType = z.infer<typeof meetingTypeSchema>;
 
 export const linkSchema = z.object({
+    linkText: z
+        .string()
+        .optional()
+        .describe("The display name of the link. Example: 'whereis man page'"),
     url: z
         .string()
         .describe(
             "URL to the reference. Example: 'https://linux.die.net/man/1/whereis'",
         ),
-    linkText: z
-        .string()
-        .optional()
-        .describe("The display name of the link. Example: 'whereis man page'"),
 });
 export type Link = z.infer<typeof linkSchema>;
 
@@ -33,7 +33,9 @@ export const presentationSchema = z.object({
 export type Presentation = z.infer<typeof presentationSchema>;
 
 export const meetingSchema = z.object({
-    meetingDate: z.coerce.date(),
+    meetingDate: z
+        .string()
+        .transform((dayString) => transformDayToDateInCentralTime(dayString)),
     meetingType: meetingTypeSchema,
     presentations: z.array(presentationSchema).min(1),
     meetupUrl: z.string().optional(),
@@ -41,7 +43,7 @@ export const meetingSchema = z.object({
     youtubeTitles: z.array(z.string()).optional(),
 });
 export type Meeting = z.infer<typeof meetingSchema> & {
-    images: {
+    image: {
         src: {
             src: string;
             width: number;
@@ -57,25 +59,27 @@ export type Meeting = z.infer<typeof meetingSchema> & {
                 | "avif";
         };
         alt: string;
-    }[];
+    };
 };
 
 const meetingCollection = defineCollection({
     type: "data",
     schema: ({ image }) =>
         z.object({
-            meetingDate: z.coerce.date(),
+            meetingDate: z
+                .string()
+                .transform((dayString) =>
+                    transformDayToDateInCentralTime(dayString),
+                ),
             meetingType: meetingTypeSchema,
             presentations: z.array(presentationSchema).min(1),
             meetupUrl: z.string().optional(),
             youtubeUrl: z.string().optional(),
             youtubeTitles: z.array(z.string()).optional(),
-            images: z.array(
-                z.object({
-                    src: image(),
-                    alt: z.string(),
-                }),
-            ),
+            image: z.object({
+                src: image(),
+                alt: z.string(),
+            }),
         }),
 });
 
@@ -104,4 +108,27 @@ export const collections = {
 export interface DisplayImage {
     src: ImageMetadata;
     alt: string;
+}
+
+function transformDayToDateInCentralTime(date: string): Date {
+    if (isDateDuringDaylightSavingsTime(new Date(date))) {
+        return new Date(`${date}T18:30:00.000-0500`);
+    }
+    return new Date(`${date}T18:30:00.000-0600`);
+}
+
+/**
+ * This function is used to determine if the date supplied is during daylight savings time.
+ *
+ * @param date The date to check
+ * @returns true if the date is during daylight savings time.
+ */
+function isDateDuringDaylightSavingsTime(date: Date): boolean {
+    console.log("date", date);
+    const jan = new Date(date.getFullYear(), 0, 1);
+    const jul = new Date(date.getFullYear(), 6, 1);
+    return (
+        date.getTimezoneOffset() <
+        Math.max(jan.getTimezoneOffset(), jul.getTimezoneOffset())
+    );
 }

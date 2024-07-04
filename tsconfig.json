@@ -7,5 +7,5 @@
         },
         "verbatimModuleSyntax": true
     },
-    "exclude": ["dist", "public"]
+    "exclude": ["dist", "public", "node_modules"]
 }

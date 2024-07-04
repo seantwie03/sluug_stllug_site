@@ -1,5 +1,5 @@
 {
-    "meetingDate": "2021-01-13T00:00:00.000Z",
+    "meetingDate": "2021-01-13",
     "meetingType": "SLUUG",
     "presentations": [
         {
@@ -17,9 +17,9 @@
             ],
             "tags": ["whereis", "customization", "linux"],
             "tweets": [
-                "Join us on 2021-01-13 for an exciting presentation by Robert C. Hansen on the Customized 'whereis' project! Discover how to remember where you put your stuff with ease! #whereis #linux #customization @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/275585456/",
-                "Don't miss Robert C. Hansen's hands-on session on 2021-01-13! Learn how to customize the 'whereis' command to suit your needs and get access to a git repository. #whereis #FOSS #linux @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/275585456/",
-                "Excited about command customization? Join us on 2021-01-13 for Robert C. Hansen's talk on the Customized 'whereis' project! Let's make 'whereis' work for you! #linux #customization @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/275585456/"
+                "Join us on 2021-01-13 for an exciting presentation by Robert C. Hansen on the Customized 'whereis' project! Discover how to remember where you put your stuff with ease! #whereis #linux #customization https://www.meetup.com/saint-louis-unix-users-group/events/275585456/",
+                "Don't miss Robert C. Hansen's hands-on session on 2021-01-13! Learn how to customize the 'whereis' command to suit your needs and get access to a git repository. #whereis #FOSS #linux https://www.meetup.com/saint-louis-unix-users-group/events/275585456/",
+                "Excited about command customization? Join us on 2021-01-13 for Robert C. Hansen's talk on the Customized 'whereis' project! Let's make 'whereis' work for you! #linux #customization https://www.meetup.com/saint-louis-unix-users-group/events/275585456/"
             ]
         },
         {
@@ -35,6 +35,7 @@
         }
     ],
     "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/275585456/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=tlmRyxjHORI&t=845s",
     "youTubeTitles": [
         "SLUUG 2021-01-13 - Mastering the 'Whereis' Command: Customization and Practical Uses",
         "SLUUG 2021-01-13 - Hands-On Custom 'Whereis' Script for Better Resource Management",
@@ -43,21 +44,10 @@
         "SLUUG 2021-01-13 - Transform Your Raspberry Pi into a Multi-Purpose Music Player | SLUUG Presentation",
         "SLUUG 2021-01-13 - Building a Hand Held Music Box Using a Raspberry Pi: A Comprehensive Tutorial",
         "SLUUG 2021-01-13 - Customized 'Where Is It?' Script: A Hands-On Guide",
-        "SLUUG 2021-01-13 - Creating a Personalized 'Whereis' Command with Linux",
-        "SLUUG 2021-01-13 - Hands-On Custom 'Whereis' Project with Git Repository"
+        "SLUUG 2021-01-13 - Creating a Personalized 'Whereis' Command"
     ],
-    "images": [
-        {
-            "src": "./2021-01-13_sluug_create-an-image-with-a-dark-minimalist-backdrop-displaying.png",
-            "alt": "Create an image with a dark, minimalist backdrop displaying digital grid patterns for depth and a sleek, futuristic terminal window floating mid-air showing matrix-like debug code as a center. On one side of the terminal window, place a slightly tilted, engaging Linux Penguin logo, and on the other side, put a Git logo to symbolize integration. Add a subtle abstract representation of a magnifying glass icon over a command line near the terminal window to indicate the whereis command. Emanate soft neon lights from the terminal edges for a glowing effect and use dark shades with neon blue and green accents as a color scheme. Put subtle overlays of hexagonal tech patterns in the background to highlight the technology theme. Arrange all elements and logos in a balanced way to focus on the center and avoid overcrowding any part."
-        },
-        {
-            "src": "./2021-01-13_sluug_imagine-a-sleek-dark-themed-image-focused-on-innovation-and.png",
-            "alt": "Imagine a sleek, dark-themed image focused on innovation and DIY technology. The background subtly transitions from dark blue at the top to black at the bottom, enhanced by a digital grid overlay, creating a circuit board-like feel. Central to the image, there's a finely detailed 3D illustration of a Raspberry Pi, placed at a slight angle to show off its ports and components. Floating around the Raspberry Pi are the logos of Raspberry Pi and YouTube, and a stylized musical note or MP3 icon, all interconnected by light blue or neon cyan lines symbolizing integration. Emanating from the Raspberry Pi, you see dynamic musical waveforms and notes, subtly glowing to signify its function as a music box. Adding to the futuristic vibe, there are holographic light effects around the Raspberry Pi and animated binary code sequences in the background for depth. The main color theme includes dark blue and black, accentuated with light blue, neon cyan, and white. The logos retain their official colors for brand recognition."
-        },
-        {
-            "src": "./2021-01-13_sluug_create-a-futuristic-and-technology-infused-image-that-repres.png",
-            "alt": "Create a futuristic and technology-infused image that represents a digital workspace or a lab environment. The background is minimalist, with a gradient from deep blue at the top to black at the bottom, signifying depth and focus. Faint binary code or matrix-style text cascades downwards, underscoring the tech-driven nature of the landscape. The foreground consists of two primary elements. The first - an abstract representation of a classic terminal window with color-coded text and unique symbols symbolizing a customized 'whereis' Project. A diagram of digital icons showcases organization. The second - a Raspberry Pi enveloped by digital music notes and waveforms to signify a Hand Held Music Box. A faint outline of a remote control signal implies remote management capabilities. Incorporate logos of Linux and Git, along with sleek, high-tech interfaces like holographic displays and digital touchpads. Hexagonal shapes softly dispersed in the background add a modern touch. Use cool tones and gradients throughout, with a mild glow effect around the main elements. Add subtle illustrations of network nodes or interconnecting lines to represent collaboration and community. Insert a digital clock or calendar to highlight the ongoing nature of the workspace."
-        }
-    ]
+    "image": {
+        "src": "./2021-01-13_sluug_create-a-futuristic-and-technology-infused-image-that-repres.png",
+        "alt": "Create a futuristic and technology-infused image that represents a digital workspace or a lab environment. The background is minimalist, with a gradient from deep blue at the top to black at the bottom, signifying depth and focus. Faint binary code or matrix-style text cascades downwards, underscoring the tech-driven nature of the landscape. The foreground consists of two primary elements. The first - an abstract representation of a classic terminal window with color-coded text and unique symbols symbolizing a customized 'whereis' Project. A diagram of digital icons showcases organization. The second - a Raspberry Pi enveloped by digital music notes and waveforms to signify a Hand Held Music Box. A faint outline of a remote control signal implies remote management capabilities. Incorporate logos of Linux and Git, along with sleek, high-tech interfaces like holographic displays and digital touchpads. Hexagonal shapes softly dispersed in the background add a modern touch. Use cool tones and gradients throughout, with a mild glow effect around the main elements. Add subtle illustrations of network nodes or interconnecting lines to represent collaboration and community. Insert a digital clock or calendar to highlight the ongoing nature of the workspace."
+    }
 }

@@ -1,15 +1,30 @@
 ---
+import { getDisplayDate, getMeetingName } from '@/buildTimeUtils';
+import type { MeetingType } from '@/content/config';
+import { Icon } from 'astro-icon/components';
+
 interface Props {
-    meetingName: string;
+    meetingType: MeetingType;
     meetingDate: Date;
+    meetupUrl?: string | undefined;
 }
 
-const { meetingName, meetingDate } = Astro.props;
+const { meetingType, meetingDate, meetupUrl } = Astro.props;
+
+const meetingName = getMeetingName(meetingType);
 ---
 
 <div>
-    <p class="text-sm font-medium leading-relaxed mt-3 mb-0">
-        {meetingDate.toLocaleDateString('default', { month: 'long', day: '2-digit', year: 'numeric' })}
+    <p class="text-gray-600 text-sm font-medium leading-relaxed mt-3 mb-0 flex justify-between">
+        {getDisplayDate(meetingDate)}
+        {
+            meetupUrl && (
+                <a href={meetupUrl} class="flex no-underline" target="_blank" rel="noopener noreferrer">
+                    <Icon name="mdi:meetup" class="inline text-xl" />
+                    Meetup
+                </a>
+            )
+        }
     </p>
     <h2 class="mt-0 mb-2">
         {meetingName}

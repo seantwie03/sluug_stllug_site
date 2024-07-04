@@ -1,0 +1,100 @@
+---
+import { getDisplayDate } from '@/buildTimeUtils';
+import type { Meeting } from '@/content/config';
+import { Icon } from 'astro-icon/components';
+import { Image } from 'astro:assets';
+type Props = { url: string; key: number } & Meeting;
+
+const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, youtubeUrl } = Astro.props;
+---
+
+<div class="flex flex-col mb-4 rounded shadow-lg w-[32rem]">
+    <p class="text-gray-600 text-md mb-0">
+        {meetingType} - {getDisplayDate(meetingDate)}
+    </p>
+    <div class="flex-grow">
+        <Image src={image.src} alt={image.alt} loading="lazy" decoding="async" />
+        {
+            presentations.map((presentation) => (
+                <div>
+                    <h3 class="mt-2">{presentation.title}</h3>
+                    <p class="mb-4">
+                        By:
+                        {presentation.presenterNames.join(' & ')}
+                    </p>
+                </div>
+            ))
+        }
+    </div>
+    <div class="flex justify-between m-1">
+        <!-- The zoom link should only show if this meeting is happening today. The logic to determine 
+         whether to show or hide the zoom link must be done client-side, not at build time. 
+         The script directive at the bottom of the file will run on the client. It will read data-meetingdate and hide 
+         the Zoom link if needed. This is the method suggested by the Astro documentation (6/30/2024).
+         https://docs.astro.build/en/guides/client-side-scripts/#pass-frontmatter-variables-to-scripts -->
+        <zoom-link id=`zoom-link-${key}` data-key={key} data-meetingdate={meetingDate}>
+            <a
+                href={meetingType === 'SLUUG' ? 'https://sluug.org/next.txt' : 'https://stllug.sluug.org/next.txt'}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <div class="inline-flex items-center bg-slate-200 text-md font-semibold px-4 py-2 rounded-full shadow">
+                    <Icon name="mdi:microphone-plus" class="mr-1" />
+                    Zoom
+                </div>
+            </a>
+        </zoom-link>
+
+        {
+            youtubeUrl && (
+                <a href={youtubeUrl} target="_blank" rel="noopener noreferrer">
+                    <div class="inline-flex items-center bg-slate-200 text-md font-semibold px-4 py-2 rounded-xl shadow">
+                        <Icon name="mdi:youtube" class="mr-1" />
+                        YouTube
+                    </div>
+                </a>
+            )
+        }
+        {
+            meetupUrl && (
+                <a href={meetupUrl} target="_blank" rel="noopener noreferrer">
+                    <div class="inline-flex items-center bg-slate-200 text-md font-semibold px-4 py-2 rounded-full shadow">
+                        <Icon name="mdi:meetup" class="mr-1" />
+                        Meetup
+                    </div>
+                </a>
+            )
+        }
+        <a href={url}>
+            <div class="inline-flex items-center bg-slate-200 text-md font-semibold px-4 py-2 rounded-full shadow">
+                Read More <Icon name="mdi:arrow-right-thin" class="ml-1" />
+            </div>
+        </a>
+    </div>
+</div>
+
+<script>
+    // Hide the zoom link if the meeting is not happening Today.
+    // By default, the zoom link is visible. This is intentional. It means the failure state is to show the
+    // zoom link. I would rather have the zoom link shown too much than not shown when it should be.
+    // Some people might have JavaScript disabled in their browser. I would rather have these people see the
+    // zoom link even if the meeting is not today or tomorrow than not see it ever.
+    class ZoomLink extends HTMLElement {
+        constructor() {
+            super();
+            const meetingDate = new Date(this.dataset.meetingdate!);
+            const today = new Date();
+
+            const isMeetingDateToday = meetingDate.getDate() === today.getDate();
+
+            const key = this.dataset.key!;
+            if (!isMeetingDateToday) {
+                const zoomLink = document.getElementById(`zoom-link-${key}`);
+                if (zoomLink) {
+                    zoomLink.classList.add('hidden');
+                }
+            }
+        }
+    }
+    customElements.define('zoom-link', ZoomLink);
+</script>

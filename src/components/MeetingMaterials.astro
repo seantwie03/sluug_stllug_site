@@ -1,0 +1,35 @@
+---
+import type { MeetingType } from '@/content/config';
+
+type Props = {
+    meetingType: MeetingType;
+    meetingDate: Date;
+};
+
+const { meetingType, meetingDate } = Astro.props;
+---
+
+<meeting-materials data-meetingtype={meetingType} data-meetingdate={meetingDate}>
+    <div id="meeting-materials">
+        <h2>Meeting Materials</h2>
+    </div>
+</meeting-materials>
+
+<script>
+    class MeetingMaterials extends HTMLElement {
+        constructor() {
+            super();
+            const meetingDate = new Date(this.dataset.meetingdate!);
+            const meetingType = this.dataset.meetingtype! as 'SLUUG' | 'STLLUG';
+            const meetingMaterials = document.getElementById('meeting-materials')!;
+            fetch(
+                `https://sluug.org/resources/presentations/media/${meetingDate.getFullYear()}/${meetingType === 'SLUUG' ? 'Main' : 'STLLINUX'}/${meetingDate.toISOString().slice(0, 10)}.json`,
+            )
+                .then((response) => console.log(response.json()))
+                .catch(() => {
+                    meetingMaterials.classList.add('hidden');
+                });
+        }
+    }
+    customElements.define('meeting-materials', MeetingMaterials);
+</script>
