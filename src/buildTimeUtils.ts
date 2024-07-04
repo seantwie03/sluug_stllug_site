@@ -45,7 +45,8 @@ export function getRandomIndex(length: number): number {
  * @returns A string representing the date in the format "Month D, YYYY" Example: July 4, 2024"
  */
 export function getDisplayDate(date: Date): string {
-    return date.toLocaleDateString("default", {
+    return date.toLocaleDateString("en-US", {
+        timeZone: "America/Chicago",
         month: "long",
         day: "numeric",
         year: "numeric",
