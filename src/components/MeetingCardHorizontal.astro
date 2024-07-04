@@ -3,64 +3,116 @@ import { getDisplayDate } from '@/buildTimeUtils';
 import type { Meeting } from '@/content/config';
 import { Icon } from 'astro-icon/components';
 import { Image } from 'astro:assets';
-type Props = { url: string } & Meeting;
+type Props = { key: number; url: string } & Meeting;
 
-const { url, meetingType, meetingDate, presentations, meetupUrl, image, youtubeUrl } = Astro.props;
+const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, youtubeUrl } = Astro.props;
 // TODO: Fix this hack
 const main = presentations[0];
 const base = presentations[1];
 ---
 
+<p class="text-gray-600 text-md">
+    {meetingType} - {getDisplayDate(meetingDate)}
+</p>
 <div class="flex mb-4 rounded shadow-lg">
-    <div class="w-1/4">
-        <Image src={image.src} alt={image.alt} height="240" width="240" loading="lazy" decoding="async" />
-    </div>
-    <div class="w-3/4 pl-4">
-        <p class="text-gray-600 text-md">
-            {meetingType} - {getDisplayDate(meetingDate)}
-        </p>
-        <div class="flex">
-            <div class="w-1/2">
-                <h4 class="font-bold text-lg mb-1">{main.title}</h4>
-                <p>
-                    By:
-                    {main.presenterNames.join(' & ')}
-                </p>
-            </div>
-            {
-                base && (
-                    <>
-                        <div class="border-r border-gray-300 mx-1" style="height: auto;" />
-                        <div class="w-1/2 pl-4">
-                            <h4 class="font-bold text-lg">{base.title}</h4>
-                            <p>
-                                By:
-                                {base.presenterNames.join(' & ')}
-                            </p>
-                        </div>
-                    </>
-                )
-            }
+    <Image src={image.src} alt={image.alt} height="240" width="240" loading="lazy" decoding="async" />
+    <div class="flex flex-row justify-between w-full pl-4">
+        <div>
+            <h4 class="font-bold text-lg mb-1">{main.title}</h4>
+            <p>
+                By:
+                {main.presenterNames.join(' & ')}
+            </p>
         </div>
+        {
+            base && (
+                <>
+                    <div class="border-r border-gray-300 mx-1" style="height: auto;" />
+                    <div>
+                        <h4 class="font-bold text-lg">{base.title}</h4>
+                        <p>
+                            By:
+                            {base.presenterNames.join(' & ')}
+                        </p>
+                    </div>
+                </>
+            )
+        }
+        <div class="flex flex-col items-start justify-between m-1">
+            <!-- The zoom link should only show if this meeting is happening today. The logic to determine 
+            whether to show or hide the zoom link must be done client-side, not at build time. 
+            The script directive at the bottom of the file will run on the client. It will read data-meetingdate and 
+            hide the Zoom link if needed. This is the method suggested by the Astro documentation (6/30/2024).
+            https://docs.astro.build/en/guides/client-side-scripts/#pass-frontmatter-variables-to-scripts -->
+            <zoom-link id=`zoom-link-${key}` data-key={key} data-meetingdate={meetingDate} class="w-[9rem] h-[2.3rem]">
+                <a
+                    href={meetingType === 'SLUUG' ? 'https://sluug.org/next.txt' : 'https://stllug.sluug.org/next.txt'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <div
+                        class="inline-flex justify-center items-center bg-slate-200 text-md font-semibold px-4 rounded-full shadow h-full w-full"
+                    >
+                        <Icon name="mdi:microphone-plus" class="mr-1" />
+                        Zoom
+                    </div>
+                </a>
+            </zoom-link>
 
-        <div class="flex justify-around mt-2 pb-1">
             {
                 youtubeUrl && (
-                    <a href={youtubeUrl}>
-                        <Icon name="mdi:youtube" class="inline" />
-                        YouTube
+                    <a href={youtubeUrl} target="_blank" rel="noopener noreferrer" class="w-[9rem] h-[2.3rem]">
+                        <div class="inline-flex justify-center items-center bg-slate-200 text-md font-semibold rounded-full shadow w-full h-full">
+                            <Icon name="mdi:youtube" class="mr-1" />
+                            YouTube
+                        </div>
                     </a>
                 )
             }
             {
                 meetupUrl && (
-                    <a href={meetupUrl}>
-                        <Icon name="mdi:meetup" class="inline" />
-                        Meetup
+                    <a href={meetupUrl} target="_blank" rel="noopener noreferrer" class="w-[9rem] h-[2.3rem]">
+                        <div class="inline-flex justify-center items-center bg-slate-200 text-md font-semibold px-4 rounded-full shadow w-full h-full">
+                            <Icon name="mdi:meetup" class="mr-1" />
+                            Meetup
+                        </div>
                     </a>
                 )
             }
-            <a href={url}>Read More <Icon name="mdi:arrow-right-thin" class="inline" /></a>
+            <a href={url} class="w-[9rem] h-[2.3rem]">
+                <div
+                    class="inline-flex justify-center items-center bg-slate-200 text-md font-semibold px-4 rounded-full shadow w-full h-full"
+                >
+                    Read More <Icon name="mdi:arrow-right-thin" class="ml-1" />
+                </div>
+            </a>
         </div>
     </div>
 </div>
+
+<script>
+    // Hide the zoom link if the meeting is not happening Today.
+    // By default, the zoom link is visible. This is intentional. It means the failure state is to show the
+    // zoom link. I would rather have the zoom link shown too much than not shown when it should be.
+    // Some people might have JavaScript disabled in their browser. I would rather have these people see the
+    // zoom link even if the meeting is not today or tomorrow than not see it ever.
+    class ZoomLink extends HTMLElement {
+        constructor() {
+            super();
+            const meetingDate = new Date(this.dataset.meetingdate!);
+            const today = new Date();
+
+            const isMeetingDateToday = meetingDate.getDate() === today.getDate();
+
+            const key = this.dataset.key!;
+            if (!isMeetingDateToday) {
+                const zoomLink = document.getElementById(`zoom-link-${key}`);
+                if (zoomLink) {
+                    zoomLink.style.display = 'none';
+                    zoomLink.classList.add('hidden');
+                }
+            }
+        }
+    }
+    customElements.define('zoom-link', ZoomLink);
+</script>

@@ -1,6 +1,7 @@
 ---
 import { sortMeetingListByMeetingDate } from '@/buildTimeUtils';
-import MeetingListing from '@/components/MeetingListing.astro';
+import MeetingCardHorizontal from '@/components/MeetingCardHorizontal.astro';
+import MeetingCardVertical from '@/components/MeetingCardVertical.astro';
 import Pagination from '@/components/Pagination.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import type { GetStaticPaths, InferGetStaticPropsType } from 'astro';
@@ -48,18 +49,47 @@ const { page } = Astro.props;
         )
     }
     <h2>STLLUG Meetings</h2>
-    {
-        page.data.map(({ collection, id, data }) => (
-            <MeetingListing
-                url={`/${collection}/${id}/`}
-                meetingType={data.meetingType}
-                meetingDate={data.meetingDate}
-                presentations={data.presentations}
-                image={data.image}
-                meetupUrl={data.meetupUrl}
-                youtubeUrl={data.youtubeUrl}
-            />
-        ))
-    }
+    <div class="flex flex-wrap lg:hidden">
+        {
+            page.data.map(
+                (
+                    { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
+                    i,
+                ) => (
+                    <MeetingCardVertical
+                        key={i}
+                        url={`/${collection}/${id}/`}
+                        meetingType={meetingType}
+                        meetingDate={meetingDate}
+                        presentations={presentations}
+                        image={image}
+                        meetupUrl={meetupUrl}
+                        youtubeUrl={youtubeUrl}
+                    />
+                ),
+            )
+        }
+    </div>
+    <div class="hidden lg:block">
+        {
+            page.data.map(
+                (
+                    { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
+                    i,
+                ) => (
+                    <MeetingCardHorizontal
+                        key={i + 1000}
+                        url={`/${collection}/${id}/`}
+                        meetingType={meetingType}
+                        meetingDate={meetingDate}
+                        presentations={presentations}
+                        image={image}
+                        meetupUrl={meetupUrl}
+                        youtubeUrl={youtubeUrl}
+                    />
+                ),
+            )
+        }
+    </div>
     <Pagination url={page.url} currentPage={page.currentPage} lastPage={page.lastPage} />
 </BaseLayout>

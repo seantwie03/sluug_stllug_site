@@ -33,7 +33,7 @@ const { page } = Astro.props;
             </p>
         )
     }
-    <div class="flex flex-wrap justify-evenly">
+    <div class="flex flex-wrap lg:hidden">
         {
             page.data.map(
                 (
@@ -54,18 +54,26 @@ const { page } = Astro.props;
             )
         }
     </div>
-    {
-        page.data.map(({ collection, id, data }) => (
-            <MeetingCardHorizontal
-                url={`/${collection}/${id}/`}
-                meetingType={data.meetingType}
-                meetingDate={data.meetingDate}
-                presentations={data.presentations}
-                image={data.image}
-                meetupUrl={data.meetupUrl}
-                youtubeUrl={data.youtubeUrl}
-            />
-        ))
-    }
+    <div class="hidden lg:block">
+        {
+            page.data.map(
+                (
+                    { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
+                    i,
+                ) => (
+                    <MeetingCardHorizontal
+                        key={i + 1000}
+                        url={`/${collection}/${id}/`}
+                        meetingType={meetingType}
+                        meetingDate={meetingDate}
+                        presentations={presentations}
+                        image={image}
+                        meetupUrl={meetupUrl}
+                        youtubeUrl={youtubeUrl}
+                    />
+                ),
+            )
+        }
+    </div>
     <Pagination url={page.url} currentPage={page.currentPage} lastPage={page.lastPage} />
 </BaseLayout>

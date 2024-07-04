@@ -24,7 +24,7 @@
             ]
         },
         {
-            "title": "SpeedBar a tool for organizing/listing files & directories (written in EMACS)",
+            "title": "SpeedBar a tool for Fast File Access (In Emacs)",
             "presenterNames": ["Steve Stegmann"],
             "abstract": "Speedbar is an integral part of Emacs which has been in use since version 23.2 in 2010. Entering “speedbar” in the emacs command line causes another frame to be opened to graphically show the current directory tree which can be traversed upwards and downwards from the current position. It shows all of the files and directories and each can be examined with a single mouse click. If the file is not text but a jpg or pdf or some other file type an auxiliary program will be called to display the file in an emacs buffer.",
             "references": [

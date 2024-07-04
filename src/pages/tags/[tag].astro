@@ -1,5 +1,7 @@
 ---
 import { sortMeetingListByMeetingDate } from '@/buildTimeUtils';
+import MeetingCardHorizontal from '@/components/MeetingCardHorizontal.astro';
+import MeetingCardVertical from '@/components/MeetingCardVertical.astro';
 import MeetingListing from '@/components/MeetingListing.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
@@ -32,20 +34,47 @@ const { meetings } = Astro.props;
 ---
 
 <BaseLayout pageTitle={tag}>
-    <p data-pagefind-ignore>Presentations tagged with: <strong>{tag}</strong></p>
-    <ul>
+    <h2 data-pagefind-ignore>Presentations tagged with: <strong>{tag}</strong></h2>
+    <div class="flex flex-wrap lg:hidden">
         {
-            meetings.map((meeting: any) => (
-                <MeetingListing
-                    url={`/meetings/${meeting.id}/`}
-                    meetingType={meeting.data.meetingType}
-                    meetingDate={meeting.data.meetingDate}
-                    presentations={meeting.data.presentations}
-                    image={meeting.data.image}
-                    meetupUrl={meeting.data.meetupUrl}
-                    youtubeUrl={meeting.data.youtubeUrl}
-                />
-            ))
+            meetings.map(
+                (
+                    { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
+                    i,
+                ) => (
+                    <MeetingCardVertical
+                        key={i}
+                        url={`/${collection}/${id}/`}
+                        meetingType={meetingType}
+                        meetingDate={meetingDate}
+                        presentations={presentations}
+                        image={image}
+                        meetupUrl={meetupUrl}
+                        youtubeUrl={youtubeUrl}
+                    />
+                ),
+            )
         }
-    </ul>
+    </div>
+    <div class="hidden lg:block">
+        {
+            meetings.map(
+                (
+                    { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
+                    i,
+                ) => (
+                    <MeetingCardHorizontal
+                        key={i + 1000}
+                        url={`/${collection}/${id}/`}
+                        meetingType={meetingType}
+                        meetingDate={meetingDate}
+                        presentations={presentations}
+                        image={image}
+                        meetupUrl={meetupUrl}
+                        youtubeUrl={youtubeUrl}
+                    />
+                ),
+            )
+        }
+    </div>
 </BaseLayout>
