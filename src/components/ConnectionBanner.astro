@@ -16,7 +16,7 @@ const { meetingDate, meetingType } = Astro.props;
  https://docs.astro.build/en/guides/client-side-scripts/#pass-frontmatter-variables-to-scripts -->
 <connection-banner data-meetingdate={meetingDate}>
     <div id="connection-banner" class="bg-yellow-100 border-l-8 border-yellow-500 p-4 mb-6">
-        <h2 class="font-bold">{meetingDate}</h2>
+        <h2 class="font-bold">{meetingDate.toLocaleString()}</h2>
         <h3 class="mb-4">
             <strong>Join us on Zoom:</strong>
             <a
