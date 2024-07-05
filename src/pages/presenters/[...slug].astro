@@ -2,7 +2,7 @@
 import { sortMeetingListByMeetingDate } from '@/buildTimeUtils';
 import MeetingCardHorizontal from '@/components/MeetingCardHorizontal.astro';
 import MeetingCardVertical from '@/components/MeetingCardVertical.astro';
-import PresenterLayout from '@/layouts/PresenterLayout.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
 import type { InferGetStaticPropsType } from 'astro';
 import { getCollection } from 'astro:content';
 
@@ -15,19 +15,25 @@ export async function getStaticPaths() {
 }
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
-const { entry } = Astro.props;
-const { Content } = await entry.render();
+const {
+    entry: {
+        data: { presenterName, lastUpdated },
+        render,
+    },
+} = Astro.props;
+const { Content } = await render();
 
 const meetings = sortMeetingListByMeetingDate(
-    await getCollection('meetings', ({ data }) => {
-        return data.presentations.some((presentation) =>
-            presentation.presenterNames.includes(entry.data.presenterName),
-        );
+    await getCollection('meetings', ({ data: { presentations } }) => {
+        return presentations.some((presentation) => presentation.presenterNames.includes(presenterName));
     }),
 );
 ---
 
-<PresenterLayout presenterName={entry.data.presenterName} lastUpdated={entry.data.lastUpdated}>
+<BaseLayout pageTitle={presenterName}>
+    <p class="text-gray-600 text-sm font-medium">
+        Last Updated: {lastUpdated.toISOString().slice(0, 10)}
+    </p>
     <Content />
 
     <h2>Presentations</h2>
@@ -73,4 +79,4 @@ const meetings = sortMeetingListByMeetingDate(
             )
         }
     </div>
-</PresenterLayout>
+</BaseLayout>
