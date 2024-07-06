@@ -1,0 +1,39 @@
+{
+    "meetingDate": "2021-04-14",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "COSI, the Common Operating System Interface",
+            "presenterNames": ["Steven Borrelli"],
+            "abstract": "This talk introduces COSI, the Common Operating System Interface, which defines an API for the configuration of container operating systems.\nWhile there has been innovation in the development of minimal Linux distributions for running Kubernetes, the distributions diverge from each other in terms of management and API endpoints. Similar to other projects such as the Container Network Interface (CNI) , COSI has a focus on the configuration of the underlying (Linux) OS, providing Protocol Buffer definitions and a gRPC API reference implementation for configuration settings such as DNS, network, and kernel settings. By utilizing a flexible plugin system, multiple backend implementations can provide a consistent API to consumers.\nIn this talk we’ll review the configuration and APIs of popular container operating systems and Kubelet-node interactions. We will then review the COSI API, the plugin architecture, and demo node management using backend plugins written in Go and Rust.",
+            "references": [
+                {
+                    "linkText": "COSI Doc",
+                    "url": "https://docs.google.com/document/d/1OuwTSsSsIPefDViheK-nzaF9xSOg1Mn62mwR2FmGPu8/edit#heading=h.1grxkjflkt7d"
+                }
+            ],
+            "tags": ["kubernetes"],
+            "tweet": "Join us on 2021-04-14 for Steven Borrelli's talk on COSI, the unified API for container OS configuration and management! Learn, network, and be inspired! 🚀 #container #API @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/277236886/"
+        },
+        {
+            "title": "Creating Your Own Shell Functions",
+            "presenterNames": ["James Conroy"],
+            "abstract": "Tired of your static aliases only doing the one thing? Want to add some flow control to your shell, so that it changes behavior depending on the time of day, day of the week, or OS of that server you're about to ssh into? This tutorial will give you the what, why, and how of BASH functions.",
+            "references": [
+                {
+                    "linkText": "Bash Functions",
+                    "url": "https://linuxize.com/post/bash-functions/"
+                }
+            ],
+            "tags": ["bash", "shell", "custimization"],
+            "tweet": "Don't miss James Conroy's tutorial on 'Creating Your Own Shell Functions' on 2021-04-14! Learn to make your shell smarter with BASH flow control. #bash #SLUUG 🎉 https://www.meetup.com/saint-louis-unix-users-group/events/277236886/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/277236886/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=z54DPRwzGQE",
+    "youTubeTitle": "Exploring COSI: Unifying Container Operating System Endpoints | SLUUG 2021-04-14",
+    "image": {
+        "src": "./2021-04-14_sluug_create-a-dark-themed-futuristic-tech-interface-acting-as-the.png",
+        "alt": "Create a dark-themed futuristic tech interface acting as the background. The palette should be filled with deep blues, blacks, and purples simulating a modern, technological aesthetic. At its center, incorporate a slightly tilted BASH logo. Surround the logo with semi-transparent, holographic-style flowcharts and command trees, representing shell functions, emanating a soft glow. To complement these, scatter smaller neon effect icons. These icons should symbolize terminal prompts, time control via clock symbols, calendar icons (for the day-of-week concept), and server figures. The overall lighting and effects should present a three-dimensional quality, with light flares, reflections, and gentle illumination emanating from the icons and flowchart. The whole design should resonate with the theme of the presentation and highlight the potential of BASH customizations."
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2021-04-22",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "IBM Z and Linux - Updates and Strategy",
+            "presenterNames": ["DeWayne Hughes"],
+            "abstract": "IBM Z and Linux have run mission critical workloads for over 20 years, yet is seeing new interest and growth. The LinuxONE server family brings security, privacy, scalability, and availability to Linux workloads. This session will provide an update on this platform and its role in the hybrid cloud.",
+            "references": [
+                {
+                    "linkText": "IBM Z",
+                    "url": "https://www.ibm.com/z"
+                }
+            ],
+            "tags": ["ibm-z", "mainframe"],
+            "tweet": "Excited to announce DeWayne Hughes will present 'IBM Z and Linux - Updates and Strategy' on 2021-04-22! Join us to explore the new growth in LinuxONE server family. #ibm-z #linux #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/271259465/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/271259465/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=iDtZKNg_fpI",
+    "youTubeTitle": "IBM Z and Linux: New Updates and Strategic Developments | STLLUG 2021-04-22",
+    "image": {
+        "src": "./2021-04-22_stllug_visualize-a-futuristic-high-tech-data-center-hallway-stretc.png",
+        "alt": "Visualize a futuristic, high-tech data center hallway stretching out into the horizon, bathed in cool blue and white lights that imply the vastness and advanced nature of the technology within. In the center, represent a hybrid cloud environment with two distinct halves. One half illustrates a sleek black and blue mainframe, showcasing its modern design. The other half features a series of interconnected cloud servers, symbolized by minimalist cloud icons interlaced with intricate circuit patterns. Include a carefully integrated, high-resolution logo relating to the mainframe on one side, and a prominent penguin logo associated with the cloud server side on the other. The mainframe and cloud elements are linked by gleaming, futuristic lines and circuits, signifying the seamless integration of the hybrid cloud environment. Embellish the scene with subtle binary code or abstract data flow patterns flowing through the background to highlight the computational strength and data-centric focus of the platform. Use a soft spotlight effect to draw attention to the central representations and effectively create an image of the future of hybrid cloud technology."
+    }
+}
