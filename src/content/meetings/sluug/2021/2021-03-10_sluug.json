@@ -1,0 +1,39 @@
+{
+    "meetingDate": "2021-03-10",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "The Raku (Perl 6) language 'hypers and gathers and takes oh my'",
+            "presenterNames": ["Steven Lembark"],
+            "abstract": "Raku is the new name (since 2019) for Perl 6 (out since 2015). Perl 6 took YEARS in anticipation and when it finally came out, it was very different from older versions of Perl. So much so, they gave up on the name Perl 6 and just went with a new name, RAKU.\nRaku is considered to have tried to 'take the best' of all other programming languages.",
+            "references": [
+                {
+                    "linkText": "Slides",
+                    "url": "https://www.slideshare.net/lembark/hypers-and-gathers-and-takes-oh-my"
+                }
+            ],
+            "tags": ["raku", "programming"],
+            "tweet": "📅 Mark your calendars for 2021-03-10! Steven Lembark will unravel the mysteries of Raku (formerly Perl 6) in his talk 'hypers and gathers and takes oh my'. A must-attend for all programmers! #SLUUG #TechTalk #Raku https://www.meetup.com/saint-louis-unix-users-group/events/276192063/"
+        },
+        {
+            "title": "1Password Explained",
+            "presenterNames": ["Scott Granneman"],
+            "abstract": "1Password - a password vault or password manager comparable to BitWarden or LastPass.",
+            "references": [
+                {
+                    "linkText": "1password",
+                    "url": "https://1password.com/"
+                }
+            ],
+            "tags": ["1password", "password-manager", "security"],
+            "tweet": "Join us on 2021-03-10 as Scott Granneman presents '1Password Explained'! Dive deep into this essential password manager and how it stacks up against BitWarden & LastPass. #Password #CyberSecurity @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/276192063/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/276192063/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=JptaX3v7yjI",
+    "youTubeTitle": "Exploring Raku: Hypers, Gathers, and Takes in Perl 6 | SLUUG 2021-03-10",
+    "image": {
+        "src": "./2021-03-10_sluug_craft-a-futuristic-technology-oriented-image-with-a-dark-s.png",
+        "alt": "Craft a futuristic, technology-oriented image with a dark, sleek background. Elements of digital grid or intricate circuit designs softly glowing add to the cybernetic vibe. On one side of the composition, exhibit a vibrant, star-like symbol adding contrast, while on the opposite end, manifest a keyhole within a circle symbol. The central design element should depict an abstract representation of data flow or information exchange, possibly through code lines, binary digits, or holographic interconnected nodes. Accentuate the image with soft glowing highlights in blues and greens around these crucial elements, against the dark backdrop. Incorporate floating digital shards or holographic overlays for depth and movement. Ensure the design guides the viewer's eye from the star symbol, through the data flow, to the keyhole, narrating a connection between programming and cybersecurity."
+    }
+}

@@ -28,9 +28,30 @@ export const presentationSchema = z.object({
     abstract: z.string(),
     references: z.array(linkSchema).optional(),
     tags: z.array(z.string()),
-    tweets: z.array(z.string()).optional(),
+    tweet: z.string().optional(),
 });
 export type Presentation = z.infer<typeof presentationSchema>;
+
+const meetingCollection = defineCollection({
+    type: "data",
+    schema: ({ image }) =>
+        z.object({
+            meetingDate: z
+                .string()
+                .transform((dayString) =>
+                    transformDayToDateInCentralTime(dayString),
+                ),
+            meetingType: meetingTypeSchema,
+            presentations: z.array(presentationSchema).min(1),
+            meetupUrl: z.string().optional(),
+            youtubeUrl: z.string().optional(),
+            youtubeTitle: z.string().optional(),
+            image: z.object({
+                src: image(),
+                alt: z.string(),
+            }),
+        }),
+});
 
 export const meetingSchema = z.object({
     meetingDate: z
@@ -40,7 +61,7 @@ export const meetingSchema = z.object({
     presentations: z.array(presentationSchema).min(1),
     meetupUrl: z.string().optional(),
     youtubeUrl: z.string().optional(),
-    youtubeTitles: z.array(z.string()).optional(),
+    youtubeTitle: z.string().optional(),
 });
 export type Meeting = z.infer<typeof meetingSchema> & {
     image: {
@@ -61,27 +82,6 @@ export type Meeting = z.infer<typeof meetingSchema> & {
         alt: string;
     };
 };
-
-const meetingCollection = defineCollection({
-    type: "data",
-    schema: ({ image }) =>
-        z.object({
-            meetingDate: z
-                .string()
-                .transform((dayString) =>
-                    transformDayToDateInCentralTime(dayString),
-                ),
-            meetingType: meetingTypeSchema,
-            presentations: z.array(presentationSchema).min(1),
-            meetupUrl: z.string().optional(),
-            youtubeUrl: z.string().optional(),
-            youtubeTitles: z.array(z.string()).optional(),
-            image: z.object({
-                src: image(),
-                alt: z.string(),
-            }),
-        }),
-});
 
 export const presenterSchema = z.object({
     presenterName: z
@@ -124,7 +124,6 @@ function transformDayToDateInCentralTime(date: string): Date {
  * @returns true if the date is during daylight savings time.
  */
 function isDateDuringDaylightSavingsTime(date: Date): boolean {
-    console.log("date", date);
     const jan = new Date(date.getFullYear(), 0, 1);
     const jul = new Date(date.getFullYear(), 6, 1);
     return (

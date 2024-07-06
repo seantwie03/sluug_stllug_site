@@ -1,0 +1,30 @@
+{
+    "meetingDate": "2021-03-18",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Local Kubernetes For Dummies",
+            "presenterNames": ["Andrew Denner"],
+            "abstract": "This presentation will serve as an intro to setting up and using a local instance of kubernetes, moving beyond docker and docker compose for local development work into more advanced tools like helm.",
+            "references": [
+                {
+                    "linkText": "Kubernetes",
+                    "url": "https://kubernetes.io/"
+                },
+                {
+                    "linkText": "Helm",
+                    "url": "https://helm.sh/"
+                }
+            ],
+            "tags": ["kubernetes", "helm"],
+            "tweet": "Mark your calendar for 2021-03-18! Andrew Denner presents 'Local Kubernetes For Dummies'. Learn the essentials of Kubernetes & Helm for local dev work. Free & open to all! #Meetup #TechEvent #SLUUG @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/271259458/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/271259458/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=DZ5gaMZFoYM",
+    "youTubeTitle": "Local Kubernetes For Dummies: Setting Up Your Local Cluster | STLLUG 2021-03-18",
+    "image": {
+        "src": "./2021-03-18_stllug_create-a-futuristic-and-high-tech-image-for-a-presentation-a.png",
+        "alt": "Create a futuristic and high-tech image for a presentation about 'Local Kubernetes For Dummies'. The background should represent a holographic-style grid subtly glowing in shades of blue and purple, giving a sense of depth and modern technology. In the center, slightly elevated, render an icon of a stylized ship's wheel in a glowing neon-blue hue, symbolizing Kubernetes. Attached at the bottom left to this icon using glowing path lines, design an icon of a whale with containers on it in a contrasting glowing green hue, to represent Docker. Similarly, on the right side of Kubernetes icon, linked via glowing lines, place an icon signifying Helm in glowing orange hue. Throughout the grid background, place small abstract tech icons (nodes, containers, etc.). Overlay the background with a gentle layer of binary code or circuit patterns. Ensure to use subtle gradients and light flares around the icons to make them stand out. The image should maintain professional, clean, and not overly crowded aesthetics."
+    }
+}

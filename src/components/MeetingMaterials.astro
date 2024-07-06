@@ -22,6 +22,7 @@ const { meetingType, meetingDate } = Astro.props;
             const meetingDate = new Date(this.dataset.meetingdate!);
             const meetingType = this.dataset.meetingtype! as 'SLUUG' | 'STLLUG';
             const meetingMaterials = document.getElementById('meeting-materials')!;
+            // TODO: Error due to CORS
             fetch(
                 `https://sluug.org/resources/presentations/media/${meetingDate.getFullYear()}/${meetingType === 'SLUUG' ? 'Main' : 'STLLINUX'}/${meetingDate.toISOString().slice(0, 10)}.json`,
             )

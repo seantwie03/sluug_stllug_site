@@ -1,5 +1,4 @@
 ---
-import { getRandomIndex } from '@/buildTimeUtils';
 import Abstract from '@/components/presentation/Abstract.astro';
 import MockTweet from '@/components/presentation/MockTweet.astro';
 import Presenters from '@/components/presentation/Presenters.astro';
@@ -9,7 +8,7 @@ import { Icon } from 'astro-icon/components';
 
 type Props = Presentation;
 
-const { title, presenterNames, abstract, references, tags, tweets } = Astro.props;
+const { title, presenterNames, abstract, references, tags, tweet } = Astro.props;
 ---
 
 <div class="flex flex-col lg:flex-row">
@@ -42,7 +41,13 @@ const { title, presenterNames, abstract, references, tags, tweets } = Astro.prop
         </div>
     </div>
     <div class="flex flex-col w-full lg:w-2/5 mt-4">
-        <h3>Spread the word</h3>
-        <MockTweet tweet={tweets ? tweets[getRandomIndex(tweets.length)] : ''} />
+        {
+            tweet && (
+                <>
+                    <h3>Spread the word</h3>
+                    <MockTweet tweet={tweet} />
+                </>
+            )
+        }
     </div>
 </div>
