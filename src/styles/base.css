@@ -14,7 +14,7 @@
         @apply text-xl;
     }
     a {
-        @apply text-blue-600 underline;
+        @apply text-blue-700 underline;
     }
 }
 

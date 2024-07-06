@@ -6,9 +6,6 @@ import { Image } from 'astro:assets';
 type Props = { key: number; url: string } & Meeting;
 
 const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, youtubeUrl } = Astro.props;
-// TODO: Fix this hack
-const main = presentations[0];
-const base = presentations[1];
 ---
 
 <p class="text-gray-600 text-md">
@@ -16,28 +13,24 @@ const base = presentations[1];
 </p>
 <div class="flex mb-4 rounded shadow-lg">
     <Image src={image.src} alt={image.alt} height="240" width="240" loading="lazy" decoding="async" />
-    <div class="flex flex-row justify-between w-full pl-4">
-        <div>
-            <h4 class="font-bold text-lg mb-1">{main.title}</h4>
-            <p>
-                By:
-                {main.presenterNames.join(' & ')}
-            </p>
-        </div>
+    <div class="flex flex-row justify-between w-full">
         {
-            base && (
+            presentations.map((presentation, i) => (
                 <>
-                    <div class="border-r border-gray-300 mx-1" style="height: auto;" />
-                    <div>
-                        <h4 class="font-bold text-lg">{base.title}</h4>
-                        <p>
+                    <div class="flex flex-col pl-2" style={`width: ${100 / presentations.length}%`}>
+                        <h3>{presentation.title}</h3>
+                        <h5 class="mt-2">
                             By:
-                            {base.presenterNames.join(' & ')}
-                        </p>
+                            {presentation.presenterNames.join(' & ')}
+                        </h5>
                     </div>
+                    {i < presentations.length - 1 && (
+                        <div class="border-r border-gray-300 mx-1" style="height: auto;" />
+                    )}
                 </>
-            )
+            ))
         }
+
         <div class="flex flex-col items-start justify-between m-1">
             <!-- The zoom link should only show if this meeting is happening today. The logic to determine 
             whether to show or hide the zoom link must be done client-side, not at build time. 

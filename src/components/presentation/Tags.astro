@@ -6,35 +6,16 @@ interface Props {
 const { tags } = Astro.props;
 ---
 
-<span class="tags">
+<span class="flex flex-wrap justify-start">
     {
         tags.map((tag) => (
-            <a class="tag" href={`/tags/${tag}`}>
+            <a
+                class="no-underline mr-1 my-1 px-2 py-1 border border-dotted border-[#a1a1a1] rounded-lg bg-[#f8fcfd]"
+                href={`/tags/${tag}`}
+            >
                 <Icon name="mdi:tag-multiple" class="inline" />
                 {tag}
             </a>
         ))
     }
 </span>
-
-<style>
-    a {
-        color: #00539f;
-        text-decoration: none;
-    }
-
-    .tags {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 2rem;
-        justify-content: flex-start;
-    }
-
-    .tag {
-        margin: 0.25em 0.25em 0.25em 0;
-        border: dotted 1px #a1a1a1;
-        border-radius: 0.5em;
-        padding: 0.2em;
-        background-color: #f8fcfd;
-    }
-</style>
