@@ -1,0 +1,20 @@
+{
+    "meetingDate": "2021-12-16",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Holiday Light Automation. Digital LEDs. WLED on a ESP32",
+            "presenterNames": ["Tyler Rudie"],
+            "abstract": "Digital LEDs are great for those non=static holiday lite displays. How do they work? The WLED sftwr package tells them what to do. You run WLED on an ESP32, which something similar to a Raspberry Pi or more to an Arduino.(from https://en.wikipedia.org/wiki/ESP32:)\nESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and dual-mode Bluetooth. The ESP32 series employs either a Tensilica Xtensa LX6 microprocessor in both dual-core and single-core variations, Xtensa LX7 dual-core microprocessor or a single-core RISC-V microprocessor and includes built-in antenna switches, RF balun, power amplifier, low-noise receive amplifier, filters, and power-management modules",
+            "tags": ["automation", "iot"],
+            "tweet": "Join us on 2021-12-16 to learn about holiday light automation with Tyler Rudie! Discover the magic of Digital LEDs and WLED on ESP32. Don't miss out! #LED #Automation #TechTalk @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/280493558/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/280493558/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=f05_-tB05Kw",
+    "youTubeTitle": "From Zero to Festive: Automating Holiday Lights with WLED on ESP32 | STLLUG 2021-12-16",
+    "image": {
+        "src": "./2021-12-16_stllug_create-an-image-with-a-fusion-of-futuristic-and-technology-t.png",
+        "alt": "Create an image with a fusion of futuristic and technology themes set against a backdrop of a starlit night sky interlaced with subtle digital grid lines. It depicts a subtly illuminated cityscape, representative of a neighborhood adorned with multicolor digital holiday lights. At its center, float a large ESP32 microcontroller with translucent lines creating a network around it, signifying data transmission. Light trails run from the ESP32 to LED strands, symbolizing automation. Include the ESP32 and the WLED logos at the bottom left and right corners respectively, subtly embedded amidst the light trails. Emanating from the ESP32 are small Wi-Fi and Bluetooth icons, interspersed with holographic control screens slipped in subtly. The color palette consists predominantly of futuristic hues of blues, purples, and cyans, sharply contrasted against the vibrant LED holiday lights, with gradients and light effects imparting depth and dimensionality."
+    }
+}

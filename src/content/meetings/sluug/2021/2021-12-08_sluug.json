@@ -1,0 +1,33 @@
+{
+    "meetingDate": "2021-12-08",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Fun and Games with Python, Big Data and Exchange",
+            "presenterNames": ["Tyler Rudie"],
+            "abstract": "Tyler did it again. After listening to his coworkers complain about how long it took to do their Job; one too many times. He asked what could go wrong if he used Python to hook up an MS-Exchange Mailbox to a SQL server. The answer, a lot. To the tune of 3gb.",
+            "tags": ["python"],
+            "tweet": "Get ready! Tyler Rudie will reveal his creative use of Python to connect an MS-Exchange Mailbox to a SQL server. Discover the fun & challenges on 2021-12-8. Don't miss it! #python #bigdata @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/282457269/"
+        },
+        {
+            "title": "Wildcard Certificates",
+            "presenterNames": ["Lee Lammert"],
+            "abstract": "SLUUG has a LOT of domain names pointing to portions of the SLUUG site. It would be a REAL pain to setup a LetsEncrypt certificate for each; so, three years ago when we originally built Bock, we setup a wildcard cert (i.e. *.sluug.org). Simple eh? NOT!\nA normal cert is validated by proving that the cert is physically linked to that domain name, but a wildcard cert could be ten, twenty, or a few hundred domain names - all using the SAME certificate. One certificate to renew every 60 days for all sites ending with sluug.org. Ownership can't be proven the same way as a single site certificate, so stop by Wednesday to see how SLUUG gets it done.",
+            "references": [
+                {
+                    "linkText": "Let's Encrypt",
+                    "url": "https://letsencrypt.org/"
+                }
+            ],
+            "tags": ["certificates", "security"],
+            "tweet": "Mark your calendars for 2021-12-08! Lee Lammert will be presenting on the intricacies of setting up Wildcard Certificates. Learn how SLUUG simplifies TLS for multiple sites. #SLUUG #Linux #Unix https://www.meetup.com/saint-louis-unix-users-group/events/282457269/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/282457269/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=AgSaN_blais",
+    "youTubeTitle": "Tyler's Python Adventure: SQL Server Meets MS-Exchange | SLUUG 2021-12-8",
+    "image": {
+        "src": "./2021-12-08_sluug_create-a-digital-artwork-capturing-the-essence-of-complex-te.png",
+        "alt": "Create a digital artwork capturing the essence of complex technologies and themes. Create a dark, metallic backdrop with a digital grid overlay to evoke a futuristic aesthetic. In the center, render the logos representing Python in neon blue and green, a stylized big data icon, an emblem related to email exchange, integrated with a database icon, and a wildcard certificate element comprising small domain icons fused together. Add a shield close to the domain icons indicating security measures. Use swirling lines or arrows between elements to depict data flow. Scatter smaller, glowing tech-related icons in the background. Centralize the main elements in a triangular arrangement. The overall color scheme should be dark shades with metallic blacks and grays, accented with glowing neon blues, greens, and purples."
+    }
+}
