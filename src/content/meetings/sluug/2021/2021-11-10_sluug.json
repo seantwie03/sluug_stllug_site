@@ -1,0 +1,39 @@
+{
+    "meetingDate": "2021-11-10",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Hardware News - Is ARM Finally Fast Enough?",
+            "presenterNames": ["Scott Granneman"],
+            "abstract": "Scott will wade thru some of the current hardware news. Ala: Google making its own Silicon similar to Apple’s M1. The new M1 Macs and the project to get Linux running on the M1 boxes. The company that is making a Linux commuter which is intended for easy user hardware upgrades.",
+            "references": [
+                {
+                    "linkText": "Apple M1",
+                    "url": "https://en.wikipedia.org/wiki/Apple_M1"
+                }
+            ],
+            "tags": ["hardware", "apple", "arm"],
+            "tweet": "Exciting news! Join Scott Granneman on 2021-11-10 for an in-depth look at the latest #hardware trends, including Google's custom Silicon and the new M1 Macs! Don't miss it! #SLUUG @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/281564704/"
+        },
+        {
+            "title": "Devops (or maybe Opsdev?) Which room are you interested in?",
+            "presenterNames": ["David Forrest"],
+            "abstract": "A short presentation over my experience in ONUG (Open Networking User Group) meetings.",
+            "references": [
+                {
+                    "linkText": "ONUG",
+                    "url": "https://onug.net/"
+                }
+            ],
+            "tags": ["conferences"],
+            "tweet": "Join us on 2021-11-10 to hear David Forrest share his insights from ONUG meetings. #SLUUG #DevOps #Networking https://www.meetup.com/saint-louis-unix-users-group/events/281564704/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/281564704/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dFCE46aqoJM",
+    "youTubeTitle": "Hardware News - Is ARM Finally Fast Enough? | SLUUG 2021-11-10",
+    "image": {
+        "src": "./2021-11-10_sluug_create-a-high-resolution-futuristic-and-technology-focused.png",
+        "alt": "Create a high-resolution, futuristic, and technology-focused image. The design should feature glowing neon grid lines to represent networks, sleek tech devices, and hologram-like effects to convey a cutting-edge vibe. Subtly incorporate logos that signify DevOps-related tools and technologies, open-source networking organizations, leading tech companies' silicon initiatives, new generation computer processors, and a characterized penguin representing Linux. The penguin should be holding a flag with the 'SLUUG' text on it. The overall image should seamlessly blend these elements to evoke a sense of technological advancement and an open-source community spirit."
+    }
+}
