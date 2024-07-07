@@ -1,0 +1,43 @@
+{
+    "meetingDate": "2021-07-14",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "PXE Boot Linux from the local network using pfsense and FreeNAS/TrueNAS",
+            "presenterNames": ["Wendell Barber"],
+            "abstract": "PXE allows booting without having the operating system on a local disk...or for that matter...not even having a local disk!\nThe Preboot eXecution Environment, PXE (most often pronounced as /ˈpɪksiː/ pixie) specification describes a standardized client–server environment that boots a software assembly, retrieved from a network, on PXE-enabled clients. On the client side it requires only a PXE-capable network interface controller (NIC), and uses a small set of industry-standard network protocols such as DHCP and TFTP.\nThe concept behind the PXE originated in the early days of protocols like BOOTP/DHCP/TFTP, and as of 2015 it forms part of the Unified Extensible Firmware Interface (UEFI) standard. In modern data centers, PXE is the most frequent choice [1] for operating system booting, installation and deployment.",
+            "references": [
+                {
+                    "linkText": "pfsense",
+                    "url": "https://www.pfsense.org/"
+                },
+                {
+                    "linkText": "TrueNAS",
+                    "url": "https://www.truenas.com/"
+                }
+            ],
+            "tags": ["pxe", "pfsense", "truenas"],
+            "tweet": "🚀 Exciting presentation alert! On 14th July, Wendell Barber will walk us through PXE Booting Linux using pfsense and FreeNAS/TrueNAS. Ready to boot without a local disk? Join us! #PXE #Linux #pfsense @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/279351847/"
+        },
+        {
+            "title": "Data Form in Calc",
+            "presenterNames": ["Stan Reichardt"],
+            "abstract": "'Data Form' is a new feature in LibreOffice's spreadsheet called Calc.\nIt allows for the column headings to be continuously displayed as you scroll down the sheet, so you can tell/remember what goes in these fields. It is useful for both data entry AND just reading the data.",
+            "references": [
+                {
+                    "linkText": "Libre Office Calc",
+                    "url": "https://www.libreoffice.org/discover/calc/"
+                }
+            ],
+            "tags": ["spreadsheet", "libre-office"],
+            "tweet": "📅 Join us on July 14, 2021, for a must-see presentation by Stan Reichardt on 'Data Form in Calc'! Discover how this new LibreOffice feature revolutionizes data entry and reading. Don't miss it! #SLUUG #LibreOffice #Calc #dataentry https://www.meetup.com/saint-louis-unix-users-group/events/279351847/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/279351847/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=3fl4Zh5iNrw",
+    "youTubeTitle": "PXE Boot Linux from Local Network with pfSense & FreeNAS/TrueNAS | SLUUG 2021-07-14",
+    "image": {
+        "src": "./2021-07-14_sluug_design-a-tech-themed-image-with-a-central-figure-of-a-large.png",
+        "alt": "Design a tech-themed image with a central figure of a large, glowing RJ-45 plug emitting digital streams in a cyan glow against a dark gradient background transitioning from navy to black. Situate the PXE logo near the network cable, subtly blended with digital streams. Place the pfsense logo next to a firewall icon, connected to the PXE logo through a digital pathway. Introduce the FreeNAS/TrueNAS logo as part of a server silhouette, linked to the network stream to indicate OS image storage. Incorporate the LibreOffice Calc logo on a stylized grid overlay, indicating data entry and management. Sprinkle icons of DHCP, TFTP, and UEFI to reinforce the technical aspects of PXE. Use shades of blue, cyan, silver, and white to produce a tech-focused, clean look. Embellish the image with futuristic motifs like holographic grids, matrix codes, and network nodes."
+    }
+}
