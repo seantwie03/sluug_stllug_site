@@ -1,0 +1,20 @@
+{
+    "meetingDate": "2021-09-16",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Serverless Basics",
+            "presenterNames": ["Frank Syler"],
+            "abstract": "You've probably heard the term 'serverless' thrown around- but what does it mean? You may have even heard the terms 'lambda', 'functions as a service', or 'cloud function'. What are these, and why are they just the beginning? Should you get in on this way of thinking? Is it complicated? Do you have to change a lot of things? The answer, of course, is 'yes, no, or maybe'- but we are going to talk through the main ideas and how they may or may not be relevant for your application. Spoiler: the big boys are using this stuff, and you can too.",
+            "tags": ["serverless", "cloud"],
+            "tweet": "Curious about serverless tech? Don't miss Frank Syler's 'Serverless Basics' on 2021-09-16! From 'lambda' to 'cloud function', get the lowdown on everything you need to know. Open to all! #Serverless #FOSS @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/280493542/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/280493542/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=RKBMtZZCNo0",
+    "youTubeTitle": "Serverless Basics: What You Need to Know | STLLUG 2021-09-16",
+    "image": {
+        "src": "./2021-09-16_stllug_imagine-a-futuristic-and-technology-focused-image-the-backg.png",
+        "alt": "Imagine a futuristic and technology-focused image. The background is a sleek gradient transitioning from dark blue to black, overlaid with subtle patterns of binary code and abstract technological designs, giving a futuristic vibe. At the center, a 3D, illuminated, vibrant-colored cloud symbolizes the abstract concept of serverless technology. Leisurely scattered around the cloud are logos of various serverless platforms including AWS Lambda, Microsoft Azure Functions, Google Cloud Functions, and IBM Cloud Functions. Each logo retains its original colors (orange, blue, multicolored, and blue respectively) for brand recognition. Interconnecting these logos are soft glowing trails, conjuring up an image of a network. Where these trails touch the logos, there are light flares to give a sense of dynamism and innovation. Complementing these aspects, stylized circuit patterns are subtly etched into the background and small, translucent icons relating to technology and cloud computing are scattered throughout the scene. Behind the cloud is a faint overlay of a digital world map, illustrating the global reach and scalability of serverless platforms. The image should convey the interconnected, global, and forward-thinking essence of serverless technology without the need for words."
+    }
+}

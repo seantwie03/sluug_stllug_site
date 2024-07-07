@@ -1,0 +1,34 @@
+{
+    "meetingDate": "2021-09-08",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Introduction to tmux",
+            "presenterNames": ["Steve Stegmann"],
+            "abstract": "Tmux is an app which starts and controls command line terminal sessions. It is typically used to access remoter servers. It can control as many sessions as you need, probably dozens. The main benefit is that these sessions continue after you disconnect or after the connection is broken accidentally. This allows your session to be just as you left it when you log back in. Also it is great when you have a program that you need to keep running while you are gone and check back on from time to time.\nWe will go over the installation and use on Linux. How to manipulate sessions, windows (like tabs on a browser), and panes within a tab.",
+            "references": [
+                {
+                    "linkText": "tmux 2 - Productive Mouse-Free Development",
+                    "url": "https://pragprog.com/titles/bhtmux2/tmux-2/"
+                },
+                {
+                    "linkText": "tmux beginner's guide",
+                    "url": "https://www.redhat.com/sysadmin/introduction-tmux-linux"
+                },
+                {
+                    "linkText": "tmux wiki",
+                    "url": "https://github.com/tmux/tmux/wiki"
+                }
+            ],
+            "tags": ["tmux", "command-line"],
+            "tweet": "Join us on 2021-09-08 for Steve Stegmann's exciting presentation: 'Introduction to tmux!' Learn how to manage terminal sessions seamlessly even after disconnection! #tmux #TerminalMastery @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/280524257/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/280524257/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=7n2PeBmDrk4",
+    "youTubeTitle": "Tmux Essentials: Installation, Sessions, Windows, and Panes on Linux | SLUUG 2021-09-08",
+    "image": {
+        "src": "./2021-09-08_sluug_create-an-image-of-a-futuristic-technology-themed-control-ro.png",
+        "alt": "Create an image of a futuristic technology-themed control room. It has a sleek, dark background with subtle gradients of deep blue and black, signifying a command-line interface environment. There is a semi-transparent grid pattern overlay, referencing the structured nature of sessions, windows, and panes. Stylized 3D terminal screens float at various angles, underscored by thin, glowing azure lines that denote seamless connectivity. The Tmux logo has a soft glow effect and centrally located among the screens. A subtle Linux penguin logo appears on one of the terminals. Small minimalist icons, such as command-line inputs, are scattered throughout the image. Neon accents and a holographic texture effect give a high-tech and modern vibe. If possible, add a subtle loop animation of a blinking cursor on a terminal screen for added engagement."
+    }
+}
