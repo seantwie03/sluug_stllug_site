@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2021-06-17",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Migrate From Windows to Linux Mint, ...games included!",
+            "presenterNames": ["Tyler Rudie"],
+            "abstract": "Last month, I was able to get my hands on a new Ryzen 5900X processor and decided to rebuild my workstation. I decided that this time around that I would attempt to move my workflow to Linux. This is the story of my migration.\nOf course, there was the need to get stuff from work to work...automated scripts sftwr, cmds to replace MS-Win cmds. But also wanted to get games to work!\nThat focus will be around games in the Steam, Epic Game Store & Good Old Games stores. I will also test the Blizzard Battle.net games.",
+            "references": [
+                {
+                    "linkText": "Linux Mint",
+                    "url": "https://linuxmint.com/"
+                }
+            ],
+            "tags": ["desktop", "linux-mint", "gaming"],
+            "tweet": "🖥️ Ready to take the plunge from Windows to Linux? Tyler Rudie will show you how on June 17th. Learn about replacing Windows commands, automating tasks, and running your favorite games on Linux. Don't miss out! #OpenSource #LinuxMint #Gaming @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/271259571/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/271259571/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=di_mwzCZOdI",
+    "youTubeTitle": "From Windows to Linux Mint: Gaming and Productivity Insights | STLLUG 2021-06-17",
+    "image": {
+        "src": "./2021-06-17_stllug_create-a-dark-futuristic-and-tech-focused-landscape-with-a.png",
+        "alt": "Create a dark, futuristic and tech-focused landscape with a grid inducing a cyber network vibe. Place an abstract representation of the Ryzen 5900X processor, a central symbol, slightly towards the top right. Linux's mascot, Tux the Penguin, should be waving towards the center-left. Near Tux, arrange the logos of, Linux Mint icon prominently, closely followed by gaming platforms: Steam, Epic Games Store, Good Old Games (GOG), and Blizzard Battle.net. These logos should form an arc above Tux. Apply glowing digital effects around the main elements, and sprinkle a faint rain of binary code in the backdrop. Uphold a color theme featuring deep black and midnight blue, with highlight colors being neon blue and electric green. The mood should induce a feeling of cutting-edge technology, excitement, and the prospects of broadening the gaming horizon among tech enthusiasts."
+    }
+}

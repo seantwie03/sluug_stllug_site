@@ -1,0 +1,39 @@
+{
+    "meetingDate": "2021-06-09",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Git: peering behind the curtain",
+            "presenterNames": ["Robert Citek"],
+            "abstract": "In a previous talk in February, we went over the basics of using git as a version control system, covering the working folder, the staging area, and the repository. In this talk, we'll go behind the scenes to see how git works its magic.\nWe'll cover the abstractions git uses, in particular, a key-value store, hashes, and graphs. And then dig into how git implements and uses those abstractions to create a version control system using files and the file system. We'll walk through examples of using the back-end commands to build a commit history just like git does. The hope is that by peering behind the curtain we can begin to demystify the magic of git.",
+            "references": [
+                {
+                    "linkText": "Git Book",
+                    "url": "https://git-scm.com/book/en/v2"
+                }
+            ],
+            "tags": ["git", "version-control"],
+            "tweet": "Join us on 2021-06-09 for 'Git: Peering Behind the Curtain' by Robert Citek! Dive deep into how Git works its magic behind the scenes. 🔍✨ #Git #VersionControl #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/278497413/"
+        },
+        {
+            "title": "SQLite 3 DataBase",
+            "presenterNames": ["Ed Howland", "Bob Hansen"],
+            "abstract": "A database is used to collect, store, manage, organize and analyze information. There are many database systems. This session will introduce simple database concepts. Then it will cover the free SQLite database system that is likely the single most popular and widely deployed choice.",
+            "references": [
+                {
+                    "linkText": "SQLite",
+                    "url": "https://www.sqlite.org/"
+                }
+            ],
+            "tags": ["sqlite", "database"],
+            "tweet": "Join us on 2021-06-09 for 'SQLite 3 DataBase' with Ed Howland & Bob Hansen! 🚀 Learn about the most popular database choice. Don't miss it! #sqlite #database @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/278497413/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/278497413/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=jhGqxTtj6yE",
+    "youTubeTitle": "Git: Peering Behind the Curtain | SLUUG 2021-06-09",
+    "image": {
+        "src": "./2021-06-09_sluug_visualize-a-sleek-modern-image-with-a-gradient-background-t.png",
+        "alt": "Visualize a sleek, modern image with a gradient background transitioning from deep navy blue at the top to black at the bottom, subtly resembling a digital data structure with faint vertical lines or a grid. The central focus is the prominent SQLite logo, enhanced with a slight 3D effect and soft shadows. The technological theme is emphasized through an overlay of futuristic, semi-transparent icons and symbols related to databases and technology, such as data flow charts, binary code, and circuit patterns. Gentle pulsating light effects around the SQLite logo create an atmospheric draw. The upper sphere features semi-transparent icons interspersed with subtle glows. The lower sphere has more subdued symbols against the dark gradient. Dominant colors should include shades of blue, trust, and technology blended with whites for contrast and clarity, with a hint of neon. Subtle smooth manic textures help accentuate the advanced technology theme, and soft backlighting behind the SQLite logo enhances the illusion of depth."
+    }
+}
