@@ -1,0 +1,20 @@
+{
+    "meetingDate": "2021-08-19",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Roundtable Discussion of DNS, IP Address Geolocation, & SPAM SCORING E-mails",
+            "presenterNames": ["Roundtable Discussion"],
+            "abstract": "Roundtable discussion about DNS, adding new websites & domain & sub-domain names, IP address geolocation, … Andrew, Stan, & Mike started some interesting threads in DISCUSS this week. Lee & Dave have provided some good tools & directions. We thought we’d go over these, elaborate on them, and give folks an opportunity for some follow-up discussions. We may even get into some issues of SPAM SCORING e-mails.",
+            "tags": ["dns", "networking", "email"],
+            "tweet": "Mark your calendars for August 19! Our Roundtable Discussion will hit the hot topics of DNS, IP Address Geolocation, and SPAM SCORING E-mails. Discover tools & insights with our experts and engage in dynamic dialogues! #dns #geolocation #spam #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/280106702/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/280106702/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=8jP2qdy5lK0",
+    "youTubeTitle": "STLLUG Roundtable: DNS, Geolocation, and SPAM Email Scoring Discussed | STLLUG 2021-08-19",
+    "image": {
+        "src": "./2021-08-19_stllug_create-an-aesthetically-pleasing-digital-image-with-a-strong.png",
+        "alt": "Create an aesthetically pleasing digital image with a strong tech and futuristic feel. In the top section, feature an interconnected web structure with nodes, subtly integrating server stack icons. Within this structure, discreetly incorporate the DNS logo. The design's middle section should include a digital globe with pinpoint markers located across various regions, complete with a translucent overlay showcasing longitude and latitude lines, thus emphasizing the notion of IP address geolocation. In the bottom section, portray an envelope icon on a tilted plane, surrounded by a tech dot grid or circular wave scanning overlay, a representation of SPAM scoring analysis. Use a color palette of deep blues, dark grays, and blacks for the background. Bright neon blues, greens, and whites should serve as accents, illuminating core elements to create a vivid contrast. For the logos of DNS, IP geolocation services, and email security tools, retain their original colors; however, make sure these logos harmoniously blend with the overall color scheme and the design's abstract focus."
+    }
+}

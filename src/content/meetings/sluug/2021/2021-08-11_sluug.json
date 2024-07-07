@@ -1,0 +1,43 @@
+{
+    "meetingDate": "2021-08-11",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Kubernettes, SUSE Rancher, OpenSuSE LEAP to SLE(SUSE Linux Enterprise), config SALT",
+            "presenterNames": ["Michael Carrington"],
+            "abstract": "A look at what's new in SUSE Rancher 2.6, Kubernettes.\nDetails on what OpenSuSE LEAP -> SLE (SUSE Linux Enterprise) path is & their relationship.\nAnd a showcase of 'configuration management' using 'SALT' - it's time if you're not currently utilizing it. I'll demonstrate some useful commands that every linux system administrator would love to help aide and automate their jobs. It will just be a teaser, but as I build out the lab further we'll see some enhancements.",
+            "references": [
+                {
+                    "linkText": "OpenSUSE",
+                    "url": "https://www.opensuse.org/"
+                },
+                {
+                    "linkText": "SaltStack",
+                    "url": "https://saltproject.io/"
+                }
+            ],
+            "tags": ["configuration-mangement", "kubernetes", "suse"],
+            "tweet": "🔧 Curious about the OpenSuSE LEAP to SLE transition? Michael Carrington will break it down for us, plus showcase SALT for configuration management! #OpenSuSE #SALT #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/279925014/"
+        },
+        {
+            "title": "EMACS Editor Intro",
+            "presenterNames": ["Steve Stegmann"],
+            "abstract": "Emacs is an editor with rich options. It has been around for many years and has grown enormously. Vim is usually considered the alternative editor to emacs but there are other editors as well.\nThis will be a very basic introduction to emacs. It will feature starting, exiting, and saving files. It will also give you the basics of moving around and using a few of the control keys and internal command line functions. My working version of emacs, set up for the C language, has 2,832 command line functions. It will also cover making global changes in a file, using a string or regexp as the target to be replaced. You’ll understand how emacs uses buffers to keep things organized.\nThis should give you enough familiarity for the upcoming presentation on advanced emacs we plan for next month.",
+            "references": [
+                {
+                    "linkText": "Emacs",
+                    "url": "https://www.gnu.org/software/emacs/"
+                }
+            ],
+            "tags": ["emacs", "text-editor"],
+            "tweet": "📅 Coming up on August 11th! Join Steve Stegmann for an exciting introduction to the powerful EMACS Editor. Learn the basics of starting, exiting, saving files, and more! Don't miss it! #Emacs #Editor @SLUUG_Org @Meetup https://www.meetup.com/saint-louis-unix-users-group/events/279925014/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/279925014/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=iblJyMduEbM",
+    "youTubeTitle": "A Deep Dive into Modern SUSE Tools: Kubernettes, Rancher, and SALT | SLUUG 2021-08-11",
+    "image": {
+        "src": "./2021-08-11_sluug_design-a-futuristic-and-technology-focused-blog-announcement.png",
+        "alt": "Design a futuristic and technology-focused blog announcement image. The background should be a sleek, dark-themed gradient that transitions smoothly from deep blue at the bottom to black at the top. Add a slight metallic texture overlay for a polished, sleek appearance. A glowing holographic representation of an unspecified logo should be placed in the center to create a modern, high-tech visual. Surround the logo with semi-transparent lines and geometric shapes, subtle neon light beams and geometric light accents. Integrate faint digital code snippets and binary strings into the background to emphasize coding aspects. The dominant color palette includes dark tones (black, deep blue), with contrasting light effects in electric blue and soft white."
+    }
+}
