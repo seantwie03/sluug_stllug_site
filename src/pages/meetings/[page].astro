@@ -9,7 +9,7 @@ import { getCollection } from 'astro:content';
 
 export const getStaticPaths = (async ({ paginate }) => {
     const allMeetings = sortMeetingListByMeetingDate(await getCollection('meetings'));
-    return paginate(allMeetings, { pageSize: 24 });
+    return paginate(allMeetings, { pageSize: 6 });
 }) satisfies GetStaticPaths;
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;

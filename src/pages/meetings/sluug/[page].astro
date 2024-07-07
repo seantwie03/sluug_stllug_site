@@ -13,7 +13,7 @@ export const getStaticPaths = (async ({ paginate }) => {
             return data.meetingType === 'SLUUG';
         }),
     );
-    return paginate(sluugMeetings, { pageSize: 2 });
+    return paginate(sluugMeetings, { pageSize: 12 });
 }) satisfies GetStaticPaths;
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
