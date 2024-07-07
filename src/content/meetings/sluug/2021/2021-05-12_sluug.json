@@ -1,0 +1,39 @@
+{
+    "meetingDate": "2021-05-12",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "RedHat Kickstart",
+            "presenterNames": ["Steven Gomez"],
+            "abstract": "Red Hat's Kickstart installations offer a means to automate the installation process, either partially or fully. Kickstart files contain answers to all questions normally asked by the installation program, such as what time zone you want the system to use, how the drives should be partitioned, or which packages should be installed. Providing a prepared Kickstart file when the installation begins therefore allows you to perform the installation automatically, without need for any intervention from the user.\nKickstart features can be an Admin's best friend. This session will present examples of how to use the Kickstart system with RHEL/CentOS platforms to automate the creation of 'cookie cutter' systems in an easily repeatable manner. Working examples of various methods using of Kickstarts will be included.",
+            "references": [
+                {
+                    "linkText": "Kickstart How To",
+                    "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/installation_guide/sect-kickstart-howto"
+                }
+            ],
+            "tags": ["kickstart", "redhat", "automation"],
+            "tweet": "Don't miss Steven Gomez's talk on 2021-05-12 about RedHat Kickstart! Learn to create repeatable 'cookie cutter' systems using RHEL/CentOS. Make installation a breeze! #Linux #RHEL #Automation @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/277908687/"
+        },
+        {
+            "title": "Upgrading RAID6 with Zero Downtime From six 2T to eight 4T",
+            "presenterNames": ["Lee Lammert"],
+            "abstract": "There is a lot of hype about 'zero downtime', and many vendors charge boucoup dinero for that sort of hardware RAID capability to have when upgrading a storage array.\nWith Linux SoftRAID, however, don't believe the hype - 'zero downtime' has nothing to do with hardware!",
+            "references": [
+                {
+                    "linkText": "Software RAID",
+                    "url": "https://www.thomas-krenn.com/en/wiki/Linux_Software_RAID_Information"
+                }
+            ],
+            "tags": ["raid", "storage"],
+            "tweet": "Exciting presentation ahead! On May 12, Lee Lammert will unravel the secrets of upgrading RAID6 without downtime. Don’t miss out on this Linux SoftRAID journey! #RAID #Linux #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/277908687/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/277908687/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=RKJsVSjgaGA",
+    "youTubeTitle": "RedHat Kickstart in Action: Streamlining System Setups | SLUUG 2021-05-12",
+    "image": {
+        "src": "./2021-05-12_sluug_create-a-futuristic-minimalist-image-representing-seamless.png",
+        "alt": "Create a futuristic, minimalist image representing seamless and automated installation. The prominent feature should be the Red Hat company's symbolic logo placed centrally overlaying a technologically interpreted Earth, symbolizing global scale automation. At the center, depict an assembly line with glowing effects exhibiting different steps of digital checkpoints – partitioning drives, installing packages, setting the time zone, represented by futuristic icons. At the bottom, subtly incorporate flowing lines of code into the background. Use a largely metallic color palette with main emphasis on shades of red, aligning with Red Hat's branding, alongside secondary accents of blue and metallic grey, and white glowing lines for highlights."
+    }
+}
