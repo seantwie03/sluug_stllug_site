@@ -1,0 +1,54 @@
+{
+    "meetingDate": "2024-07-10",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Diagnose A Real World Networking Problem",
+            "presenterNames": ["Lee Lammert", "Grant Taylor"],
+            "abstract": "Lee & Grant will demonstrate how to capture remote network traffic and troubleshoot a problem on a remote system.\nProblem: DNS is not working for either of the two Win10 VMs!\nConfiguration: Current OpenSuSE 15.5 fileserver [Samba]\nXen Hypervisor\nVirtual Machine Manager used to access VMs\ntcpdump on remote server for capturing data\nWireshark to analyze data on a local workstation",
+            "references": [
+                {
+                    "linkText": "Into to tcpdump",
+                    "url": "https://opensource.com/article/18/10/introduction-tcpdump"
+                },
+                {
+                    "linkText": "tcpdump man page",
+                    "url": "https://www.tcpdump.org/manpages/tcpdump.1.html"
+                },
+                {
+                    "linkText": "tshark man page",
+                    "url": "https://www.wireshark.org/docs/man-pages/tshark.html"
+                },
+                {
+                    "linkText": "Wireshark",
+                    "url": "https://www.wireshark.org/"
+                }
+            ],
+            "tags": ["networking", "authentication", "remote-access"],
+            "tweet": "🖥️ Excited for our July 10 presentation! Join Lee Lammert and Grant Taylor as they unravel a networking mystery, showing how to capture remote network traffic and troubleshoot DNS issues. Don't miss out! #networking #troubleshooting @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/300428323/"
+        },
+        {
+            "title": "How to Securely Authenticate to a Remote System Using SSH Keys",
+            "presenterNames": ["Lee Lammert", "Grant Taylor"],
+            "abstract": "Building on the last two presentations, we will show how to securely capture network traffic on a remote server wusing an authentication agent, ssh-agent!",
+            "references": [
+                {
+                    "linkText": "Basic overview of SSH Keys",
+                    "url": "https://www.ssh.com/academy/ssh-keys"
+                },
+                {
+                    "linkText": "SSH Agent Explained",
+                    "url": "https://smallstep.com/blog/ssh-agent-explained/"
+                }
+            ],
+            "tags": ["authentication", "ssh", "remote-access"],
+            "tweet": "Mark your calendars for 2024-07-10! Lee Lammert and Grant Taylor will teach you how to use SSH keys effectively for remote system security. Stay secure, stay informed! #authentication #ssh #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/300428323/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/300428323/",
+    "youtubeTitle": "Remote Network Traffic Capture & DNS Problem Solving with Lee & Grant | SLUUG 2024-07-10",
+    "image": {
+        "src": "./2024-07-10_sluug_design-an-image-of-a-clean-and-futuristic-technology-centri.png",
+        "alt": "Design an image of a clean and futuristic, technology-centric background transitioning from deep blue at the top to black at the bottom, embedding subtle circuit board patterns that hints at technological complexity. The center visual, a large glowing futuristic padlock, will symbolize the security with semi-transparent circuits and connection nodes radiating from it to represent network connections and remote access. On the left of the padlock, include a glowing stylized symbol that resonates with encryption, while on the right, a symbol that signifies a tech-assistant software. Quietly situated in the top background, place an icon to signify remote access and cloud environments. Lastly, subtly scatter futuristic key icons in the background, signifying authentication protocols, and apply soft glows and neon-like highlights around the elements, coupled with subtle drop shadows to impart them a high-tech and a 3-Dimensional look. The final layout will have a deep blue hue at the top with a circuit board pattern and a cloud icon, the center will have a large glowing padlock with radiating circuits, flanked by the stylized encryption and the tech-assistant software symbols, and the bottom will be a dark gradient fading to black with additional authentication key icons."
+    }
+}
