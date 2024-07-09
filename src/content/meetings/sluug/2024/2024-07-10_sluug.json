@@ -25,12 +25,12 @@
                 }
             ],
             "tags": ["networking", "authentication", "remote-access"],
-            "tweet": "🖥️ Excited for our July 10 presentation! Join Lee Lammert and Grant Taylor as they unravel a networking mystery, showing how to capture remote network traffic and troubleshoot DNS issues. Don't miss out! #networking #troubleshooting @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/300428323/"
+            "tweet": "🖥️ Excited for our July 10 presentation! Join Lee Lammert and Grant Taylor as they unravel a networking mystery, showing how to capture remote network traffic and troubleshoot DNS issues. Don't miss out! #networking #troubleshooting https://www.meetup.com/saint-louis-unix-users-group/events/300428323/"
         },
         {
             "title": "How to Securely Authenticate to a Remote System Using SSH Keys",
             "presenterNames": ["Lee Lammert", "Grant Taylor"],
-            "abstract": "Building on the last two presentations, we will show how to securely capture network traffic on a remote server wusing an authentication agent, ssh-agent!",
+            "abstract": "Building on the last two presentations, we will show how to securely capture network traffic on a remote server using an authentication agent, ssh-agent!",
             "references": [
                 {
                     "linkText": "Basic overview of SSH Keys",
@@ -42,7 +42,7 @@
                 }
             ],
             "tags": ["authentication", "ssh", "remote-access"],
-            "tweet": "Mark your calendars for 2024-07-10! Lee Lammert and Grant Taylor will teach you how to use SSH keys effectively for remote system security. Stay secure, stay informed! #authentication #ssh #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/300428323/"
+            "tweet": "Mark your calendars for 2024-07-10! Lee Lammert and Grant Taylor will teach you how to use SSH keys effectively for remote system security. Stay secure, stay informed! #authentication #ssh https://www.meetup.com/saint-louis-unix-users-group/events/300428323/"
         }
     ],
     "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/300428323/",
