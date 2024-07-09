@@ -2,11 +2,12 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Tags from '@/components/presentation/Tags.astro';
+import type { Presentation } from '@/content/config';
 const allMeetings = await getCollection('meetings');
 const uniqueTags = [
     ...new Set([
         ...allMeetings
-            .map((meeting) => meeting.data.presentations.map((presentation) => presentation.tags))
+            .map((meeting) => meeting.data.presentations.map((presentation: Presentation) => presentation.tags))
             .flat()
             .flat(),
     ]),

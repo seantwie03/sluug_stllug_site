@@ -2,6 +2,7 @@
 import { sortMeetingListByMeetingDate } from '@/buildTimeUtils';
 import MeetingCardHorizontal from '@/components/MeetingCardHorizontal.astro';
 import MeetingCardVertical from '@/components/MeetingCardVertical.astro';
+import type { Presentation } from '@/content/config';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
@@ -10,7 +11,7 @@ export async function getStaticPaths() {
     const uniqueTags = [
         ...new Set([
             ...allMeetings
-                .map((meeting) => meeting.data.presentations.map((presentation) => presentation.tags))
+                .map((meeting) => meeting.data.presentations.map((presentation: Presentation) => presentation.tags))
                 .flat()
                 .flat(),
         ]),
@@ -18,7 +19,7 @@ export async function getStaticPaths() {
     return uniqueTags.map((tag) => {
         const filteredPosts = sortMeetingListByMeetingDate(
             allMeetings.filter((meeting) =>
-                meeting.data.presentations.some((presentation) => presentation.tags.includes(tag)),
+                meeting.data.presentations.some((presentation: Presentation) => presentation.tags.includes(tag)),
             ),
         );
         return {
@@ -33,7 +34,9 @@ const { meetings } = Astro.props;
 ---
 
 <BaseLayout pageTitle={tag}>
-    <h2Presentations tagged with: <strong>{tag}</h2Presentations>
+    <h2>
+        Presentations tagged with: <strong>{tag}</strong>
+    </h2>
     <div class="flex flex-wrap lg:hidden">
         {
             meetings.map(

@@ -2,6 +2,7 @@
 import { sortMeetingListByMeetingDate } from '@/buildTimeUtils';
 import MeetingCardHorizontal from '@/components/MeetingCardHorizontal.astro';
 import MeetingCardVertical from '@/components/MeetingCardVertical.astro';
+import type { Presentation } from '@/content/config';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import type { InferGetStaticPropsType } from 'astro';
 import { getCollection } from 'astro:content';
@@ -25,7 +26,7 @@ const { Content } = await render();
 
 const meetings = sortMeetingListByMeetingDate(
     await getCollection('meetings', ({ data: { presentations } }) => {
-        return presentations.some((presentation) => presentation.presenterNames.includes(presenterName));
+        return presentations.some((presentation: Presentation) => presentation.presenterNames.includes(presenterName));
     }),
 );
 ---
