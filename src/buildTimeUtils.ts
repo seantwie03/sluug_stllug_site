@@ -52,3 +52,10 @@ export function getDisplayDate(date: Date): string {
         year: "numeric",
     });
 }
+
+export function generateIdForHeading(heading: string) {
+    return heading
+        .toLowerCase()
+        .replace(/\s+/g, "-")
+        .replace(/[^a-z0-9-]/g, "");
+}

@@ -34,8 +34,9 @@ const meetings = sortMeetingListByMeetingDate(
     <p class="text-gray-600 text-sm font-medium">
         Last Updated: {lastUpdated.toISOString().slice(0, 10)}
     </p>
-    <Content />
-
+    <div data-pagefind-body data-pagefind-weight="1">
+        <Content />
+    </div>
     <h2>Presentations</h2>
     <div class="flex flex-wrap lg:hidden">
         {

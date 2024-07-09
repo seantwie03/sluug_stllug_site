@@ -32,48 +32,46 @@ const { tag } = Astro.params;
 const { meetings } = Astro.props;
 ---
 
-<BaseLayout pageTitle={tag}>
-    <h2 data-pagefind-ignore>Presentations tagged with: <strong>{tag}</strong></h2>
-    <div class="flex flex-wrap lg:hidden">
-        {
-            meetings.map(
-                (
-                    { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
-                    i,
-                ) => (
-                    <MeetingCardVertical
-                        key={i}
-                        url={`/${collection}/${id}/`}
-                        meetingType={meetingType}
-                        meetingDate={meetingDate}
-                        presentations={presentations}
-                        image={image}
-                        meetupUrl={meetupUrl}
-                        youtubeUrl={youtubeUrl}
-                    />
-                ),
-            )
-        }
-    </div>
-    <div class="hidden lg:block">
-        {
-            meetings.map(
-                (
-                    { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
-                    i,
-                ) => (
-                    <MeetingCardHorizontal
-                        key={i + 1000}
-                        url={`/${collection}/${id}/`}
-                        meetingType={meetingType}
-                        meetingDate={meetingDate}
-                        presentations={presentations}
-                        image={image}
-                        meetupUrl={meetupUrl}
-                        youtubeUrl={youtubeUrl}
-                    />
-                ),
-            )
-        }
-    </div>
-</BaseLayout>
+<BaseLayout pageTitle={tag}> <h2Presentations tagged with: <strong>{tag}</h2Presentations></BaseLayout>
+<div class="flex flex-wrap lg:hidden">
+    {
+        meetings.map(
+            (
+                { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
+                i,
+            ) => (
+                <MeetingCardVertical
+                    key={i}
+                    url={`/${collection}/${id}/`}
+                    meetingType={meetingType}
+                    meetingDate={meetingDate}
+                    presentations={presentations}
+                    image={image}
+                    meetupUrl={meetupUrl}
+                    youtubeUrl={youtubeUrl}
+                />
+            ),
+        )
+    }
+</div>
+<div class="hidden lg:block">
+    {
+        meetings.map(
+            (
+                { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
+                i,
+            ) => (
+                <MeetingCardHorizontal
+                    key={i + 1000}
+                    url={`/${collection}/${id}/`}
+                    meetingType={meetingType}
+                    meetingDate={meetingDate}
+                    presentations={presentations}
+                    image={image}
+                    meetupUrl={meetupUrl}
+                    youtubeUrl={youtubeUrl}
+                />
+            ),
+        )
+    }
+</div>

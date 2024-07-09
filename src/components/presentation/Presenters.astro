@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 
 interface PresenterLink {
-    slug: string | null
+    slug: string | null;
     presenterName: string;
 }
 interface Props {
@@ -26,17 +26,27 @@ const presenterLinksFromProps = presenterNames.map((presenterName) => ({ slug: n
 // Merge two list of PresenterLinks
 const merge = (a: PresenterLink[], b: PresenterLink[], predicate = (a: string, b: string) => a === b) => {
     const c = [...a];
-    b.forEach((bItem: PresenterLink) => (c.some((cItem) => predicate(bItem.presenterName, cItem.presenterName)) ? null : c.push(bItem)))
+    b.forEach((bItem: PresenterLink) =>
+        c.some((cItem) => predicate(bItem.presenterName, cItem.presenterName)) ? null : c.push(bItem),
+    );
     return c;
-}
+};
 const presenters = merge(presenterLinksFromCollection, presenterLinksFromProps);
 ---
 
-<strong>
-    Presented By:
-    <span class="[&>*:nth-child(even)]:ml-2">
-        {
-            presenters.map((presenter) => (presenter.slug ? <a href=`/presenters/${presenter.slug}`>{presenter.presenterName}</a> : <span>{presenter.presenterName}</span>))
-        }
-    </span>
-</strong>
+<p>
+    <strong>
+        Presented By:
+        <span class="[&>*:nth-child(even)]:ml-2">
+            {
+                presenters.map((presenter) =>
+                    presenter.slug ? (
+                        <a href={`/presenters/${presenter.slug}`}>{presenter.presenterName}</a>
+                    ) : (
+                        <span>{presenter.presenterName}</span>
+                    ),
+                )
+            }
+        </span>
+    </strong>
+</p>
