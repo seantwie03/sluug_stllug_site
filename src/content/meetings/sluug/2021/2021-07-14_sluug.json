@@ -35,7 +35,7 @@
     ],
     "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/279351847/",
     "youtubeUrl": "https://www.youtube.com/watch?v=3fl4Zh5iNrw",
-    "youTubeTitle": "PXE Boot Linux from Local Network with pfSense & FreeNAS/TrueNAS | SLUUG 2021-07-14",
+    "youtubeTitle": "PXE Boot Linux from Local Network with pfSense & FreeNAS/TrueNAS | SLUUG 2021-07-14",
     "image": {
         "src": "./2021-07-14_sluug_design-a-tech-themed-image-with-a-central-figure-of-a-large.png",
         "alt": "Design a tech-themed image with a central figure of a large, glowing RJ-45 plug emitting digital streams in a cyan glow against a dark gradient background transitioning from navy to black. Situate the PXE logo near the network cable, subtly blended with digital streams. Place the pfsense logo next to a firewall icon, connected to the PXE logo through a digital pathway. Introduce the FreeNAS/TrueNAS logo as part of a server silhouette, linked to the network stream to indicate OS image storage. Incorporate the LibreOffice Calc logo on a stylized grid overlay, indicating data entry and management. Sprinkle icons of DHCP, TFTP, and UEFI to reinforce the technical aspects of PXE. Use shades of blue, cyan, silver, and white to produce a tech-focused, clean look. Embellish the image with futuristic motifs like holographic grids, matrix codes, and network nodes."

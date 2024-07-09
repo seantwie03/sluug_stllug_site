@@ -17,11 +17,7 @@
                 }
             ],
             "tags": ["git", "version-control"],
-            "tweets": [
-                "🚀 Exciting news! On 2021-02-10, Robert Citek will present 'A Gentle Introduction to git' at SLUUG's virtual meeting. Learn the basics of git and transform your version control skills! #Git #VersionControl #OpenSource https://www.meetup.com/saint-louis-unix-users-group/events/275750179/",
-                "💻 Join us on 2021-02-10 as Robert Citek dives into the essentials of #Git. Explore working folders, staging areas, and repositories in this must-attend presentation! #SLUUG #FOSS #TechTalk https://www.meetup.com/saint-louis-unix-users-group/events/275750179/",
-                "🔧 Ready to master git? Don't miss Robert Citek's 'A Gentle Introduction to git' on 2021-02-10! Perfect for beginners looking to expand their version control knowledge. #Linux #GitLearning #OpenSource https://www.meetup.com/saint-louis-unix-users-group/events/275750179/"
-            ]
+            "tweet": "🚀 Exciting news! On 2021-02-10, Robert Citek will present 'A Gentle Introduction to git' at SLUUG's virtual meeting. Learn the basics of git and transform your version control skills! #Git #VersionControl #OpenSource https://www.meetup.com/saint-louis-unix-users-group/events/275750179/"
         },
         {
             "title": "SpeedBar a tool for Fast File Access (In Emacs)",
@@ -38,26 +34,12 @@
                 }
             ],
             "tags": ["emacs", "text-editor"],
-            "tweets": [
-                "📅 Mark your calendars for 02/10/2021! Steve Stegmann will present 'SpeedBar: A Tool for Organizing/Listing Files & Directories' at our next SLUUG meeting! Free, virtual, & open to all. Don't miss out! #emacs #speedbar https://www.meetup.com/saint-louis-unix-users-group/events/275750179/",
-                "✨ Exciting news! Steve Stegmann is set to showcase 'SpeedBar' - an integral part of Emacs for organizing files & directories. Join us virtually on 02/10/2021. This is a must-attend for #Emacs users! #speedbar https://www.meetup.com/saint-louis-unix-users-group/events/275750179/",
-                "🚀 Join Steve Stegmann on 02/10/2021 for an in-depth look at 'SpeedBar' in Emacs. Navigate your directory tree effortlessly with a single mouse click! Free, virtual event. Spread the word! #emacs #speedbar https://www.meetup.com/saint-louis-unix-users-group/events/275750179/"
-            ]
+            "tweet": "✨ Exciting news! Steve Stegmann is set to showcase 'SpeedBar' - an integral part of Emacs for organizing files & directories. Join us virtually on 02/10/2021. This is a must-attend for #Emacs users! #speedbar https://www.meetup.com/saint-louis-unix-users-group/events/275750179/"
         }
     ],
     "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/275750179/",
     "youtubeUrl": "https://www.youtube.com/watch?v=F4cVj1ZabFc",
-    "youTubeTitles": [
-        "SLUUG 2021-02-10 - Getting Started with Git: Basics for Beginners",
-        "SLUUG 2021-02-10 - Mastering the Basics of Git: A Gentle Introduction",
-        "SLUUG 2021-02-10 - Git Fundamentals: From Files to Commits (Beginner's Guide)",
-        "SLUUG 2021-02-10 - Organize and List Files Effortlessly in Emacs with SpeedBar",
-        "SLUUG 2021-02-10 - Mastering SpeedBar in Emacs: A Comprehensive Guide",
-        "SLUUG 2021-02-10 - Navigating Directories with Ease: SpeedBar in Emacs Explained",
-        "SLUUG 2021-02-10 - A Gentle Introduction to Git: Master the Basics of Version Control",
-        "SLUUG 2021-02-10 - SpeedBar in Emacs: Organize and Navigate Your Files Efficiently",
-        "SLUUG 2021-02-10 - Getting Started with Git and Emacs SpeedBar Tool"
-    ],
+    "youtubeTitle": "Exploring the OpenVAS Major Upgrade: Capabilities and Features | STLLUG 2021-01-21",
     "image": {
         "src": "./2021-02-10_sluug_create-an-image-visualizing-tech-fusion-futurism-concept-for.png",
         "alt": "Create an image visualizing Tech Fusion Futurism concept for a blog. The setting is a sleek, dark digital space gradient transitioning from deep blue to black. The centerpiece is a large holographic representation of a Git commit history tree with nodes and connecting lines. Surrounding the tree are semi-transparent cards demonstrating a Git project's main parts (working folder, staging area, and repository), and small pulsating data points symbolizing git objects. On the left, there is a prominently placed Git logo and to the right, an Emacs logo blending into the aesthetic yet maintaining its significance. Nearby is a stylized folder icon representing Speedbar. All elements emit soft futuristic glows against the dark background, hexagonal grid patterns subtly included with thin, glowing energy lines racing across, connecting Git and Emacs together. This design reflects the essence of Git's structure and Emacs' file organization to resonate with the advanced open-source community in a sleek, modern and tech-focused aesthetic."

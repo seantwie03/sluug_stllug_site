@@ -17,25 +17,11 @@
                 }
             ],
             "tags": ["software", "software-architecture"],
-            "tweets": [
-                "🖥️✨ Join us on 2024-07-18 for 'Architectures Big and Small' by Craig Buchek! Explore the fascinating origins of software patterns inspired by building architectures. #Software #Architecture #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/301573177/",
-                "📅 Don't miss Craig Buchek's presentation 'Architectures Big and Small' on 2024-07-18. Dive deep into the intersection of software and building architectures. #SLUUG #TechTalk https://www.meetup.com/saint-louis-unix-users-group/events/301573177/",
-                "🔧🏢 Save the date: 2024-07-18! Craig Buchek will uncover what software development can learn from traditional building architectures in 'Architectures Big and Small'. #Software #Architecture #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/301573177/"
-            ]
+            "tweet": "🖥️✨ Join us on 2024-07-18 for 'Architectures Big and Small' by Craig Buchek! Explore the fascinating origins of software patterns inspired by building architectures. #Software #Architecture #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/301573177/"
         }
     ],
     "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/301573177/",
-    "youTubeTitles": [
-        "STLLUG 2024-07-18 - Architectures Big and Small: Software and Building Patterns",
-        "STLLUG 2024-07-18 - Discovering the Intersection of Software and Building Architectures",
-        "STLLUG 2024-07-18 - What Software Can Learn from Building Architectures: Patterns Explored",
-        "STLLUG 2024-07-18 - Architectures Big and Small: Insights into Software Patterns",
-        "STLLUG 2024-07-18 - From Building to Software: Lessons in Architecture Patterns",
-        "STLLUG 2024-07-18 - Architectures Big and Small: A Deep Dive into Software and Building Synergies",
-        "STLLUG 2024-07-18 - Exploring Software and Building Patterns: Architectures Big and Small",
-        "STLLUG 2024-07-18 - Architectures Big and Small: Insights from Software Patterns",
-        "STLLUG 2024-07-18 - What We Learn from Building Architectures in Software: Architectures Big and Small"
-    ],
+    "youtubeTitle": "STLLUG 2024-07-18 - What Software Can Learn from Building Architectures: Patterns Explored",
     "image": {
         "src": "./2024-07-18_stllug_create-an-image-where-a-city-skyline-featuring-a-blend-of-cl.png",
         "alt": "Create an image where a city skyline featuring a blend of classical architecture elements and modern skyscrapers is illuminated with bright, futuristic lighting. The background is filled with sleek, ultra-modern buildings against a deep blue to purple sky gradient. In the foreground, one side showcases an ancient architectural structure like a roman column or a gothic archway subtly blending with the skyline. On the opposite side, there is a visual representation of software architecture diagrams in the form of interconnected nodes and lines, merging seamlessly with the physical buildings. Logos for relevant technologies such as Linux, BSD, Unix-like OS, Docker, and Kubernetes subtly integrated on the structures, connected by digital lines. The image is further embellished with visual effects like light trails, glowing edges, digital patterns, reflective and transparent elements, all within a cohesive color palette of blues, purples, and silvers. This design symbolizes the fusion of traditional building architecture and modern software architecture, merging the world of physical structure with digital innovation."

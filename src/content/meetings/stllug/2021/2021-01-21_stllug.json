@@ -7,26 +7,12 @@
             "presenterNames": ["Tony Zafiropoulos"],
             "abstract": "OpenVAS (Open Vulnerability Assessment Scanner) is a full-featured vulnerability scanner. Its capabilities include unauthenticated testing, authenticated testing, various high level and low level Internet and industrial protocols, performance tuning for large-scale scans and a powerful internal programming language to implement any type of vulnerability test.",
             "tags": ["openVAS", "security"],
-            "tweets": [
-                "Join us on January 21, 2021, for Tony Zafiropoulos' talk on OpenVAS's major upgrade! Whether you are a pro or a newbie, this presentation will enhance your vulnerability assessment skills. See you there! #OpenVAS #Vulnerability #Meetup https://www.meetup.com/saint-louis-unix-users-group/events/271259443/",
-                "Get ready for an insightful presentation by Tony Zafiropoulos on January 21, 2021! Discover the new major upgrade in OpenVAS and learn about its powerful vulnerability scanning features. Don't miss it! #CyberSecurity #VulnerabilityScanner #OpenVAS https://www.meetup.com/saint-louis-unix-users-group/events/271259443/",
-                "Exciting news for our next meeting on January 21, 2021! Tony Zafiropoulos will dive into the latest upgrade of OpenVAS. Learn about its unauthenticated and authenticated testing features. Mark your calendars! #Linux #Unix #FOSS https://www.meetup.com/saint-louis-unix-users-group/events/271259443/"
-            ]
+            "tweet": "Get ready for an insightful presentation by Tony Zafiropoulos on January 21, 2021! Discover the new major upgrade in OpenVAS and learn about its powerful vulnerability scanning features. Don't miss it! #CyberSecurity #VulnerabilityScanner #OpenVAS https://www.meetup.com/saint-louis-unix-users-group/events/271259443/"
         }
     ],
     "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/271259443/",
     "youtubeUrl": "https://www.youtube.com/watch?v=7gcAaU-JgV0&t=428s",
-    "youTubeTitles": [
-        "STLLUG 2021-01-21 - OpenVAS Major Upgrade: Full-Featured Vulnerability Scanner",
-        "STLLUG 2021-01-21 - Exploring the OpenVAS Major Upgrade: Capabilities and Features",
-        "STLLUG 2021-01-21 - St. Louis Unix Users Group: OpenVAS Major Upgrade Presentation",
-        "STLLUG 2021-01-21 - OpenVAS Major Upgrade: Full-Featured Vulnerability Scanning Explained",
-        "STLLUG 2021-01-21 - Deep Dive into OpenVAS: Major Upgrade & New Capabilities",
-        "STLLUG 2021-01-21 - Exploring OpenVAS Major Upgrade: Enhancing Your Vulnerability Assessment",
-        "STLLUG 2021-01-21 - Unlocking OpenVAS: Major Upgrade Features",
-        "STLLUG 2021-01-21 - Deep Dive into OpenVAS: Major Upgrade Unveiled",
-        "STLLUG 2021-01-21 - Mastering Vulnerability Scanning with OpenVAS: The Major Upgrade"
-    ],
+    "youtubeTitle": "STLLUG 2021-01-21 - Exploring the OpenVAS Major Upgrade: Capabilities and Features",
     "image": {
         "src": "./2021-01-21_stllug_a-high-tech-cybersecurity-image-to-announce-a-major-upgrade.png",
         "alt": "A high-tech cybersecurity image to announce a major upgrade of OpenVAS. The backdrop is a complex digital network with pathways and nodes, colored in hues of blue and green. The central element in the foreground is the textless OpenVAS logo, subtly larger and glowing. It is surrounded by graphics representing vulnerability assessment tools like shields, padlocks, warning icons, and network nodes. Logos of HTTP/HTTPS to the left, FTP to the right, SSH below, and SMTP above hover around the OpenVAS logo without any text, adding to the complexity of the image. Layered on top of this are soft green digital matrix-like lines of code, creating additional depth and highlighting the theme of programming. All these elements combine to create a clean, modern flat design with slight gradients and shadows for depth, signifying OpenVAS's advanced features and capabilities."

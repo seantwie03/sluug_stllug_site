@@ -15,37 +15,20 @@
                     "url": "https://linux.die.net/man/1/whereis"
                 }
             ],
-            "tags": ["whereis", "customization", "linux"],
-            "tweets": [
-                "Join us on 2021-01-13 for an exciting presentation by Robert C. Hansen on the Customized 'whereis' project! Discover how to remember where you put your stuff with ease! #whereis #linux #customization https://www.meetup.com/saint-louis-unix-users-group/events/275585456/",
-                "Don't miss Robert C. Hansen's hands-on session on 2021-01-13! Learn how to customize the 'whereis' command to suit your needs and get access to a git repository. #whereis #FOSS #linux https://www.meetup.com/saint-louis-unix-users-group/events/275585456/",
-                "Excited about command customization? Join us on 2021-01-13 for Robert C. Hansen's talk on the Customized 'whereis' project! Let's make 'whereis' work for you! #linux #customization https://www.meetup.com/saint-louis-unix-users-group/events/275585456/"
-            ]
+            "tags": ["whereis", "command-line"],
+            "tweet": "Excited about command customization? Join us on 2021-01-13 for Robert C. Hansen's talk on the Customized 'whereis' project! Let's make 'whereis' work for you! #linux #customization https://www.meetup.com/saint-louis-unix-users-group/events/275585456/"
         },
         {
             "title": "Hand Held Music Box",
             "presenterNames": ["Lee Lammert"],
             "abstract": "Ever wanted a multi-purpose stereo system that can be managed remotely? One built from that spare Raspberry Pi? Well, .. my answers were affirmative, so I grabbed a Pi and got to work.\nThis tutorial will follow my creation of a Pi based MP3 player that could also be used for things like YouTube.",
             "tags": ["raspberry-pi", "mp3-player"],
-            "tweets": [
-                "🎵 Join us for an exciting presentation by Lee Lammert on 2021-01-13! Learn how to transform your spare Raspberry Pi into a remote-controlled multi-purpose stereo system. Don't miss it! #RaspberryPi #DIY #MP3Player https://www.meetup.com/saint-louis-unix-users-group/events/275585456/",
-                "📅 Mark your calendar for 2021-01-13! Lee Lammert will guide us through creating a versatile Pi-based MP3 player. Perfect for music lovers and tinkerers alike! #RaspberryPi #MusicLovers #Linux https://www.meetup.com/saint-louis-unix-users-group/events/275585456/",
-                "🎉 Ever dreamt of a remotely managed multi-purpose stereo system? Lee Lammert will show us how to build one using a Raspberry Pi on 2021-01-13. Be there! #TechTalk #DIY #OpenSource https://www.meetup.com/saint-louis-unix-users-group/events/275585456/"
-            ]
+            "tweet": "🎵 Join us for an exciting presentation by Lee Lammert on 2021-01-13! Learn how to transform your spare Raspberry Pi into a remote-controlled multi-purpose stereo system. Don't miss it! #RaspberryPi #DIY #MP3Player https://www.meetup.com/saint-louis-unix-users-group/events/275585456/"
         }
     ],
     "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/275585456/",
     "youtubeUrl": "https://www.youtube.com/watch?v=tlmRyxjHORI&t=845s",
-    "youTubeTitles": [
-        "SLUUG 2021-01-13 - Mastering the 'Whereis' Command: Customization and Practical Uses",
-        "SLUUG 2021-01-13 - Hands-On Custom 'Whereis' Script for Better Resource Management",
-        "SLUUG 2021-01-13 - From Script to Git: Mastering Custom 'Whereis' Commands in Linux",
-        "SLUUG 2021-01-13 - Creating a Remote-Controlled Music Box with Raspberry Pi - Step-by-Step Guide",
-        "SLUUG 2021-01-13 - Transform Your Raspberry Pi into a Multi-Purpose Music Player | SLUUG Presentation",
-        "SLUUG 2021-01-13 - Building a Hand Held Music Box Using a Raspberry Pi: A Comprehensive Tutorial",
-        "SLUUG 2021-01-13 - Customized 'Where Is It?' Script: A Hands-On Guide",
-        "SLUUG 2021-01-13 - Creating a Personalized 'Whereis' Command"
-    ],
+    "youtubeTitle": "Customized Whereis Command and Pi-Based Music Box | SLUUG 2021-01-13",
     "image": {
         "src": "./2021-01-13_sluug_create-a-futuristic-and-technology-infused-image-that-repres.png",
         "alt": "Create a futuristic and technology-infused image that represents a digital workspace or a lab environment. The background is minimalist, with a gradient from deep blue at the top to black at the bottom, signifying depth and focus. Faint binary code or matrix-style text cascades downwards, underscoring the tech-driven nature of the landscape. The foreground consists of two primary elements. The first - an abstract representation of a classic terminal window with color-coded text and unique symbols symbolizing a customized 'whereis' Project. A diagram of digital icons showcases organization. The second - a Raspberry Pi enveloped by digital music notes and waveforms to signify a Hand Held Music Box. A faint outline of a remote control signal implies remote management capabilities. Incorporate logos of Linux and Git, along with sleek, high-tech interfaces like holographic displays and digital touchpads. Hexagonal shapes softly dispersed in the background add a modern touch. Use cool tones and gradients throughout, with a mild glow effect around the main elements. Add subtle illustrations of network nodes or interconnecting lines to represent collaboration and community. Insert a digital clock or calendar to highlight the ongoing nature of the workspace."

@@ -26,7 +26,7 @@
     ],
     "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/280524257/",
     "youtubeUrl": "https://www.youtube.com/watch?v=7n2PeBmDrk4",
-    "youTubeTitle": "Tmux Essentials: Installation, Sessions, Windows, and Panes on Linux | SLUUG 2021-09-08",
+    "youtubeTitle": "Tmux Essentials: Installation, Sessions, Windows, and Panes on Linux | SLUUG 2021-09-08",
     "image": {
         "src": "./2021-09-08_sluug_create-an-image-of-a-futuristic-technology-themed-control-ro.png",
         "alt": "Create an image of a futuristic technology-themed control room. It has a sleek, dark background with subtle gradients of deep blue and black, signifying a command-line interface environment. There is a semi-transparent grid pattern overlay, referencing the structured nature of sessions, windows, and panes. Stylized 3D terminal screens float at various angles, underscored by thin, glowing azure lines that denote seamless connectivity. The Tmux logo has a soft glow effect and centrally located among the screens. A subtle Linux penguin logo appears on one of the terminals. Small minimalist icons, such as command-line inputs, are scattered throughout the image. Neon accents and a holographic texture effect give a high-tech and modern vibe. If possible, add a subtle loop animation of a blinking cursor on a terminal screen for added engagement."

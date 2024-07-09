@@ -12,7 +12,7 @@
     ],
     "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/280493558/",
     "youtubeUrl": "https://www.youtube.com/watch?v=f05_-tB05Kw",
-    "youTubeTitle": "From Zero to Festive: Automating Holiday Lights with WLED on ESP32 | STLLUG 2021-12-16",
+    "youtubeTitle": "From Zero to Festive: Automating Holiday Lights with WLED on ESP32 | STLLUG 2021-12-16",
     "image": {
         "src": "./2021-12-16_stllug_create-an-image-with-a-fusion-of-futuristic-and-technology-t.png",
         "alt": "Create an image with a fusion of futuristic and technology themes set against a backdrop of a starlit night sky interlaced with subtle digital grid lines. It depicts a subtly illuminated cityscape, representative of a neighborhood adorned with multicolor digital holiday lights. At its center, float a large ESP32 microcontroller with translucent lines creating a network around it, signifying data transmission. Light trails run from the ESP32 to LED strands, symbolizing automation. Include the ESP32 and the WLED logos at the bottom left and right corners respectively, subtly embedded amidst the light trails. Emanating from the ESP32 are small Wi-Fi and Bluetooth icons, interspersed with holographic control screens slipped in subtly. The color palette consists predominantly of futuristic hues of blues, purples, and cyans, sharply contrasted against the vibrant LED holiday lights, with gradients and light effects imparting depth and dimensionality."

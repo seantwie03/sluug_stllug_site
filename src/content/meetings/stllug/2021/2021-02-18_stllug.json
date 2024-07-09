@@ -7,25 +7,11 @@
             "presenterNames": ["Michael Carrington"],
             "abstract": "Including Rancher Labs acquisition (Kubernettes system) by SUSE Corp.and SuSE Storage update.\nRancher is a complete software stack for teams adopting containers.It addresses the operational and security challenges of managing multiple Kubernetes clusters, while providing DevOps teams with integrated tools for running containerized workloads.\n There's only one version of Rancher; it's 100% free and open-source software.\nA fundamental difference between Kubernetes and Docker is that Kubernetes is meant to run across a cluster while Docker runs on a single node.  Kubernetes is more extensive than Docker Swarm and is meant to coordinate clusters of nodes at scale in production in an efficient manner.\nKubernetes contains powerful functionality for orchestrating applications and guaranteeing service availability.  Rancher adds a complete UI and workload management layer to Kubernetes, that simplifies adoption and integrates CI/CD as well as key open source projects",
             "tags": ["suse", "kubernetes", "rancher"],
-            "tweets": [
-                "🔥 Exciting news! On 02/18, Michael Carrington will present on SUSE updates, including the Rancher Labs acquisition and SuSE Storage. Don’t miss out! 💻 #SUSE #Kubernetes https://www.meetup.com/saint-louis-unix-users-group/events/271259450/",
-                "🚀 Dive into the future of container management with Michael Carrington! Get the latest on Rancher and Kubernetes updates this 02/18. Join us online! 🎉 #OpenSource #Containers https://www.meetup.com/saint-louis-unix-users-group/events/271259450/",
-                "🌟 Discover the power of Rancher and SUSE with Michael Carrington on 02/18! Learn how they simplify Kubernetes clusters and storage updates. Free and open to all! 🗓️ #FOSS #TechTalk https://www.meetup.com/saint-louis-unix-users-group/events/271259450/"
-            ]
+            "tweet": "🌟 Discover the power of Rancher and SUSE with Michael Carrington on 02/18! Learn how they simplify Kubernetes clusters and storage updates. Free and open to all! 🗓️ #FOSS #TechTalk https://www.meetup.com/saint-louis-unix-users-group/events/271259450/"
         }
     ],
     "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/271259450/",
-    "youTubeTitles": [
-        "STLLUG 2021-02-18 - Update on SuSE: Rancher Labs & Storage Innovations",
-        "STLLUG 2021-02-18 - Rancher Labs Acquisition and SuSE Storage Update",
-        "STLLUG 2021-02-18 - SUSE Corp. Update: New Horizons with Kubernetes and Rancher",
-        "STLLUG 2021-02-18 - Update on SuSE: Rancher Labs Acquisition and Storage Enhancements",
-        "STLLUG 2021-02-18 - Exploring SuSE's Latest: Rancher Labs & Storage Innovations",
-        "STLLUG 2021-02-18 - SuSE Update: Kubernetes Integration with Rancher and Storage Developments",
-        "STLLUG 2021-02-18 - Update on SUSE: Integrating Rancher Labs & Enhancing Storage",
-        "STLLUG 2021-02-18 - SUSE & Rancher Labs: Mastering Kubernetes and Container Management",
-        "STLLUG 2021-02-18 - Harnessing Kubernetes with SUSE & Rancher: A Comprehensive Update"
-    ],
+    "youtubeTitle": "Update on SuSE: Rancher Labs Acquisition and Storage Enhancements | STLLUG 2021-02-18",
     "youtubeUrl": "https://www.youtube.com/watch?v=ZCBMwAisd4s",
     "image": {
         "src": "./2021-02-18_stllug_create-a-futuristic-and-technological-themed-image-with-a-sl.png",
