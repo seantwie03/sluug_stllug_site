@@ -53,7 +53,7 @@ const { meetingDate, meetingType } = Astro.props;
             if (stopShowingBannerOn.getTime() < new Date().getTime()) {
                 const connectionBanner = document.getElementById('connection-banner');
                 if (connectionBanner) {
-                    connectionBanner.classList.add('hidden');
+                    connectionBanner.style.display = 'none';
                 }
             }
         }
