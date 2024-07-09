@@ -1,5 +1,6 @@
 ---
 import { getDisplayDate } from '@/buildTimeUtils';
+import { SLUUG_SITE_URL, STLLUG_SITE_URL } from '@/constants';
 import type { Meeting } from '@/content/config';
 import { Icon } from 'astro-icon/components';
 import { Image } from 'astro:assets';
@@ -27,14 +28,12 @@ const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, you
         }
     </div>
     <div class="flex justify-between m-1">
-        <!-- The zoom link should only show if this meeting is happening today. The logic to determine 
-         whether to show or hide the zoom link must be done client-side, not at build time. 
-         The script directive at the bottom of the file will run on the client. It will read data-meetingdate and hide 
-         the Zoom link if needed. This is the method suggested by the Astro documentation (6/30/2024).
+        <!-- Create a custom element to pass in data from the props into the script tag that runs client-side. 
+         This is the method suggested by the Astro documentation (6/30/2024).
          https://docs.astro.build/en/guides/client-side-scripts/#pass-frontmatter-variables-to-scripts -->
         <zoom-link id=`zoom-link-${key}` data-key={key} data-meetingdate={meetingDate}>
             <a
-                href={meetingType === 'SLUUG' ? 'https://sluug.org/next.txt' : 'https://stllug.sluug.org/next.txt'}
+                href={meetingType === 'SLUUG' ? `${SLUUG_SITE_URL}/next.txt` : `${STLLUG_SITE_URL}/next.txt`}
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -74,27 +73,27 @@ const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, you
 </div>
 
 <script>
-    // Hide the zoom link if the meeting is not happening Today.
-    // By default, the zoom link is visible. This is intentional. It means the failure state is to show the
-    // zoom link. I would rather have the zoom link shown too much than not shown when it should be.
-    // Some people might have JavaScript disabled in their browser. I would rather have these people see the
-    // zoom link even if the meeting is not today or tomorrow than not see it ever.
+    /**
+     * Hide the ZoomLink if the meeting occurred more than 24h ago.
+     * By default, the connection banner is visible. This is intentional. It means the failure state is to show the
+     * connection banner. I would rather have the connection banner shown too much than not shown when it should be.
+     * Some people might have JavaScript disabled in their browser. I would rather have these people see the
+     * connection banner even if the meeting is not today than not see it ever.
+     */
     class ZoomLink extends HTMLElement {
         constructor() {
             super();
-            const meetingDate = new Date(this.dataset.meetingdate!);
-            const today = new Date();
-
-            const isMeetingDateToday = meetingDate.getDate() === today.getDate();
+            const stopShowingBannerOn = new Date(this.dataset.meetingdate!);
+            stopShowingBannerOn.setDate(stopShowingBannerOn.getDate() + 1);
 
             const key = this.dataset.key!;
-            if (!isMeetingDateToday) {
+            if (stopShowingBannerOn.getTime() < new Date().getTime()) {
                 const zoomLink = document.getElementById(`zoom-link-${key}`);
                 if (zoomLink) {
-                    zoomLink.classList.add('hidden');
+                    zoomLink.style.display = 'none';
                 }
             }
         }
     }
-    customElements.define('zoom-link', ZoomLink);
+    customElements.get('zoom-link') || customElements.define('zoom-link', ZoomLink);
 </script>

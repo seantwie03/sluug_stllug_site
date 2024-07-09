@@ -16,6 +16,8 @@ const { meetingType, meetingDate } = Astro.props;
 </meeting-materials>
 
 <script>
+    import { SLUUG_SITE_URL } from '@/constants';
+
     class MeetingMaterials extends HTMLElement {
         constructor() {
             super();
@@ -24,11 +26,11 @@ const { meetingType, meetingDate } = Astro.props;
             const meetingMaterials = document.getElementById('meeting-materials')!;
             // TODO: Error due to CORS
             fetch(
-                `https://sluug.org/resources/presentations/media/${meetingDate.getFullYear()}/${meetingType === 'SLUUG' ? 'Main' : 'STLLINUX'}/${meetingDate.toISOString().slice(0, 10)}.json`,
+                `${SLUUG_SITE_URL}/resources/presentations/media/${meetingDate.getFullYear()}/${meetingType === 'SLUUG' ? 'Main' : 'STLLINUX'}/${meetingDate.toISOString().slice(0, 10)}.json`,
             )
                 .then((response) => console.log(response.json()))
                 .catch(() => {
-                    meetingMaterials.classList.add('hidden');
+                    meetingMaterials.style.display = 'none';
                 });
         }
     }
