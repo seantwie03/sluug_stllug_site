@@ -1,5 +1,5 @@
 ---
-import { getDisplayDate } from '@/buildTimeUtils';
+import { generateIdForHeading, getDisplayDate } from '@/buildTimeUtils';
 import { SLUUG_SITE_URL, STLLUG_SITE_URL } from '@/constants';
 import type { Meeting } from '@/content/config';
 import { Icon } from 'astro-icon/components';
@@ -13,18 +13,27 @@ const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, you
     {meetingType} - {getDisplayDate(meetingDate)}
 </p>
 <div class="flex mb-4 rounded shadow-lg">
-    <Image src={image.src} alt={image.alt} height="240" width="240" loading="lazy" decoding="async" />
+    <a href={image.src.src}
+        ><Image src={image.src} alt={image.alt} height="240" width="240" loading="lazy" decoding="async" /></a
+    >
     <div class="flex flex-row justify-between w-full">
         {
             presentations.map((presentation, i) => (
                 <>
-                    <div class="flex flex-col pl-2" style={`width: ${100 / presentations.length}%`}>
+                    <a
+                        href={url}
+                        class="flex flex-col pl-2 text-current no-underline font-normal"
+                        style={`width: ${100 / presentations.length}%`}
+                    >
+                        {/* <div class="flex flex-col pl-2" style={`width: ${100 / presentations.length}%`}> */}
                         <h3>{presentation.title}</h3>
+
                         <h5 class="mt-2">
                             By:
                             {presentation.presenterNames.join(' & ')}
                         </h5>
-                    </div>
+                        {/* </div> */}
+                    </a>
                     {i < presentations.length - 1 && (
                         <div class="border-r border-gray-300 mx-1" style="height: auto;" />
                     )}
