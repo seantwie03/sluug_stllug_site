@@ -1,10 +1,10 @@
 ---
 // Header for large and extra large devices
-import { Image } from 'astro:assets';
-import { Icon } from 'astro-icon/components';
-import { SLUUG_LOGO_ALT, STLLUG_LOGO_ALT } from '@/constants.ts';
-import sluugOrgLogo from '../../images/SLUUG-Logo.png';
-import stllugLogo from '../../images/STLLUG-Logo.png';
+import { SLUUG_LOGO_ALT, STLLUG_LOGO_ALT } from "@/constants.ts";
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import sluugOrgLogo from "../../images/SLUUG-Logo.png";
+import stllugLogo from "../../images/STLLUG-Logo.png";
 ---
 
 <div class="w-full">
@@ -13,7 +13,7 @@ import stllugLogo from '../../images/STLLUG-Logo.png';
             <a href="/meetings/sluug/1">
                 <Image src={sluugOrgLogo} alt={SLUUG_LOGO_ALT} width="80" loading="lazy" decoding="async" />
             </a>
-            <h1>St. Louis Unix/Linux User Groups</h1>
+            <h1>Stl Linux Unix Users Group</h1>
             <a href="/meetings/stllug/1">
                 <Image src={stllugLogo} alt={STLLUG_LOGO_ALT} width="100" loading="lazy" decoding="async" />
             </a>
