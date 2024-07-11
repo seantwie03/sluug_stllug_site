@@ -1,35 +1,33 @@
 ---
-import { sortMeetingListByMeetingDate } from '@/buildTimeUtils';
-import MeetingCardHorizontal from '@/components/MeetingCardHorizontal.astro';
-import MeetingCardVertical from '@/components/MeetingCardVertical.astro';
-import Pagination from '@/components/Pagination.astro';
-import BaseLayout from '@/layouts/BaseLayout.astro';
-import type { GetStaticPaths, InferGetStaticPropsType } from 'astro';
-import { getCollection } from 'astro:content';
+import { sortMeetingListByMeetingDate } from "@/buildTimeUtils";
+import MeetingCardHorizontal from "@/components/MeetingCardHorizontal.astro";
+import MeetingCardVertical from "@/components/MeetingCardVertical.astro";
+import Pagination from "@/components/Pagination.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
+import { getCollection } from "astro:content";
 
 export const getStaticPaths = (async ({ paginate }) => {
-    const allMeetings = sortMeetingListByMeetingDate(await getCollection('meetings'));
+    const allMeetings = sortMeetingListByMeetingDate(await getCollection("meetings"));
     return paginate(allMeetings, { pageSize: 6 });
 }) satisfies GetStaticPaths;
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
-const pageTitle = 'St. Louis Unix/Linux Users Group';
+const pageTitle = "Stl Linux Unix Users Group";
 
 const { page } = Astro.props;
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-    <h3 class="text-center lg:hidden m-0">St. Louis</h3>
-    <h1 class="text-center lg:hidden m-0">Unix & Linux</h1>
-    <h2 class="text-center lg:hidden m-0 mb-2">Users Groups</h2>
+    <h1 class="text-center lg:hidden m-0">Stl Linux Unix Users Group</h1>
     {
         page.currentPage === 1 && (
             <p class="mb-6">
-                The St. Louis Unix and Linux Users Groups hold regular meetings with technical presentations and
-                discussions. Our topics frequently involve Unix, Unix-like Operating Systems, Linux, BSD, and other Free
-                and Open Source Software (FOSS) applications, products, projects and services. All of our meetings are
-                free and open to the public.
+                The Stl Linux Unix Users Group holds regular meetings with technical presentations and discussions. Our
+                topics frequently involve Unix, Unix-like Operating Systems, Linux, BSD, and other Free and Open Source
+                Software (FOSS) applications, products, projects and services. All of our meetings are free and open to
+                the public.
             </p>
         )
     }
@@ -38,7 +36,7 @@ const { page } = Astro.props;
             page.data.map(
                 (
                     { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
-                    i,
+                    i
                 ) => (
                     <MeetingCardVertical
                         key={i}
@@ -50,7 +48,7 @@ const { page } = Astro.props;
                         meetupUrl={meetupUrl}
                         youtubeUrl={youtubeUrl}
                     />
-                ),
+                )
             )
         }
     </div>
@@ -59,7 +57,7 @@ const { page } = Astro.props;
             page.data.map(
                 (
                     { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
-                    i,
+                    i
                 ) => (
                     <MeetingCardHorizontal
                         key={i + 1000}
@@ -71,7 +69,7 @@ const { page } = Astro.props;
                         meetupUrl={meetupUrl}
                         youtubeUrl={youtubeUrl}
                     />
-                ),
+                )
             )
         }
     </div>

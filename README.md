@@ -1,6 +1,6 @@
 # SLUUG / STLLUG Site
 
-A website for the St. Louis Unix/Linux Users Groups written in [Astro](https://astro.build/).
+A website for the Stl Linux Unix Users Group written in [Astro](https://astro.build/).
 
 Key technologies used:
 

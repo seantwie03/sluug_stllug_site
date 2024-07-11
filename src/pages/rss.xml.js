@@ -7,7 +7,7 @@ export async function GET(context) {
         await getCollection("meetings"),
     );
     return rss({
-        title: "St. Louis Unix/Linux Users Group",
+        title: "Stl Linux Unix Users Group",
         description: "RSS Feed of our monthly SLUUG and STLLUG meetings",
         site: context.site,
         items: allMeetings.map((meeting) => ({
