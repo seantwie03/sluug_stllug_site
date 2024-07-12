@@ -3,6 +3,7 @@ import { sortMeetingListByMeetingDate } from "@/buildTimeUtils";
 import MeetingCardHorizontal from "@/components/MeetingCardHorizontal.astro";
 import MeetingCardVertical from "@/components/MeetingCardVertical.astro";
 import Pagination from "@/components/Pagination.astro";
+import StllugAgenda from "@/components/StllugAgenda.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
 import { getCollection } from "astro:content";
@@ -33,18 +34,7 @@ const { page } = Astro.props;
                     This is typically the <em>third Thursday</em> of each month. The meeting begins at 6:30p.m. Central
                     Time.
                 </p>
-                <h2>Meeting Agenda</h2>
-                <p>
-                    At <strong>6:00p.m. Central Time</strong> the meeting opens. Participants are encouraged to join at
-                    this time to if they need to test their microphone, screen sharing, and video camera.
-                </p>
-                <p>
-                    At <strong>6:30p.m. Central Time</strong> we attempt a quick welcome, introductions, announcements,
-                    current events of interest, and a general CALL FOR HELP (Questions and Answers) segment.
-                </p>
-                <p>
-                    At <strong>6:45p.m. Central Time</strong> the presentation begins.
-                </p>
+                <StllugAgenda />
             </>
         )
     }

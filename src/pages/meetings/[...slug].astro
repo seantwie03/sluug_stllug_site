@@ -1,16 +1,18 @@
 ---
-import ConnectionBanner from '@/components/ConnectionBanner.astro';
-import MeetingMaterials from '@/components/MeetingMaterials.astro';
-import MeetingTitle from '@/components/MeetingTitle.astro';
-import ResponsiveYouTubeEmbed from '@/components/ResponsiveYouTubeEmbed.astro';
-import PresentationSection from '@/components/presentation/PresentationSection.astro';
-import type { Presentation } from '@/content/config';
-import BaseLayout from '@/layouts/BaseLayout.astro';
-import { Image } from 'astro:assets';
-import { getCollection } from 'astro:content';
+import ConnectionBanner from "@/components/ConnectionBanner.astro";
+import MeetingMaterials from "@/components/MeetingMaterials.astro";
+import MeetingTitle from "@/components/MeetingTitle.astro";
+import ResponsiveYouTubeEmbed from "@/components/ResponsiveYouTubeEmbed.astro";
+import SluugAgenda from "@/components/SluugAgenda.astro";
+import StllugAgenda from "@/components/StllugAgenda.astro";
+import PresentationSection from "@/components/presentation/PresentationSection.astro";
+import type { Presentation } from "@/content/config";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-    const meetingEntries = await getCollection('meetings');
+    const meetingEntries = await getCollection("meetings");
     return meetingEntries.map((entry) => ({
         params: { slug: entry.id },
         props: { entry },
@@ -42,6 +44,10 @@ const {
                 </div>
             ))
         }
+    </div>
+    <div class="my-6">
         <MeetingMaterials meetingType={meetingType} meetingDate={meetingDate} />
+        {meetingType === "SLUUG" && <SluugAgenda />}
+        {meetingType === "STLLUG" && <StllugAgenda />}
     </div>
 </BaseLayout>

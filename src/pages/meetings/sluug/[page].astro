@@ -1,24 +1,25 @@
 ---
-import { sortMeetingListByMeetingDate } from '@/buildTimeUtils';
-import MeetingCardHorizontal from '@/components/MeetingCardHorizontal.astro';
-import MeetingCardVertical from '@/components/MeetingCardVertical.astro';
-import Pagination from '@/components/Pagination.astro';
-import BaseLayout from '@/layouts/BaseLayout.astro';
-import type { GetStaticPaths, InferGetStaticPropsType } from 'astro';
-import { getCollection } from 'astro:content';
+import { sortMeetingListByMeetingDate } from "@/buildTimeUtils";
+import MeetingCardHorizontal from "@/components/MeetingCardHorizontal.astro";
+import MeetingCardVertical from "@/components/MeetingCardVertical.astro";
+import Pagination from "@/components/Pagination.astro";
+import SluugAgenda from "@/components/SluugAgenda.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
+import { getCollection } from "astro:content";
 
 export const getStaticPaths = (async ({ paginate }) => {
     const sluugMeetings = sortMeetingListByMeetingDate(
-        await getCollection('meetings', ({ data }) => {
-            return data.meetingType === 'SLUUG';
-        }),
+        await getCollection("meetings", ({ data }) => {
+            return data.meetingType === "SLUUG";
+        })
     );
     return paginate(sluugMeetings, { pageSize: 12 });
 }) satisfies GetStaticPaths;
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
-const pageTitle = 'SLUUG - St. Louis Unix Users Group';
+const pageTitle = "SLUUG - St. Louis Unix Users Group";
 
 const { page } = Astro.props;
 ---
@@ -27,79 +28,63 @@ const { page } = Astro.props;
     {
         page.currentPage === 1 && (
             <>
-                <h2>St. Louis Unix Users Group</h2>
-                <p>
-                    The <em>St. Louis Unix Users Group (SLUUG)</em> meets on the <strong>second Wednesday</strong> of
-                    each month. The meeting begins at 6:30p.m. Central Time.
-                </p>
-                <h2>Meeting Agenda</h2>
-                <p>
-                    At <strong>6:00p.m. Central Time</strong> the meeting opens. Participants are encouraged to join at
-                    this time to if they need to test their microphone, screen sharing, and video camera.
-                </p>
-                <p>
-                    At <strong>6:30p.m. Central Time</strong> we begin with our <em>BASE</em> presentation. The{' '}
-                    <em>BASE</em>
-                    presentation is intended to be an introductory level session ( often focused on personal computing
-                    ); which may include either amazing graphical packages, blinking lights, command line wonders,
-                    demonstrations of useful applications, displays of newly discovered web sites, major resolution of
-                    long standing anomalies, quantum discoveries, smoke and mirrors, superb tutorials, or shifts in both
-                    time and space.
-                </p>
-                <p>
-                    At <strong>7:00p.m. Central Time</strong> we attempt a quick welcome, introductions, announcements,
-                    current events of interest, and a general CALL FOR HELP (Questions and Answers) segment.
-                </p>
-                <p>
-                    At <strong>7:15p.m. Central Time</strong> the <em>MAIN</em> presentation begins. The <em>MAIN</em>{' '}
-                    presentation is intended to be something more advanced, detailed, important, new, profound,
-                    significant, timely or useful and is often focused on enterprise computing.
-                </p>
+                <>
+                    <h2>St. Louis Unix Users Group</h2>
+                    <p>
+                        The <em>St. Louis Unix Users Group (SLUUG)</em> meets on the <strong>second Wednesday</strong>{" "}
+                        of each month. The meeting begins at 6:30p.m. Central Time.
+                    </p>
+                    <SluugAgenda />
+                </>
+                <h2>SLUUG Meetings</h2>
+                <div class="flex flex-wrap lg:hidden">
+                    {page.data.map(
+                        (
+                            {
+                                collection,
+                                id,
+                                data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl },
+                            },
+                            i
+                        ) => (
+                            <MeetingCardVertical
+                                key={i}
+                                url={`/${collection}/${id}/`}
+                                meetingType={meetingType}
+                                meetingDate={meetingDate}
+                                presentations={presentations}
+                                image={image}
+                                meetupUrl={meetupUrl}
+                                youtubeUrl={youtubeUrl}
+                            />
+                        )
+                    )}
+                </div>
+                <div class="hidden lg:block">
+                    {page.data.map(
+                        (
+                            {
+                                collection,
+                                id,
+                                data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl },
+                            },
+                            i
+                        ) => (
+                            <MeetingCardHorizontal
+                                key={i + 1000}
+                                url={`/${collection}/${id}/`}
+                                meetingType={meetingType}
+                                meetingDate={meetingDate}
+                                presentations={presentations}
+                                image={image}
+                                meetupUrl={meetupUrl}
+                                youtubeUrl={youtubeUrl}
+                            />
+                        )
+                    )}
+                </div>
+                <Pagination url={page.url} currentPage={page.currentPage} lastPage={page.lastPage} />
             </>
         )
     }
-    <h2>SLUUG Meetings</h2>
-    <div class="flex flex-wrap lg:hidden">
-        {
-            page.data.map(
-                (
-                    { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
-                    i,
-                ) => (
-                    <MeetingCardVertical
-                        key={i}
-                        url={`/${collection}/${id}/`}
-                        meetingType={meetingType}
-                        meetingDate={meetingDate}
-                        presentations={presentations}
-                        image={image}
-                        meetupUrl={meetupUrl}
-                        youtubeUrl={youtubeUrl}
-                    />
-                ),
-            )
-        }
-    </div>
-    <div class="hidden lg:block">
-        {
-            page.data.map(
-                (
-                    { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
-                    i,
-                ) => (
-                    <MeetingCardHorizontal
-                        key={i + 1000}
-                        url={`/${collection}/${id}/`}
-                        meetingType={meetingType}
-                        meetingDate={meetingDate}
-                        presentations={presentations}
-                        image={image}
-                        meetupUrl={meetupUrl}
-                        youtubeUrl={youtubeUrl}
-                    />
-                ),
-            )
-        }
-    </div>
-    <Pagination url={page.url} currentPage={page.currentPage} lastPage={page.lastPage} />
 </BaseLayout>
