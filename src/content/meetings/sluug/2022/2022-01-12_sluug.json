@@ -1,0 +1,38 @@
+{
+    "meetingDate": "2022-01-12",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "GitHub Overview - Hints & Features",
+            "presenterNames": ["Robert Citek"],
+            "abstract": "Not all of GitHub, of course, as that would take several days without sleep or bathroom breaks. But rather, a few walk-throughs of use cases with hints, pointers, and teasers of other features. The purpose is to entice listeners to use GitHub and be comfortable doing so.\nYou don't have to be a software developer to use GitHub. For example, here's someone who is using it to share recipes: https://github.com/LarryMad/recipes\nIf someone can use GitHub to share recipes on-line with the world, what is GitHub?\nSome ancillary items included with the talk will be Chromebooks, VSCode, Jupyter notebooks, Markdown, Docker, and the FizzBuzz challenge. Oh, and the public library.",
+            "references": [
+                {
+                    "linkText": "GitHub Recipies Repository",
+                    "url": "https://github.com/LarryMad/recipes"
+                }
+            ],
+            "tags": ["git"],
+            "tweet": "Exciting presentation coming up! Robert Citek will show us GitHub's magic on 2022-01-12. Expect tips on Chromebooks, VSCode, Jupyter, and more! #SLUUG #GitHub #OpenSource https://www.meetup.com/saint-louis-unix-users-group/events/283065396/"
+        },
+        {
+            "title": "Build a Secure Theme Based Website in 10 Minutes",
+            "presenterNames": ["Lee Lammert"],
+            "abstract": "Everyone knows how insecure web sites can be, .. but many take the risk to be able to use a 'Theme' to make the process simpler.\nBUT, what if you COULD build a SECURE website, choosing from hundreds of themes, in under 10 minutes? Hosting on ANY server you wish?\nBe sure to stop by Wednesday and find out how!",
+            "references": [
+                {
+                    "linkText": "Hugo",
+                    "url": "https://gohugo.io/"
+                }
+            ],
+            "tags": ["web-development"],
+            "tweet": "Ever wondered how to get both security and style on your website? Lee Lammert will show you how on Jan 12! Don't miss 'Build a Secure Theme Based Website in 10 Minutes.' #WebSecurity #Themes @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/283065396/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/283065396/",
+    "youtubeTitle": "From Recipes to FizzBuzz: Unlocking GitHub's Potential | SLUUG 2022-01-12",
+    "image": {
+        "src": "./2022-01-12_sluug_design-an-image-for-a-blog-header-the-backdrop-depicts-a-sl.png",
+        "alt": "Design an image for a blog header. The backdrop depicts a sleek, dark, futuristic cityscape with subtle neon highlights, and the addition of holographic elements or digital lines for a state-of-the-art appeal. In the foreground, find visual representations of web security technologies including SSL/TLS padlocks, OWASP, and Let's Encrypt, as well as icons for popular theme frameworks and CMS platforms such as WordPress, Joomla, and Wix. A stylized globe or planet, with various color-glowing interconnected nodes representing global web hosting, forms the main focus. A central shield symbol draws attention, signifying safety, with theme icons either orbiting or 'plugged in' to it to suggest ease of theme integration. Light trails or circuits link the different themes and security icons to the central shield, while a subtle binary code or matrix-style effect in the background enhances the tech aspect. The color scheme is dominated by hues of blue, green, and violet for a futuristic feel, contrasted with neon highlights in colors like orange and yellow."
+    }
+}
