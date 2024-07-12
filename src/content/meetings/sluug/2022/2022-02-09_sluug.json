@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2022-02-09",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "What's New in Solaris 11.4",
+            "presenterNames": ["Bob Netherton"],
+            "abstract": "Serving customers into 2031 and beyond\nParaphrasing Mark Twain a bit, rumors of the demise of Solaris have been greatly exaggerated. For many of our customers, SPARC and Solaris continue to be critical technologies and this talk will be focused on how Oracle has supported and will continue to support those customers into the next decade. This will be a technical discussion covering:\nSolaris Support Repository Updates (SRUs) - what they are and why they matter\nNew features in ZFS, including vdev device removal (has it really been 16 years)\nSolaris Analytics for fans of Grafana (Solaris Web Dashboard) and Prometheus (Solaris Stat Store)\nPlatform support\nSecurity and Compliance Reporting tools\nSolaris in the Oracle Cloud",
+            "tags": ["solaris"],
+            "tweet": "Don't miss Bob Netherton's deep dive into Solaris 11.4 on February 9th! Learn about Solaris Support Repository Updates, Security tools, and Oracle Cloud integration. 🌐 #TechTalk #Solaris @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/283378913/"
+        },
+        {
+            "title": ".Dot Files",
+            "presenterNames": ["Ed Howland"],
+            "abstract": "What are dotfiles? If, as you say, they are invisible, then how do I view them? Why to dotfiles exist? Where did they originally come from? What are they used for? Why are they splattered all over my clean pristine home directory and other folders? Is there some strategy for managing them well? All these questions and perhaps many more will be attempted to be answered by this talk.",
+            "tags": ["dotfiles"],
+            "tweet": "✨ Want to clean up your home directory? Ed Howland will teach us all about .dot files on 2022-02-09. Discover why they're important and how to manage them! 🛠️ #Linux #Unix #Configuration @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/283378913/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/283378913/",
+    "youtubeTitle": "What's New in Solaris 11.4: A Comprehensive Overview | SLUUG 2022-02-09",
+    "image": {
+        "src": "./2022-02-09_sluug_create-an-image-laid-out-as-detailed-the-background-should.png",
+        "alt": "Create an image laid out as detailed: The background should be a tech-themed gradient of dark blues and greyscale which includes faint illustrations of circuits or server racks. On the left side, position a non-specific tech company logo near the top, with images reminiscent of hardware architecture subtly blended into the background. Overlay it with icons that symbolize server updates, file inspection, analytics and monitoring tools, and cloud services. On the right side, display a graphic of a terminal window featuring command-line text like 'ls -a', and include icons for configuration settings. Include also a faded image of an old computer terminal and a directory tree structure in the background. Separate these sides with a faint vertical line or gradient. Use a color palette that harmonizes strong corporate tones (reds, blacks) with retro terminal aesthetics (greens, whites on dark backgrounds). Remember, no textual content should be included."
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "meetingDate": "2022-02-17",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "SUSE Rancher, Harvester, Liberty, and more!",
+            "presenterNames": ["Michael Carrington"],
+            "abstract": "SuSE Liberty is a 'replacement' for CentOS Linux.\nCentOS was one of the most acclaimed distros for servers, and one that many companies adopted, a binary fork of RHEL (Red Hat Enterprise Linux), from Red Hat (now owned by IBM), maintained by the community and free. But nevertheless, in an unexpected turn (by RedHat), everything was turned upside down, leaving a large gap that is now to be filled. (The CentOS that we knew is no more.) Liberty Linux from SUSE, is another of the alternatives that join projects like AlmaLinux, Rocky Linux, etc.\nLiberty Linux is a product that is being developed by SUSE with its own Open Build Service tool, from the binary packages Official Red Hat RPMs (SRPMs). In the case of the kernel, the RHEL kernel will not be used, rather it is based on the SUSE Linux Enterprise Server (SLES) kernel, but compiled using a configuration to maintain compatibility for RHEL/CentOS.\nSUSE Rancher is a container management platform that provides full management of all your Kubernetes distributions, whether you're managing one or one ... SUSE Rancher addresses the needs of DevOps teams deploying apps.\nThe difference between Kubernetes and Rancher is:\nKubernetes is a technology for managing containers organized under a cluster of virtual or physical machines.\nRancher is a technology for managing Kubernetes clusters en masse. Harvester= Open, interoperable hyperconverged infrastructure HCI\nHyperconverged infrastructure (HCI) doesn’t need to be expensive or complex and with Harvester it’s not. Harvester presents organizations with a modern HCI solution that is feature-full and purpose built for cloud-native environments. Consolidate your virtual machine workloads and Kubernetes clusters with Harvester.\nDesigned by the SUSE Rancher engineering team, Harvester is built on Kubernetes and utilizes the latest cloud-native solutions\nHarvester has two modes of operation:\nHCI, where it can attach to another cluster as a VM hosting node or a Helm application deployed into an existing Kubernetes cluster.",
+            "references": [
+                {
+                    "linkText": "SUSE Liberty Linux",
+                    "url": "https://www.linuxadictos.com/en/suse-alternative-centos-liberty-linux.html"
+                }
+            ],
+            "tags": ["suse", "rancher", "kubernetes", "harvester"],
+            "tweet": "📅 Mark your calendars! Join us on 2022-02-17 for an insightful presentation by Michael Carrington on SUSE Rancher, Harvester, and Liberty Linux. Discover the future of server and container management! 🌐 #SLUUG #Kubernetes #Linux https://www.meetup.com/saint-louis-unix-users-group/events/280493581/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/280493581/",
+    "youtubeTitle": "Exploring SUSE Rancher, Harvester, and Liberty Linux | STLLUG 2022-02-17",
+    "image": {
+        "src": "./2022-02-17_stllug_create-a-visually-engaging-technology-collage-with-a-gradien.png",
+        "alt": "Create a visually engaging technology collage with a gradient backdrop transitioning from deep blue to a lighter green. Place the logo of SUSE Liberty prominently in the top-center part of the image, slightly larger than the others. Arrange the logos of SUSE Rancher and SUSE Harvester around SUSE Liberty in a semi-circular format, with Rancher on the left and Harvester on the right. Include the Kubernetes logo at the bottom center. Connect the logos subtly with thin, glowing lines indicating integration. Each logo has a light aura around it for a glowing effect. Sprinkle faint server stacks and container icons in the background for additional context."
+    }
+}
