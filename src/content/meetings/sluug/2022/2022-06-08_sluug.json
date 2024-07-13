@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2022-06-08",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "LDAP",
+            "presenterNames": ["Tyler Rudie"],
+            "abstract": "noSQL before it was a thing, Lightweight Directory Access Protocol was used to maintain collections of data. Mainly used for authentication and address books. This database is both flexible and frustrating. We will go over connecting to the service, available tools to manage the data, managing the services and considerations required when building a server and dealing with schemas along with an example server for participants to use.\nLDAP (Lite-weight Directory Access Protocol) is a software protocol for enabling anyone to locate data about organizations, individuals and other resources such as files and devices in a network -- whether on the public Internet or on a corporate Intranet.\nLDAP is a protocol, and Active Directory is a server. LDAP authenticates Active Directory – it's a set of guidelines to send and receive information (like usernames and passwords) to Active Directory.\nKerberos is used to manage credentials securely (authentication) while LDAP is used for holding authoritative information about the accounts, such as what they're allowed to access (authorization), the user's full name and uid.",
+            "tags": ["authentication"],
+            "tweet": "🚀 Join us on 2022-06-08 for an exciting presentation by Tyler Rudie on LDAP! Learn how LDAP was the noSQL before it was a thing, and dive into its applications for authentication and address books. Don't miss it! #LDAP #Authentication #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/286426473/"
+        },
+        {
+            "title": "rsnapshot",
+            "presenterNames": ["Lee Lammert"],
+            "abstract": "There are thousands of way to backup files, but only a few that efficiently manage revisions over time.\n rsnapshot is standard tool in almost any distro repos that uses rsync and ssh to backup files to a remote system, and also allows configuration of any number of backed up versions, such as:\n- hourly\n - daily\n- weekly\n- monthly\n- yearly\nEach of these [file] shapshots uses hard linking to efficiently save an\nexact copy of the original system image at the time point it is created.\nBe sure to tune in and see exactly how it works, how to setup, andexamples of systems in use.",
+            "tags": ["backup", "storage"],
+            "tweet": "Join us on 2022-06-08 for an insightful presentation by Lee Lammert on rsnapshot! Discover how this powerful tool uses rsync and ssh to create efficient, configurable backups. Don't miss it! #backup #rsnapshot #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/286426473/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/286426473/",
+    "youtubeTitle": "LDAP Basics: From Authentication to Address Books | SLUUG 2022-06-08",
+    "image": {
+        "src": "./2022-06-08_sluug_design-an-engaging-image-that-conveys-the-essence-of-time-ef.png",
+        "alt": "Design an engaging image that conveys the essence of time-efficient, organized backups. The background is a calming gradient transitioning from a light to dark shade of blue. In the center, there's a large, white open folder. Surrounding it are smaller folders or files, each labeled with timestamps like 'hourly', 'daily', 'weekly', etc. and color-coded. To the bottom right, there's a small, recognizable logo signifying data transfer, and to the bottom left, an emblem representing secure digital communication. Floating above all this are subtle icons of clocks and calendars, reinforcing the time aspect of the backups. This image will not include any text."
+    }
+}

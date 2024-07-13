@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2022-06-16",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Ansible Versus Manual Configuration",
+            "presenterNames": ["Sean Twiehaus"],
+            "abstract": "In this month's presentation, Sean Twiehaus will demonstrate two ways to set up and run an Apache web server on VMs (Virtual Machines).\nSean will first type the commands and edit all required configuration files by hand. By writing a playbook doing those exact same steps using Ansible, he will re-create an exact same server configuration on another VM.\nUsing Ansible will duplicate the functions done by Manual Configuration. Comparing using them should show the Pros and Cons of using each.\nAfter the demonstrations, we will have a discussion about when each method is most appropriate and compare Pros and Cons of each.",
+            "tags": ["automation"],
+            "tweet": "Join us on June 16 as Sean Twiehaus demonstrates the pros and cons of Ansible versus Manual Configuration! See live how Ansible playbooks can simplify your server setups. Exciting stuff ahead! #SLUUG #Apache #Automation https://www.meetup.com/saint-louis-unix-users-group/events/286192680/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/286192680/",
+    "youtubeTitle": "Ansible vs Manual Configuration: Setting Up Apache Web Server | STLLUG 2022-06-16",
+    "image": {
+        "src": "./2022-06-16_stllug_create-a-split-background-image-the-left-half-should-have-a.png",
+        "alt": "Create a split background image. The left half should have a light grey background, and the right half a darker, modern shade of blue. On the left half, illustrating a retro-style Caucasian sysadmin with a laptop amidst command line interfaces, snippets of code, and a server or VM icon. On the right half, illustrating a sleek, modern Black automation engineer with a laptop that displays the Ansible logo. Also, incorporate playbook and gear icons. In the center, include the Apache logo (feather) symbolizing the commonality between both methods. Add subtle VM icons, perhaps as small server racks or cloud icons, slightly above the split to symbolize their dual usage. The entire composition should balance both sides visually with a clear dividing line enhanced by a slight shadow or glow effect."
+    }
+}
