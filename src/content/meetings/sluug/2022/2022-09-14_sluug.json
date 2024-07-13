@@ -1,0 +1,40 @@
+{
+    "meetingDate": "2022-09-14",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Archiving Web Pages",
+            "presenterNames": ["Scott Granneman"],
+            "abstract": "How do you back up a website. Is the backup a complete archive? Are there things that are referenced or pulled into what is seen on-screen, and will that 'visual presentation'...that 'format' be saved along with the content? And since the SysAdmin or Operating System guy is usually the guy doing back-ups at the system level, they will expect you to know the back-up strategy at the web=page level.",
+            "tags": ["web"],
+            "tweet": "Join us on 9/14 for an insightful presentation by Scott Granneman on 'Archiving Web Pages'! Learn the secrets of comprehensive web backups. See you there! #SLUUG #WebArchiving https://www.meetup.com/saint-louis-unix-users-group/events/288460206/"
+        },
+        {
+            "title": "Securing WordPress",
+            "presenterNames": ["Scott Granneman"],
+            "abstract": "WordPress is perhaps the most used software to build websites for personal & small business. BUT...what should we do to make it secure? Free and easy to build blogs or web sites. Open source content management system (CMS) written in PHP and paired with a MySQL or MariaDB database with supported HTTPS. But, its highly targeted by bad actors.",
+            "tags": ["web", "security", "programming"],
+            "tweet": "🛡️ Calling all website builders! Scott Granneman will reveal how to secure WordPress sites on 2022-09-14. Don't miss this vital session! #WordPress #Security #OpenSource #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/288460206/"
+        },
+        {
+            "title": "Setting up a Linode",
+            "presenterNames": ["Scott Granneman"],
+            "abstract": "A Linux server in the Linode cloud.",
+            "tags": ["cloud", "automation"],
+            "tweet": "Mark your calendars! On September 14th, Scott Granneman presents 'Setting up a Linode'. Discover the ins and outs of running a Linux server in the Linode cloud. See you there! 🌐 #Linode #Linux @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/288460206/"
+        },
+        {
+            "title": "Visual Studio Code",
+            "presenterNames": ["Scott Granneman"],
+            "abstract": "Aka VS-Code. Free code editor redefined and optimized for building and debugging modern web and cloud applications. For MS-Windows, Linux & macOS.",
+            "tags": ["text-editor"],
+            "tweet": "Join us on Sept 14 with Scott Granneman presenting 'Visual Studio Code.' Learn about the free code editor redefined for modern web & cloud apps! Perfect for MS-Windows, Linux & macOS. #VSCode #Web #Linux #FOSS @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/288460206/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/288460206/",
+    "youtubeTitle": "Lightning Talks: Web Archive, Wordpress, Linode, VSCode | SLUUG 2022-09-14",
+    "image": {
+        "src": "./2022-09-14_sluug_envision-an-image-with-the-harmony-of-soft-blue-and-white-hu.png",
+        "alt": "Envision an image with the harmony of soft blue and white hues forming a tranquil cloudscape in the background, symbolizing the serenity of the cloud environment. In the center, depict a stylized image of a server, or perhaps a rack of servers, to signify cloud-based solutions. Towards the top-right corner, place a hint of a green abstract logo, similar but not identical to any existing brand to stay copyright compliant, subtly hinting at a particular cloud service provider. Near the bottom-middle, draw an endearing black and white bird with an orange beak, evoking the spirit of an open-source community but not exactly mimicking the Linux mascot. Sprinkle the image with subtle elements of network connection lines, indicating connectivity, and subtly incorporate visuals of a shield and a bar graph to signify robust security and performance. The color palette should relay a bright and inviting tone."
+    }
+}

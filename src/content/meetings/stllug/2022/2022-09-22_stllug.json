@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2022-09-22",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Using Dump and Restore",
+            "presenterNames": ["Jonathan Drews"],
+            "abstract": "Dump is a software for doing backups of the files on your Linux or OpenBSD computer.\nRestore is the software that restores those backups. Restore can restore the entire backup or a portion of it in interactive mode.",
+            "tags": ["backup", "storage"],
+            "tweet": "Join us on 2022-09-22 as Jonathan Drews demystifies 'Using Dump and Restore' at SLUUG. Discover powerful backup and restore techniques for your systems. Perfect for enthusiasts and pros! #backup #restore https://www.meetup.com/saint-louis-unix-users-group/events/273753105/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/273753105/",
+    "youtubeTitle": "Using Dump and Restore: Efficient Backup and Restoration | STLLUG 2022-09-22",
+    "image": {
+        "src": "./2022-09-22_stllug_design-a-clean-modern-visually-appealing-image-with-simpli.png",
+        "alt": "Design a clean, modern, visually appealing image with simplicity. It should have a smooth gradient background transitioning from light blue to soft green. At its center, include a large, simplistic 3D cloud icon. Beside the cloud on the left, display a simplified computer server icon, and on the right, place a simplistic hard drive icon. Incorporate sets of arrows indicating the data flow: one from the server to the cloud and another from the cloud to the hard drive. Add small, sleek monochrome logos of Tux Penguin for Linux and Puffy Pufferfish for OpenBSD at the bottom but semi-transparent to minimize their impact. Furthermore, integrate subtle icons of files, folders, and databases floating to depict the concept of data in cloud storage."
+    }
+}
