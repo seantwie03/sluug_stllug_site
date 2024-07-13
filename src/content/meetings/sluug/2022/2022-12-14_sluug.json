@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2022-12-14",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": " Introduction to Linux",
+            "presenterNames": ["Stan Reichardt"],
+            "abstract": "Experienced Linux users may be called upon, need to or want to explain Linux or introduce Linux to others.\nThis material was derived from presentation slides originally produced by Microcenter in 2009 and may not have been given at any of our previous meetings. It is something that may help beginners or you may want to use it to help others. It is an introduction to Linux that specifically targets those with very limited knowledge of computer technology.\nWe want it to be a good and informative overview of Linux for the curious. We hope to improve the explanations, while giving accurate and positive information.\nParticipation by those new to Linux and also those that have been using Linux for some time, may be very helpful in improving it. We expect and want comments, recommendations, and suggestions for improvement. This may take a bit of time. Therefore, from the beginning of this session, the slides will be made available; so that, participants can fully know and understand what will be covered and what may need to be changed.\nAlthough most of our regular attendees have considerable Linux experience, it is always good to look back at what 'grounded' us in the beginning. As this helps to explain to others, including bosses, 'WHY'. Please help us make it better.",
+            "tags": ["beginner"],
+            "tweet": "Curious about Linux? Stan Reichardt presents an 'Introduction to Linux' on 2022-12-14. A must-attend for newbies and seasoned users alike! Let's improve and learn together. #SLUUG #OpenSource https://www.meetup.com/saint-louis-unix-users-group/events/290316967/"
+        },
+        {
+            "title": "A Gentle Introduction to Regular Expressions for Playing Wordle",
+            "presenterNames": ["Robert Citek"],
+            "abstract": "If you have ever played Wordle, you eventually begin to ask yourself questions like, What is the 'best' start word? What should my second and subsequent guesses be? And, what is the airspeed velocity of an unladen swallow?\nWhile there are numerous websites, blogs, YouTube videos, etc. that purport to help you answer these questions, they may not. Know that, in this talk Robert will introduce an old Unix tool, grep. The tool grep is used to search for patterns in files. Initially written by Ken Thompson of Unix fame more than 50 years ago, grep (and its ilk) uses regular expressions to match text patterns.\nRobert will demonstrate and then explain how grep can be used to select and exclude words from a list of five-letter words. By iteratively applying grep and adjusting the regular expression patterns based on the information from previous guesses, an initial 10,000+ word list can be whittled down to just a handful of words ( and possibly just one word.)",
+            "tags": ["regular-expression", "command-line"],
+            "tweet": "Get ready! On Dec 14, Robert Citek will present 'A Gentle Introduction to Regular Expressions for Playing Wordle.' Discover how to wield the power of grep for your Wordle strategies! Don't miss it! #Regex #Wordle #grep @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/290316967/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/290316967/",
+    "youtubeTitle": "Demystifying Linux: An Overview for Newcomers | SLUUG 2022-12-14",
+    "image": {
+        "src": "./2022-12-14_sluug_create-a-modern-and-inviting-digital-art-inspired-by-visual.png",
+        "alt": "Create an abstract digital art piece showcasing the Tux penguin, recognized as the mascot of the Linux kernel. The penguin is accompanied by appealing and glowing representations of well-known Linux distributions like Ubuntu, Fedora, and Debian. The backdrop is designed with a stylized binary code matrix, imbuing the scene with the essence of modern technology."
+    }
+}

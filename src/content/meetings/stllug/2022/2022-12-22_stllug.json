@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2022-12-22",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "ChatGPT & AI",
+            "presenterNames": ["Scott Granneman"],
+            "abstract": "The following description was mostly written by ChatGPT:\nScott's list of the most important and revolutionary computing achievements would contain the following: transistor, ARPANET, Intel CPU, Personal Computer, Internet, World Wide Web, smartphone, and now ChatGPT.\nMidjourney, DALL-E, Stable Diffusion, and ChatGPT are AI ( Artificial Intelligence ) tools that enable natural language processing, image generation, machine learning, and conversational AI.\nIn a 2-hour talk, Scott will provide an overview of those AI tools, and discuss how they are used. He will also explore the challenges and limitations of these tools, and the ethical considerations of using AI in general. Throughout the talk, he will provide many examples of how these tools are applied in various fields and industries, and discuss their potential impact on society. He will conclude with a discussion of the future of AI and its implications for different industries and fields.",
+            "tags": ["ai"],
+            "tweet": "Mark your calendars for Dec 22! Scott Granneman will delve into AI tools, from ChatGPT to Stable Diffusion, and their societal impacts. Engage in discussions about the future and ethics of AI. Open to all! #AI #FutureTech @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/289976137/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/289976137/",
+    "youtubeTitle": "Navigating AI: ChatGPT, Ethics, and Industry Applications | STLLUG 2022-12-22",
+    "image": {
+        "src": "./2022-12-22_stllug_at-the-center-of-the-image-visualise-an-abstract-digital-br.png",
+        "alt": "At the center of the image, visualise an abstract digital brain with glowing neural network lines radiating outward in vibrant colors like blues and neon greens, symbolising ChatGPT and artificial intelligence. Orbiting this brain, arrange smaller icons evenly, depicting a modern smartphone with a glowing screen, a circuit-studded microchip, a minimalistic palette with artistic swirls conveying DALL-E image generation, a cloud-like diffusion graphic signifying Stable Diffusion, and a globe with interconnected lines representing the Internet. Set all of this against a dark blue background, subtly speckled with white and light gray digital patterns or circuit designs. Distribute small logos of related technologies such as OpenAI and Intel, blending seamlessly into the digital mesh. Strive for an engaging, sleek and modern look synonymous with technological advancement, effectively encompassing the subject of the blog post presentation."
+    }
+}
