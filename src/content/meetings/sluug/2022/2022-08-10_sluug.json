@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2022-08-10",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Locking Down Your Web Browser & Search Engine Part 2",
+            "presenterNames": ["Scott Granneman"],
+            "abstract": "(This is somewhat of a 'Part 2' BUT WILL stand on its own!\nScott will add a few final comments about Brave but also some other browsers. He'll then go into detail about securing the Search Engine you access from your browsers. )\nWeb browsers are the most important software on most computers, but if you are not careful, you can inadvertently reveal way too much information about yourself to websites, companies, and even the Web browser makers themselves. In this talk Scott is going to give advice and instructions for locking down browsers, as well as showing you some of the very cool new browsers on the scene. Of particular note, The Onion Browser which utilizes the TOR network so that the IP addresses/destinations/routings of your searches & webpage hits are hidden!\nAnd beyond that, Scott will spend a lot of time covering some brand-new, 'not-Google', 'don't-track-you' search engines as well.",
+            "tags": ["security", "privacy", "web"],
+            "tweet": "🌟 Don't miss Scott Granneman on Aug 10! 'Locking Down Your Web Browser & Search Engine Part 2' will cover Brave, Onion Browser, and tracker-free search engines. Protect your info! 📅💻 #Security #FOSS #Browsers @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/287336464/"
+        },
+        {
+            "title": "Getting Started With Jupyter In CoLab",
+            "presenterNames": ["Robert Citek"],
+            "abstract": "The name Jupyter is somewhat of a portmanteau of Julia, Python, and R, the three initial core languages. And one way to get started using Jupyter and experience 'interactive computing' is by enabling and using Google's Colaboratory ( aka CoLab ), a free service available via Google Drive. CoLab is not a full Jupyter environment, but there's enough there that you can create Markdown documents, develop Python code, explore data, and even run shell commands.\nIn this talk I will show how to get started with CoLab and demonstrate some of its capabilities using excerpts from Scott Granneman's 'Linux Phrasebook.'",
+            "tags": ["jupyter", "programming", "cloud"],
+            "tweet": "🚀 Get ready! Robert Citek will show us how to get started with Jupyter in Google's CoLab on 08/10. 📅 A session you don't want to miss! #Jupyter #CoLab #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/287336464/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/287336464/",
+    "youtubeTitle": "Locking Down Your Web Browser & Search Engine: Tips & Tools | SLUUG 2022-08-10",
+    "image": {
+        "src": "./2022-08-10_sluug_create-a-tech-futuristic-collage-embodying-the-concept-of-in.png",
+        "alt": "Create a tech-futuristic collage embodying the concept of interactive computing. Start with a background showcasing a smooth gradient transitioning from light blue at the top to white at the bottom, lending the image a clean, tech-inspired look. In the center, place a prominent symbol resembling the Jupyter logo: an orbiting semi-circle in orange. Near it, but slightly off to the side, place a shiny, yellow, abstract design evoking the essence of the Google Colab logo. Scatter around smaller symbols, each representing one of the programming languages: Python (represent this with two intertwined snakes in blue and yellow), R (a simple, stylized 'R'), and Julia (three multicolored dots). Sprinkle subtle graphics throughout the visual that communicate coding and interactivity: small, classically styled terminal windows, stylized snippets of unknown code, and graphically represented data plots. Integrate these elements judiciously, aiming to keep the overall image uncluttered. Finally, place a small icon similar to Google Drive in a corner, indicating the interconnection with cloud storage. The design should be without any text and maintain a smart and high-tech appearance."
+    }
+}

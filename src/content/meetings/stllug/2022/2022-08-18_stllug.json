@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2022-08-18",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "OwnCloud",
+            "presenterNames": ["Lee Lammert"],
+            "abstract": "ownCloud is a great way to save your files in a central location of your choice. Files can be shared in realtime amongst any number of devices, and, with a little magic sauce, even to Android and IOS devices.\nSee how to build an ownCloud server, install a client, configured data to be shared, and syncyronize across multiple platforms.",
+            "tags": ["cloud", "storage"],
+            "tweet": "🎉 On 2022-08-18, join us at SLUUG for an exciting presentation by Lee Lammert on OwnCloud! Learn how to save, share, and synchronize your files across multiple devices. Don't miss it! #owncloud #storage #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/287502885/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/287502885/",
+    "youtubeTitle": "OwnCloud Demystified: Real-Time File Sharing Across Devices | STLLUG 2022-08-18",
+    "image": {
+        "src": "./2022-08-18_stllug_create-a-visually-striking-image-based-on-modern-cloud-compu.png",
+        "alt": "Create a visually striking image based on modern cloud computing. The background will feature a smooth gradient transitioning from a deep blue at the top to a lighter blue at the bottom. At the center, depict a sleek and minimalist design of a cloud, representing versatility. Around the central cloud, incorporate modern and visually consistent icons of four devices: a desktop computer, a laptop, a tablet, a smartphone - all subtly connected to the central cloud with thin, white lines. Incorporate smaller platform symbols representing Android, iOS, Windows, macOS, and Linux near the device icons. Add faint technological patterns or representations of binary code in the background. Use shades of blue, white, and light gray to keep the image cohesive and modern. All icons must be in a flat design and arranged symmetrically for balance, drawing the viewer's eyes towards the central cloud."
+    }
+}
