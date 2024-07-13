@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2022-04-13",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "pfSense Firewall/Router",
+            "presenterNames": ["Wendell Barber"],
+            "abstract": "What is pfSense you might ask? PfSense is a free/open src firewall & router distro (based on FreeBSD) that also features unified threat management, load balancing, multi WAN, and more.\nWhat is used for?\npfSense is mostly used as a router and firewall software, and typically configured as DHCP server, DNS server, WiFi access point, VPN server, all running on the same hardware device.",
+            "tags": ["networking", "bsd"],
+            "tweet": "🌟 Save the date! Wendell Barber will present on pfSense Firewall/Router on 2022-04-13. Learn how it's used as a DHCP server, WiFi access point, VPN server, and more. See you there! #cybersecurity #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/285140624/"
+        },
+        {
+            "title": "NomadBSD",
+            "presenterNames": ["Ken Johnson"],
+            "abstract": "NomadBSD is a curated FreeBSD system with an OpenBox desktop. NomadBSD can be used as a persistent live system from a USB drive, or can be installed as the default boot O/S on a system or virtual environment. This talk will describe features and characteristics, discuss some reasons you might use it, and touch on installation and setup.",
+            "tags": ["bsd"],
+            "tweet": "📅 Mark your calendars for 04/13/2022! Join us as Ken Johnson presents on #NomadBSD, a curated FreeBSD system with an OpenBox desktop. Perfect for use as a persistent live system or default boot O/S. Don't miss it! #openbox @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/285140624/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/285140624/",
+    "youtubeTitle": "PfSense Firewall/Router: Enhancing Network Security and Management | SLUUG 2022-04-13",
+    "image": {
+        "src": "./2022-04-13_sluug_create-an-image-highlighting-the-theme-of-network-security-a.png",
+        "alt": "Create an image highlighting the theme of network security and functionality. The scene is set against a dark, textured background representing a sense of cybersecurity. At the center, a stylized representation of a router is situated, with rays emanating from it symbolizing network connectivity. Icons related to pfSense, FreeBSD, DNS, DHCP, WiFi, VPN, and Firewall are logically arranged around the router. The image also contains undulating lines signifying network traffic management and subtle, Matrix-like code running in the background. The color scheme combines deep blues and greens for a sense of security, with bright whites and yellows serving as accents. Ensure all elements are symmetrically balanced and the PfSense logo is the most visually prominent."
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2022-04-21",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Linux Memory 'Manglement'",
+            "presenterNames": ["Steven Lembark"],
+            "abstract": "Steven Lembark will tell us how memory in Linux is “mangled”..... er, ah “managed” by looking at various system calls and data structures.\nWe are going to get into the deep weeds. Lets look at the data structures in a running process!\nThere are process performance & memory data structures that have been defined in the original AT&T UNIX, Posix, & now Linux. While commands like “top” will show you info on many of the process running on your computer, its possible to look within the process itself to get details that can be used “real time”.\nHe’ll use Raku language which is the follow-on language to Perl but it is similar to C. We’ll be able to follow even if you don’t know Perl or Raku. (Perl was originally intended to be THE LONG AWAITED PERL 6 but was so different they gave it the new name Raku.)",
+            "tags": ["raku", "programming"],
+            "tweet": "Exciting session alert! Steven Lembark will explore Linux memory management and process performance, using the Raku language. Perfect for all skill levels! See you on April 21. #Linux #FOSS #RakuLanguage https://www.meetup.com/saint-louis-unix-users-group/events/280536321/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/280536321/",
+    "youtubeTitle": "Linux Memory 'Manglement' with Steven Lembark | STLLUG 2022-04-21",
+    "image": {
+        "src": "./2022-04-21_stllug_create-an-image-with-a-dark-gradient-background-transitionin.png",
+        "alt": "Create an image with a dark gradient background transitioning from deep navy blue at the top to black at the bottom. The central focus is a large, transparent schematic of a motherboard with RAM modules. On the left side of the motherboard, include the Tux penguin logo which is the mascot for Linux. On the other side, place the logo of the Raku language, a programming language that succeeded Perl. Around the motherboard, incorporate small, clear icons and symbols representative of system calls and data structures, such as pointers, memory addresses, and fragments of binary code. Overlay a subtle, semi-transparent process tree diagram in the background. Accentuate the main elements with a faint, glowing outline, and use jagged lines or swirling paths to emphasis the image's overall complexity. The overall appearance should be clean, professional, and compelling, without unnecessary clutter."
+    }
+}
