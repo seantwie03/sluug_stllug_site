@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2022-05-11",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Building and maintaining a container",
+            "presenterNames": ["Andrew Denner"],
+            "abstract": "In this month's presentation Andrew Denner from Central Iowa Linux Users group will cover how to design, use, and update OCI Containers (aka docker containers) for custom local usage. He will start from the beginning answering questions like 'what is a container', 'why should your processes should be cattle instead of pets' (even with one machine), how can you use containers to simplify updates, and separate concerns. Also we will explore alternative tools to docker like podman and buildah.",
+            "tags": ["containers"],
+            "tweet": "🔧 Join us on 2022-05-11 for Andrew Denner's talk on transforming your processes with containers. Understand the 'cattle vs pets' approach and streamline your updates! #DevOps #Unix @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/285426714/"
+        },
+        {
+            "title": "TOR - The Onion Router",
+            "presenterNames": ["Lee Lammert"],
+            "abstract": "TOR, short for The Onion Router, is free and open-source software for enabling anonymous communication. It directs Internet traffic through a free, worldwide, volunteer overlay network, consisting of more than six thousand relays, to conceal a user's location and usage from anyone performing network surveillance or traffic analysis. Using TOR makes it more difficult to trace a user's Internet activity. TOR's intended use is to protect the personal privacy of its users, as well as their freedom and ability to communicate confidentially through IP address anonymity using TOR exit nodes.",
+            "tags": ["web", "privacy"],
+            "tweet": "Get ready for an enlightening session on 2022-05-11! Lee Lammert will present 'TOR - The Onion Router' to explore how you can achieve online anonymity and safeguard your privacy. Don't miss it! #TOR #Anonymity #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/285426714/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/285426714/",
+    "youtubeTitle": "Building and Maintaining a Container | Andrew Denner | SLUUG | SLUUG 2022-05-11",
+    "image": {
+        "src": "./2022-05-11_sluug_create-an-image-with-a-dark-background-transitioning-from-de.png",
+        "alt": "Create an image with a dark background transitioning from deep navy blue to black, adding the sense of secrecy and protection. Add dimly lit digital data trails moving across the scene, suggesting network data traffic. Place a glowing, semi-transparent onion in the center, with several layers peeled back to symbolize encryption and anonymity, using TOR as a theme. Add various small server icons around the onion, indicating relay nodes in an overlay network, and scatter subtle variations of the simple purple onion logo, some slightly tilted or faded for dynamism. Insert a subtle global map placed in the background, showing relay positions as points of light, connecting these positions to the central onion with digital lines. Make the aesthetic clean, high-tech, with subtle glows and shadows, ensuring the image components work harmoniously without overpowering the central onion symbol, thereby creating a narrative of a networked, anonymous system."
+    }
+}

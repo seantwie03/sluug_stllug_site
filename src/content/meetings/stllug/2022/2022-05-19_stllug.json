@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2022-05-19",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Getting Stuff Done With Ansible'",
+            "presenterNames": ["James Conroy"],
+            "abstract": "This talk will cover:\n- what Ansible is\n- why you should be using Ansible\n- setting Ansible up to mange servers\n- managing webpages, webservers, and docker images with ansible",
+            "tags": ["automation"],
+            "tweet": "Join us on 2022-05-19 for 'Getting Stuff Done With Ansible,' presented by James Conroy! Learn all about what Ansible is and why you should be using it! #ansible #automation #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/280536335/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/280536335/",
+    "youtubeTitle": "Introduction to Ansible: Automate Your Server Configuration | STLLUG 2022-05-19",
+    "image": {
+        "src": "./2022-05-19_stllug_create-an-image-with-a-gradient-background-transitioning-fro.png",
+        "alt": "Create an image with a gradient background transitioning from dark blue at the top to light blue at the bottom. Place a prominent logo in the center of the image. The logo should be white and resemble a loop that intersects itself in two places. Surround this logo with smaller, simplified icons: a stack of servers on the top left, a browser window with a gear on the top right, a network flow icon on the bottom left, and a whale on the bottom right. Connect these icons to the central logo with thin, light blue dashed lines. Add subtle shadow effects to the icons and the central logo to create a sense of depth. The color scheme should be consistent, with the icons outlined in white or light blue and accentuated with dark blue."
+    }
+}

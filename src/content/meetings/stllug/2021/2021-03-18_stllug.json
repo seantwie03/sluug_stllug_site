@@ -16,7 +16,7 @@
                     "url": "https://helm.sh/"
                 }
             ],
-            "tags": ["kubernetes", "helm"],
+            "tags": ["kubernetes", "application-packaging"],
             "tweet": "Mark your calendar for 2021-03-18! Andrew Denner presents 'Local Kubernetes For Dummies'. Learn the essentials of Kubernetes & Helm for local dev work. Free & open to all! #Meetup #TechEvent #SLUUG @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/271259458/"
         }
     ],
