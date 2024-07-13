@@ -12,7 +12,7 @@
                     "url": "https://git-scm.com/book/en/v2"
                 }
             ],
-            "tags": ["git", "version-control"],
+            "tags": ["version-control"],
             "tweet": "Join us on 2021-06-09 for 'Git: Peering Behind the Curtain' by Robert Citek! Dive deep into how Git works its magic behind the scenes. 🔍✨ #Git #VersionControl #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/278497413/"
         },
         {
@@ -25,7 +25,7 @@
                     "url": "https://www.sqlite.org/"
                 }
             ],
-            "tags": ["sqlite", "database"],
+            "tags": ["databases"],
             "tweet": "Join us on 2021-06-09 for 'SQLite 3 DataBase' with Ed Howland & Bob Hansen! 🚀 Learn about the most popular database choice. Don't miss it! #sqlite #database @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/278497413/"
         }
     ],

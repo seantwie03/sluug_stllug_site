@@ -16,7 +16,7 @@
                     "url": "https://www.truenas.com/"
                 }
             ],
-            "tags": ["pxe", "pfsense", "truenas"],
+            "tags": ["pxe", "storage", "networking"],
             "tweet": "🚀 Exciting presentation alert! On 14th July, Wendell Barber will walk us through PXE Booting Linux using pfsense and FreeNAS/TrueNAS. Ready to boot without a local disk? Join us! #PXE #Linux #pfsense @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/279351847/"
         },
         {
@@ -29,7 +29,7 @@
                     "url": "https://www.libreoffice.org/discover/calc/"
                 }
             ],
-            "tags": ["spreadsheet", "libre-office"],
+            "tags": ["office-suite"],
             "tweet": "📅 Join us on July 14, 2021, for a must-see presentation by Stan Reichardt on 'Data Form in Calc'! Discover how this new LibreOffice feature revolutionizes data entry and reading. Don't miss it! #SLUUG #LibreOffice #Calc #dataentry https://www.meetup.com/saint-louis-unix-users-group/events/279351847/"
         }
     ],

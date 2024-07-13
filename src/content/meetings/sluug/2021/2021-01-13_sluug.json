@@ -15,14 +15,14 @@
                     "url": "https://linux.die.net/man/1/whereis"
                 }
             ],
-            "tags": ["whereis", "command-line"],
+            "tags": ["command-line"],
             "tweet": "Excited about command customization? Join us on 2021-01-13 for Robert C. Hansen's talk on the Customized 'whereis' project! Let's make 'whereis' work for you! #linux #customization https://www.meetup.com/saint-louis-unix-users-group/events/275585456/"
         },
         {
             "title": "Hand Held Music Box",
             "presenterNames": ["Lee Lammert"],
             "abstract": "Ever wanted a multi-purpose stereo system that can be managed remotely? One built from that spare Raspberry Pi? Well, .. my answers were affirmative, so I grabbed a Pi and got to work.\nThis tutorial will follow my creation of a Pi based MP3 player that could also be used for things like YouTube.",
-            "tags": ["raspberry-pi", "mp3-player"],
+            "tags": ["raspberry-pi", "media"],
             "tweet": "🎵 Join us for an exciting presentation by Lee Lammert on 2021-01-13! Learn how to transform your spare Raspberry Pi into a remote-controlled multi-purpose stereo system. Don't miss it! #RaspberryPi #DIY #MP3Player https://www.meetup.com/saint-louis-unix-users-group/events/275585456/"
         }
     ],

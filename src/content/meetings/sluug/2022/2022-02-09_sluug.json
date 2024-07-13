@@ -13,7 +13,7 @@
             "title": ".Dot Files",
             "presenterNames": ["Ed Howland"],
             "abstract": "What are dotfiles? If, as you say, they are invisible, then how do I view them? Why to dotfiles exist? Where did they originally come from? What are they used for? Why are they splattered all over my clean pristine home directory and other folders? Is there some strategy for managing them well? All these questions and perhaps many more will be attempted to be answered by this talk.",
-            "tags": ["dotfiles"],
+            "tags": ["command-line"],
             "tweet": "✨ Want to clean up your home directory? Ed Howland will teach us all about .dot files on 2022-02-09. Discover why they're important and how to manage them! 🛠️ #Linux #Unix #Configuration @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/283378913/"
         }
     ],

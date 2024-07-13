@@ -6,7 +6,7 @@
             "title": "Fun and Games with Python, Big Data and Exchange",
             "presenterNames": ["Tyler Rudie"],
             "abstract": "Tyler did it again. After listening to his coworkers complain about how long it took to do their Job; one too many times. He asked what could go wrong if he used Python to hook up an MS-Exchange Mailbox to a SQL server. The answer, a lot. To the tune of 3gb.",
-            "tags": ["python"],
+            "tags": ["python", "programming"],
             "tweet": "Get ready! Tyler Rudie will reveal his creative use of Python to connect an MS-Exchange Mailbox to a SQL server. Discover the fun & challenges on 2021-12-8. Don't miss it! #python #bigdata @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/282457269/"
         },
         {

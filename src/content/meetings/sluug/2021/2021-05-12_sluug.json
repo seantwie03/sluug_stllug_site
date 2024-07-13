@@ -12,7 +12,7 @@
                     "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/installation_guide/sect-kickstart-howto"
                 }
             ],
-            "tags": ["kickstart", "redhat", "automation"],
+            "tags": ["redhat", "automation"],
             "tweet": "Don't miss Steven Gomez's talk on 2021-05-12 about RedHat Kickstart! Learn to create repeatable 'cookie cutter' systems using RHEL/CentOS. Make installation a breeze! #Linux #RHEL #Automation @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/277908687/"
         },
         {
@@ -25,7 +25,7 @@
                     "url": "https://www.thomas-krenn.com/en/wiki/Linux_Software_RAID_Information"
                 }
             ],
-            "tags": ["raid", "storage"],
+            "tags": ["storage"],
             "tweet": "Exciting presentation ahead! On May 12, Lee Lammert will unravel the secrets of upgrading RAID6 without downtime. Don’t miss out on this Linux SoftRAID journey! #RAID #Linux #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/277908687/"
         }
     ],

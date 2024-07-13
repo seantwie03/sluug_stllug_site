@@ -25,7 +25,7 @@
                     "url": "https://1password.com/"
                 }
             ],
-            "tags": ["1password", "password-manager", "security"],
+            "tags": ["password-manager", "security"],
             "tweet": "Join us on 2021-03-10 as Scott Granneman presents '1Password Explained'! Dive deep into this essential password manager and how it stacks up against BitWarden & LastPass. #Password #CyberSecurity @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/276192063/"
         }
     ],

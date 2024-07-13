@@ -12,7 +12,7 @@
                     "url": "https://syncthing.net/"
                 }
             ],
-            "tags": ["syncthing", "plex"],
+            "tags": ["storage", "media"],
             "tweet": "Curious about improving your media management? Tyler Rudie will share his insights on replacing Plex with Syncthing on 2021-05-20. Make sure to tune in! #TechTalk #OpenSource #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/276369887/"
         }
     ],

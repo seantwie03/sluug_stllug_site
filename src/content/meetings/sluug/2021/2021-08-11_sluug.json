@@ -16,7 +16,7 @@
                     "url": "https://saltproject.io/"
                 }
             ],
-            "tags": ["configuration-mangement", "kubernetes", "suse"],
+            "tags": ["automation", "kubernetes", "suse"],
             "tweet": "🔧 Curious about the OpenSuSE LEAP to SLE transition? Michael Carrington will break it down for us, plus showcase SALT for configuration management! #OpenSuSE #SALT #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/279925014/"
         },
         {

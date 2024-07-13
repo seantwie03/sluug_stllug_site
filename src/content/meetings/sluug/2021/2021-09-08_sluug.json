@@ -20,7 +20,7 @@
                     "url": "https://github.com/tmux/tmux/wiki"
                 }
             ],
-            "tags": ["tmux", "command-line"],
+            "tags": ["command-line"],
             "tweet": "Join us on 2021-09-08 for Steve Stegmann's exciting presentation: 'Introduction to tmux!' Learn how to manage terminal sessions seamlessly even after disconnection! #tmux #TerminalMastery @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/280524257/"
         }
     ],

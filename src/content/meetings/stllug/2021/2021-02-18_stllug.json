@@ -6,7 +6,7 @@
             "title": "Update on SuSE",
             "presenterNames": ["Michael Carrington"],
             "abstract": "Including Rancher Labs acquisition (Kubernettes system) by SUSE Corp.and SuSE Storage update.\nRancher is a complete software stack for teams adopting containers.It addresses the operational and security challenges of managing multiple Kubernetes clusters, while providing DevOps teams with integrated tools for running containerized workloads.\n There's only one version of Rancher; it's 100% free and open-source software.\nA fundamental difference between Kubernetes and Docker is that Kubernetes is meant to run across a cluster while Docker runs on a single node.  Kubernetes is more extensive than Docker Swarm and is meant to coordinate clusters of nodes at scale in production in an efficient manner.\nKubernetes contains powerful functionality for orchestrating applications and guaranteeing service availability.  Rancher adds a complete UI and workload management layer to Kubernetes, that simplifies adoption and integrates CI/CD as well as key open source projects",
-            "tags": ["suse", "kubernetes", "rancher"],
+            "tags": ["suse", "kubernetes"],
             "tweet": "🌟 Discover the power of Rancher and SUSE with Michael Carrington on 02/18! Learn how they simplify Kubernetes clusters and storage updates. Free and open to all! 🗓️ #FOSS #TechTalk https://www.meetup.com/saint-louis-unix-users-group/events/271259450/"
         }
     ],

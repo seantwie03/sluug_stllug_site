@@ -12,7 +12,7 @@
                     "url": "https://github.com/LarryMad/recipes"
                 }
             ],
-            "tags": ["git"],
+            "tags": ["version-control"],
             "tweet": "Exciting presentation coming up! Robert Citek will show us GitHub's magic on 2022-01-12. Expect tips on Chromebooks, VSCode, Jupyter, and more! #SLUUG #GitHub #OpenSource https://www.meetup.com/saint-louis-unix-users-group/events/283065396/"
         },
         {
@@ -25,7 +25,7 @@
                     "url": "https://gohugo.io/"
                 }
             ],
-            "tags": ["web-development"],
+            "tags": ["web", "programming"],
             "tweet": "Ever wondered how to get both security and style on your website? Lee Lammert will show you how on Jan 12! Don't miss 'Build a Secure Theme Based Website in 10 Minutes.' #WebSecurity #Themes @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/283065396/"
         }
     ],

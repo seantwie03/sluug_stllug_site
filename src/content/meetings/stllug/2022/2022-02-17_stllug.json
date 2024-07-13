@@ -12,7 +12,7 @@
                     "url": "https://www.linuxadictos.com/en/suse-alternative-centos-liberty-linux.html"
                 }
             ],
-            "tags": ["suse", "rancher", "kubernetes", "harvester"],
+            "tags": ["suse", "kubernetes", "automation"],
             "tweet": "📅 Mark your calendars! Join us on 2022-02-17 for an insightful presentation by Michael Carrington on SUSE Rancher, Harvester, and Liberty Linux. Discover the future of server and container management! 🌐 #SLUUG #Kubernetes #Linux https://www.meetup.com/saint-louis-unix-users-group/events/280493581/"
         }
     ],

@@ -6,7 +6,7 @@
             "title": "RIP CentOS… Now what?",
             "presenterNames": ["David Gilpin"],
             "abstract": "On 12/31/2021 IBM/Red Hat end-of-lifed CentOS 8. CentOS has historically been a downstream rebuild of Red Hat Enterprise Linux. CentOS Stream 8 is designated an upstream (development) branch of Red Hat Enterprise Linux - a continual Beta release.\nOracle Linux has been a tracking release of RHEL since 2006. This presentation will review the Oracle Linux operating environment and how it is a great CentOS alternative. We will also cover Oracle’s involvement and commitment to Open Source software.",
-            "tags": ["red-hat", "centos", "oracle-linux", "virtualization"],
+            "tags": ["redhat", "centos", "oracle-linux", "virtualization"],
             "tweet": "Mark your calendars for January 20th! David Gilpin will guide us through the CentOS end-of-life transition and show us why Oracle Linux is a strong alternative. #FOSS #RHEL #LinuxCommunity https://www.meetup.com/saint-louis-unix-users-group/events/280493567/"
         }
     ],
