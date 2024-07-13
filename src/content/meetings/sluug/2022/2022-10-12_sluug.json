@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2022-10-12",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Steam Deck",
+            "presenterNames": ["Tyler Rudie"],
+            "abstract": "On Feb 25th; Valve released the latest foray into the gaming hrdwr market with the Steam Deck. Utilizing a AMD Zen 2 APU, 16gb of memory, & using Arch Linux to power the Steam sftwr. We will dive into how this device works, the goal for Valve, & how this helps us in the broader Linux ecosystem. Also demo games that I own working on the device.\nFrom Wikipedia:\nThe Steam Deck is a hand held gaming computer developed by Valve Corporation. Steam Deck can be played as a handheld (or connected to a monitor in the same manner as the Nintendo Switch).\nIt runs SteamOS which is a fork of ArchLinux. The Proton compatibility layer allows it to run sftwr written for MS-Win on this Linux machine. Therefore games written for MS-Win can be run as well as native Linux games from the Steam library.\nIt is an x86-64-v3 device with integrated gaming inputs. The system is an open platform, allowing users to install other compatible games on the device or other operating systems.",
+            "tags": ["hardware", "gaming"],
+            "tweet": "Don't miss Tyler Rudie's deep dive into Valve's Steam Deck on Oct 12! Uncover how this Arch Linux-powered gaming device works and what it means for the Linux community. Live game demos included! 📅🔥 #Linux #SteamDeck #TechTalk https://www.meetup.com/saint-louis-unix-users-group/events/288659207/"
+        },
+        {
+            "title": "Man Pages",
+            "presenterNames": ["Stan Reichardt"],
+            "abstract": "Man pages refers to the man command, which is the system's manual pager. Each page argument given to man is normally the name of a program, utility or function. The manual page associated with each of these arguments is then found and displayed. A section, if provided, will direct man to look only in that section of the manual. The default action is to search in all of the available sections following a pre-defined order (see DEFAULTS), and to show only the first page found, even if page exists in several sections.",
+            "tags": ["command-line"],
+            "tweet": "Discover the magic of man pages with Stan Reichardt on 2022-10-12! Learn how to navigate the manual pager effectively. Perfect for all Linux/Unix enthusiasts! #Documentation #Linux #Unix https://www.meetup.com/saint-louis-unix-users-group/events/288659207/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/288659207/",
+    "youtubeTitle": "Steam Deck Deep Dive: A Linux-Powered Gaming Marvel | SLUUG 2022-10-12",
+    "image": {
+        "src": "./2022-10-12_sluug_generate-a-sleek-and-modern-image-that-captures-both-the-tec.png",
+        "alt": "Generate a sleek and modern image that captures both the technical and gaming aspects of a handheld gaming computer. The central focus of the image is a high-resolution depiction of the handheld gaming device, surrounded by a subtle blend of gaming-related elements such as faint circuit patterns and game controller icons. Surrounding this central image, please integrate subtle tech logos and emblems that represent the device's developer, operating system, processor, and gaming ecosystem. These can include a gear for the developer, a penguin to represent the broader Linux ecosystem, and a representation of popular gaming software. Accompany these logos with faint silhouettes of generic game characters or symbols in the backdrop. The color theme should be primarily dark tones, supplemented with vibrant accents from the emblems and symbols. Finally, add some soft glowing effects around the gaming device and subtle gradients and shadow effects to create depth."
+    }
+}

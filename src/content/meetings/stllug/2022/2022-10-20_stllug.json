@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2022-10-20",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Encrypt File Systems in User SpacE (FUSE)",
+            "presenterNames": ["Steven Lembark"],
+            "abstract": "How to encrypt File systems in User SpacE (FUSE) for securing your private data. Both LOCAL & REMOTE.\nHe’ll show us how to set it up, mount it, back it up, and recover it.\nIn the beginning was LUKS, and it was good... enough.\nIt encrypted a filesystem but it required privileged access and knowlege of LVM and encryption standards. (Linux Unified Key Setup (LUKS) is a disk encryption specification created in 2004. It encrypts entire block devices and is therefore well-suited for protecting the contents of mobile devices such as removable storage media.)\nThen came FUSE (File systems in User SpacE ). This allows a non-privileged user to mount filesystems using local code. The variety of filesystems supported show just how useful the idea can be.\nOne early example encfs, which made it easy for non-privileged users to access and encrypted filesystem.Its an encrypted filesystem in user-space. It runs stackably in userspace, using the FUSE library for the filesystem interface. EncFS is open source.\nOver time holes in its algorithm emerged and it became un-maintained and is no longer secure. The good news is, as every competent programmer knows, There's More Than One Way To Do It. (At least 5!)\nThis talk looks at some alterntives to encfs, their foibles, and how to use them.",
+            "tags": ["filesystem", "storage"],
+            "tweet": "Get ready for Steven Lembark's session on FUSE! Learn to set up, mount, back up, and recover encrypted file systems without privileged access. Don't miss out! #Linux #FOSS @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/288829719/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/288829719/",
+    "youtubeTitle": "Encrypting FUSE: Secure Your Data Locally & Remotely | STLLUG 2022-10-20",
+    "image": {
+        "src": "./2022-10-20_stllug_create-a-professional-and-tech-savvy-image-using-gradients-o.png",
+        "alt": "Create a professional and tech-savvy image using gradients of blue and green for the background. The central element should be an abstract representation of a padlock to symbolize encryption. Around the padlock, place icons representing various storage devices like hard drives and the cloud, symbolizing local and remote storage. Include a subtle representation of 'user space' with simplified user avatars. Incorporate logos related to encryption and file systems: place one near the base of the encrypted padlock and another near a storage device icon. Finally, draw light, flowing lines connecting the padlock to the storage devices and technology logos, representing the flow of encrypted data. Add security icons like shields and checkmarks to emphasize data protection."
+    }
+}
