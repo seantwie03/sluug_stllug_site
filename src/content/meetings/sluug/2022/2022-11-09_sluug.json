@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2022-11-09",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Visual Studio Code - Installing, Configuring, & Using",
+            "presenterNames": ["Scott Granneman"],
+            "abstract": "In just seven quick years, Visual Studio Code is now used by a majority of developers. In this talk by Scott Granneman, you’ll learn the ins & outs of VS Code, including installation, configuration, and usage. We’ll delve into the user interface, key features (like the amazing IntelliSense and built-in Emmet), useful extensions & themes, and tips & tricks. Even if you already use VS Code, you’ll still learn a lot; if you’ve never used VS Code, learning about it will blow your mind!\nIn the Stack Overflow2021 Developer Survey, VS Code was ranked the most popular developer environment tool among 82,000 respondents, with 70% reporting that they use it.",
+            "tags": ["text-editor", "programming"],
+            "tweet": "🛠️ Unlock the full potential of VS Code with Scott Granneman on 2022-11-09! From installation to advanced features, get all the insights you need. Perfect for both newbies and seasoned users. #vscode #DevCommunity @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/289241569/"
+        },
+        {
+            "title": "Searching for Applications",
+            "presenterNames": ["Stan Reichardt"],
+            "abstract": "In this presentation Stan will cover how to find and install applications on Linux. The talk will include aptitude (apt-get), synaptic, flatpak, and many command-line utilities.",
+            "tags": ["command-line", "application-packaging"],
+            "tweet": "🚀 Join us on Nov 9 for an exciting presentation by Stan Reichardt on 'Searching for Applications'! Learn how to effectively find and install apps on Linux using aptitude, synaptic, flatpak, and more. Don't miss out! #Linux #Applications #FOSS @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/289241569/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/289241569/",
+    "youtubeTitle": "VS Code Explained: Installation, Configuration, and Key Features | SLUUG 2022-11-09",
+    "image": {
+        "src": "./2022-11-09_sluug_generate-a-detailed-image-of-a-developers-workstation-with.png",
+        "alt": "Generate a detailed image of a developer's workstation, with a high-resolution monitor displaying code in a code editor, alongside a keyboard and an organized desk setup. A slightly blurred background focuses the view on the central elements. In the central spot, a large logo implicitly signifying a code editor program should attract attention, surrounded by four smaller logos illustrating key aspects of coding: a lightbulb (indicating features that ease software development), an HTML/CSS snippet (denoting intuitive markup language editing feature), a puzzle piece (representing helpful extensions), and a palette (depicting customizable themes). Scatter subtle, abstract tech-themed graphics like circuit board patterns, code snippets, or geometric shapes across the background to increase their visual appeal. The color scheme should cover a dark mode aesthetic with soft blue, green, and purple shades matching the hues commonly associated with modern coding environments."
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2022-11-17",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Btrfs in the Real World",
+            "presenterNames": ["Lee Lammert"],
+            "abstract": "Btrfs is Awesome, .. except when it isn't. There are lots of nice features in Btrfs that makes it the 'next generation' file system, .. but that makes it suitable for specific applications and also creates some interesting ways to cause problems.",
+            "tags": ["filesystem", "storage"],
+            "tweet": "Join us on 17th Nov for Lee Lammert's talk on 'Btrfs in the Real World'! Discover the awesome features and interesting challenges of Btrfs. Don't miss out! #SLUUG #Btrfs #Linux https://www.meetup.com/saint-louis-unix-users-group/events/289406372/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/289406372/",
+    "youtubeTitle": "Btrfs in the Real World: Pros, Cons, and Best Practices | STLLUG 2022-11-17",
+    "image": {
+        "src": "./2022-11-17_stllug_visualise-a-representation-of-modern-data-storage-focused-on.png",
+        "alt": "Visualise a representation of modern data storage focused on Btrfs. Have a sleek, modern background with a gradient transitioning from deep blue at the top to a lighter blue at the bottom, creating a professional and polished look. Centre an intricate 3D model of a hard disk drive overlapped by semi-transparent hexagonal shapes creating a network/grid representation alluding to the multi-layered nature of Btrfs. Place the official Btrfs logo, semi-transparently, in the upper left and lower right corners. Scatter small icons for key Btrfs features such as snapshots (a camera icon), RAID configuration (a line chart icon), and compression (a compressed folder icon) around the central hard disk drive model. Add visual effects like light rays or data streams flowing around and through the hard disk drive model, and subtle digital error/glitch effects to indicate quirks Btrfs can introduce."
+    }
+}
