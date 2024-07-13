@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2022-07-21",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Filesystem in Userspace (FUSE)",
+            "presenterNames": ["Steven Lembark"],
+            "abstract": "Filesystem in Userspace (FUSE) is a linux extension that allows unprivileged users to access various types of storage services without superuser access to mount them. Examples include 'sshfs' for file access via SSH or 'encfs' for an encrypted filesystem. FUSE gives linux users this added flexibility without the overhead or security risks of granting superuser to acces them.\nThis talk looks at the basic mechanism for FUSE and examines some of the tradeoffs using them and how to use a few of the common ones.",
+            "tags": ["storage", "filesystem"],
+            "tweet": "Discover the power of FUSE with Steven Lembark on 2022-07-21! Unveil the secrets behind SSHFS, ENCFS, and more without superuser risks at @SLUUG_Org. Don't miss out! #Filesystem #Linux https://www.meetup.com/saint-louis-unix-users-group/events/286929409/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/286929409/",
+    "youtubeTitle": "Diving into FUSE: Mechanisms, Tradeoffs, and Practical Implementations | STLLUG 2022-07-21",
+    "image": {
+        "src": "./2022-07-21_stllug_create-an-image-that-visually-represents-the-concept-of-file.png",
+        "alt": "Create an image that visually represents the concept of Filesystem in Userspace (FUSE) with a gradient background transitioning from dark to light, starting from a rich shade of blue or black at the top, transitioning to a lighter shade towards the bottom. The main visual should be a graphic representation of a filesystem extending from a user's desktop or laptop, with connected icons symbolizing different types of storage services such as a locked folder for encrypted filesystems like `encfs`, a cloud for cloud storage, and a server icon for `sshfs`. Include the Linux Tux penguin near the bottom of the screen or next to a silhouette of a user represented as a hobbyist or business professional interacting with the filesystem. Also, include minimalist icons that represent FUSE features like `sshfs` and `encfs`, and a terminal icon with a simple command prompt interface to represent user's ease of use."
+    }
+}

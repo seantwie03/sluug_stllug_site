@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2022-07-13",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Locking Down Your Web Browser",
+            "presenterNames": ["Scott Granneman"],
+            "abstract": "What web browsers are doing for your privacy (Chrome, Brave, Edge, Firefox, Vivaldi, Safari)\nWeb browsers are the most important software on most computers, but if you are not careful, you can inadvertently reveal way too much information about yourself to websites, companies, and even the Web browser makers themselves. In this talk Scott is going to give advice and instructions for locking down browsers, as well as showing you some of the very cool new browsers on the scene. And on top of that, Scott is going to cover some brand new, not-Google, don't-track-you search engines as well.",
+            "tags": ["security", "privacy", "web"],
+            "tweet": "Excited for Scott Granneman's presentation on July 13th! Discover how to protect your data and explore new privacy-focused browsers and search engines. Join us! #SLUUG #WebSecurity https://www.meetup.com/saint-louis-unix-users-group/events/286764917/"
+        },
+        {
+            "title": "What You Should Get with GIT",
+            "presenterNames": ["James Conroy"],
+            "abstract": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.\nThis talk will give you everything you need to know about how to set up a project, and perform the most common tasks.\nYou will also learn how to interact with open source projects using git.",
+            "tags": ["version-control"],
+            "tweet": "Join us on 2022-07-13 for an enlightening session by James Conroy on 'What You Should Get with GIT'! Learn to set up projects, perform common tasks & interact with open source using Git! #git #versioncontrol #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/286764917/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/286764917/",
+    "youtubeTitle": "Essential GIT Skills for Open Source Projects | SLUUG 2022-07-13",
+    "image": {
+        "src": "./2022-07-13_sluug_create-a-sleek-modern-interface-showcasing-a-dark-theme-des.png",
+        "alt": "Create a sleek, modern interface showcasing a dark theme design. The background should use shades of black, grey, and white, with grid lines representing structured organization. An abstract representation of branching is the central visual. Lines and nodes are to be used to create multiple branches converging and diverging, symbolizing the concept of version control. A large generic logo, similar to that used by Git, is prominently displayed in the center. Lesser known hosting platforms' logos, represented by a fictitious octopus logo and a tanuki logo, are positioned in the top corners with another logo near the bottom. Subtle use of circuit patterns or faded coding snippets should be integrated into the back drop for an added technological theme."
+    }
+}
