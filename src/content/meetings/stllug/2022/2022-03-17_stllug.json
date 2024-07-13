@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2022-03-17",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "OpenVAS Vulnerability Scanner",
+            "presenterNames": ["Tony Zafiropoulos"],
+            "abstract": "OpenVAS dates back to 2009 and the project is maintained by a commercial/open-source company. With its focus on the enterprise market and its long history, any risks of enterprises adopting a technology that might become abandoned are greatly reduced.\nCan perform various types of authenticated/unauthenticated tests. \nSupports a variety of high- and low-level Internet and industrial protocols\nHas an internal programming language that can be used for implementing custom vulnerability tests\nin last quarter(4Q21):\n175383 CVE profiles in scan engine,\n79195 vulnerability tests available for the scan system to test the environment.\nI will discuss the install process, and configuration. Show my laptop environment (not the prod standalone) but it works, I have used it to scan onsite.\nThe version that came out in late 2020 was considered “a forklift upgrade” changing the functionality of openVAS.\nThe Greenbone Scan Cluster performs scans for external targets (public IP addresses, e.g., WWW servers, e-mail servers, etc.) or internal targets via Virtual Private Network (VPN). After execution, the scan results are transferred back to the cloud and made available on the platform in the form of reports.\nThe name openVAS is being deprecated as it changes to the Greenbone name.\nKali Linux is a Linux distro that is customized to be most useful for cybersecurity work.",
+            "tags": ["security"],
+            "tweet": "Ready to dive into OpenVAS? Tony Zafiropoulos will guide us through its installation, configuration, and capabilities. Discover how this tool can secure your environment. See you on 2022-03-17! #OpenVAS #Linux #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/280493581/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/280536311/",
+    "youtubeTitle": "OpenVAS/Greenbone: Installation, Configuration, and Use Cases | STLLUG 2022-03-17",
+    "image": {
+        "src": "./2022-03-17_stllug_create-an-image-aligning-with-a-cybersecurity-orientation-pr.png",
+        "alt": "Create an image aligning with a cybersecurity orientation presentation. The image should have a modern dark background with a subtle gradient effect for a high-tech and professional feel. In the center, represent a logo that symbolizes a well-known vulnerability scanner. This should be surrounded by two distinct logos, one at the top right indicative of a change from vulnerability scanning to a different initiative, and another at the bottom left representing a popular Linux distribution associated with cybersecurity. Include abstract graphic elements like network diagrams, shield icons, and nodes to denote network security, scanning, and vulnerability assessment. Depict clouds, servers, and device icons around the edges as indications of scanning capacities for both external and internal targets. For a finishing touch, incorporate a subtle overlay of circuit board patterns, suggesting technical depth."
+    }
+}

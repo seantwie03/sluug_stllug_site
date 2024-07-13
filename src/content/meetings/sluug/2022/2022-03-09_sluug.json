@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2022-03-09",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "The mission of the FreeBSD Foundation",
+            "presenterNames": ["Deb Goodkin"],
+            "abstract": "Deb Goodkin is the head of the FreeBSD foundation. In the presentation she will discuss the mission of the FreeBSD Foundation and provide Resources for installing and running FreeBSD.",
+            "tags": ["freebsd"],
+            "tweet": "🌟 Join us on 2022-03-09 as Deb Goodkin, head of the FreeBSD Foundation, presents 'The mission of the FreeBSD Foundation.' Learn about FreeBSD's purpose & resources! #freebsd #foundation @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/284083988/"
+        },
+        {
+            "title": "Chromebook Discovery",
+            "presenterNames": ["Robert Citek"],
+            "abstract": "I'll walk through what I've been discovering what works and does not work for me with a Chromebook.",
+            "tags": ["chromebook"],
+            "tweet": "Join us on 2022-03-09 for 'Chromebook Discovery' by Robert Citek! 🚀 Discover the ins and outs of Chromebook functionality! #SLUUG #ChromebookDiscovery https://www.meetup.com/saint-louis-unix-users-group/events/284083988/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/284083988/",
+    "youtubeTitle": "Deb Goodkin on the FreeBSD Foundation's Mission and Resources | SLUUG 2022-03-09",
+    "image": {
+        "src": "./2022-03-09_sluug_an-image-designed-around-a-modern-tech-savvy-aesthetic-fea.png",
+        "alt": "An image designed around a modern, tech-savvy aesthetic, featuring a clean, white or very light grayscale background. In the center, a high-resolution image of an open Chromebook, its screen displaying a Linux terminal symbolizing the exploration of functionalities. Small, recognizable logos delicately arranged around the Chromebook, without cluttering the image, signify Linux (with Penguin Tux), Chrome OS (using the Google Chrome logo) and Open Source (using the Open Source Initiative logo). Additionally, enhance the image with shadow effects under the Chromebook for a 3D floating appearance, and subtle, semi-transparent icons related to productivity and development tools (like terminal, code brackets, and cloud storage) faintly in the background."
+    }
+}
