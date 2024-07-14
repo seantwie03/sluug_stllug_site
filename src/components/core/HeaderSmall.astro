@@ -1,13 +1,13 @@
 ---
 // Header for small and medium devices
-import { Image } from 'astro:assets';
-import { Icon } from 'astro-icon/components';
-import sluugOrgLogo from '@/images/SLUUG-Logo.png';
-import stllugLogo from '@/images/STLLUG-Logo.png';
-import { SLUUG_LOGO_ALT, STLLUG_LOGO_ALT } from '@/constants';
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+import sluugOrgLogo from "@/images/SLUUG-Logo.png";
+import stllugLogo from "@/images/STLLUG-Logo.png";
+import { SLUUG_LOGO_ALT, STLLUG_LOGO_ALT } from "@/constants";
 ---
 
-<nav class="bg-slate-200 mb-2">
+<nav class="bg-bg_emphasis-light dark:bg-bg_emphasis mb-2">
     <div class="w-full flex justify-center">
         <div class="h-16 w-full flex items-center">
             <div class="w-full flex flex-row items-center justify-between">
@@ -36,7 +36,7 @@ import { SLUUG_LOGO_ALT, STLLUG_LOGO_ALT } from '@/constants';
         id="sidenav"
         role="navigation"
         aria-hidden="true"
-        class="fixed top-0 right-0 h-full w-40 mt-14 bg-slate-200 overflow-auto z-50 transform translate-x-full transition-transform
+        class="fixed top-0 right-0 h-full w-40 mt-14 bg-bg_emphasis-light dark:bg-bg_emphasis overflow-auto z-50 transform translate-x-full transition-transform
     duration-200"
         style="display: none;"
     >
@@ -62,38 +62,38 @@ import { SLUUG_LOGO_ALT, STLLUG_LOGO_ALT } from '@/constants';
         </ul>
     </div>
     <script>
-        document.addEventListener('astro:page-load', () => {
-            document.getElementById('hamburger')!.addEventListener('click', function () {
-                const sidenav = document.getElementById('sidenav')!;
+        document.addEventListener("astro:page-load", () => {
+            document.getElementById("hamburger")!.addEventListener("click", function () {
+                const sidenav = document.getElementById("sidenav")!;
                 const menuButton = document.querySelector('button[aria-label="Menu"]')!;
-                if (sidenav.style.display === 'none' || sidenav.style.transform === 'translateX(100%)') {
-                    sidenav.style.display = 'block';
-                    sidenav.style.transform = 'translateX(0)';
-                    sidenav.ariaHidden = 'false';
-                    menuButton.ariaExpanded = 'true';
+                if (sidenav.style.display === "none" || sidenav.style.transform === "translateX(100%)") {
+                    sidenav.style.display = "block";
+                    sidenav.style.transform = "translateX(0)";
+                    sidenav.ariaHidden = "false";
+                    menuButton.ariaExpanded = "true";
                 } else {
-                    sidenav.style.transform = 'translateX(100%)';
-                    sidenav.ariaHidden = 'true';
-                    menuButton.ariaExpanded = 'false';
+                    sidenav.style.transform = "translateX(100%)";
+                    sidenav.ariaHidden = "true";
+                    menuButton.ariaExpanded = "false";
                     setTimeout(function () {
-                        sidenav.style.display = 'none';
+                        sidenav.style.display = "none";
                     }, 200); // hide after slide animation is done
                 }
             });
         });
         let outside = true;
-        document.addEventListener('click', function (event: MouseEvent) {
-            const sidenav = document.getElementById('sidenav')!;
+        document.addEventListener("click", function (event: MouseEvent) {
+            const sidenav = document.getElementById("sidenav")!;
             const isClickInsideSidemenu = sidenav.contains(event.target as Node);
-            const isClickInsideHamburger = document.getElementById('hamburger')!.contains(event.target as Node);
+            const isClickInsideHamburger = document.getElementById("hamburger")!.contains(event.target as Node);
 
             if (isClickInsideHamburger) {
                 outside = false;
             }
             if (!isClickInsideSidemenu && !isClickInsideHamburger && outside) {
-                sidenav.style.transform = 'translateX(100%)';
+                sidenav.style.transform = "translateX(100%)";
                 setTimeout(function () {
-                    sidenav.style.display = 'none';
+                    sidenav.style.display = "none";
                 }, 200); // hide after slide animation is done
             }
             outside = true;

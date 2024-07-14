@@ -1,18 +1,18 @@
 ---
-import { getDisplayDate } from '@/buildTimeUtils';
-import { SLUUG_SITE_URL, STLLUG_SITE_URL } from '@/constants';
-import type { Meeting } from '@/content/config';
-import { Icon } from 'astro-icon/components';
-import { Image } from 'astro:assets';
+import { getDisplayDate } from "@/buildTimeUtils";
+import { SLUUG_SITE_URL, STLLUG_SITE_URL } from "@/constants";
+import type { Meeting } from "@/content/config";
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
 type Props = { key: number; url: string } & Meeting;
 
 const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, youtubeUrl } = Astro.props;
 ---
 
-<p class="text-gray-600 text-md">
+<p class="text-txt_subtle-light dark:text-txt_subtle text-md">
     {meetingType} - {getDisplayDate(meetingDate)}
 </p>
-<div class="flex mb-4 rounded shadow-lg">
+<div class="flex mb-4 rounded shadow-xl">
     <a href={image.src.src}
         ><Image src={image.src} alt={image.alt} height="240" width="240" loading="lazy" decoding="async" /></a
     >
@@ -22,14 +22,14 @@ const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, you
                 <>
                     <a
                         href={url}
-                        class="flex flex-col pl-2 text-current no-underline font-normal"
+                        class="flex flex-col pl-2 text-current no-underline text-txt_normal-light dark:text-txt_normal"
                         style={`width: ${100 / presentations.length}%`}
                     >
                         <h3>{presentation.title}</h3>
 
                         <h5 class="mt-2">
                             By:
-                            {presentation.presenterNames.join(' & ')}
+                            {presentation.presenterNames.join(" & ")}
                         </h5>
                     </a>
                     {i < presentations.length - 1 && (
@@ -43,14 +43,14 @@ const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, you
             <!-- Create a custom element to pass in data from the props into the script tag that runs client-side. 
              This is the method suggested by the Astro documentation (6/30/2024).
              https://docs.astro.build/en/guides/client-side-scripts/#pass-frontmatter-variables-to-scripts -->
-            <zoom-link id=`zoom-link-${key}` data-key={key} data-meetingdate={meetingDate} class="w-[9rem] h-[2.3rem]">
+            <zoom-link id=`zoom-link-${key}` data-key={key} data-meetingdate={meetingDate} class="w-[8.5rem] h-[2rem]">
                 <a
-                    href={meetingType === 'SLUUG' ? `${SLUUG_SITE_URL}/next.txt` : `${STLLUG_SITE_URL}/next.txt`}
+                    href={meetingType === "SLUUG" ? `${SLUUG_SITE_URL}/next.txt` : `${STLLUG_SITE_URL}/next.txt`}
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     <div
-                        class="inline-flex justify-center items-center bg-slate-200 text-md font-semibold px-4 rounded-full shadow h-full w-full"
+                        class="inline-flex justify-center items-center bg-bg_emphasis-light dark:bg-bg_emphasis text-md font-semibold px-4 rounded-full shadow h-full w-full"
                     >
                         <Icon name="mdi:microphone-plus" class="mr-1" />
                         Zoom
@@ -60,8 +60,8 @@ const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, you
 
             {
                 youtubeUrl && (
-                    <a href={youtubeUrl} target="_blank" rel="noopener noreferrer" class="w-[9rem] h-[2.3rem]">
-                        <div class="inline-flex justify-center items-center bg-slate-200 text-md font-semibold rounded-full shadow w-full h-full">
+                    <a href={youtubeUrl} target="_blank" rel="noopener noreferrer" class="w-[8.5rem] h-[2rem]">
+                        <div class="inline-flex justify-center items-center bg-bg_emphasis-light dark:bg-bg_emphasis text-md font-semibold rounded-full shadow w-full h-full">
                             <Icon name="mdi:youtube" class="mr-1" />
                             YouTube
                         </div>
@@ -70,17 +70,17 @@ const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, you
             }
             {
                 meetupUrl && (
-                    <a href={meetupUrl} target="_blank" rel="noopener noreferrer" class="w-[9rem] h-[2.3rem]">
-                        <div class="inline-flex justify-center items-center bg-slate-200 text-md font-semibold px-4 rounded-full shadow w-full h-full">
+                    <a href={meetupUrl} target="_blank" rel="noopener noreferrer" class="w-[8.5rem] h-[2rem]">
+                        <div class="inline-flex justify-center items-center bg-bg_emphasis-light dark:bg-bg_emphasis text-md font-semibold px-4 rounded-full shadow w-full h-full">
                             <Icon name="mdi:meetup" class="mr-1" />
                             Meetup
                         </div>
                     </a>
                 )
             }
-            <a href={url} class="w-[9rem] h-[2.3rem]">
+            <a href={url} class="w-[8.5rem] h-[2rem]">
                 <div
-                    class="inline-flex justify-center items-center bg-slate-200 text-md font-semibold px-4 rounded-full shadow w-full h-full"
+                    class="inline-flex justify-center items-center bg-bg_emphasis-light dark:bg-bg_emphasis text-md font-semibold px-4 rounded-full shadow w-full h-full"
                 >
                     Read More <Icon name="mdi:arrow-right-thin" class="ml-1" />
                 </div>
@@ -107,10 +107,10 @@ const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, you
             if (stopShowingBannerOn.getTime() < new Date().getTime()) {
                 const zoomLink = document.getElementById(`zoom-link-${key}`);
                 if (zoomLink) {
-                    zoomLink.style.display = 'none';
+                    zoomLink.style.display = "none";
                 }
             }
         }
     }
-    customElements.get('zoom-link') || customElements.define('zoom-link', ZoomLink);
+    customElements.get("zoom-link") || customElements.define("zoom-link", ZoomLink);
 </script>

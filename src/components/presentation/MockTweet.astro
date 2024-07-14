@@ -1,14 +1,14 @@
 ---
-import { getRandomIndex } from '@/buildTimeUtils';
-import tuxProfile1 from '@/images/tux-profile1.png';
-import tuxProfile2 from '@/images/tux-profile2.png';
-import tuxProfile3 from '@/images/tux-profile3.png';
-import tuxProfile4 from '@/images/tux-profile4.png';
-import tuxProfile5 from '@/images/tux-profile5.png';
-import tuxProfile6 from '@/images/tux-profile6.png';
+import { getRandomIndex } from "@/buildTimeUtils";
+import tuxProfile1 from "@/images/tux-profile1.png";
+import tuxProfile2 from "@/images/tux-profile2.png";
+import tuxProfile3 from "@/images/tux-profile3.png";
+import tuxProfile4 from "@/images/tux-profile4.png";
+import tuxProfile5 from "@/images/tux-profile5.png";
+import tuxProfile6 from "@/images/tux-profile6.png";
 
-import { Icon } from 'astro-icon/components';
-import { Image } from 'astro:assets';
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
 
 type Props = {
     tweet: string;
@@ -18,32 +18,34 @@ const { tweet } = Astro.props;
 const profilePictures = [tuxProfile1, tuxProfile2, tuxProfile3, tuxProfile4, tuxProfile5, tuxProfile6];
 const profilePicture = profilePictures[getRandomIndex(profilePictures.length)];
 
-const bgColors = ['bg-gray-200', 'bg-yellow-200', 'bg-green-200', 'bg-blue-200', 'bg-purple-200'];
+const bgColors = ["bg-gray-200", "bg-yellow-200", "bg-green-200", "bg-blue-200", "bg-purple-200"];
 const bgColor = bgColors[getRandomIndex(bgColors.length)];
 
 const usernames = [
-    '@SophisticatedSudoer',
-    '@BashBabe',
-    '@LinuxLad',
-    '@LinuxLegend',
-    '@TuxFan',
-    '@OpenSourceAdvocate',
-    '@KernelContributor',
-    '@LovesToLS',
-    '@CommandLineQueen',
-    '@TerminalTinkerer',
+    "@SophisticatedSudoer",
+    "@BashBabe",
+    "@LinuxLad",
+    "@LinuxLegend",
+    "@TuxFan",
+    "@OpenSourceAdvocate",
+    "@KernelContributor",
+    "@LovesToLS",
+    "@CommandLineQueen",
+    "@TerminalTinkerer",
 ];
 const username = usernames[getRandomIndex(usernames.length)];
 ---
 
-<div class="bg-white rounded-lg shadow-md p-4 mb-4">
+<div class="bg-bg_emphasis-light dark:bg-bg_emphasis rounded-lg shadow-md p-4 mb-4">
     <div class="flex justify-between">
         <Image src={profilePicture} alt="Goofy Profile Picture of Tux" class=`w-10 h-10 rounded-full mr-2 ${bgColor}` />
         <div class="flex">
-            <Icon name="mdi:twitter" class=`w-10 h-10 mr-2 text-blue-600` ` />
-            <Icon name="mdi:mastodon" class="w-10 h-10 text-purple-600" />
+            <Icon name="mdi:twitter" class="w-10 h-10 mr-2 text-[#1da1f2]" />
+            <Icon name="mdi:mastodon" class="w-10 h-10 text-[#6364FF]" />
         </div>
     </div>
-    <p class="text-gray-600 text-sm">{username} • {Math.floor(Math.random() * 9) + 1}h ago</p>
-    <p class="text-gray-800 mt-1 text-md">{tweet}</p>
+    <p class="text-txt_subtle-light dark:text-txt_subtle text-sm">
+        {username} • {Math.floor(Math.random() * 9) + 1}h ago
+    </p>
+    <p class="mt-1 text-md">{tweet}</p>
 </div>

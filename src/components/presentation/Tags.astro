@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon/components';
+import { Icon } from "astro-icon/components";
 interface Props {
     tags: string[];
 }
@@ -10,7 +10,7 @@ const { tags } = Astro.props;
     {
         tags.map((tag) => (
             <a
-                class="no-underline mr-1 my-1 px-2 py-1 border border-dotted border-[#a1a1a1] rounded-lg bg-[#f8fcfd]"
+                class="no-underline mr-1 my-1 px-2 py-1 border border-[#a1a1a1] rounded-lg bg-bg_emphasis-light dark:bg-bg_emphasis"
                 href={`/tags/${tag}`}
             >
                 <Icon name="mdi:tag-multiple" class="inline" />

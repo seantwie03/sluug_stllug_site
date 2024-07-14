@@ -14,7 +14,13 @@
         @apply text-xl;
     }
     a {
-        @apply text-blue-700 underline;
+        @apply text-link-light dark:text-link-dark underline;
+    }
+
+    .dark {
+        --pagefind-ui-text: #cccccc;
+        --pagefind-ui-background: #181818;
+        --pagefind-ui-border: #181818;
     }
 }
 

@@ -21,8 +21,19 @@ const { pageTitle } = Astro.props;
         <link rel="sitemap" href="/sitemap-index.xml" />
         <title>{pageTitle}</title>
         <ViewTransitions fallback="swap" />
+        <script is:inline>
+            // Dark theme by default
+            document.documentElement.classList.add("dark");
+            document.body.classList.add("dark");
+            if (window.matchMedia("(prefers-color-scheme: light)")) {
+                document.documentElement.classList.remove("dark");
+                document.body.classList.remove("dark");
+            }
+        </script>
     </head>
-    <body class="flex items-center flex-col min-h-screen bg-slate-100">
+    <body
+        class="flex items-center flex-col min-h-screen bg-bg_normal-light text-txt_normal-light dark:bg-bg_normal dark:text-txt_normal"
+    >
         <Header />
         <main class="grow w-full lg:max-w-[75rem] px-2">
             <slot />

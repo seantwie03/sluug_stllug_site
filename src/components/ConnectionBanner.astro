@@ -1,7 +1,7 @@
 ---
-import { SLUUG_SITE_URL, STLLUG_SITE_URL } from '@/constants';
-import type { MeetingType } from '@/content/config';
-import { Icon } from 'astro-icon/components';
+import { SLUUG_SITE_URL, STLLUG_SITE_URL } from "@/constants";
+import type { MeetingType } from "@/content/config";
+import { Icon } from "astro-icon/components";
 
 type Props = {
     meetingDate: Date;
@@ -15,11 +15,14 @@ const { meetingDate, meetingType } = Astro.props;
  method suggested by the Astro documentation (6/30/2024).
  https://docs.astro.build/en/guides/client-side-scripts/#pass-frontmatter-variables-to-scripts -->
 <connection-banner data-meetingdate={meetingDate}>
-    <div id="connection-banner" class="bg-yellow-100 border-l-8 border-yellow-500 p-4 mb-6">
+    <div
+        id="connection-banner"
+        class="bg-bg_emphasis-light dark:bg-bg_emphasis border-8 border-conn_banner-light p-4 mb-6"
+    >
         <!-- <h2 id="display-date" class="font-bold">{meetingDate}</h2> -->
         <h3>
             <a
-                href={meetingType === 'SLUUG' ? `${SLUUG_SITE_URL}/next.txt` : `${STLLUG_SITE_URL}/next.txt`}
+                href={meetingType === "SLUUG" ? `${SLUUG_SITE_URL}/next.txt` : `${STLLUG_SITE_URL}/next.txt`}
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -51,12 +54,12 @@ const { meetingDate, meetingType } = Astro.props;
             stopShowingBannerOn.setDate(stopShowingBannerOn.getDate() + 1);
 
             if (stopShowingBannerOn.getTime() < new Date().getTime()) {
-                const connectionBanner = document.getElementById('connection-banner');
+                const connectionBanner = document.getElementById("connection-banner");
                 if (connectionBanner) {
-                    connectionBanner.style.display = 'none';
+                    connectionBanner.style.display = "none";
                 }
             }
         }
     }
-    customElements.get('connection-banner') || customElements.define('connection-banner', ConnectionBanner);
+    customElements.get("connection-banner") || customElements.define("connection-banner", ConnectionBanner);
 </script>

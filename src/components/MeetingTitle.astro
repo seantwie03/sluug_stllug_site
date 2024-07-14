@@ -1,7 +1,7 @@
 ---
-import { getDisplayDate, getMeetingName } from '@/buildTimeUtils';
-import type { MeetingType } from '@/content/config';
-import { Icon } from 'astro-icon/components';
+import { getDisplayDate, getMeetingName } from "@/buildTimeUtils";
+import type { MeetingType } from "@/content/config";
+import { Icon } from "astro-icon/components";
 
 interface Props {
     meetingType: MeetingType;
@@ -15,7 +15,9 @@ const meetingName = getMeetingName(meetingType);
 ---
 
 <div>
-    <p class="text-gray-600 text-sm font-medium leading-relaxed mt-3 mb-0 flex justify-between">
+    <p
+        class="text-txt_subtle-light dark:text-txt_subtle text-sm font-medium leading-relaxed mt-3 mb-0 flex justify-between"
+    >
         {getDisplayDate(meetingDate)}
         {
             meetupUrl && (

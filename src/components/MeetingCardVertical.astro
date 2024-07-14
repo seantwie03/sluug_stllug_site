@@ -1,16 +1,16 @@
 ---
-import { getDisplayDate } from '@/buildTimeUtils';
-import { SLUUG_SITE_URL, STLLUG_SITE_URL } from '@/constants';
-import type { Meeting } from '@/content/config';
-import { Icon } from 'astro-icon/components';
-import { Image } from 'astro:assets';
+import { getDisplayDate } from "@/buildTimeUtils";
+import { SLUUG_SITE_URL, STLLUG_SITE_URL } from "@/constants";
+import type { Meeting } from "@/content/config";
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
 type Props = { url: string; key: number } & Meeting;
 
 const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, youtubeUrl } = Astro.props;
 ---
 
 <div class="flex flex-col mb-4 rounded shadow-lg w-[32rem]">
-    <p class="text-gray-600 text-md mb-0">
+    <p class="text-txt_subtle-light dark:text-txt_subtle text-md mb-0">
         {meetingType} - {getDisplayDate(meetingDate)}
     </p>
     <div class="flex-grow">
@@ -21,7 +21,7 @@ const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, you
                     <h3 class="mt-2">{presentation.title}</h3>
                     <p class="mb-4">
                         By:
-                        {presentation.presenterNames.join(' & ')}
+                        {presentation.presenterNames.join(" & ")}
                     </p>
                 </div>
             ))
@@ -33,11 +33,13 @@ const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, you
          https://docs.astro.build/en/guides/client-side-scripts/#pass-frontmatter-variables-to-scripts -->
         <zoom-link id=`zoom-link-${key}` data-key={key} data-meetingdate={meetingDate}>
             <a
-                href={meetingType === 'SLUUG' ? `${SLUUG_SITE_URL}/next.txt` : `${STLLUG_SITE_URL}/next.txt`}
+                href={meetingType === "SLUUG" ? `${SLUUG_SITE_URL}/next.txt` : `${STLLUG_SITE_URL}/next.txt`}
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <div class="inline-flex items-center bg-slate-200 text-md font-semibold px-4 py-2 rounded-full shadow">
+                <div
+                    class="inline-flex items-center bg-bg_emphasis-light dark:bg-bg_emphasis text-md font-semibold px-4 py-2 rounded-full shadow"
+                >
                     <Icon name="mdi:microphone-plus" class="mr-1" />
                     Zoom
                 </div>
@@ -47,7 +49,7 @@ const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, you
         {
             youtubeUrl && (
                 <a href={youtubeUrl} target="_blank" rel="noopener noreferrer">
-                    <div class="inline-flex items-center bg-slate-200 text-md font-semibold px-4 py-2 rounded-xl shadow">
+                    <div class="inline-flex items-center  bg-bg_emphasis-light dark:bg-bg_emphasis text-md font-semibold px-4 py-2 rounded-xl shadow">
                         <Icon name="mdi:youtube" class="mr-1" />
                         YouTube
                     </div>
@@ -57,7 +59,7 @@ const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, you
         {
             meetupUrl && (
                 <a href={meetupUrl} target="_blank" rel="noopener noreferrer">
-                    <div class="inline-flex items-center bg-slate-200 text-md font-semibold px-4 py-2 rounded-full shadow">
+                    <div class="inline-flex items-center  bg-bg_emphasis-light dark:bg-bg_emphasis text-md font-semibold px-4 py-2 rounded-full shadow">
                         <Icon name="mdi:meetup" class="mr-1" />
                         Meetup
                     </div>
@@ -65,7 +67,9 @@ const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, you
             )
         }
         <a href={url}>
-            <div class="inline-flex items-center bg-slate-200 text-md font-semibold px-4 py-2 rounded-full shadow">
+            <div
+                class="inline-flex items-center bg-bg_emphasis-light dark:bg-bg_emphasis text-md font-semibold px-4 py-2 rounded-full shadow"
+            >
                 Read More <Icon name="mdi:arrow-right-thin" class="ml-1" />
             </div>
         </a>
@@ -90,10 +94,10 @@ const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, you
             if (stopShowingBannerOn.getTime() < new Date().getTime()) {
                 const zoomLink = document.getElementById(`zoom-link-${key}`);
                 if (zoomLink) {
-                    zoomLink.style.display = 'none';
+                    zoomLink.style.display = "none";
                 }
             }
         }
     }
-    customElements.get('zoom-link') || customElements.define('zoom-link', ZoomLink);
+    customElements.get("zoom-link") || customElements.define("zoom-link", ZoomLink);
 </script>
