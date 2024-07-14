@@ -8,6 +8,9 @@ interface Props {
 }
 
 const { url, lastPage, currentPage } = Astro.props;
+
+const firstPageUrl = url.current.slice(0, -1) + "1";
+const lastPageUrl = url.current.slice(0, -1) + lastPage;
 ---
 
 <div class="flex-row justify-evenly mb-4">
@@ -15,7 +18,7 @@ const { url, lastPage, currentPage } = Astro.props;
         <li>
             {
                 url.prev ? (
-                    <a href={"1"}>
+                    <a href={firstPageUrl}>
                         <Icon name="mdi:arrow-collapse-left" size={25} />
                     </a>
                 ) : null
@@ -43,7 +46,7 @@ const { url, lastPage, currentPage } = Astro.props;
         <li>
             {
                 url.next ? (
-                    <a href={`${lastPage}`}>
+                    <a href={lastPageUrl}>
                         <Icon name="mdi:arrow-collapse-right" size={25} />
                     </a>
                 ) : null
