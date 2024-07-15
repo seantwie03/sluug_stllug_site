@@ -12,7 +12,7 @@ export default {
             bg_normal: {
                 DEFAULT: "#1f1f1f",
                 dark: "#1f1f1f",
-                light: "#f1f5f9",
+                light: "#f0f9ff",
             },
             bg_emphasis: {
                 DEFAULT: "#181818",
