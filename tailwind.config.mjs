@@ -6,8 +6,8 @@ export default {
         colors: {
             link: {
                 DEFAULT: "#4daafc",
-                light: "#1d4ed8",
                 dark: "#4daafc",
+                light: "#0000ff",
             },
             bg_normal: {
                 DEFAULT: "#1f1f1f",
@@ -17,7 +17,7 @@ export default {
             bg_emphasis: {
                 DEFAULT: "#181818",
                 dark: "#181818",
-                light: "#e2e8f0",
+                light: "#add6ff80",
             },
             txt_normal: {
                 DEFAULT: "#cccccc",
