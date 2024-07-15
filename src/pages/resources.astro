@@ -1,7 +1,30 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Icon } from "astro-icon/components";
 ---
 
 <BaseLayout pageTitle="Resources">
     <h2>Resources</h2>
+    <ul>
+        <li><a href="https://www.sluug.org/resources/attendance/">Attendance</a></li>
+        <li>
+            <a
+                href="https://calendar.google.com/calendar/embed?title=SLUUG+events&height=1350&wkst=1&src=2msihq4sam6cr99ec5p0e0viv8@group.calendar.google.com&color=%2329527A&src=9526deac063a56a7acf07a9c7d8362da769ed90b11d64099608ccddbc0714bc5@group.calendar.google.com&color=%2329527A&src=p6lp304ra5bq7bga1cemg1uj74@group.calendar.google.com&color=%23A32929&ctz=America/Chicago"
+                target="_blank"
+                rel="noopener noreferrer">Calendar <Icon class="inline" name="mdi:open-in-new" /></a
+            >
+        </li>
+        <li><a href="https://www.sluug.org/resources/handouts/">Handouts</a></li>
+        <li><a href="https://www.sluug.org/resources/irc/">IRC</a></li>
+        <li><a href="https://www.sluug.org/mailman/listinfo/">Mailing Lists</a></li>
+        <li><a href="https://www.sluug.org/resources/newsletter/">Newsletter</a></li>
+        <li><a href="https://www.sluug.org/resources/presentations/">Presentations Archive</a></li>
+        <li><a href="https://www.sluug.org/sponsors/">Sponsors</a></li>
+        <li>
+            <a href="https://www.youtube.com/@SluugOrg/featured" target="_blank" rel="noopener noreferrer"
+                >SLUUG YouTube Channel <Icon class="inline" name="mdi:open-in-new" /></a
+            >
+        </li>
+        <li><a href="http://wiki.sluug.org/">Wiki</a></li>
+    </ul>
 </BaseLayout>
