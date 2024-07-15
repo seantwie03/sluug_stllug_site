@@ -19,6 +19,9 @@ export default {
                 dark: "#181818",
                 light: "#add6ff80",
             },
+            bg_alt: {
+                light: "#ffffff",
+            },
             txt_normal: {
                 DEFAULT: "#cccccc",
                 dark: "#cccccc",
