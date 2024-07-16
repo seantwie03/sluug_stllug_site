@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Icon } from "astro-icon/components";
 const pageTitle = "About SLUUG";
 ---
 
@@ -46,6 +47,34 @@ const pageTitle = "About SLUUG";
             > of each month.
         </li>
     </ul>
+    <h2>Socials</h2>
+    <span class="flex flex-col">
+        <a
+            class="no-underline"
+            href="https://www.meetup.com/saint-louis-unix-users-group"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <Icon class="inline" name="mdi:meetup" size={35} />
+            MeetUp (saint-louis-unix-users-group)
+            <Icon class="inline" name="mdi:open-in-new" size={15} />
+        </a>
+        <a class="no-underline" href="https://www.youtube.com/@SluugOrg" target="_blank" rel="noopener noreferrer">
+            <Icon class="inline" name="mdi:youtube" size={30} />
+            YouTube (SluugOrg)
+            <Icon class="inline" name="mdi:open-in-new" size={15} />
+        </a>
+        <a class="no-underline" href="https://twitter.com/sluug_org" target="_blank" rel="noopener noreferrer">
+            <Icon class="inline" name="mdi:twitter" size={30} />
+            Twitter (@SLUUG_Org)
+            <Icon class="inline" name="mdi:open-in-new" size={15} />
+        </a>
+        <a class="no-underline" rel="me" href="https://mastodon.social/@SLUUG_Org">
+            <Icon class="inline" name="mdi:mastodon" size={30} />
+            Mastodon (@SLUUG_Org@mastodon.social)
+            <Icon class="inline" name="mdi:open-in-new" size={15} />
+        </a>
+    </span>
     <h2>Contacts</h2>
     <table border="1" cellpadding="4" width="80%">
         <thead>
