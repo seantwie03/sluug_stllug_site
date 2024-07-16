@@ -27,6 +27,15 @@ const pageTitle = "Search & Tags";
     </div>
 </BaseLayout>
 
+<style>
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --pagefind-ui-text: #cccccc;
+            --pagefind-ui-background: #181818;
+            --pagefind-ui-border: #181818;
+        }
+    }
+</style>
 <script>
     document.addEventListener("astro:page-load", () => {
         //@ts-ignore
