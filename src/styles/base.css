@@ -17,10 +17,12 @@
         @apply text-link-light dark:text-link-dark underline;
     }
 
-    .dark {
-        --pagefind-ui-text: #cccccc;
-        --pagefind-ui-background: #181818;
-        --pagefind-ui-border: #181818;
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --pagefind-ui-text: #cccccc;
+            --pagefind-ui-background: #181818;
+            --pagefind-ui-border: #181818;
+        }
     }
 }
 

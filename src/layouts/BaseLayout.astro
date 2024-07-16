@@ -24,10 +24,8 @@ const { pageTitle } = Astro.props;
         <script is:inline>
             // Dark theme by default
             document.documentElement.classList.add("dark");
-            document.body.classList.add("dark");
             if (window.matchMedia("(prefers-color-scheme: light)")) {
                 document.documentElement.classList.remove("dark");
-                document.body.classList.remove("dark");
             }
         </script>
     </head>

@@ -1,9 +1,9 @@
 ---
-import { getCollection } from 'astro:content';
-import BaseLayout from '@/layouts/BaseLayout.astro';
-import Tags from '@/components/presentation/Tags.astro';
-import type { Presentation } from '@/content/config';
-const allMeetings = await getCollection('meetings');
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Tags from "@/components/presentation/Tags.astro";
+import type { Presentation } from "@/content/config";
+const allMeetings = await getCollection("meetings");
 const uniqueTags = [
     ...new Set([
         ...allMeetings
@@ -12,7 +12,7 @@ const uniqueTags = [
             .flat(),
     ]),
 ].sort((a, b) => a.localeCompare(b));
-const pageTitle = 'Search & Tags';
+const pageTitle = "Search & Tags";
 ---
 
 <head>
@@ -28,8 +28,8 @@ const pageTitle = 'Search & Tags';
 </BaseLayout>
 
 <script>
-    document.addEventListener('astro:page-load', () => {
+    document.addEventListener("astro:page-load", () => {
         //@ts-ignore
-        new PagefindUI({ element: '#search', showSubResults: true });
+        new PagefindUI({ element: "#search", showSubResults: true, autofocus: true });
     });
 </script>
