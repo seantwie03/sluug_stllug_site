@@ -37,5 +37,12 @@ const { pageTitle } = Astro.props;
             <slot />
         </main>
         <Footer />
+        <script is:inline>
+            // Dark theme by default
+            document.body.classList.add("dark");
+            if (window.matchMedia("(prefers-color-scheme: light)")) {
+                document.body.classList.remove("dark");
+            }
+        </script>
     </body>
 </html>
