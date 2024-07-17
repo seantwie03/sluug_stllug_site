@@ -1,13 +1,15 @@
 ---
-import { sortMeetingListByMeetingDate } from '@/buildTimeUtils';
-import MeetingCardHorizontal from '@/components/MeetingCardHorizontal.astro';
-import MeetingCardVertical from '@/components/MeetingCardVertical.astro';
-import type { Presentation } from '@/content/config';
-import BaseLayout from '@/layouts/BaseLayout.astro';
-import { getCollection } from 'astro:content';
+import { sortMeetingListByMeetingDate } from "@/buildTimeUtils";
+import MeetingCardHorizontal from "@/components/MeetingCardHorizontal.astro";
+import MeetingCardVertical from "@/components/MeetingCardVertical.astro";
+import { baseUrl, STLLUG_LOGO_ALT } from "@/constants";
+import type { Presentation } from "@/content/config";
+import stllugLogo from "@/images/STLLUG-Logo.png";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-    const allMeetings = await getCollection('meetings');
+    const allMeetings = await getCollection("meetings");
     const uniqueTags = [
         ...new Set([
             ...allMeetings
@@ -19,8 +21,8 @@ export async function getStaticPaths() {
     return uniqueTags.map((tag) => {
         const filteredPosts = sortMeetingListByMeetingDate(
             allMeetings.filter((meeting) =>
-                meeting.data.presentations.some((presentation: Presentation) => presentation.tags.includes(tag)),
-            ),
+                meeting.data.presentations.some((presentation: Presentation) => presentation.tags.includes(tag))
+            )
         );
         return {
             params: { tag },
@@ -33,16 +35,28 @@ const { tag } = Astro.params;
 const { meetings } = Astro.props;
 ---
 
+<head>
+    <meta name="twitter:card" content="player" />
+    <meta property="twitter:image" content={baseUrl + stllugLogo.src} />
+    <meta property="og:url" content={baseUrl + Astro.url.pathname} />"
+    <meta property="og:image" content={baseUrl + stllugLogo.src} />
+    <meta property="og:image:alt" content={baseUrl + STLLUG_LOGO_ALT} />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:title" content={`Stl Linux Unix Users Group - ${tag} Presentations`} />
+    <meta property="og:description" content={`Presentations about ${tag} at the Stl Linux Unix Users Group.`} />
+</head>
+
 <BaseLayout pageTitle={tag}>
     <h2>
-        Presentations tagged with: <strong>{tag}</strong>
+        Presentations about: <strong>{tag}</strong>
     </h2>
     <div class="flex flex-wrap lg:hidden">
         {
             meetings.map(
                 (
                     { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
-                    i,
+                    i
                 ) => (
                     <MeetingCardVertical
                         key={i}
@@ -54,7 +68,7 @@ const { meetings } = Astro.props;
                         meetupUrl={meetupUrl}
                         youtubeUrl={youtubeUrl}
                     />
-                ),
+                )
             )
         }
     </div>
@@ -63,7 +77,7 @@ const { meetings } = Astro.props;
             meetings.map(
                 (
                     { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
-                    i,
+                    i
                 ) => (
                     <MeetingCardHorizontal
                         key={i + 1000}
@@ -75,7 +89,7 @@ const { meetings } = Astro.props;
                         meetupUrl={meetupUrl}
                         youtubeUrl={youtubeUrl}
                     />
-                ),
+                )
             )
         }
     </div>

@@ -1,12 +1,30 @@
 ---
-import BaseLayout from '@/layouts/BaseLayout.astro';
-import { getCollection } from 'astro:content';
-const allPresenters = await getCollection('presenters');
+import { baseUrl, STLLUG_LOGO_ALT } from "@/constants";
+import stllugLogo from "@/images/STLLUG-Logo.png";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const allPresenters = await getCollection("presenters");
 const uniquePresenters = [...new Set(allPresenters)].sort((a, b) =>
-    a.data.presenterName.localeCompare(b.data.presenterName),
+    a.data.presenterName.localeCompare(b.data.presenterName)
 );
-const pageTitle = 'Presenters';
+const pageTitle = "Presenters";
 ---
+
+<head>
+    <meta name="twitter:card" content="player" />
+    <meta property="twitter:image" content={baseUrl + stllugLogo.src} />
+    <meta property="og:url" content={baseUrl + Astro.url.pathname} />"
+    <meta property="og:image" content={baseUrl + stllugLogo.src} />
+    <meta property="og:image:alt" content={baseUrl + STLLUG_LOGO_ALT} />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:title" content="Stl Linux Unix Users Group Presenters" />
+    <meta
+        property="og:description"
+        content={"The atypical SLUUG member is quite extraordinary. So are our presenters."}
+    />
+</head>
 
 <BaseLayout pageTitle={pageTitle}>
     <h1 class="text-center">{pageTitle}</h1>

@@ -4,6 +4,8 @@ import MeetingCardHorizontal from "@/components/MeetingCardHorizontal.astro";
 import MeetingCardVertical from "@/components/MeetingCardVertical.astro";
 import Pagination from "@/components/Pagination.astro";
 import StllugAgenda from "@/components/StllugAgenda.astro";
+import { baseUrl, STLLUG_LOGO_ALT } from "@/constants";
+import stllugLogo from "@/images/STLLUG-Logo.png";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
 import { getCollection } from "astro:content";
@@ -23,6 +25,21 @@ const pageTitle = "STLLUG - St. Louis Linux Users Group";
 
 const { page } = Astro.props;
 ---
+
+<head>
+    <meta name="twitter:card" content="player" />
+    <meta property="twitter:image" content={baseUrl + stllugLogo.src} />
+    <meta property="og:url" content={baseUrl + Astro.url.pathname} />"
+    <meta property="og:image" content={baseUrl + stllugLogo.src} />
+    <meta property="og:image:alt" content={baseUrl + STLLUG_LOGO_ALT} />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:title" content="St. Louis Linux Users Group Meetings" />
+    <meta
+        property="og:description"
+        content={"The St. Louis Linux Users Group holds regular meetings with technical presentations and discussions. Our topics frequently involve Linux, BSD, and other Free and Open Source Software."}
+    />
+</head>
 
 <BaseLayout pageTitle={pageTitle}>
     {
