@@ -26,6 +26,13 @@ const {
 } = Astro.props;
 ---
 
+<head>
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={image.src.src} />
+    <meta property="og:title" content={presentations[0].title} />
+    <meta property="og:description" content={presentations[0].presenterNames.join(" & ")} />
+</head>
+
 <BaseLayout pageTitle=`${meetingType} - ${(meetingDate as Date).toISOString().slice(0, 10)}`>
     <ConnectionBanner meetingType={meetingType} meetingDate={meetingDate} />
     <div class="flex flex-col items-center">
