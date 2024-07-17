@@ -28,10 +28,13 @@ const {
 ---
 
 <head>
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="player" />
+    <meta property="twitter:image" content={baseUrl + image.src.src} />
+    <meta property="og:url" content={baseUrl + Astro.url.pathname} />"
+    <meta property="og:type" content="article" />
     <meta property="og:image" content={baseUrl + image.src.src} />
     <meta property="og:title" content={presentations[0].title} />
-    <meta property="og:description" content={presentations[0].presenterNames.join(" & ")} />
+    <meta property="og:description" content={`By: ${presentations[0].presenterNames.join(" & ")}`} />
 </head>
 
 <BaseLayout pageTitle=`${meetingType} - ${(meetingDate as Date).toISOString().slice(0, 10)}`>
