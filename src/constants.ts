@@ -5,3 +5,4 @@ export const STLLUG_LOGO_ALT =
 
 export const SLUUG_SITE_URL = "https://www.sluug.org";
 export const STLLUG_SITE_URL = "https://www.stllinux.org";
+export const baseUrl = "https://sluug.netlify.app";
