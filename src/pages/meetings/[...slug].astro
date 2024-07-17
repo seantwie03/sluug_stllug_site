@@ -6,7 +6,6 @@ import ResponsiveYouTubeEmbed from "@/components/ResponsiveYouTubeEmbed.astro";
 import SluugAgenda from "@/components/SluugAgenda.astro";
 import StllugAgenda from "@/components/StllugAgenda.astro";
 import PresentationSection from "@/components/presentation/PresentationSection.astro";
-import { baseUrl } from "@/constants";
 import type { Presentation } from "@/content/config";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
@@ -29,10 +28,10 @@ const {
 
 <head>
     <meta name="twitter:card" content="player" />
-    <meta property="twitter:image" content={baseUrl + image.src.src} />
-    <meta property="og:url" content={baseUrl + Astro.url.pathname} />"
-    <meta property="og:image" content={baseUrl + image.src.src} />
-    <meta property="og:image:alt" content={baseUrl + image.alt} />
+    <meta property="twitter:image" content={Astro.site + image.src.src} />
+    <meta property="og:url" content={Astro.site + Astro.url.pathname} />"
+    <meta property="og:image" content={Astro.site + image.src.src} />
+    <meta property="og:image:alt" content={Astro.site + image.alt} />
     <meta property="og:image:width" content="1280" />
     <meta property="og:image:height" content="720" />
     <meta property="og:title" content={presentations[0].title} />

@@ -3,7 +3,7 @@ import { sortMeetingListByMeetingDate } from "@/buildTimeUtils";
 import MeetingCardHorizontal from "@/components/MeetingCardHorizontal.astro";
 import MeetingCardVertical from "@/components/MeetingCardVertical.astro";
 import PresenterWrapper from "@/components/PresenterWrapper.astro";
-import { baseUrl, STLLUG_LOGO_ALT } from "@/constants";
+import { STLLUG_LOGO_ALT } from "@/constants";
 import type { Presentation } from "@/content/config";
 import stllugLogo from "@/images/STLLUG-Logo.png";
 import BaseLayout from "@/layouts/BaseLayout.astro";
@@ -36,10 +36,10 @@ const meetings = sortMeetingListByMeetingDate(
 
 <head>
     <meta name="twitter:card" content="player" />
-    <meta property="twitter:image" content={baseUrl + stllugLogo.src} />
-    <meta property="og:url" content={baseUrl + Astro.url.pathname} />"
-    <meta property="og:image" content={baseUrl + stllugLogo.src} />
-    <meta property="og:image:alt" content={baseUrl + STLLUG_LOGO_ALT} />
+    <meta property="twitter:image" content={Astro.site + stllugLogo.src} />
+    <meta property="og:url" content={Astro.site + Astro.url.pathname} />"
+    <meta property="og:image" content={Astro.site + stllugLogo.src} />
+    <meta property="og:image:alt" content={Astro.site + STLLUG_LOGO_ALT} />
     <meta property="og:image:width" content="1024" />
     <meta property="og:image:height" content="1024" />
     <meta property="og:title" content={`Stl Linux Unix Users Group - ${presenterName}`} />

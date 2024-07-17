@@ -3,11 +3,10 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
 import { defineConfig } from "astro/config";
-import { baseUrl } from "/src/constants";
 
 // https://astro.build/config
 export default defineConfig({
-    site: `${baseUrl}`,
+    site: "https://sluug.netlify.app",
     redirects: {
         "/": "/meetings/1",
         "/sluug": "/meetings/sluug/1",
