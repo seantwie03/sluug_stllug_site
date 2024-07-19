@@ -7,7 +7,8 @@
         "start": "astro dev",
         "build": "astro check && astro build && pagefind --site dist && node -e \"require('fs').cpSync('./dist/pagefind', './public/pagefind', {recursive: true});\"",
         "preview": "astro preview",
-        "astro": "astro"
+        "astro": "astro",
+        "prepare": "husky"
     },
     "dependencies": {
         "@astrojs/check": "^0.5.10",
@@ -23,6 +24,7 @@
     },
     "devDependencies": {
         "@tailwindcss/typography": "^0.5.13",
+        "husky": "^9.1.1",
         "pagefind": "^1.1.0",
         "prettier": "^3.2.5",
         "prettier-plugin-astro": "^0.13.0"
