@@ -21,7 +21,8 @@
         }
     ],
     "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/301573177/",
-    "youtubeTitle": "STLLUG 2024-07-18 - What Software Can Learn from Building Architectures: Patterns Explored",
+    "youtubeUrl": "https://youtu.be/nYyQceWHono",
+    "youtubeTitle": "What Software Can Learn from Building Architectures | STLLUG 2024-07-18",
     "image": {
         "src": "./2024-07-18_stllug_create-an-image-where-a-city-skyline-featuring-a-blend-of-cl.png",
         "alt": "Create an image where a city skyline featuring a blend of classical architecture elements and modern skyscrapers is illuminated with bright, futuristic lighting. The background is filled with sleek, ultra-modern buildings against a deep blue to purple sky gradient. In the foreground, one side showcases an ancient architectural structure like a roman column or a gothic archway subtly blending with the skyline. On the opposite side, there is a visual representation of software architecture diagrams in the form of interconnected nodes and lines, merging seamlessly with the physical buildings. Logos for relevant technologies such as Linux, BSD, Unix-like OS, Docker, and Kubernetes subtly integrated on the structures, connected by digital lines. The image is further embellished with visual effects like light trails, glowing edges, digital patterns, reflective and transparent elements, all within a cohesive color palette of blues, purples, and silvers. This design symbolizes the fusion of traditional building architecture and modern software architecture, merging the world of physical structure with digital innovation."
