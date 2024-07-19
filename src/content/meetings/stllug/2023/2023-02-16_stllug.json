@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2023-02-16",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Design Like CRAP!",
+            "presenterNames": ["Scott Granneman"],
+            "abstract": "'Design Like CRAP!' is a playful take on four key principles of design: Contrast, Repetition, Alignment, and Proximity.\nScott will share insights on how to apply these principles in creative and unconventional ways to create visually compelling designs that stand out. By embracing the idea of 'designing like CRAP,' attendees will learn not only the rules, but also how to break the rules in order to create innovative and impactful designs.\nFun and with a million examples.",
+            "tags": ["web", "design"],
+            "tweet": "Exciting news! Scott Granneman will present 'Design Like CRAP!' on 02/16. 🚀 Learn innovative ways to use Contrast, Repetition, Alignment, and Proximity to create stunning designs. Fun examples await! #design #creativity @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/290698143/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/290698143/",
+    "youtubeTitle": "Design Like CRAP! Mastering the Art of Contrast, Repetition, Alignment, and Proximity | STLLUG 2023-02-16",
+    "image": {
+        "src": "./2023-02-16_stllug_create-an-image-with-a-gradient-background-that-transitions.png",
+        "alt": "Create an image with a gradient background that transitions from a vibrant shade of red, symbolizing contrast, to a bright yellow, symbolizing creativity and ideas. In the center, depict a contrasting scene split into two; one side with sharp, high-contrast colors and bold lines, the other with soft, blended hues. Add repetitive motifs or patterns across the image, possibly arranged in grids or orderly sequences for alignment. Ensure some elements overlap, breaking the conventional rules. Showcase proximity by clustering elements in one section, with others spaced apart. Along the border or corners, incorporate small, subtly blended logos of design technologies such as a vector design icon, collaborative design process icon, open-source design tool icon, and image editing icon. Add abstract design aids like dashed lines, arrows, waves, and curves, leading the viewer's eye through the image. In the background, lightly sprinkle creativity symbols like stars or light bulbs."
+    }
+}

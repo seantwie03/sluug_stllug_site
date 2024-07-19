@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2023-02-08",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "YADM - Yet Another Dotfiles Manager",
+            "presenterNames": ["Sean Twiehaus"],
+            "abstract": "In this presentation Sean will demonstrate 'Yet Another Dotfiles Manager' -- YADM . YADM's tag line is 'If you know how to use Git, then you already know how to use YADM'; but, if you don't know Git, then YADM is a great way to learn Git.\nThis presentation will demonstrate the following capabilities of YADM:\nKeep dotfiles in-sync between machines\nUse Alternate files to have different settings on different systems.\nBootstrap your system using YADM.",
+            "tags": ["command-line"],
+            "tweet": "Excited for our upcoming presentation on 2023-02-08! 📅 Sean Twiehaus will introduce us to YADM - Yet Another Dotfiles Manager. If you know Git, you know YADM! 🖥️👩‍💻 Don't miss it! #dotfiles #git https://www.meetup.com/saint-louis-unix-users-group/events/291413417/"
+        },
+        {
+            "title": "Hands On btrFS",
+            "presenterNames": ["Lee Lammert"],
+            "abstract": "At the Nov 2022 stlLINUX presentation covering btrFS, we could not do the hands-on portion due to an issue with the Zoom client, ...but this time we will! In to this Base presentation we will:\nInstall from scratch with subvolumes;\nUpdate and see the snapshots created;\nDelete extra snapshots;\nBlow it up and recover.",
+            "tags": ["filesystem", "storage"],
+            "tweet": "Join us on 2023-02-08 as Lee Lammert returns with 'Hands On btrFS'! Learn to install, update, create, and delete snapshots, plus recovery tactics! #btrfs #filesystem #snapshotting https://www.meetup.com/saint-louis-unix-users-group/events/291413417/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/291413417/",
+    "youtubeTitle": "YADM Explained: Manage Your Dotfiles Easily with Git | SLUUG 2023-02-08",
+    "image": {
+        "src": "./2023-02-08_sluug_create-a-minimalist-technically-oriented-image-the-backdro.png",
+        "alt": "Create a minimalist, technically-oriented image. The backdrop consists of a gradient blend transitioning from soft blue to white. In the center of the image place a large, open folder icon that represents dotfiles, with semi-transparent overlays of icons for typical files such as .bashrc, .vimrc, and .gitconfig. On the left side of the folder, place the YADM logo, and on the right side the Git logo, indicating their synonymous relationship, connected by arrows. Add subtle, dotted lines linking these logos to various dotfiles, suggesting syncing and alteration capabilities. Dispersed around the central folder, include small icons representing different operating systems like Linux Tux, BSD Daemon, to hint their use across different systems. Maintain original colors for YADM, Git, and system logos for authenticity, while arrows and dotted lines can be light grey or blue to keep the visual balance without overwhelming the key elements."
+    }
+}
