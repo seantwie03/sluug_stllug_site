@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2023-05-10",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Making Effective Use of Select in Postgress...a SQL Rant",
+            "presenterNames": ["Steven Lembark"],
+            "abstract": "Face it: Most of what we all write for queries isn't poetry, let alone True Art. All too often we hack a 'select * from foobar' and figure that 'the code can handle it' or some such.\nBlech.\nThis month let's look at how to use simple data structures and SQL to generate straightforward tables for time-based analysis with SQL -- nary a loop or block required!\nThis talk uses and shows how to create the basis of a complete data analysis framework using SQL, sequences, and range data types. It's efficient in time and space, flexible for handling calendar and fiscal periods, and it'll impress your friends in bar bets.\nOr, to say it in poetry:\nDoff thy for loops and\ntake joy in select!\nThus is the way we\nshall make use of SQL*:\ngenerate what is\nneeded with nary\na loop!\nKISS what is\nreal, and so make it\nyour own! Sets are your\nfriends, no loops needed!\nWith Apologies\nto The Bard (of course).\n* 'squeal', as in the noise of a pig.",
+            "tags": ["sql", "databases"],
+            "tweet": "🎉 Join us on 2023-05-10 for 'Making Effective Use of Select in Postgres...a SQL Rant' by Steven Lembark! Get ready to transform your SQL queries into efficient data analysis! 🚀 #SQL #DataAnalysis #Postgres @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/293032095/"
+        },
+        {
+            "title": "Flipper Zero - A Swiss Army Knife?",
+            "presenterNames": ["Rob Dodson"],
+            "abstract": "Flipper Zero has garnered a great deal of attention as an ultimate Hacking Tool. The first shipment to the US was held up by customs so the government could determine what threat it posed to information technology and related services. Amazon removed it from their site stating it could be used as a card skimmer. The big question, is it?\nLearn the pros and cons of the tool, what it is good for and how it works. Is it a toy, as most people think or does it have a role in security? What can you do to expand its capabilities, and does this make it more dangerous? ...",
+            "tags": ["security"],
+            "tweet": "Is the Flipper Zero just a toy or a legit security tool? Rob Dodson will uncover everything you need to know on 2023-05-10! 🔍💡 #Hacking #Cybersecurity @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/293032095/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/293032095/",
+    "youtubeTitle": "Mastering Time-Based Analysis in PostgreSQL: A SQL Guide | SLUUG 2023-05-10",
+    "image": {
+        "src": "./2023-05-10_sluug_create-a-visually-engaging-image-with-a-gradient-background.png",
+        "alt": "Create a visually engaging image with a gradient background transitioning from light grey to soft blue. Towards the left side, place the logo of an imaginary database represented by a blue elephant, thus highlighting the technology theme. Near the center of the image, incorporate a subtle motif representing a SQL database, like a simplified cylinder, and blend it slightly into the background to provide depth without overpowering the viewer. Towards the bottom right of the image, include a minimalist chart or graph icon to symbolism data analysis. The overall arrangement of elements should be balanced with a minimalist aesthetic, emphasizing a professional and technical, yet engaging tone. This image is intended for a presentation topic centered on effective database usage and data analysis."
+    }
+}

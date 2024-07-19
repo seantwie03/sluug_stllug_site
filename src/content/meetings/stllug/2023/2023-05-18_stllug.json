@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2023-05-18",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "GitHub CodeSpace",
+            "presenterNames": ["Robert Citek"],
+            "abstract": "A codespace is a development environment that’s hosted in the cloud. … Each codespace you create is hosted by GitHub in a Docker container, running on a virtual machine.\nRegardless of your local operating system, your codespace will run in a Linux environment.\nYou can connect to your codespaces from your browser, among other ways. In other words, click a button in a browser and a few seconds later you have a Linux system ready for you to develop in.",
+            "tags": ["cloud", "programming"],
+            "tweet": "🌐 Get ready to dive into GitHub’s CodeSpace with expert Robert Citek on 2023-05-18. Learn how to use development environments in the cloud to boost your productivity! #SLUUG #Linux #GitHub #CodeSpace https://www.meetup.com/saint-louis-unix-users-group/events/291365750/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/291365750/",
+    "youtubeTitle": "Getting Started with GitHub’s CodeSpace: Develop Anywhere | STLLUG 2023-05-18",
+    "image": {
+        "src": "./2023-05-18_stllug_design-an-image-for-a-blog-post-about-github-codespace-th.png",
+        "alt": "Design an image for a blog post about GitHub’s CodeSpace. The background should transition from a deep blue at the top to a light blue at the bottom, symbolizing the cloud and the possibilities of development environments. At the center, design a sleek, modern cloud icon, subtly integrated with a Docker icon. Also, incorporate an image of an open laptop or computer screen, showing terminal windows and code snippets. Place a GitHub Octocat logo at the top-left or top-right corner of the image, a subtly placed Linux Tux logo around the laptop screen, and a recognizable browser icon like Chrome or Firefox near the laptop, all within trademark guidelines. For finishing touches, add a slight tech-themed, circuit board pattern to the background and sprinkle in icons representing development, such as a wrench, gears, or code brackets. The overall image should convey innovation, ease-of-use, and excitement about accessing powerful development tools directly from the cloud."
+    }
+}
