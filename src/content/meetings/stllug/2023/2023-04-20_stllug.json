@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2023-04-20",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Stack Overflows in Linux: Tools, Methods, & Vulnerabilities",
+            "presenterNames": ["Bryce Meyer"],
+            "abstract": "'Stack based attacks' against 32bit and 64bit linux has become and arms race between 'methods to exploit software missteps' vs 'operating system and x64 methods to stop them'.\nWill cover: how holes get in, compiler switches, an intro to 'return oriented programming', shellcode, and mitigation like 'stack canaries.'",
+            "tags": ["security"],
+            "tweet": "Mark your calendars for April 20! Bryce Meyer will dive into 'Stack Overflows in Linux: Tools, Methods, & Vulnerabilities.' Get insights on shellcode, ROP, stack canaries, and more. Don't miss it! #linux #security #opensource @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/291365719/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/291365719/",
+    "youtubeTitle": "Stack Overflows in Linux: Tools, Methods, & Vulnerabilities | SLUUG | STLLUG 2023-04-20",
+    "image": {
+        "src": "./2023-04-20_stllug_create-a-detailed-image-that-captures-the-concept-of-the-pre.png",
+        "alt": "Create a detailed image that captures the concept of the presentation on 'Stack Overflows in Linux: Tools, Methods, & Vulnerabilities'. The central visual should include a layered stack representing a computer stack, labeled '32-bit' in light colors at the bottom and '64-bit' in dark colors at the top, with cracks and fissures running through both stacks symbolizing vulnerabilities. Surround the central visual with icons of popular security tools like GDB and Objdump, symbols representing compiler switches and stack canaries, a shadowy figure manipulating code snippets around return-oriented programming, and floating hexadecimal code. The Linux penguin mascot should be prominent but stylized to avoid copyright infringement. For color scheme, use dark blues and grays for a serious tone with bright yellow and red accents highlighting areas of vulnerability and tools. The background may include subtle elements like code snippets and binary numbers for a sense of depth and complexity. This image aims to engage viewers and provide an immediate understanding of the topic."
+    }
+}

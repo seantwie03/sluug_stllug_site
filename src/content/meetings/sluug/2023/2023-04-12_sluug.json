@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2023-04-12",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Intel's Contributions to Open Source",
+            "presenterNames": ["Katherine Druckman"],
+            "abstract": "Ms. Druckman will speak about how Intel helps Open Source and Linux in particular.\nCoverage:\nWhy Intel has supported Open Source.\nWhere Intel has supported Open Source.\nHighlighted specific projects.\nImportance of giving back to various communities.\nImportance of giving to certain organizations.",
+            "tags": ["open-source-contributions"],
+            "tweet": "Join us on April 12th for an insightful presentation by Katherine Druckman on Intel's Contributions to Open Source! Discover why and where Intel supports Open Source, and learn about key projects! #Intel #Contributions @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/292438842/"
+        },
+        {
+            "title": "Using KeePassXC",
+            "presenterNames": ["Stan Reichardt"],
+            "abstract": "KeePassXC is a free and open-source password manager. It started as a community fork of KeePassX (itself a cross-platform port of KeePass).",
+            "tags": ["password-manager", "security"],
+            "tweet": "🔐 Join us on 2023-04-12 for an exciting presentation! Stan Reichardt will dive into 'Using KeePassXC,' the powerful open-source password manager. Don't miss it! #SLUUG #Linux #Password #Security https://www.meetup.com/saint-louis-unix-users-group/events/292438842/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/292438842/",
+    "youtubeTitle": "Exploring Intel's Impact on Linux and Open Source Communities | SLUUG 2023-04-12",
+    "image": {
+        "src": "./2023-04-12_sluug_visualize-a-modern-and-professional-blog-post-design-with-an.png",
+        "alt": "Visualize a modern and professional blog post design with an emphasis on technology and open source. The background consists of a sleek, dark-themed gradient, transitioning from shades of blue to black. The foreground is home to various tech-centered logos and symbols. A generic tech logo, mimicking Intel's style and size, is placed prominently in the center. Around this logo, artistically arrange icons that symbolize open-source concepts, such as a penguin (representing Linux), a wildebeest head (for GNU), and an octocat (resembling GitHub). Discreet icons of a handshake and a group of people, symbolizing community and collaboration, are poised near the edges. Subtle tech elements like binary code, circuit diagrams, network connections trace around the edges to add a tech-focused aesthetic. The visual elements are displayed in contrasting white and blue tones on the dark background. The logos near the central tech logo are positioned in a semi-circle or orbit effect, with faint lines of code or circuit designs in the backdrop to add depth. This design will convey the theme of contributions to Open Source in a neat and engaging manner."
+    }
+}
