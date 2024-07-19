@@ -5,7 +5,7 @@
         {
             "title": "Apple Announcements Including the Vision Pro",
             "presenterNames": ["Scott Granneman"],
-            "abstract": "Apple announced updates to all of their BSD UNIX operating systems - macOS, iOS, iPadOS, watchOS, & tvOS - and also unveiled a new device with a new operating system: the Vision Pro, an augmented reality-based headset with a focus on what Apple calls 'spatial computing'. The Vision Pro is expensive, but that price will come down in coming years; meanwhile there is plenty to look at and think about when it comes to this new category of computing. In this talk, Scott Granneman will cover the announcements that Apple made and talk about what they mean for computing in general as well as the open source world.",
+            "abstract": "Apple recently announced updates to all of their BSD UNIX operating systems - macOS, iOS, iPadOS, watchOS, & tvOS - and also unveiled a new device with a new operating system: the Vision Pro, an augmented reality-based headset with a focus on what Apple calls 'spatial computing'. The Vision Pro is expensive, but that price will come down in coming years; meanwhile there is plenty to look at and think about when it comes to this new category of computing. In this talk, Scott Granneman will cover the announcements that Apple made and talk about what they mean for computing in general as well as the open source world.",
             "tags": ["hardware", "apple"],
             "tweet": "Join us on 2023-06-14 for an exciting presentation by Scott Granneman covering Apple's latest announcements, including the Vision Pro headset! Don't miss it! #macOS #AugmentedReality @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/294063967/"
         },

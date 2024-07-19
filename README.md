@@ -4,18 +4,17 @@ A website for the Stl Linux Unix Users Group written in [Astro](https://astro.bu
 
 Key technologies used:
 
-- [Typescript](https://www.typescriptlang.org/) for static typing.
-- [TailwindCSS](https://tailwindcss.com/) for styling.
-- [Pagefind](https://pagefind.app/) for static site search.
-- [Astro Icon](https://www.astroicon.dev/) for icons.
-
+-   [Typescript](https://www.typescriptlang.org/) for static typing.
+-   [TailwindCSS](https://tailwindcss.com/) for styling.
+-   [Pagefind](https://pagefind.app/) for static site search.
+-   [Astro Icon](https://www.astroicon.dev/) for icons.
 
 ## Commands
 
 All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
-|---------------------------|--------------------------------------------------|
+| ------------------------- | ------------------------------------------------ |
 | `npm install`             | Installs dependencies                            |
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
 | `npm run build`           | Build your production site to `./dist/`          |
@@ -31,7 +30,7 @@ The majority of the content on this site is managed using Astro's [Content Colle
 
 The primary Content Collection is for our Meetings in `/src/content/meetings`. Each file in this collection represents a meeting with one or more presentations. The Meetings collection contains information for both SLUUG and STLLUG. Housing all of our meetings in a single collection allows them to easily be displayed on the 'Home' page in chronological order. Additionally we can [filter](https://docs.astro.build/en/guides/content-collections/#filtering-collection-queries) the collection to only show SLUUG or STLLUG when needed.
 
-For a full listing of all the frontmatter fields, check the `meetingCollection` schema in `/src/content/config.ts`
+For a full listing of all the json fields, check the `meetingCollection` schema in `/src/content/config.ts`
 
 ### Presenters
 
@@ -49,7 +48,6 @@ To add a new presenter, create a new file in `/src/content/presenters`. The name
 
 On the meeting page, the presenter's name is a hyperlink to the presenter's specific page. Like-wise, on the presenter's page is a list of all the meetings that specific person presented at. In order for these links between the `preseneterCollection` and `meetingCollection` to work, the `presenterName` field must match exactly on the meeting frontmatter and the presenter frontmatter.
 
-
 ## Search Using Pagefind
 
 This site uses [Pagefind](https://pagefind.app/) for search. It was integrated mostly by following this guide ([Video](https://www.youtube.com/watch?v=v79VRrfVau8), [Written](https://chrispennington.blog/blog/pagefind-static-search-for-astro-sites/)).
@@ -62,92 +60,6 @@ To get this to work in dev mode (`npm run dev`) the `/dist/pagefind` directory i
 
 One limitation to this implementation is that when you are running in dev mode (`npm run dev`) and you add a new markdown file, it will NOT be included in the Pagefind index. To have the new file included, you will need stop the dev server and run a build (`npm run build`).
 
-## Possible Options for adding AI content (Marketing Material, Images, etc.)
+## Linting
 
-### 1. YAML Content Collection
-
-Instead of having a Content Collection with `type: "content"`, I could have `type: data`. This would mean instead of using MDX files, we would just supply YAML or JSON files. These values would act as Frontmatter that could be passed into layouts and components.
-
-#### Workflow
-
-- Human
-    - Create YAML file
-- Script
-    - Parse YAML
-    - Send relevant prompts to AI
-    - Modify YAML file to add AI content
-- Astro notices changed YAML, updates page
-- Human
-    - Preview new page
-    - Tweak YAML file as needed.
-
-#### Pro
-
-- Less duplication than having dozens/hundreds of MDX files. 
-    - If we wanted to add/remove a component on every page, we would likely only need to change a single component or layout file.
-
-#### Con
-
-- Hard to style, add links to abstract body content.
-    - Body content would be written in YAML or JSON. Adding new lines, formatting, links, etc. would be finnicky.
-- Limited flexibility for styling of individual (one-off) pages.
-
-
-### 2. Script to parse MDX file and add AI content to frontmatter
-
-This option would have a human create the MDX file with YAML frontmatter and Markdown/JSX body. Then, a script could parse it to pull the relevant information to use in the AI prompts. Then, the script could modify the MDX file to add AI content.
-
-#### Workflow
-
-- Human
-    - Create MDX file
-- Script
-    - Parse YAML frontmatter of MDX file
-    - Parse Markdown body content of MDX file
-    - Send relevant prompts to AI
-    - Modify MDX file to add AI content
-- Astro notices changed MDX, updates page
-- Human
-    - Preview new page
-    - Tweak MDX file as needed.
-
-#### Pro
-
-- Easy to style, add links to abstract body content.
-    - Body content would be written in Markdown. Easy to add new lines, formatting, links, etc.
-- Does not need a YAML file that is thrown away after MDX is generated (compared option 3).
-
-#### Con
-
-- MDX is more difficult to parse than YAML alone. More parsing code to maintain.
-- Modifying the file to add AI content will be more difficult.
-- MDX files have a lot of duplication. 
-    - If we wanted to add/remove a component on every page, we would likely need to change every MDX file.
-
-
-### 3. Script to parse YAML and output entire MDX file
-
-#### Workflow
-
-- Human
-    - Create YAML file
-- Script
-    - Parse YAML
-    - Send relevant prompts to AI
-    - Generate MDX file with data from human and AI
-- Astro notices new MDX, creates page
-- Human
-    - Preview new page
-    - Tweak MDX file as needed.
-
-#### Pro
-
-- Easy to style, add links to abstract body content.
-    - Body content would be written in Markdown. Easy to add new lines, formatting, links, etc.
-
-#### Con
-
-- Would need to maintain code to generate MDX files.
-- MDX files have a lot of duplication. 
-    - If we wanted to add/remove a component on every page, we would likely need to change every MDX file **and** update the MDX generator code.
-
+Husky is used to run prettier on all staged files prior to commit.
