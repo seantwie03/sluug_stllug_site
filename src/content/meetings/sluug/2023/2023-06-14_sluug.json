@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2023-06-14",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Apple Announcements Including the Vision Pro",
+            "presenterNames": ["Scott Granneman"],
+            "abstract": "Apple announced updates to all of their BSD UNIX operating systems - macOS, iOS, iPadOS, watchOS, & tvOS - and also unveiled a new device with a new operating system: the Vision Pro, an augmented reality-based headset with a focus on what Apple calls 'spatial computing'. The Vision Pro is expensive, but that price will come down in coming years; meanwhile there is plenty to look at and think about when it comes to this new category of computing. In this talk, Scott Granneman will cover the announcements that Apple made and talk about what they mean for computing in general as well as the open source world.",
+            "tags": ["hardware", "apple"],
+            "tweet": "Join us on 2023-06-14 for an exciting presentation by Scott Granneman covering Apple's latest announcements, including the Vision Pro headset! Don't miss it! #macOS #AugmentedReality @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/294063967/"
+        },
+        {
+            "title": "Ergonomic Keyboard Design",
+            "presenterNames": ["Eric Trinkle"],
+            "abstract": "This introduction to Ergonomic Keyboard Design will first cover traditional keyboards and some of the potential issues that can arise for power users. With those in mind, we will explore general ergonomic countermeasures, and provide resources for getting started with DIY keyboards or selecting pre-built ones to suit your workflow.",
+            "tags": ["hardware"],
+            "tweet": "Excited to announce Eric Trinkle’s deep dive into Ergonomic Keyboard Design on 2023-06-14! Learn how to choose or build the perfect keyboard to enhance your productivity and comfort. Open to all! #SLUUG #keyboard #ergonomics https://www.meetup.com/saint-louis-unix-users-group/events/294063967/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/294063967/",
+    "youtubeTitle": "Apple's Vision Pro and OS Updates | SLUUG 2023-06-14",
+    "image": {
+        "src": "./2023-06-14_sluug_generate-an-image-showcasing-the-evolution-of-keyboards-on.png",
+        "alt": "Generate an image showcasing the evolution of keyboards. On the left side, depict a dimly lit, standard QWERTY keyboard symbolizing the starting point. In the center, display a brightly lit, custom ergonomic keyboard, split or curved, denoting a creative DIY solution. On the right, present a well-lit, modern pre-built ergonomic keyboard, illustrating accessibility and professional use. Set these on a minimalist desk with a comfortable chair in the background, creating a welcoming workspace ambiance. Subtly, include overhead view of a Caucasian female’s hands typing on the DIY keyboard to add a human element. Small unobtrusive logos related to ergonomic keyboard brands and QMK firmware are placed along the desk edges. Faint icons of FOSS projects like Linux and BSD are scattered in the background, signifying SLUUG themes. Use a neutral color palette with vibrant colors on the keyboards to highlight progression. Maintain a balance in composition and ensure the image is a high-resolution without text."
+    }
+}

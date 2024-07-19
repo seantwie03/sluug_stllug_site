@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2023-06-22",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Learning vi/VIM in 7 lessons",
+            "presenterNames": ["Stan Reichardt"],
+            "abstract": "Learning vi/VIM in 7 lessons.",
+            "tags": ["text-editor"],
+            "tweet": "🎉 Gear up for an insightful journey into the world of vi/VIM! Join us on 2023-06-22 as Stan Reichardt takes us through 'Learning vi/VIM in 7 lessons'. Don't miss it! #VIM #Editor #Linux #OpenSource @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/290697832/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/290697832/",
+    "youtubeTitle": "Learn vi/Vim in 7 Lessons | STLLUG 2023-06-22",
+    "image": {
+        "src": "./2023-06-22_stllug_create-a-tech-themed-blog-announcement-image-with-the-follow.png",
+        "alt": "Create a tech-themed blog announcement image with the following characteristics: the background should be sleek and dark, evoking the atmosphere of a coding environment. The primary colors should be deep greys and blacks contrasted with accent colors of bright green, whites, and light greys. The central design should be a large computer screen or laptop, displaying the interface of the vi/VIM text editor. To the side of this screen, place a logo familiar in its design but unrelated to any real brands. Throughout the design, integrate soft visual elements representing code (e.g., brackets, tags). To symbolize a progression of learning in 7 steps, incorporate a subtle abstract flow, such as a series of small dots or arrows, meandering across the image. Ensure the top section of the design is less detailed to allow for a blog title overlay. For the bottom section, add delicate coding symbols to provide depth without detracting from the central image. The graphic design elements should maintain their original ratios and exude a professional aesthetic."
+    }
+}
