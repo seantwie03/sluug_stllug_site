@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2023-01-11",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Strace & Zoom",
+            "presenterNames": ["Steven Lembark"],
+            "abstract": "Strace is a cmd-line tool in Linux (& some other OS distro) that can let you watch what a program is doing. Even if you don't have a program's source code, you can watch: its interaction with your operating system, watch which of your files it is reading, watch it turn on your mic, your camera, your GPS,... Perhaps this will lead you to ask 'Why does this program need to do this? ...why does it need to read my passwd file, my contacts, my banking files,...???\nSo, strace isn't only a tool for developers...its a SECURITY TOOL!!\nSLUUG's Steven Lembark will show us how to use strace. Then, he hopes to demo using it on 'a popular 3rd party program, ie ZOOM'...and we'll see just what it didn't tell us it is doing!)\n'strace and Chairman Xi:'\nFinding out what the Communist Chinese know about your zoom sessions?\nThere have been some questions about what zoom is really doing under the hood while you're happily chatting. This what led Apple to dis-continue distribution of zoom on their store. One way to look at zoom -- or anything else on your *nix machine -- is with strace. Tonight we'll spend some time setting up a workspace, looking at what strace does for\nyou, and using it on zoom to see what's going on under the chat.",
+            "tags": ["security"],
+            "tweet": "Is Zoom spying on you? Find out with Steven Lembark on 2023-01-11 as he demos Strace, revealing the hidden activities of popular programs. Don't miss it! #SLUUG #Linux #Strace #Security https://www.meetup.com/saint-louis-unix-users-group/events/290814070/"
+        },
+        {
+            "title": "Why Use Linux: Advantages & Challenges",
+            "presenterNames": ["Stan Reichardt"],
+            "abstract": "There are many advantages and challenges. Some less important than expected, others more important. You may want to understand them yourself and share them with those new to Linux.",
+            "tags": ["desktop"],
+            "tweet": "🤔 Curious about the pros and cons of Linux? On January 11th, Stan Reichardt will break it down in 'Why Use Linux: Advantages & Challenges'. Essential knowledge for all tech enthusiasts! #Unix #Linux #FOSS @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/290814070/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/290814070/",
+    "youtubeTitle": "Strace for Security: Analyzing Zoom Under the Hood | SLUUG 2023-01-11",
+    "image": {
+        "src": "./2023-01-11_sluug_design-a-sleek-dark-themed-blog-image-the-background-shoul.png",
+        "alt": "Design a sleek, dark-themed blog image. The background should display a subtle gradient from dark blue to black, with slight inclusions of a world map and a modern shield icon with a lock symbol for security representation. In the center, create an abstract image of a semi-transparent terminal window, slightly tilted, showcasing code snippets. On either side of the terminal window, include minimalist line-art styled icons inspired by communication and debugging tech tools. The left icon should match the terminal theme colors while the right icon can remain its recognizable blue yet blended well into the dark theme. Edge the image with scattered binary codes or data flow lines to add a high-tech feel. Note: the image should be high-resolution, clean, and without any text."
+    }
+}

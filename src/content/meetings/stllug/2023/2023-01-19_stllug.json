@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2023-01-19",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Powershell Empire Security Tool",
+            "presenterNames": ["Gregory Petty"],
+            "abstract": "PowerShell Empire is a post-exploitation framework that allows attackers to easily and stealthily execute malicious payloads on compromised systems.\nThis talk will provide an overview of the capabilities of PowerShell Empire and demonstrate how it can be used in various stages of an attack, from initial compromise to lateral movement and persistence within an organization.\nThe talk will also cover some of the countermeasures that can be taken to defend against PowerShell Empire and other post-exploitation frameworks. By understanding the capabilities and limitations of PowerShell Empire, attendees will be better equipped to recognize and respond to potential attacks that leverage this powerful tool.\n(Editors note: Empire is a post-exploitation framework, which its agents supporting various different Operating Systems (OSes). MS-Windows is purely implemented in PowerShell (without `powershell.exe`!), and Linux/macOS is done in Python 3. Empire is often a favourite for Command and Control (C2) activity. There is a partnership w Kali Linux.Empire is the original tool. BC Security also have created their own “Graphical User Interface (GUI)”, Starkiller, to go along side Empire. Starkiller is a Frontend for Powershell Empire. It is an Electron application written in VueJS. )",
+            "tags": ["security", "powershell"],
+            "tweet": "🔐 Join us on 2023-01-19 for an enlightening presentation by Gregory Petty on the PowerShell Empire Security Tool! Learn about its capabilities and defense measures. #CyberSecurity #PowerShell #SLUUG @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/290696689/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/290696689/",
+    "youtubeTitle": "Unveiling PowerShell Empire: Navigating Attacks and Countermeasures | STLLUG 2023-01-19",
+    "image": {
+        "src": "./2023-01-19_stllug_design-an-image-to-be-used-for-a-blog-post-with-a-cybersecur.png",
+        "alt": "Design an image to be used for a blog post with a cybersecurity theme. The main visual component is a dark, abstract tech-themed background meant to evoke a sense of mystery and security. Incorporate the PowerShell logo prominently at the top or center, and represent the Empire with an abstract icon, such as a stealthy figure or a hacker silhouette. On one side, subtly integrate an icon representing a GUI or dashboard, signifying Starkiller. At the top left corner, include the Kali Linux dragon logo, subtly blended into the design. Along the bottom, integrate abstract representations of operating system logos, such as Windows, macOS, and Linux, to highlight cross-platform compatibility. The image should also feature circuit-like designs or lines, shadows and gradient effects for added depth and a high-tech feel."
+    }
+}
