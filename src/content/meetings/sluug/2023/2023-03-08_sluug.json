@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2023-03-08",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Future of OpenSuSE LEAP",
+            "presenterNames": ["Lee Lammert"],
+            "abstract": "There are a lot of Linux distros, .. but there is only ONE that meets the following criteria (it's also what we use here):\n* Largest independent Linux distro - pure Open Source as well as commercial side to support corporate environments\n* Adheres to and provides a huge amount of development to mainstream FOSS projects (and may not so mainstream)\n* That development commitment has produced some of the arguably most mature management tools of any distro, most notablly Yast.\n* Manages a STABLE set of versions that have not changed in 20 years:\n- OpenSuSE Leap (stable version, major updates every 18 months or so, track record of painless upgrades)\n- OpenSuSE Tumbleweed (rolling release, bleeding edge)\n- SuSE (commercial version with support)",
+            "tags": ["suse", "desktop"],
+            "tweet": "🚀 Exciting times ahead! Lee Lammert will explore the world of OpenSuSE LEAP, Tumbleweed, and SuSE. Get insights into their unique features and stable versions. See you there! #OpenSUSE #Linux #TechTalk @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/292101394/"
+        },
+        {
+            "title": "LibreOffice Database",
+            "presenterNames": ["Stan Reichardt"],
+            "abstract": "Stan was planning, next up, to do a tutorial on the open source, cross platform LibreOffice BASE ( a desktop database front end ). It works with widely employed multi-user database engines: MySQL/MariaDB, Adabas D, MS Access and PostgreSQL. By default it uses an embedded HSQLDB ( Hyper SQL Database ) relational database.\nWell, that was the original plan. Then, Stan ran across a 30 minute video that clearly gave a much better, much clearer, more complete, more concise and professional tutorial than he could ever hope to give.\nWhat to do? Well, what then came to mind was to actually demonstrate using the two database tools that he had developed for SLUUG. Showing the flexibility, power and simplicity of these two in action could actually show why someone might want to explore using LibreOffice BASE.",
+            "tags": ["office-suite", "database"],
+            "tweet": "Get ready for a fantastic demo! Stan Reichardt will showcase the tools he developed, emphasizing the simplicity and power of LibreOffice BASE on 2023-03-08. Don't miss it! #OpenSource #TechTalk #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/292101394/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/292101394/",
+    "youtubeTitle": "Why OpenSuSE is the Best Linux Distro for Stability and Management Tools | SLUUG 2023-03-08",
+    "image": {
+        "src": "./2023-03-08_sluug_design-a-professional-and-modern-blog-announcement-image-th.png",
+        "alt": "Design a professional and modern blog announcement image. The background is a mix of green and white, using gradients to simulate depth, growth, and freshness. The OpenSuSE logo is located centrally, sized slightly larger than the other elements for emphasis, while the Linux penguin logo is subtly included in the background. Icons from other well-known FOSS projects, like Docker, Kubernetes, and Jenkins, are scattered around the OpenSuSE logo. A Yast icon representing a toolkit or a system control center is added along with arrow icons that form a cycle, symbolizing seamless upgrades and stability. Subtle tech iconography, depicting servers and data centers is integrated into the background, along with icons suggesting pathways or connectivity. The bottom portion of the image includes a clean, transparent overlay strip placeholder for event details."
+    }
+}

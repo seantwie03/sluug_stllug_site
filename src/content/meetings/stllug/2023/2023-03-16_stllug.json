@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2023-03-16",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Favorite Linux Commands",
+            "presenterNames": ["Roundtable Discussion"],
+            "abstract": "Enthusiasts are invited to attend and showcase some of their favorite Linux commands. Anywhere from those most frequently used, to most useful, to most helpful. Recent discoveries and old work horses alike are welcome.\nThis session will be very much like those we have had in the past that we referred to as 'keyboard karaoke.' At those face-to-face meetings, volunteers would come up front to a keyboard that would feed into a projection of their terminal input. One or two fascinating lines and others would be inspired.\nYou are welcome to make a quick list of your five favorites to demo and share.\nMany would not attend because they thought there wasn't a well defined topic that would interest them. Many of those that did come would often behold a brilliant new gem. Discovery and inspirations need to be shared.",
+            "tags": ["command-line"],
+            "tweet": "🎤🎉Join us on 2023-03-16 for a 'Favorite Linux Commands' roundtable! Showcase your top commands and discover new gems. It's like keyboard karaoke! Don't miss out! #Linux #CommandLine @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/290698199/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/290698199/",
+    "youtubeTitle": "Discover Hidden Gems: Favorite Linux Commands from the Community | STLLUG 2023-03-16",
+    "image": {
+        "src": "./2023-03-16_stllug_generate-an-artistic-representation-of-the-power-and-versati.png",
+        "alt": "Generate an artistic representation of the power and versatility of Linux commands. The background is a gradient transitioning from deep space black at the edges to vibrant luminescent blue at the center, symbolizing the vast open-source universe with a focal point of discovery. In the foreground, a semi-transparent terminal window with bright green text displaying example Linux commands floats at the center. Surrounding this terminal window, display recognizable symbols associated with Linux, Bash, SSH, and Git. Soft, glowing lines and snippets of code snippets drift around the terminal, representing dynamic idea sharing. The background also features subtle aurora-like wave patterns and light circuit board patterns to signify enlightenment and a tech-savvy atmosphere."
+    }
+}
