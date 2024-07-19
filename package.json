@@ -1,7 +1,8 @@
 {
-    "name": "sluug-stllug-site",
+    "name": "sluug_stllug_site",
     "type": "module",
-    "version": "0.0.1",
+    "version": "1.0.0",
+    "description": "A website for the Stl Linux Unix Users Group.",
     "scripts": {
         "dev": "astro dev",
         "start": "astro dev",
@@ -10,6 +11,8 @@
         "astro": "astro",
         "prepare": "husky"
     },
+    "author": "SLUUG_Org Developers",
+    "license": "MIT",
     "dependencies": {
         "@astrojs/check": "^0.5.10",
         "@astrojs/mdx": "^2.2.2",
