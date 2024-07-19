@@ -18,7 +18,15 @@ const { tweet } = Astro.props;
 const profilePictures = [tuxProfile1, tuxProfile2, tuxProfile3, tuxProfile4, tuxProfile5, tuxProfile6];
 const profilePicture = profilePictures[getRandomIndex(profilePictures.length)];
 
-const bgColors = ["bg-gray-200", "bg-yellow-200", "bg-green-200", "bg-blue-200", "bg-purple-200"];
+const bgColors = [
+    "bg-[#d1d5db]",
+    "bg-[#fca5a5]",
+    "bg-[#fde047]",
+    "bg-[#86efac]",
+    "bg-[#d8b4fe]",
+    "bg-[#f9a8d4]",
+    "bg-[#fda4af]",
+];
 const bgColor = bgColors[getRandomIndex(bgColors.length)];
 
 const usernames = [
