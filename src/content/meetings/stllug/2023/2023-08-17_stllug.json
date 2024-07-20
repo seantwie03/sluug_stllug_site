@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2023-08-17",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "nushell",
+            "presenterNames": ["Robert Citek", "Ed Howland"],
+            "abstract": "Imagine if the output from a command was structured data, e.g. like a SQL table, instead of plain text.\nFifty years ago, Unix implemented pipes, where the output of one command was fed as input to the next command. The data flowing between the commands tended to be plain text and often required parsing by intermediate programs in the pipeline. Furthermore, that text was often organized by lines and rows. And if it wasn't, that made parsing the text a bit of a challenge. Despite those limitations, the concept was revolutionary. But imagine if that data was more than text. Imagine if it was structured data so that you could easily query, select, filter, and sort the data regardless of its structure.\nEnter nushell, a different way of piping data. Nushell also uses pipes, but the data flowing between commands is structured data, e.g. text, CSV, JSON, YAML, SQLite, Excel.\nAnd you can use common nushell commands to operate and transform the data. It's like using a shell and a programming language from a command line.\nIn this talk, we will casually walk through using nushell with plenty of examples of what it can do. Nushell is still very much in the early phases of active development, but it shows a lot of potential for working with structured data.",
+            "tags": ["command-line"],
+            "tweet": "Get ready for an eye-opening presentation on 8/17! 🖥️ Robert Citek and Ed Howland will introduce us to nushell - a revolutionary way to handle and transform structured data. Don't miss this! 💡 #Nushell #Pipeline #FOSS @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/291365781/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/291365781/",
+    "youtubeTitle": "From Plain Text to Structured Data: An Introduction to Nushell | STLLUG 2023-08-17",
+    "image": {
+        "src": "./2023-08-17_stllug_design-a-digital-image-that-depicts-the-concept-of-structure.png",
+        "alt": "Design a digital image that depicts the concept of structured data pipelines and its evolution from traditional Unix pipes to nushell's structured data pipelines. The background should display a gradient transition from a dark, terminal-style backdrop on the left to a more modern, lighter design on the right. On the left side, signify the traditional Unix shell with an old-school terminal icon and visualize plain text lines flowing from it. In the center, show traditional pipes flowing from left to right, transforming plain text lines into structured, colorful data blocks. On the right side, display the nushell logo, and illustrate various data formats (CSV, JSON, YAML, SQLite, Excel) as colorful blocks flowing through nushell pipes. Overlay some common nushell commands/icons on top of the structured data as a hint of data operations. The visual flow should be centered in the top third of the image, with the flowing pipe structure occupying the middle third, and icons representing different data types in the bottom third. The overall style should be modern and tech-focused, with clean lines, sleek design, and vibrant colors."
+    }
+}

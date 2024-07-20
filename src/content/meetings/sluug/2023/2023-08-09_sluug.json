@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2023-08-09",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Hot restore of a MySQL database",
+            "presenterNames": ["Lee Lammert"],
+            "abstract": "Problem: Web server with 20 websites; one of the web admins borked their site and needs it's database restored. The backup from last night is, of course, all 20 databases (plus a few), so it is not possible to restore just one.\nCompounding that problem is that MySQL version is quite a few years old, and the backup cannot be restored to a current MySQL.\nInteresting problem? Tune in Wednesday to see how it was done!",
+            "tags": ["database", "backup"],
+            "tweet": "Exciting news! On 2023-08-09, Lee Lammert will present \"Hot restore of a MySQL database.\" Learn how to tackle a complex web server issue involving 20 sites! Don't miss out! #mysql #backup https://www.meetup.com/saint-louis-unix-users-group/events/294937478/"
+        },
+        {
+            "title": "VIM Side by Side",
+            "presenterNames": ["Stan Reichardt"],
+            "abstract": "The VIM text editor has some abilities and tools that enhances and improves side by side editing of multiple files.\nIf you started with the June 2023 STLLINUX challenge for Learning VIM, by now you should be far enough along to appreciate some interesting and useful VIM capabilities and features presented here.",
+            "tags": ["text-editor"],
+            "tweet": "🚀 Get ready for 'VIM Side by Side' by Stan Reichardt on 2023-08-09! Elevate your VIM game with advanced side-by-side editing techniques. Ideal for participants of the June VIM challenge! #VIM #Editing #OpenSource @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/294937478/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/294937478/",
+    "youtubeTitle": "Hot Restore of a MySQL Database for 20 Websites - SLUUG Presentation | SLUUG 2023-08-09",
+    "image": {
+        "src": "./2023-08-09_sluug_create-a-visually-appealing-layout-for-a-blog-post-image-us.png",
+        "alt": "Create a visually appealing layout for a blog post image. Use a modern gradient background transitioning from a soft blue on the left to a deeper blue on the right. On the left side, place an image of a dolphin that signifies a popular database system, surrounded by subtle database icons for depth. Incorporate the concept of backup and restore with an icon featuring a server stack and an arrow indicating a restore process. On the right side, display a logo denoting a text editor in green, along with a split-screen graphic filled with code snippets, mimicking the side-by-side editing feature. In the center, leave a merging area that subtly signifies the connection between the two technologies, without any text. Preserve plenty of white space for a clean, professional look. All logos and icons should be high-quality, clean vector graphics to maintain sharpness and detail."
+    }
+}
