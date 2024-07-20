@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2023-07-12",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "TMUX - A Longer Introduction",
+            "presenterNames": ["Steve Stegmann"],
+            "abstract": "tmux is an open-source terminal multiplexer for Unix-like operating systems. It allows multiple terminal sessions to be accessed simultaneously in a single window or physical terminal. Simply speaking, tmux acts as a window manager within your terminal and allows you to create multiple windows and panes within a single terminal.\nIts SO simple, most of us only ever use 2 commands. But, there are MORE COMMANDS! It can do FANCIER THINGS. Tonite Steve Stegman will tell us>",
+            "tags": ["command-line"],
+            "tweet": "Join us on 2023-07-12 for Steve Stegmann's deep dive into tmux. Learn how to manage multiple terminal sessions with ease! #Linux #Unix #terminal @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/294360394/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/294360394/",
+    "youtubeTitle": "Unlocking the Power of TMUX: Beyond the Basics | SLUUG 2023-07-12",
+    "image": {
+        "src": "./2023-07-12_sluug_generate-an-image-illustrating-navigating-the-terminal-maze.png",
+        "alt": "Generate an image illustrating 'Navigating the Terminal Maze with TMUX'. The scene uses an abstract maze as a background, designed with terminal-style lines and grid patterns to symbolize complex workspace organization. The central element features a computer monitor, where a terminal window displays a maze-like split with multiple panes. Scattered throughout the maze are miniature terminal icons, interconnected by pathways or arrows, depicting navigation within tmux. The tmux logo stands near the center of the image, while subtle hints of logos from Unix-like OS are embedded within the maze. The dominant color scheme ideally uses dark, monochromatic base colors balanced with neon accents, reflecting the look of classic terminal displays. Green, yellow, and white are used to highlight key elements. This imagery blends the simplicity of flat design with the charm of hand-drawn illustrations."
+    }
+}

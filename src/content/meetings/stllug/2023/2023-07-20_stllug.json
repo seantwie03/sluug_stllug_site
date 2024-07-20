@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2023-07-20",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Social Media for Techies",
+            "presenterNames": ["Scott Granneman"],
+            "abstract": "Mastodon vs Discord vs OpenStack vs GitHubDiscuss vs Slack vs your local user group's email listserver...?\nWhere should techies 'hang out' with their contemporaries? WHy are there SO MANY places to check out? Why utilize one rather than another? What is each one's strength?\nAnd, in the larger world of social media, things are pregnant with change. Twitter, one of the 1st social media sites was faultering and now under Elon Musk's ownership has been radically changing....so much so it is effecting other media & apps that had presumed its services. New social media keep sprouting up, including Facebook/Instagram's new Threads. A huge 'instant winner' gathering millions of users in record time...who are now discovering there may be consequences!",
+            "tags": ["social-media"],
+            "tweet": "📢 Get ready to unravel the complexities of social media with Scott Granneman on 2023-07-20! Discover where techies should hang out and the strengths of Mastodon, Discord, OpenStack, GitHubDiscuss, Slack, and more. Don't miss it! 🌐💬 #SocialMedia #Techies https://www.meetup.com/saint-louis-unix-users-group/events/291365767/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/291365767/",
+    "youtubeTitle": "Techies' Guide to Social Platforms: Mastodon, Discord, and Beyond | STLLUG 2023-07-20",
+    "image": {
+        "src": "./2023-07-20_stllug_generate-an-image-representing-the-concept-of-social-media.png",
+        "alt": "Generate an image representing the concept of 'Social Media for Techies', designed as a collage. The background should be a high-resolution image of a modern, tech-inspired workspace with neutral colors. Place seven silhouetted logos, symbolizing different social platforms, in a scattered, circular arrangement. These symbolic logos, all of similar size, should include a mammoth (Mastodon), a game controller (Discord), a cloud (OpenStack), a stylized cat (GitHub), a multicolored hashtag (Slack), a bird (Twitter), and a small 'f' and intertwined circles (Facebook/Threads). Add subtle digital networking lines, imitating a software system architecture, connecting the symbols to represent interaction and connectivity. For a 3D effect, incorporate slight drop shadows under each logo. The color theme should blend blues, greens, and greys to reflect a tech-friendly and calming environment. Overlay the background lightly with binary code to subtly enhance the techie theme."
+    }
+}
