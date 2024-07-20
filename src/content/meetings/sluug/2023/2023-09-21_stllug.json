@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2023-09-21",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Using Podman Desktop to Shorten the Distance Between Local Containers and Production Deployments",
+            "presenterNames": ["Chris Bowland"],
+            "abstract": "Containers promised to make production look just like local environments. We could finally solve the 'it works on my machine' conundrum.\nBut things didn't actually turn out that way. Local development environments have become impractical to maintain and lack consistency with production. Developers continue to use tools and technologies that keep them at odds with their production environments.\nPodman Desktop simplifies working with containers when targeting Kubernetes platforms. Learn how the Podman Desktop project is bringing Kubernetes closer to the actual developer by minimizing the differences between the developer's desktop and production environments.",
+            "tags": ["containers"],
+            "tweet": "Don't miss our next SLUUG meetup with Chris Bowland! Discover how Podman Desktop is bridging the gap between developers' local environments and production on 2023-09-21. #podman #containers https://www.meetup.com/saint-louis-unix-users-group/events/291365801/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/291365801/",
+    "youtubeTitle": "Bridging Local and Production with Podman Desktop | STLLUG 2023-09-21",
+    "image": {
+        "src": "./2023-09-21_stllug_design-a-professional-and-modern-tech-themed-image-which-pre.png",
+        "alt": "Design a professional and modern tech-themed image which presents the concept of bridging the gap between local and production environments with Podman Desktop. Visualize this concept with the following key elements: a central bridge icon symbolizing the concept of 'shortening the distance', Podman logo positioned above the bridge, a representation of the production environment using the Kubernetes logo on the right side of the bridge, a representation of the local environment using a desktop computer icon on the left side, and subtle connectors indicating the transition from the local to the production environment through the bridge. Enhance this scene with a light gradient background transitioning from blue to white, subtle Docker-style container graphics scattered in the background, and light geometric patterns or abstract tech lines to fill negative spaces and maintain visual balance."
+    }
+}

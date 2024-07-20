@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2023-09-13",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Windows Subsystem for Linux (WSL) Primer",
+            "presenterNames": ["Jon Newbolt"],
+            "abstract": "If you want to learn how to run Linux applications on Windows without the hassle of virtual machines or dual booting, then you should attend this primer on Windows Subsystem for Linux (WSL).\nWSL is a feature that lets you install and use your favorite Linux distributions, such as Ubuntu, Debian, SUSE, Kali, and more, directly on Windows.\nYou can access the power and flexibility of Linux command-line tools, utilities, and applications from your Windows machine. You can also use Windows applications from within Linux, and even run graphical Linux programs on your Windows desktop.\nYou will learn how to:\ninstall WSL with a single command,\nhow to switch between different Linux distributions,\nuse GPU acceleration for machine learning & data science scenarios,\nand how to troubleshoot common issues.\nDon't miss this opportunity to discover the best of both worlds with WSL!",
+            "tags": ["command-line"],
+            "tweet": "📅 Mark your calendars for 2023-09-13! Jon Newbolt will present the 'Windows Subsystem for Linux (WSL) Primer'. Discover how to install WSL, switch distros, & use GPU acceleration for ML! 🚀 #SLUUG #WSL #Linux #Windows https://www.meetup.com/saint-louis-unix-users-group/events/296024767/"
+        },
+        {
+            "title": "How to get started in emacs",
+            "presenterNames": ["Steve Stegmann"],
+            "abstract": "It will cover:\nInstalling from a repository\nOpening and saving files, abandoning any changes you made ( accidents never happen do they? )\nBasic movement of the cursor\nUndo function\nFind / replace\nModes such as:\nshell scripting (bash)\ncompilation and debugging\nspecial commenting modes",
+            "tags": ["text-editor"],
+            "tweet": "Excited for our next SLUUG meeting! 🖥️ Join us on 2023-09-13 as Steve Stegmann dives into 'How to get started in emacs.' Learn how to install, navigate, and make the best of this powerful editor! #emacs #opensource #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/296024767/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/296024767/",
+    "youtubeTitle": "Run Linux on Windows Seamlessly: WSL Primer for Beginners | SLUUG 2023-09-13",
+    "image": {
+        "src": "./2023-09-13_sluug_generate-an-image-following-a-modern-and-slightly-abstract-t.png",
+        "alt": "Generate an image following a modern and slightly abstract theme that creates a visual synergy between Windows, Linux, and Emacs. The background should be a soft gradient transitioning from light blue (symbolizing Windows) to dark gray/black (signifying Linux terminal). In the center, place the Windows logo. Around it, arrange a semi-circle featuring the logos of various Linux distributions: Ubuntu, Debian, SUSE, and Kali Linux, showing integration. Towards the right, integrate the Emacs logo. Include a minimalist terminal icon, spanning both the Windows and Linux gradient halves, symbolizing ease-of-use across command-line interfaces. Incorporate circuit-like lines or tech lines connecting different logos, along with a faint icon of a monitor displaying code snippets in the background. All of these elements should be further enhanced by a harmonious color scheme made up of blues, Ubuntu oranges, green from SUSE, and red tones from Emacs."
+    }
+}
