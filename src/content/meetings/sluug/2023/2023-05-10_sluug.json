@@ -6,7 +6,7 @@
             "title": "Making Effective Use of Select in Postgress...a SQL Rant",
             "presenterNames": ["Steven Lembark"],
             "abstract": "Face it: Most of what we all write for queries isn't poetry, let alone True Art. All too often we hack a 'select * from foobar' and figure that 'the code can handle it' or some such.\nBlech.\nThis month let's look at how to use simple data structures and SQL to generate straightforward tables for time-based analysis with SQL -- nary a loop or block required!\nThis talk uses and shows how to create the basis of a complete data analysis framework using SQL, sequences, and range data types. It's efficient in time and space, flexible for handling calendar and fiscal periods, and it'll impress your friends in bar bets.\nOr, to say it in poetry:\nDoff thy for loops and\ntake joy in select!\nThus is the way we\nshall make use of SQL*:\ngenerate what is\nneeded with nary\na loop!\nKISS what is\nreal, and so make it\nyour own! Sets are your\nfriends, no loops needed!\nWith Apologies\nto The Bard (of course).\n* 'squeal', as in the noise of a pig.",
-            "tags": ["sql", "databases"],
+            "tags": ["sql", "database", "programming"],
             "tweet": "🎉 Join us on 2023-05-10 for 'Making Effective Use of Select in Postgres...a SQL Rant' by Steven Lembark! Get ready to transform your SQL queries into efficient data analysis! 🚀 #SQL #DataAnalysis #Postgres @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/293032095/"
         },
         {
