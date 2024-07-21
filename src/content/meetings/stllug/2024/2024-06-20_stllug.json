@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2024-06-20",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Upgrading from Debian 10 (Buster) to Debian 11 (Bullseye) - A Walkthrough",
+            "presenterNames": ["Lee Lammert"],
+            "abstract": "We will be doing a walkthru of a live upgrade of Debian 10->12 showing how we planned it. We'd like to get to release 12 (the latest) but 'do we need to stop at 11 for intermediate things'?\nWe have mailman e-mail listserve and a webserver and various other sftwr. Do these sftwr pkges have DEPENDENCIES on which release of the OS? How can we tell? In what order do we proceed?\nIt is a 'multi-user system' with expectations that it is to be 'up and available' 24x7, so, we have to treat this more like a 'business machine' rather than a 'home-user/hobbiest'. So, this will be a good chance to see how to PLAN such an upgrade rather than just 'brute force it'",
+            "tags": ["debian"],
+            "tweet": "Mark your calendars for 2024-06-20! Lee Lammert will be presenting a live upgrade of Debian 10 to Debian 11 and beyond, discussing critical planning steps for maintaining 24x7 availability. #Linux #Debian #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/298080070/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/298080070/",
+    "youtubeTitle": "Planning the Perfect Debian Upgrade: From Buster to Bullseye | STLLUG 2024-06-20",
+    "image": {
+        "src": "./2024-06-20_stllug_create-a-transition-themed-tech-image-the-background-transi.png",
+        "alt": "Create a transition-themed tech image. The background transitions from a gradient of dark gray on the left to light gray on the right, overlaid with a faint abstract design of binary code and circuit lines. An arrow, symbolizing the upgrade path, stretches across the width of the image in a central focus. On the left side, there is a clear and prominent logo that looks like a spiral with the number '10' subtly incorporated within. On the right side, a similar logo is placed, but with the number '11' instead. Small icons representing an email service (mailman), a webserver (globe/server), and software dependencies (packages) are integrated along the path of the arrow. The color scheme includes shades of red, white, gray, black, and soft gradients of blue."
+    }
+}

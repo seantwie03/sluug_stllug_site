@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2024-06-12",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Social Media for Nerds",
+            "presenterNames": ["Scott Granneman"],
+            "abstract": "What 'social media' might a nerd or techie want to use? Mastodon? Slack? Discord? TechTV? Twitch? What are the differences between these and other social media? Why use one rather than another?",
+            "tags": ["social-media"],
+            "tweet": "Save the date! Scott Granneman will unpack the differences between Mastodon, Slack, Discord, and others in 'Social Media for Nerds' on 2024-06-12. Perfect for all tech enthusiasts! #SLUUG #TechSavvy #SocialMedia https://www.meetup.com/saint-louis-unix-users-group/events/301551674/"
+        },
+        {
+            "title": "An adventure in starting network 'sniffing'",
+            "presenterNames": ["Lee Lammert", "Grant Taylor"],
+            "abstract": "Are you just starting to 'sniff' to see what is going on at that network interface? Last month we showed an overview of how to start and 'get the feel.' This month, lets look at some specifics. (This is a tutorial, so if it seems a bit esoteric, we expect folks to ask questions. We hope for a good discussion.)\nOur mission tonite is to have Wireshark SSH to a system and run tcpdump remotely and send the packet data back to Wireshark on the client.\nTo do this, the client needs to be able to log into the remote system and gain sufficient privileges to run tcpdump without password prompts.",
+            "tags": ["networking"],
+            "tweet": "💻 Ready to master network 'sniffing'? Join Lee Lammert and Grant Taylor on 2024-06-12 for a hands-on tutorial using Wireshark and tcpdump. Bring your questions! #OpenSource #networking #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/301551674/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/301551674/",
+    "youtubeTitle": "Social Media for Nerds: Which Platform is Right for You? | SLUUG 2024-06-12",
+    "image": {
+        "src": "./2024-06-12_sluug_design-a-vibrant-collage-style-image-that-visually-represent.png",
+        "alt": "Design a vibrant collage-style image that visually represents the concept of social media for a tech-savvy audience. The main background should be sleek and modern with a gradient from a dark to a lighter shade of blue or green. Incorporate various logos: a simple 'M' with a mammoth mascot, a colorful hashtag-like symbol, a game controller with eyes, a recognizable TV network logo, and a purple speech bubble with 'Live Stream' spelled inside. Arrange these logos in a circular or scattered manner, equally sized, around the center of the image. Enhance the techy feel by adding semi-transparent icons of computer-related items like code snippets, circuit boards, or network symbols into the background. Ensure a cohesive color scheme, incorporating shades of blue, green, and purple that complement the logos. Apply a gentle glow or shadow effect around the logos for depth and add light flares in the background for a dynamic, modern feel."
+    }
+}
