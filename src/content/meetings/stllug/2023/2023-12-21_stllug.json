@@ -1,0 +1,37 @@
+{
+    "meetingDate": "2023-12-21",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Using ZFS to Achieve 3-2-1 Backups and Bitrot Protection on Limited Hardware",
+            "presenterNames": ["Sean Twiehaus"],
+            "abstract": "I'm gearing this talk towards homelab users. The premise will be: I have some documents (taxes, copies of drivers licenses, marriage certificate etc.) that contain too much Personally Identifiable Information (PII) to upload to Google or Dropbox. How can I keep these documents backed up and secured using minimal hardware that I may already have laying around.\nI'll show how I'm achieving 3-2-1 Backups using an ODROID H3+ w zfs_autobackup & Restic.\nThe bulk of this presentation will be me explaining the ZFS setup that I described in this forum post:\nhttps://discourse.practicalzfs.com/t/snapshots-to-a-different-zpool-on-the-same-host-as-part-of-a-3-2-1-backup-strategy/1074\nBasically, I have an ODROID H3+ that has multiple drives attached. I configure them to have multiple zpools. I then take snapshots of one zpool and send it to another zpool on the same host. This gives me two copies of the data on two different storage devices. Then I use restic to send a third copy offsite. I also use some nifty ZFS features to enable bitrot protection on a single device zpool.",
+            "references": [
+                {
+                    "linkText": "ODROID H3+",
+                    "url": "https://www.hardkernel.com/shop/odroid-h3-plus/"
+                },
+                {
+                    "linkText": "3-2-1 Backups",
+                    "url": "https://www.seagate.com/blog/what-is-a-3-2-1-backup-strategy/"
+                },
+                {
+                    "linkText": "zfs_autobackup",
+                    "url": "https://github.com/psy0rz/zfs_autobackup"
+                },
+                {
+                    "linkText": "Restic",
+                    "url": "https://restic.net/"
+                }
+            ],
+            "tags": ["backup", "filesystem", "storage"],
+            "tweet": "Join us on 12/21 for Sean Twiehaus's talk: 'Using ZFS to Achieve 3-2-1 Backups and Bitrot Protection on Limited Hardware.' Learn how to secure your vital documents with minimal hardware! #Linux #Backup #ZFS #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/291365848/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/291365848/",
+    "youtubeTitle": "Achieving 3-2-1 Backups and Bitrot Protection with ZFS on Limited Hardware | STLLUG 2023-12-21",
+    "image": {
+        "src": "./2023-12-21_stllug_design-an-image-for-a-blog-that-captures-the-key-technologie.png",
+        "alt": "Design an image for a blog that captures the key technologies and concepts for an upcoming presentation. Start with a gradient background transitioning smoothly from dark blue to light blue to symbolize a shift from local to offsite backups. In the center, place a high-resolution image of the ODROID H3+ board. Surround this with the logos of the ZFS, Restic, and recognizable icons for Linux/Unix arranged in a circular fashion. Include subtle vector graphics illustrating the 3-2-1 Backup strategy near the top with three hard drive icons of varying sizes, two smaller distinctive storage media icons, and an offsite icon represented by a distant server or a cloud. On the side of the ODROID H3+, introduce geometric patterns or icons signifying data protection. Lastly, include small screen overlay icons in a corner to suggest a virtual and free-to-access orientation of the presentation. Make sure all elements are balanced and synchronized visually, thereby visually encapsulating the focus of the presentation."
+    }
+}

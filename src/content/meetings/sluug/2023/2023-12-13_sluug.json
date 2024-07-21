@@ -1,0 +1,32 @@
+{
+    "meetingDate": "2023-12-13",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Python's Pandas Data Frames",
+            "presenterNames": ["Robert Citek"],
+            "abstract": "Your gateway to Extract-Transform-Load ( ETL ) & Machine Learning ( ML ).\nEmbark on a beginner-friendly exploration of a powerful library that turns raw data into a playground for insights. In this introductory talk, we'll demonstrate how Pandas can help with the Extract-Transform-Load (ETL) processes, shed light on your data with its Exploratory Data Analysis (EDA) methods, and get started with Machine Learning (ML).\n#### Agenda:\n##### * Getting Started with ETL:\nLearn the foundations of extracting, loading, and transforming data with Pandas.\nDiscover how Pandas simplifies the initial steps of preparing your data.\n##### * Playful Exploration with EDA:\nTake a casual stroll through your data with Pandas' user-friendly Exploratory Data Analysis tools.\nGet acquainted with simple yet powerful techniques to understand your dataset.\n##### * A Peek into Machine Learning with Pandas:\nDip your toes into the world of ML as we showcase how Pandas contributes to the early stages of the ML journey.\nExplore basic concepts of data preparation for ML tasks.\n##### * Hands-On with Google Colab:\nImmerse yourself in practical examples using Google Colab.\nExperience the simplicity and collaborative nature of working with Pandas in a cloud-based environment.\n##### * Why Attend:\nPerfect for beginners exploring data manipulation and analysis.\nGain familiarity with using Pandas for your initial data tasks.",
+            "tags": ["programming", "python", "data-science"],
+            "tweet": "Join us on 2023-12-13 for Robert Citek's talk on 'Python’s Pandas Data Frames'! Get ready for a beginner-friendly exploration into ETL, EDA, and ML with Pandas at #SLUUG! 🚀📊 #python #datascience https://www.meetup.com/saint-louis-unix-users-group/events/297550133/"
+        },
+        {
+            "title": "Save, Share, and Replay Your Terminal Sessions With Asciinema",
+            "presenterNames": ["Sean Twiehaus"],
+            "abstract": "Asciinema is a free and open source solution for recording terminal sessions and sharing them on the web. Similar to script and scriptreplay.\nSimilar to last month's **script replay** BASE topic; but, with some really neat features.",
+            "references": [
+                {
+                    "linkText": "Asciinema",
+                    "url": "https://asciinema.org/"
+                }
+            ],
+            "tags": ["command-line"],
+            "tweet": "🎥🔧🌐 Exciting times ahead! Sean Twiehaus will dive into Asciinema on 2023-12-13. Discover the power of recording, saving, and sharing your terminal sessions. Be sure to attend! #FOSS #terminal #asciinema @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/297550133/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/297550133/",
+    "youtubeTitle": "Unlocking Data Insights with Pandas: ETL, EDA, and ML for Beginners | SLUUG 2023-12-13",
+    "image": {
+        "src": "./2023-12-13_sluug_create-an-engaging-tech-related-blog-image-the-backdrop-sho.png",
+        "alt": "Create an engaging tech-related blog image. The backdrop should be a sleek modern gradient blue and white, invoking an atmosphere of trust and professionalism. In the center, prominently place the Pandas logo (a friendly panda face), alongside the Python logo. Surround these with subtly incorporated elements for ETL and Machine Learning: icons of gears for ETL, bar charts, and line plots for EDA, and a small neural network diagram for ML. To the side, ensure the Asciinema logo (a terminal screen icon with a play button) is visible but does not overshadow the Pandas design. Perhaps near this, include small terminal session illustrations or a command line snippet. Indicate the Google Colab environment with a small cloud icon, possibly with an arrow pointing at it for an upload/download concept. Finally, balance these design elements, leaving enough whitespace to keep the design clean and approachable, and consider using light, translucent overlays to accentuate key logos."
+    }
+}
