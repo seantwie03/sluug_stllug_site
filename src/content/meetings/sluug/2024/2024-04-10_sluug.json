@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2024-04-10",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Using 'Screenshot to Code' to Style a Website",
+            "presenterNames": ["Sean Twiehaus"],
+            "abstract": "Screenshot to code is an open-source self-hostable tool that can generate web pages. It works using OpenAI's GPT4-Vision model.\nThe user uploads a screenshot of a website, then 'Screenshot to code' asks GPT4-Vision to generate code that will produce a web page that looks like the screenshot.\nIn this presentation, we will play around with 'Screenshot to Code' and see if it can style a new SLUUG website that I am building.",
+            "tags": ["ai", "web", "programming"],
+            "tweet": "Mark your calendars for 2024-04-10! Sean Twiehaus will demonstrate how to use 'Screenshot to Code' to style a new SLUUG website using GPT-4 Vision. You don’t want to miss this! 🌐 #SLUUG #OpenSource #GPT4 https://www.meetup.com/saint-louis-unix-users-group/events/299940596/"
+        },
+        {
+            "title": "Virtualization ShootOut",
+            "presenterNames": ["Roundtable Discussion"],
+            "abstract": "Volunteers welcome to add their views on any of the following or related points.\nA 'Virtualization ShootOut' / Roundtable discussion.\nKVM\nXen\nVirtualBox\nHyper-V / VirtualServer / VirtualPC\nProxmox\n[VMWare?]\nRelated topics:\nIDRAC\nOther out-of-band console access",
+            "tags": ["virtualization"],
+            "tweet": "🚀 Join us on April 10, 2024, for an epic 'Virtualization ShootOut'! Our roundtable will dive deep into KVM, Xen, VirtualBox, Hyper-V, Proxmox, and more. Don't miss it! #virtualization #roundtable @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/299940596/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/299940596/",
+    "youtubeTitle": "'Screenshot to Code' Demo with OpenAI GPT-4 Vision | SLUUG 2024-04-10",
+    "image": {
+        "src": "./2024-04-10_sluug_create-a-high-resolution-tech-forward-image-that-is-1200x60.png",
+        "alt": "Create a high-resolution, tech-forward image that is 1200x600 px. On the left, occupying 40% of the image is a high-quality screenshot of a generic, professional webpage with headers, paragraphs, and images. Transitioning from this via a semi-transparent, gradient arrow (light blue to dark blue) curving from top left to the bottom right is a window showing HTML/CSS code with syntax-highlighted text on a dark background. The arrow is surrounded by a subtle digital transformation effect to symbolize the AI-driven process converting the visual design into code. Towards the bottom left corner of the layout is the logo for OpenAI GPT-4 Vision and a user group logo (SLUUG). If available, an appropriate icon or logo for the 'Screenshot to Code' tool is placed in the bottom right corner. The background color of the image is a neutral light gray or off-white. The overall aesthetic should feel modern, clean, and line up with a sense of a professional educational resource."
+    }
+}

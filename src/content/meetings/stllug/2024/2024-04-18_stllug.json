@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2024-04-18",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "The XZ Hack",
+            "presenterNames": ["Andrew Denner"],
+            "abstract": "The backdoor in xz and liblzma is a serious near miss that thankfully did not make it into most production linux distributions and could have been far worse if it hadn't been caught by a developer noticing his ssh login took an extra half a second.\nThis hack is an impressive long con by someone who had been given maintainer status in the tool. We will cover how it worked from a high level, how it almost was a far more serious issue than it is, and what it means for the FOSS world. (Also why this issue is causing me to loose sleep over it)\n(This was noted in an ArsTechnica article on March 29 (ie ~ 20 days ago.) Same day, stlLUG members were posting it in our DISCUSS email-list. On April 11, there was a ~5min on-air interview with the MS engineer who discovered it, including comments about open-src vs closed-src. This interview was on the general public's NPR radio. The backdoor seems to have been loose in the public since at least Feb 23?)\nCVE-2024-3094.",
+            "tags": ["security"],
+            "tweet": "🔍 Uncover the secrets of 'The XZ Hack' on 2024-04-18 with Andrew Denner! Learn how a half-second delay in SSH login helped identify a major security flaw before it could wreak more havoc! #CVE20243094 #FOSS #Linux #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/298136396/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/298136396/",
+    "youtubeTitle": "The Implications of the XZ Hack in the FOSS Community | STLLUG 2024-04-18",
+    "image": {
+        "src": "./2024-04-18_stllug_create-a-striking-and-moody-image-representing-a-security-is.png",
+        "alt": "Create a striking and moody image representing a security issue for a blog announcement titled 'The XZ Hack: Unveiling the Near-Miss in xz and liblzma'. The image should have a gradient background transitioning from dark blue to black, symbolizing sophistication and ominousness. In the center, a high-resolution image of a lock that's half-broken with glowing red crack lines emanating from it should be placed, symbolizing compromise in security and vulnerability. At the top-left, subtly blend the logo of a utility unit and at the bottom-left, place a logo honoring open-source operating systems. A grayscale logo of a tech news site should be positioned at the bottom right. Overlaid faintly across the image horizontally should be binary code, representing underlying data. A shadowy image of a hacker should be blended into the background on one side, suggesting the undetected threat. Red accents or highlights around the broken lock and a soft white glow around the logos should be present to draw focus."
+    }
+}
