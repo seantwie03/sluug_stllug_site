@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2023-10-11",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "RISC architecture",
+            "presenterNames": ["Carl Perry"],
+            "abstract": "This presentation will cover the features of RISC architecture and how it differs from Intel x86 processors. He will also address the security benefits of RISC.",
+            "tags": ["hardware"],
+            "tweet": "Join us on 2023-10-11 for an insightful presentation by Carl Perry on #RISC architecture! Learn how it differs from Intel x86 processors and gain insights into its security benefits. #architecture #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/296264250/"
+        },
+        {
+            "title": "Pi-Hole",
+            "presenterNames": ["James Conroy"],
+            "abstract": "Are you tired of seeing advertisements at home?\nDo you have a raspberry pi lying around collecting dust?\nThis base talk will give an overview of the pi-hole project, how to install it (bare metal, or via docker), and how to use the project to block ads on your whole home network.\nPi-hole is a Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole and optionally a DHCP server, intended for use on a private network.\nIt is designed for low-power embedded devices with network capability, such as the Raspberry Pi, but can be installed on almost any Linux machine.\nPi-hole has the ability to block traditional website advertisements as well as advertisements in unconventional places, such as smart TVs and mobile operating system advertisements.",
+            "tags": ["raspberry-pi", "privacy"],
+            "tweet": "Don't miss our next exciting presentation on 10/11! James Conroy will walk us through Pi-Hole, the ultimate ad-blocking solution using a Raspberry Pi. Say goodbye to intrusive ads on your home network! #PiHole #AdBlocking #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/296264250/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/296264250/",
+    "youtubeTitle": "Understanding RISC Architecture: Features and Security Benefits | SLUUG 2023-10-11",
+    "image": {
+        "src": "./2023-10-11_sluug_create-a-clean-and-modern-image-with-high-contrast-color-pal.png",
+        "alt": "Create a clean and modern image with high-contrast color palette primarily using shades of blue, grey and accents of green. The image aspect ratio should be either 16:9 or 4:3. The image should provide a sleek tech-themed background with gradient from dark blue to black serving as a base. In the center, feature a stylized microchip hovering above an icon representing a miniature single-board computer. To the left side of the microchip, place a symbol representing a global semiconductor company. On the right side of the single-board computer icon, include a shield symbolizing network security. Add subtle details like scattered, tiny glowing dots mimicking the lights on networking hardware and thin lines connecting various elements, giving an impression of networked technology. Aim for an aesthetic that would resonate with technological enthusiasts, even without using any text."
+    }
+}

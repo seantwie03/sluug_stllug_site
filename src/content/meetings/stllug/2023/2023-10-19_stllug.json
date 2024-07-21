@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2023-10-19",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Lightning Talks",
+            "presenterNames": ["Ken Johnson"],
+            "abstract": "Ken will present a mix of short topics of recent interest to him.\nTrouble shooting email ( real life examples )\nFossil vs Git\nWhatever else he can think of...",
+            "tags": ["version-control"],
+            "tweet": "🚀 Exciting News! On 2023-10-19, join us for 'Lightning Talks' presented by Ken Johnson! He'll cover troubleshooting email with real-life examples, Fossil vs Git, and even more! Don't miss it! #troubleshooting #vcs #opensource @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/291365819/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/291365819/",
+    "youtubeTitle": "Lightning Talks: Ken's Latest FOSS Discoveries and More! | STLLUG 2023-10-19",
+    "image": {
+        "src": "./2023-10-19_stllug_create-an-image-that-reflects-a-dynamic-and-stimulating-pres.png",
+        "alt": "Create an image that reflects a dynamic and stimulating presentation called 'Lightning Talks'. In the centre, under the dire atmosphere of a dark, stormy sky bathed with diverging beams of light from bolts of lightning, lay three pictorial representations of the discussion topics. On the left edge, an envelope icon is being examined by a magnifying glass, signifying email troubleshooting. On the right, two logos are displayed side by side with miniscule 'VS' symbol in between them, plainspokenly representing a comparison of Fossil and Git, two distributed version control systems. Lastly, towards the lower edge, computer screens and code snippets are disseminated across the field, symbolising an array of other tech topics that can be introduced. The bolts of lightning illuminate specific areas around these symbols, guiding focus and highlighting the drama and excitement these discussions encapsulate. The colors used should be in line with and augment the SLUUG branding."
+    }
+}
