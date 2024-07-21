@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2024-03-21",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Using Local LLMs and RAG For Content Promotion",
+            "presenterNames": ["Sean Twiehaus"],
+            "abstract": "SLUUG produces a lot of content, but we are horrible at promoting it. In this presentation I will show how we could use Open Src Sftwr and AI's Open Src Large Language Models (LLM) running on our privately owned hardware to promote the content we create with minimal effort.\nIf you ask a Large Language Model what the St. Louis Unix Users Group is, it has a good answer pulled directly from our website. If you ask specific questions about a presentation that has been given, you quickly realize the limitations. Using Retrieval Augmented Generation (RAG), we can 'teach' the Large Language Model about our presentations. Once taught, we can utilize these Large Language Models to generate summaries, lists of key topics, tweets, YouTube titles, thumbnails, etc.\nRecently, Stan R. has begun uploading our presentation archives to our Youtube Channel. I will demonstrate how we can 'teach' an Open Source LLM about a specific presentation then get it to generate several titles suitable for the YouTube Video. Then, we will have it generate the video description. Then we will have it generate a list of tags and key phrases.\nThen, we will imagine a program where we submit a talk Title and Abstract into a program, then all these things are generated automatically, all using Open Source Software and Open Source Large Language Models running on our private hardware.\nIf anyone is willing to volunteer to make such a program, please reach out! Volunteers Needed!",
+            "tags": ["ai"],
+            "tweet": "🚀 Join us on 2024-03-21 as Sean Twiehaus demonstrates using Open Source LLMs and RAG for content promotion! Learn how to generate summaries, tweets, YouTube titles, and more automatically. Be there! #SLUUG #OpenSource #AI https://www.meetup.com/saint-louis-unix-users-group/events/298136389/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/298136389/",
+    "youtubeTitle": "Automating Content Promotion with Open Source LLMs & RAG | STLLUG 2024-03-21",
+    "image": {
+        "src": "./2024-03-21_stllug_create-a-vibrant-illustration-that-embodies-themes-of-ai-and.png",
+        "alt": "Create a vibrant illustration that embodies themes of AI and open-source technology. The central focus should be a stylized depiction of a brain with neural network connections, signifying Large Language Models. The supporting images should include illustrations of private, local hardware such as a server rack, and AI icons like a robot head, cogwheels, and circuit board patterns. Also include open-source logos for Markdown, Jupyter, GitHub, and a general logo for machine learning frameworks, along with promotional symbols like megaphones and social media icons. The image should be set against a gradient background with modern, abstract shapes or soft lines in blues, greens, bright yellows, oranges, grays and whites. Elements should be arranged with the brain in the center, hardware and AI icons in the top corners, and promotional symbols and logos scattered in the bottom corners. The space should be filled with video-related icons and supporting logos, maintaining ample white space for a clean, uncluttered look."
+    }
+}

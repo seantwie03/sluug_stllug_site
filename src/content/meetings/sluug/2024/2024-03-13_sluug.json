@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2024-03-13",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "The History of Computing since 1968",
+            "presenterNames": ["Scott Granneman"],
+            "abstract": " Scott Granneman is going to break it down into decades. So, why talk about all that old stuff? To understand 'how we got here.' is how all historians will point out that you want to know the history. What were the problems that we were trying to solve? We are living with the solutions...and the new problems caused by those solutions, so we should understand what was being attempted.\nBack in January, Ed Howland told us about the 'History of The Unix Shell.' And, we learned the above usefulness of history.\nSo, Scott will give us the decade by decade description of the important events & inventions in computing. And you can understand what they have influenced it your problems today.\nBack then, computers ran on punch cards and reel-to-reel tape. A five megabyte hard drive was the size of today's dishwasher. Mini-computers were the size of a deep freeze. Things changed.",
+            "tags": ["history"],
+            "tweet": "📅 Mark your calendars for 2024-03-13! Scott Granneman will present 'The History of Computing since 1968' at SLUUG's virtual meeting. Discover the pivotal moments that shaped modern tech! #ComputingHistory #FOSS #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/299368303/"
+        },
+        {
+            "title": "Upgrading 2 releases of Debian on web/email server. Part 2",
+            "presenterNames": ["Lee Lammert"],
+            "abstract": "Lee_Lammert et al. will discuss more of 'how to plan' an upgrade thru 2 major rels of the Debian OS on our web/mail server as well as your system! What need be considered and planned in OUR particular case? But also, what does the discipline of doing this planning show all of our members 'HOW TO PLAN' such an effort on their own systems? IE systems that may be MULTI-USER? ...systems that should have high availability & high uptime? IE you can NOT just 'be down' until this 'kinda works'!\nLast month we outlined some of the work we planned for updating BOCK ( our web and mail server ). This will be about the next phase in our transition from Debian 10 to Debian 11 base line.",
+            "tags": ["debian"],
+            "tweet": "🚀 Exciting news! Join us on 2024-03-13 as Lee Lammert dives into 'Upgrading 2 releases of Debian on web/email server. Part 2'! Learn essential planning tips for seamless upgrades 🖥️📧 #Debian #Upgrade #Linux @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/299368303/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/299368303/",
+    "youtubeTitle": "The Evolution of Computing: A Journey from 1968 to Present | SLUUG 2024-03-13",
+    "image": {
+        "src": "./2024-03-13_sluug_create-an-image-divided-into-two-halves-the-left-side-showc.png",
+        "alt": "Create an image divided into two halves. The left side showcases a retro, sepia-toned background with elements of vintage computer hardware: punch cards, reel-to-reel tapes, a large 5-megabyte hard drive and iconic machines from the 1960s, 70s, and 80s. The right side embodies a modern, sleek, high-tech feel and features a high-resolution image of a server rack, the Debian logo, multi-user server icon, and subtle icons for cloud computing and uptime monitoring. In the middle, visualize the transition between the two eras with a gradient or dissolve effect, and include a symbolic element that denotes the digital transformation, such as a timeline arrow."
+    }
+}
