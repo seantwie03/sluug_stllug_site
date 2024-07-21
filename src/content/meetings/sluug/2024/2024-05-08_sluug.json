@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2024-05-08",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Cybersecurity & AI - A Review",
+            "presenterNames": ["Tony Zafiropoulos"],
+            "abstract": "Reviewing where we are and what we need to look out for both positive vs. negative (IE. AI as used in attacks vs. in defense)",
+            "tags": ["security", "ai"],
+            "tweet": "🔒🧠 On 2024-05-08, Tony Zafiropoulos presents 'Cybersecurity & AI - A Review'. Explore the good, the bad, and the future of AI in cybersecurity. Be there! #AI #Cybersecurity @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/300166072/"
+        },
+        {
+            "title": "An adventure in starting network 'sniffing'",
+            "presenterNames": ["Lee Lammert", "Grant Taylor"],
+            "abstract": "Just starting to 'sniff' to see what is going on at that network interface?\nIs it: ... fast? ...Slow? ...Screwed up? ...HACKED??\nWhat are you looking for?\nWhat are the tools (WireShark, Sniffer, etc...)?\nHow to start sniffing...?\nHave you ever:\n'sniffed' a network?\nSearched for specific traffic (e.g.DNS)?\nCaptured that traffic without taking disk space on that source system?\nAnalyzed that traffic in clear text?\nBe sure to attend the tutorial on Wednesday and get these questions answered, and more!\nBut wait!! This is only the FIRST tutorial in a series of increasing complexity with members of the 'SLUUG Sysadmin Team' contributing different perspectives to diagnose issues with one of our serves.\nTease: If you're curious what 'tcpdump', 'Wireshark', 'tshark', and 'snoop' have to do with network sniffing, then you're going to want to make sure to attend ....\nAnd, if you thought sniffing unencrypted traffic was impressive, wait until you can do and SEE with encrypted traffic. Yes, you read that correct, we're going to look into encrypted traffic from a network sniffer. (More likely encrypted will be in future month's presentation, but tonite will lead you to it.)",
+            "tags": ["networking"],
+            "tweet": "📅 Mark your calendars for May 8, 2024! Lee Lammert and Grant Taylor will take us on an 'An adventure in starting network sniffing.' 🕵️‍♂️🔍 Don’t miss the first in a series of exciting tutorials! #Networking #Sniffing @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/300166072/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/300166072/",
+    "youtubeTitle": "AI in Cybersecurity: Attack vs. Defense | SLUUG 2024-05-08",
+    "image": {
+        "src": "./2024-05-08_sluug_create-an-image-with-a-visually-striking-dark-themed-backgr.png",
+        "alt": "Create an image with a visually striking, dark-themed background suggestive of cybersecurity; incorporate a circuit board pattern to represent technology. Position a large semi-transparent shield symbol in the center that represents protection. On the left side, depict artificial intelligence and cybersecurity with a neural network pattern, a lock icon, a generic security software logo, and an image of a friendly robot opposing a cyber attacker silhouette. On the right side, represent network sniffing with the illustrations of different generic network sniffing tools, a magnifying glass over a network diagram, data packets, a network topology, and a Wi-Fi symbol with an eye icon included. Throughout the image, subtly include binary code or matrix-like elements and use neon blue or green highlights to make things pop out. The entire image embodies a futuristic, security-centric theme."
+    }
+}

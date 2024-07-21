@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2024-05-16",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "The History of Computing since 1980",
+            "presenterNames": ["Scott Granneman"],
+            "abstract": " Scott Granneman is going to break it down into decades. So, why talk about all that old stuff? To understand 'how we got here.' is how all historians will point out that you want to know the history. What were the problems that we were trying to solve? We are living with the solutions...and the new problems caused by those solutions, so we should understand what was being attempted.\nBack in January, Ed Howland told us about the 'History of The Unix Shell'. And, we learned the above usefulness of history. And in March, Scott started this series with 'The History of Computing since 1968'.\nSo, Scott will give us the decade by decade description of the important events & inventions in computing. And we understood what they have influenced in your problems today.\nBack then, the push was to stop using those mainframe computers 'in the clouds'. Your data and your computing should be moved onto your physical desktop on that new, powerful desktop computer! Things have changed.",
+            "tags": ["history"],
+            "tweet": "📅 Mark your calendars for May 16! Scott Granneman presents 'The History of Computing since 1980'. Discover the significant events and innovations that shaped today's tech landscape! #Computing #TechTalk #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/290697995/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/290697995/",
+    "youtubeTitle": "The History of Computing Since 1980: A Decade-by-Decade Breakdown | STLLUG 2024-05-16",
+    "image": {
+        "src": "./2024-05-16_stllug_create-a-modern-clean-image-representing-the-evolution-of-c.png",
+        "alt": "Create a modern, clean image representing the evolution of computing technologies from 1980 to the present. It should feature a blue gradient background transitioning from dark (left, past) to light (right, present). A horizontal timeline across the middle should mark each decade with a small circle or node, and include non-copyrighted equivalents of iconic tech logos from each era. Morphing symbols of computing devices from large, old mainframes to sleek modern ones should intersperse along the timeline. Subtle line drawings or silhouettes of iconic hardware like a floppy disk, CD, USB stick, and SSD should scatter along the timeline. Use a complementary color palette - primarily blues and greys, with accents in bright colors for pop. The layout must include an empty space at the top for the blog title and text, the timeline with logos and icons in the middle, and a slight shadow or fade effect at the bottom to add depth. Make sure to keep it wordless for universal understanding, focusing on visual impact and storytelling, and maintaining high resolution for clarity and professionalism."
+    }
+}
