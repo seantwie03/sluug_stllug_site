@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2023-11-08",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Windows Subsystem for Android (WSA)",
+            "presenterNames": ["Jon Newbolt"],
+            "abstract": "At the Windows 11 announcement event in June 2021, Microsoft showcased the new Windows Subsystem for Android ™ (WSA) that will enable support for the Android Open Source Project (AOSP) and will allow users to run Android apps on their Windows desktop.\nWindows Subsystem for Android ™ (WSA) is a feature of Windows 11 that allows users to run Android apps on their Windows devices. WSA integrates with the Amazon Appstore, where users can download and install Android apps. Developers can test and debug their Android apps on Windows 11 using the WSA settings and the Android Debugging Bridge (ADB) tools.\nWSA also supports various input methods and window management features for Android apps on Windows.\nThis article provides a short technical overview of WSA, its prerequisites, installation, configuration, and troubleshooting steps.\nIntegration with the Amazon Appstore: Users can download and install Android apps from the Amazon Appstore, which offers a catalogue of Android apps.\nhttps://www.androidsage.com/2022/06/09/download-windows-subsystem-for-android-12-1-wsa-on-windows-11/\nDeveloper support: Developers can test and debug their Android apps on Windows 11 using the WSA settings and the ADB tools.\nttps://www.androidsage.com/2022/06/09/download-windows-subsystem-for-android-12-1-wsa-on-windows-11/\nInput compatibility: WSA supports various input methods and window management features for Android apps on Windows.Users can interact with Android apps using keyboard, mouse, touch, pen, or game controller inputs.\nhttps://learn.microsoft.com/en-us/windows/android/wsa/\nPerformance and reliability: WSA has improved its performance and reliability over time with updates and bug fixes.\nhttps://www.androidsage.com/2022/06/09/download-windows-subsystem-for-android-12-1-wsa-on-windows-11/",
+            "tags": ["android"],
+            "tweet": "Join us on Nov 8th for Jon Newbolt's presentation on Windows Subsystem for Android (WSA)! Learn how you can run Android apps on Windows 11 seamlessly. Don't miss out! #WSA #TechTalk #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/296845963/"
+        },
+        {
+            "title": "Script Recording - Record and Playback Terminal Sessions",
+            "presenterNames": ["Stan Reichardt"],
+            "abstract": "What should you do, when you can't remember what you did at the terminal before breakfast? Let Stan show you what he does, because he can't remember what he did at the terminal before breakfast.",
+            "tags": ["command-line"],
+            "tweet": "📅 Mark your calendars for 11/08! Stan Reichardt will teach us how to record and playback terminal sessions. Never forget a command again! Join us virtually for this insightful session. #script #recording #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/296845963/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/296845963/",
+    "youtubeTitle": "Running Android Apps on Windows 11: Exploring Windows Subsystem for Android | SLUUG 2023-11-08",
+    "image": {
+        "src": "./2023-11-08_sluug_design-a-collage-style-image-based-on-the-following-descript.png",
+        "alt": "Design a collage-style image based on the following descriptions: Start with a background expressing a gradient transitioning from dark blue to light blue, similar to the Windows 11 color scheme. At the center, feature an illustration of a computer screen displaying the Windows 11 desktop, with an Android app open, symbolizing the integration of Android apps into Windows 11. The Android app window should include an identifiable icon or UI element. Include near the center a simplified icon that combines the Windows and Android logos, representing the Windows Subsystem for Android (WSA), flanking the computer screen. Incorporate the Amazon Appstore logo near the Android app window. Implement small icons or graphics near the computer screen, denoting development tools including the Android Debug Bridge (ADB), such as a wrench or gear icon. On one side of the collage, include an illustration of a terminal window with some generic command lines and visual representations of script recording, such as a red 'REC' icon and a green 'PLAY' icon. Scattered in the background, introduce smaller, semi-transparent icons, symbolizing the community and user groups, such as a group of people and a speech bubble for communication. The contour of the image should follow a modern flat design with clean lines and minimalistic details, adhering to a harmonious color palette of blues and greens. The image should be ideal for a blog header, with dimensions preferably 1200px wide by 675px high."
+    }
+}

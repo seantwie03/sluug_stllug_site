@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2023-11-16",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "TLS 2023",
+            "presenterNames": ["Michael W. Lucas"],
+            "abstract": "Transport Layer Security (TLS) is an essential part of any Internet-based service. This talk takes you through the essentials of what every sysadmin should know about TLS, how it works, what it doesn't do, and the tools and protocols that surround it. Based on the book 'TLS Mastery.'",
+            "tags": ["web", "security"],
+            "tweet": "Join us on 16th Nov for 'TLS 2023' with Michael W. Lucas! Learn the essentials of TLS and its role in Internet security. Don't miss out! #TLS #Security #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/291365832/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/291365832/",
+    "youtubeTitle": "Master TLS 2023: Key Insights from 'TLS Mastery' | STLLUG 2023-11-16",
+    "image": {
+        "src": "./2023-11-16_stllug_create-an-image-that-incorporates-a-gradient-background-blen.png",
+        "alt": "Create an image that incorporates a gradient background blending deep blues and soft greens to represent security and trust. The central component of this image should be a visually striking shield, symbolizing protection and security. Inside this shield, subtly incorporate a padlock symbol often associated with encryption. Surrounding the shield, small, semi-transparent logos of OpenSSL, Let's Encrypt, Wireshark, and Mozilla Firefox should be distributed. Connect these logos to the shield with very subtle lines, representing the network. Small icons such as a globe, a server rack, and a computer should be placed subtly in the background to symbolize the global nature of the internet, server facilities, and end-user devices.  Overall, the color scheme should evoke feelings of security, trust, and reliability and include subtle glows and gradients to make the image engaging. The resolution should be high, and the overall style should be minimal yet informative. The image should be suitable for a blog post on TLS and should not include any text."
+    }
+}
