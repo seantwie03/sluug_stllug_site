@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2024-01-18",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Hadoop for big data. An intro.",
+            "presenterNames": ["Steven Lembark"],
+            "abstract": "Apache Hadoop is an open src, Java-based sftwr platform/ecosystem that manages processing & storage for big data apps. It handles datasets ranging in size from gigabytes to petabytes of data. They can be fed and analyzed by many distributed computers over many distributed disk farms to be read and analyzed by many dispersed computers requesting data.\nHadoop is an ecosystem of open source components that fundamentally changes the way enterprises store, process, and analyze data.\nIn the infancy of The Internet, there was the quest to 'find stuff'. 'Search engines' were needed. Google, AltaVista, Yahoo, AskJeeves,...all had ideas how to do it.\nInspired by their MapReduce, a programming model that divides an application into small fractions to run on different nodes, Google started Hadoop in 2002 while working on the Apache Nutch.\nIn 2003, Hadoop was in the academic paper describing the 'Google File System'. In 2006, the Apache Software Foundation released an open src version.\nAltho now there are other tools used for such large data (ex Apache Hive · Apache Spark · Amazon EMR · Azure Data Lake Storage · IBM Analytics Engine · Hortonworks Data Platform · Apache Pig, Clarissa,....) there are still those depending on Hadoop, including Netflix.\nSo, Steven will tell us…\nAn Overview of the Apache Hadoop Ecosystem:\nThere is stuff that's growing on your data warehouse hard disks.\nIn the beginning was Hadoop, and was, well, Google's. And everyone tried it.\nBut as Google dropped the approach as ineffective lots of other folks had found ways to make pieces of it work, added new pieces to it, and out of the ashes of single-purpose Hadoop grew the Apache Hadoop ecosystem.\nToday this includes a variety of software for intake,querying, mapping SQL to key:value stores, and a few other cute tricks.\nThis talk will look at the pieces of this ecosystem, a bit about how they fit together, and how they can be used for Really Truly HUUUUUUGE data processing.",
+            "tags": ["data-science", "database"],
+            "tweet": "Don't miss Steven Lembark's talk on Jan 18, 2024: 'Hadoop for big data. An intro.' Discover how the Apache Hadoop ecosystem has evolved to tackle REALLY BIG data! #Hadoop #BigData @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/298136400/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/298136400/",
+    "youtubeTitle": "Diving into Apache Hadoop: Big Data Fundamentals | STLLUG 2024-01-18",
+    "image": {
+        "src": "./2024-01-18_stllug_design-a-detailed-digital-collage-that-captures-the-concept.png",
+        "alt": "Design a detailed digital collage that captures the concept of big data and the Hadoop ecosystem. Center the image with a yellow elephant, surrounded by flowing streams of binary code and data packets. Include cloud icons and server rack graphics radiating out from the elephant, and scatter smaller logos of related technologies (like Apache Hive, Apache Spark, etc.) around. Add abstract elements like fading graphs, charts, and network diagrams in the background. Use a modern palette with shades of blue, green, and yellow on a subtle gradient or geometric background. Highlight key areas with soft glow or light streaks for a dynamic, futuristic feel. The image should be sized for blog headers (1200px x 675px) and saved in high-quality PNG or JPEG."
+    }
+}

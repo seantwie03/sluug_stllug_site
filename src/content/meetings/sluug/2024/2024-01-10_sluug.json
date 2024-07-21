@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2024-01-10",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "SystemD Timers vs cron",
+            "presenterNames": ["Sean Twiehaus"],
+            "abstract": "In this presentation Sean will show you 3 features that make Systemd Timers better than crontabs. These features help to understand which jobs will run when, reduce the amount of shell code the administrator must maintain, and allow modification of vendor jobs while avoiding conflict.\nHere are the three features (subject to change)\nDetailed View of all Jobs on a System\nWhen each job will run next in a human-readable time format\nLess shell code required\nBuilt-In Randomization Timers\nBuild in conditions like ACPower\nOverridable without conflicts\nIf a Systemd Timer is installed by a package, such as Unattended Upgrades, it will have a default time that it runs. With Systemd Timers you can override the default time without having conflicts if the package maintainers update the timer.\n(Bonus if time permits) Centralized Logging\nSystemd services log to the journal",
+            "tags": ["systemd"],
+            "tweet": "Join us on January 10, 2024, for an exciting presentation by Sean Twiehaus on 'SystemD Timers vs cron'. Discover why SystemD Timers are a game-changing alternative with features like detailed job views, reduced shell code, and conflict-free overrides! #Linux #Systemd #Cron https://www.meetup.com/saint-louis-unix-users-group/events/298078872/"
+        },
+        {
+            "title": "History of the Shell",
+            "presenterNames": ["Ed Howland"],
+            "abstract": "Do you ever feel the raw power thrumming between your fingers when you open your terminal? Are you amazed by the fact that most of our entire digital world is held together by the Duck Tape called shell scripts? Did the concept of the World Wide Web spring forth in whole cloth out of the grey cells of Sir Berners-Lee? These answers and more will be explored in this month's thrilling episode of the Base session on Wednesday night's meeting of the St. Louis Unix User's Group. Let Ed be your guide on this fascinating journey through time as we explore the history of the Shell! Starting with the Dawn B.T.E. ( Before the Epoch ) and the arrival of the Big Blue monolith, and continuing through the co-evolution of hardware, operating systems and user interfaces before arriving at 'The One True Way': The Shell. Don't miss the notable landmarks on this fast-paced trek such as JCL, CICS, GECOS, MULTICS and, of course, UNICS.",
+            "tags": ["command-line", "history"],
+            "tweet": "🔜 Get ready for an exhilarating ride through the 'History of the Shell' with Ed Howland on 2024-01-10! 🌐💻 If you've ever felt the power of your terminal, this one's for you! #Shell #Unix #History #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/298078872/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/298078872/",
+    "youtubeTitle": "SystemD Timers vs Cron: 3 Game-Changing Features | SLUUG 2024-01-10",
+    "image": {
+        "src": "./2024-01-10_sluug_generate-an-image-that-represents-the-theme-history-of-the.png",
+        "alt": "Generate an image that represents the theme 'History of the Shell.' The background should be a dark, textured terminal screen with a gradient to resemble a classic command-line interface. Position a timeline path across the image, indicating different historical milestones. Along this timeline, place iconic illustrations of historic computers and shell types such as an old IBM mainframe, a vintage UNIX system, and various old terminals. Insert the logos for MULTICS, GE GECOS, and IBM at appropriate points on the timeline, with each logo receiving a subtle glow effect. At the end of the timeline, depict a modern computer screen featuring a terminal window with a Bash shell prompt. Subtle glow effects and color accents using greens for terminal input text and amber for the old terminals should be applied. Ensure that there are no superfluous words or letters, except for the necessary logos."
+    }
+}
