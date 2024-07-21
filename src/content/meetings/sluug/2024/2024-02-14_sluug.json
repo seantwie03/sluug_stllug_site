@@ -1,0 +1,26 @@
+{
+    "meetingDate": "2024-02-14",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "AI 2: Electric Boogaloo",
+            "presenterNames": ["Scott Granneman"],
+            "abstract": "The Continued Growth of ArtificiaI Intelligence (AI) Generators & Assistants.\nA little over a year ago, I gave a talk about ChatGPT and other new generative AI tools that had exploded into popularity. Since then, things have not slowed down; rather, we've seen an astonishing array of improvements, changes, and emerging issues within the realm of generative AI.\nThis sequel will delve into the developments over the past year, looking at examples and tools that illustrate how AI is continually redefining creativity, productivity, and problem-solving across various sectors.",
+            "tags": ["ai"],
+            "tweet": "🚀 Join us on 2024-02-14 for 'AI 2: Electric Boogaloo' with Scott Granneman! Discover the latest in AI generators & assistants. Don't miss out! #AI #TechTalk #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/298136431/"
+        },
+        {
+            "title": "How to Plan a Major OS Upgrade",
+            "presenterNames": ["Lee Lammert"],
+            "abstract": "This month we will have a quick update of the work planned on our multi-user web/email-list server. It will get a major new release of DEBIAN LINUX OS. How do you plan such? ",
+            "tags": ["debian"],
+            "tweet": "🚀 Get ready! On Feb 14, Lee Lammert will present 'How to Plan a Major OS Upgrade.' Learn the ins-and-outs of upgrading to the latest DEBIAN LINUX OS. Don't miss it! #upgrade #debian @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/298136431/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/298136431/",
+    "youtubeTitle": "AI 2: Electric Boogaloo - The Rise of AI Generators & Assistants | SLUUG 2024-02-14",
+    "image": {
+        "src": "./2024-02-14_sluug_design-a-dynamic-and-engaging-image-that-encapsulates-the-es.png",
+        "alt": "Design a dynamic and engaging image that encapsulates the essence of generative AI's growth and impact over the past year, for a blog post titled 'AI 2: Electric Boogaloo'. The image must feature a futuristic cityscape, symbolizing innovation and progress, segmented into various sectors like corporate offices, art studios, research labs, and tech startups to represent AI's widespread influence. Incorporate subtle logos of prominent AI tools into different sections of the cityscape such as banner on buildings, signs, or projected holograms. Additionally, include imagery of paths or data streams flowing through the city connecting these logos. Add elements showing Caucasian female and Hispanic male figures interacting with AI-generated visuals on screens or holographic assistants, representing the collaborative aspect between humans and AI. Highlight diverse activities like creating art, coding, and conducting a research. Feature subtle icons or representations of advancements such as robotic hands, neural network patterns, and digital tools using vibrant colours like neon blues, silvers, and whites. As for the background, make a deep, starry night sky infused with digital elements like binary codes among the stars, indicating the expansive nature of AI data processing and development. The image should be clean, modern, visually compelling and evoke curiosity and excitement about the upcoming presentation while clearly highlighting the rapid advancements in AI technology."
+    }
+}

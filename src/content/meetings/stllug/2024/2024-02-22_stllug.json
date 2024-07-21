@@ -1,0 +1,19 @@
+{
+    "meetingDate": "2024-02-22",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Large Language Models (LLM) in Linux",
+            "presenterNames": ["Alex Towell"],
+            "abstract": "The ease of use provided by open-source libraries like `ollama` has simplified the process of getting LLMs up and running. Consequently, I plan to cover this aspect briefly before moving on to more exploratory topics. Our primary focus will be on building applications using LLMs and understanding their integration with various tools, adopting a learning and exploratory perspective since this field is still quite new.\nA significant part of the presentation will be dedicated to showcasing frameworks like LangChain and AutoGen, which are pivotal in the development of LLM applications. I'll discuss how these tools can be integrated as web services to enhance LLM capabilities in areas such as statistical analysis & prediction.\nThe session is designed to be interactive, encouraging a lively and open-ended exchange of ideas and questions. This format is intended to foster a shared learning experience, providing insights into the potential of LLMs and their evolving role in our interaction with technology.\nThis talk focuses on the intricacies of Large Language Models (LLMs) and their implementation on Linux systems. Drawing from my experience in setting up a local LLM and developing a web service, I will discuss:\nfoundational concepts,\ntechnical details, and the evolution of LLMs.\nThe presentation aims to be highly interactive, suitable for both beginners and experienced users in AI and machine learning on Linux.",
+            "tags": ["ai"],
+            "tweet": "🔜 Join us on 2024-02-22 as Alex Towell dives into the world of #LargeLanguageModels in Linux! Learn about integration with tools like #LangChain & #AutoGen. Perfect for beginners & experts in AI! #LLM #Linux #FOSS https://www.meetup.com/saint-louis-unix-users-group/events/290697932/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/290697932/",
+    "youtubeTitle": "Unveiling the Potential of LLMs on Linux | STLLUG 2024-02-22",
+    "image": {
+        "src": "./2024-02-22_stllug_design-an-image-with-a-modern-gradient-background-transition.png",
+        "alt": "Design an image with a modern gradient background transitioning from deep blue at the bottom to light blue at the top. Central element should be an abstract digital brain composed of circuitry and network lines, subtly animated to show connectivity. Surrounding the brain, integrate small, subtle logos of key technologies, connected to the brain with faint, glowing lines. Incorporate a penguin logo, suggestive of Linux, subtly blended at the bottom left corner. Also, include minimalist icons representing statistics and prediction. The color palette should be shades of blue, green, and white, with a balance of elements to maintain a clean and engaging look."
+    }
+}
