@@ -59,7 +59,6 @@ export function getDisplayDate(date: Date): string {
  * @returns A string representing the date in the format "YYYY-MM-DD" Example: 2024-07-04"
  */
 export function getIsoDate(date: Date): string {
-    console.log("date", date);
     const usFormattedDate = date.toLocaleDateString("en-US", {
         timeZone: "America/Chicago",
         month: "2-digit",
