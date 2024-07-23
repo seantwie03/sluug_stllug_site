@@ -4,27 +4,25 @@ import MeetingCardHorizontal from "@/components/MeetingCardHorizontal.astro";
 import MeetingCardVertical from "@/components/MeetingCardVertical.astro";
 import Pagination from "@/components/Pagination.astro";
 import SluugCalendar from "@/components/SluugCalendar.astro";
-import StllugAgenda from "@/components/StllugAgenda.astro";
 import { pageSize, STLLUG_LOGO_ALT } from "@/constants";
 import stllugLogo from "@/images/STLLUG-Logo.png";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
 import { getCollection } from "astro:content";
 
-export const getStaticPaths = (async ({ paginate }) => {
-    const stllugMeetings = sortMeetingListByMeetingDate(
-        await getCollection("meetings", ({ data }) => {
-            return data.meetingType === "STLLUG";
-        })
-    );
-    return paginate(stllugMeetings, { pageSize: pageSize });
-}) satisfies GetStaticPaths;
+const pageTitle = "Stl Linux Unix Users Group Meetings";
 
-type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+const allMeetingsCount = sortMeetingListByMeetingDate(await getCollection("meetings")).length;
+const url: {
+    current: string;
+    prev: string | undefined;
+    next: string | undefined;
+} = {
+    current: "/meetings/1/",
+    prev: undefined,
+    next: allMeetingsCount > pageSize ? "/meetings/2/" : undefined,
+};
 
-const pageTitle = "STLLUG - St. Louis Linux Users Group";
-
-const { page } = Astro.props;
+const firstSixMeetings = sortMeetingListByMeetingDate(await getCollection("meetings")).slice(0, pageSize);
 ---
 
 <head>
@@ -34,33 +32,25 @@ const { page } = Astro.props;
     <meta property="og:image:alt" content={Astro.site + STLLUG_LOGO_ALT} />
     <meta property="og:image:width" content="1024" />
     <meta property="og:image:height" content="1024" />
-    <meta property="og:title" content="St. Louis Linux Users Group Meetings" />
+    <meta property="og:title" content="Stl Linux Unix Users Group Meetings" />
     <meta
         property="og:description"
-        content={"The St. Louis Linux Users Group holds regular meetings with technical presentations and discussions. Our topics frequently involve Linux, BSD, and other Free and Open Source Software."}
+        content={"The Stl Linux Unix Users Group holds regular meetings with technical presentations and discussions. Our topics frequently involve Unix, Unix-like Operating Systems, Linux, BSD, and other..."}
     />
 </head>
 
 <BaseLayout pageTitle={pageTitle}>
-    {
-        page.currentPage === 1 && (
-            <>
-                <h2>St. Louis Linux Users Group</h2>
-                <p>
-                    The <em>St. Louis Linux Users Group (STLLUG)</em> meets <strong>eight days after SLUUG</strong>.
-                    This is typically the <em>third Thursday</em> of each month. The meeting begins at 6:30p.m. Central
-                    Time.
-                </p>
-                <StllugAgenda />
-            </>
-        )
-    }
-    <h2>STLLUG Meetings</h2>
+    <h1 class="text-center lg:hidden m-0">Stl Linux Unix Users Group</h1>
+    <p class="mb-6">
+        The Stl Linux Unix Users Group holds regular meetings with technical presentations and discussions. Our topics
+        frequently involve Unix, Unix-like Operating Systems, Linux, BSD, and other Free and Open Source Software (FOSS)
+        applications, products, projects and services. All of our meetings are free and open to the public.
+    </p>
     <div class="flex flex-wrap lg:hidden">
         {
-            page.data.map(
+            firstSixMeetings.map(
                 (
-                    { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
+                    { id, collection, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
                     i
                 ) => (
                     <MeetingCardVertical
@@ -79,9 +69,9 @@ const { page } = Astro.props;
     </div>
     <div class="hidden lg:block">
         {
-            page.data.map(
+            firstSixMeetings.map(
                 (
-                    { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
+                    { id, collection, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
                     i
                 ) => (
                     <MeetingCardHorizontal
@@ -98,6 +88,6 @@ const { page } = Astro.props;
             )
         }
     </div>
-    <Pagination url={page.url} currentPage={page.currentPage} lastPage={page.lastPage} />
-    {page.currentPage === 1 && <SluugCalendar />}
+    <Pagination url={url} currentPage={1} lastPage={Math.floor(allMeetingsCount / pageSize) + 1} />
+    <SluugCalendar />
 </BaseLayout>

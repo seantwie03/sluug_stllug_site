@@ -4,7 +4,8 @@ import MeetingCardHorizontal from "@/components/MeetingCardHorizontal.astro";
 import MeetingCardVertical from "@/components/MeetingCardVertical.astro";
 import Pagination from "@/components/Pagination.astro";
 import SluugAgenda from "@/components/SluugAgenda.astro";
-import { SLUUG_LOGO_ALT } from "@/constants";
+import SluugCalendar from "@/components/SluugCalendar.astro";
+import { pageSize, SLUUG_LOGO_ALT } from "@/constants";
 import sluugLogo from "@/images/SLUUG-Logo.png";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
@@ -16,7 +17,7 @@ export const getStaticPaths = (async ({ paginate }) => {
             return data.meetingType === "SLUUG";
         })
     );
-    return paginate(sluugMeetings, { pageSize: 12 });
+    return paginate(sluugMeetings, { pageSize: pageSize });
 }) satisfies GetStaticPaths;
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
@@ -45,63 +46,58 @@ const { page } = Astro.props;
     {
         page.currentPage === 1 && (
             <>
-                <>
-                    <h2>St. Louis Unix Users Group</h2>
-                    <p>
-                        The <em>St. Louis Unix Users Group (SLUUG)</em> meets on the <strong>second Wednesday</strong>{" "}
-                        of each month. The meeting begins at 6:30p.m. Central Time.
-                    </p>
-                    <SluugAgenda />
-                </>
-                <h2>SLUUG Meetings</h2>
-                <div class="flex flex-wrap lg:hidden">
-                    {page.data.map(
-                        (
-                            {
-                                collection,
-                                id,
-                                data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl },
-                            },
-                            i
-                        ) => (
-                            <MeetingCardVertical
-                                key={i}
-                                url={`/${collection}/${id}/`}
-                                meetingType={meetingType}
-                                meetingDate={meetingDate}
-                                presentations={presentations}
-                                image={image}
-                                meetupUrl={meetupUrl}
-                                youtubeUrl={youtubeUrl}
-                            />
-                        )
-                    )}
-                </div>
-                <div class="hidden lg:block">
-                    {page.data.map(
-                        (
-                            {
-                                collection,
-                                id,
-                                data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl },
-                            },
-                            i
-                        ) => (
-                            <MeetingCardHorizontal
-                                key={i + 1000}
-                                url={`/${collection}/${id}/`}
-                                meetingType={meetingType}
-                                meetingDate={meetingDate}
-                                presentations={presentations}
-                                image={image}
-                                meetupUrl={meetupUrl}
-                                youtubeUrl={youtubeUrl}
-                            />
-                        )
-                    )}
-                </div>
-                <Pagination url={page.url} currentPage={page.currentPage} lastPage={page.lastPage} />
+                <h2>St. Louis Unix Users Group</h2>
+                <p>
+                    The <em>St. Louis Unix Users Group (SLUUG)</em> meets on the <strong>second Wednesday</strong> of
+                    each month. The meeting begins at 6:30p.m. Central Time.
+                </p>
+                <SluugAgenda />
             </>
         )
     }
+    <h2>SLUUG Meetings</h2>
+    <div class="flex flex-wrap lg:hidden">
+        {
+            page.data.map(
+                (
+                    { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
+                    i
+                ) => (
+                    <MeetingCardVertical
+                        key={i}
+                        url={`/${collection}/${id}/`}
+                        meetingType={meetingType}
+                        meetingDate={meetingDate}
+                        presentations={presentations}
+                        image={image}
+                        meetupUrl={meetupUrl}
+                        youtubeUrl={youtubeUrl}
+                    />
+                )
+            )
+        }
+    </div>
+    <div class="hidden lg:block">
+        {
+            page.data.map(
+                (
+                    { collection, id, data: { meetingDate, meetingType, presentations, image, meetupUrl, youtubeUrl } },
+                    i
+                ) => (
+                    <MeetingCardHorizontal
+                        key={i + 1000}
+                        url={`/${collection}/${id}/`}
+                        meetingType={meetingType}
+                        meetingDate={meetingDate}
+                        presentations={presentations}
+                        image={image}
+                        meetupUrl={meetupUrl}
+                        youtubeUrl={youtubeUrl}
+                    />
+                )
+            )
+        }
+    </div>
+    <Pagination url={page.url} currentPage={page.currentPage} lastPage={page.lastPage} />
+    {page.currentPage === 1 && <SluugCalendar />}
 </BaseLayout>

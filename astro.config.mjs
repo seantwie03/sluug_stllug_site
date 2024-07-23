@@ -8,7 +8,6 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
     site: "https://sluug.netlify.app",
     redirects: {
-        "/": "/meetings/1",
         "/sluug": "/meetings/sluug/1",
         "/stllug": "/meetings/stllug/1",
     },
