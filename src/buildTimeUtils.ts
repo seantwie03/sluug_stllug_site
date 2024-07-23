@@ -53,6 +53,23 @@ export function getDisplayDate(date: Date): string {
     });
 }
 
+/**
+ *
+ * @param date Date object
+ * @returns A string representing the date in the format "YYYY-MM-DD" Example: 2024-07-04"
+ */
+export function getIsoDate(date: Date): string {
+    console.log("date", date);
+    const usFormattedDate = date.toLocaleDateString("en-US", {
+        timeZone: "America/Chicago",
+        month: "2-digit",
+        day: "2-digit",
+        year: "numeric",
+    });
+    const dateParts = usFormattedDate.split("/");
+    return `${dateParts[2]}-${dateParts[0]}-${dateParts[1]}`;
+}
+
 export function generateIdForHeading(heading: string) {
     return heading
         .toLowerCase()

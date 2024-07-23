@@ -1,5 +1,5 @@
 ---
-import type { MeetingType } from '@/content/config';
+import type { MeetingType } from "@/content/config";
 
 type Props = {
     meetingType: MeetingType;
@@ -16,23 +16,24 @@ const { meetingType, meetingDate } = Astro.props;
 </meeting-materials>
 
 <script>
-    import { SLUUG_SITE_URL } from '@/constants';
+    import { getIsoDate } from "@/buildTimeUtils";
+    import { SLUUG_SITE_URL } from "@/constants";
 
     class MeetingMaterials extends HTMLElement {
         constructor() {
             super();
             const meetingDate = new Date(this.dataset.meetingdate!);
-            const meetingType = this.dataset.meetingtype! as 'SLUUG' | 'STLLUG';
-            const meetingMaterials = document.getElementById('meeting-materials')!;
+            const meetingType = this.dataset.meetingtype! as "SLUUG" | "STLLUG";
+            const meetingMaterials = document.getElementById("meeting-materials")!;
             // TODO: Error due to CORS
             fetch(
-                `${SLUUG_SITE_URL}/resources/presentations/media/${meetingDate.getFullYear()}/${meetingType === 'SLUUG' ? 'Main' : 'STLLINUX'}/${meetingDate.toISOString().slice(0, 10)}.json`,
+                `${SLUUG_SITE_URL}/resources/presentations/media/${meetingDate.getFullYear()}/${meetingType === "SLUUG" ? "Main" : "STLLINUX"}/${getIsoDate(meetingDate)}.json`
             )
                 .then((response) => console.log(response.json()))
                 .catch(() => {
-                    meetingMaterials.style.display = 'none';
+                    meetingMaterials.style.display = "none";
                 });
         }
     }
-    customElements.define('meeting-materials', MeetingMaterials);
+    customElements.define("meeting-materials", MeetingMaterials);
 </script>
