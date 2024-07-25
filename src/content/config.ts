@@ -131,3 +131,10 @@ function isDateDuringDaylightSavingsTime(date: Date): boolean {
         Math.max(jan.getTimezoneOffset(), jul.getTimezoneOffset())
     );
 }
+
+export const mediaSchema = z.object({
+    displayName: z.string(),
+    relativeFilePath: z.string(),
+    fileSizeBytes: z.number(),
+});
+export type Media = z.infer<typeof mediaSchema>;

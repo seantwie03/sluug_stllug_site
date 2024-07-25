@@ -1,0 +1,9 @@
+.media-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.media-list li {
+    margin-right: 2rem;
+}

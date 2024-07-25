@@ -1,5 +1,6 @@
 ---
 import type { MeetingType } from "@/content/config";
+import "./MeetingMaterials.css";
 
 type Props = {
     meetingType: MeetingType;
@@ -11,29 +12,58 @@ const { meetingType, meetingDate } = Astro.props;
 
 <meeting-materials data-meetingtype={meetingType} data-meetingdate={meetingDate}>
     <div id="meeting-materials">
-        <h2>Meeting Materials</h2>
+        <h2>Meeting Artifacts and Media</h2>
     </div>
 </meeting-materials>
 
 <script>
     import { getIsoDate } from "@/buildTimeUtils";
     import { SLUUG_SITE_URL } from "@/constants";
+    import type { Media } from "@/content/config";
 
     class MeetingMaterials extends HTMLElement {
         constructor() {
             super();
             const meetingDate = new Date(this.dataset.meetingdate!);
             const meetingType = this.dataset.meetingtype! as "SLUUG" | "STLLUG";
+            const mediaPath = `${SLUUG_SITE_URL}/resources/presentations/media/${meetingDate.getFullYear()}/${meetingType === "SLUUG" ? "Main" : "STLLINUX"}`;
             const meetingMaterials = document.getElementById("meeting-materials")!;
-            // TODO: Error due to CORS
-            fetch(
-                `${SLUUG_SITE_URL}/resources/presentations/media/${meetingDate.getFullYear()}/${meetingType === "SLUUG" ? "Main" : "STLLINUX"}/${getIsoDate(meetingDate)}.json`
-            )
-                .then((response) => console.log(response.json()))
+            retrieveMediaMetadata(meetingDate, mediaPath)
+                .then((media) => {
+                    if (media) {
+                        const mediaList = document.createElement("ul");
+                        mediaList.classList.add("media-list");
+                        mediaList.innerHTML = media
+                            .map((item) => {
+                                const fileSize = formatFileSize(item.fileSizeBytes);
+                                return `<li><a href="${mediaPath}/${item.relativeFilePath}">${item.displayName} (${fileSize})</a></li>`;
+                            })
+                            .join("");
+                        meetingMaterials.appendChild(mediaList);
+                    } else {
+                        meetingMaterials.style.display = "none";
+                    }
+                })
                 .catch(() => {
                     meetingMaterials.style.display = "none";
                 });
         }
     }
     customElements.define("meeting-materials", MeetingMaterials);
+    async function retrieveMediaMetadata(meetingDate: Date, mediaPath: string): Promise<Media[]> {
+        const response = await fetch(`${mediaPath}/${getIsoDate(meetingDate)}.json`);
+        // Not parsing with Zod because this is client-side code. Don't want to ship zod across the wire.
+        return response.json();
+    }
+    function formatFileSize(bytes: number): string {
+        const kb = 1024;
+        const mb = kb * 1024;
+        if (bytes >= mb) {
+            return (bytes / mb).toFixed() + " MB";
+        } else if (bytes >= kb) {
+            return (bytes / kb).toFixed() + " KB";
+        } else {
+            return bytes + " bytes";
+        }
+    }
 </script>
