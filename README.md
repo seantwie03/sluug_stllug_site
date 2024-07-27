@@ -24,7 +24,7 @@ All commands are run from the root of the project, from a terminal:
 
 ## Content Collections
 
-The majority of the content on this site is managed using Astro's [Content Collections](https://docs.astro.build/en/guides/content-collections/). The files that make up the Content Collections are located in `/src/content`. These files are written in [Markdown](https://docs.astro.build/en/guides/markdown-content/) or [MDX](https://mdxjs.com/) with [YAML frontmatter](https://dev.to/paulasantamaria/introduction-to-yaml-125f).
+The majority of the content on this site is managed using Astro's [Content Collections](https://docs.astro.build/en/guides/content-collections/). The files that make up the Content Collections are located in `/src/content`. The meeting content files are written in [JSON](https://www.json.org/json-en.html). The Presenter content files are written in [MDX](https://mdxjs.com/) with [YAML frontmatter](https://dev.to/paulasantamaria/introduction-to-yaml-125f).
 
 ### Meetings
 
@@ -36,21 +36,21 @@ For a full listing of all the json fields, check the `meetingCollection` schema 
 
 A secondary Content Collection is the Presenters in `/src/content/presenters`. Each file in this collection represents a Presenter.
 
-The most important field in the frontmatter of each Presenter file is the `presenterName` field. This field should be the presenter's name as it should be displayed on the site.
+The most important field in the frontmatter of each Presenter file is the `presenterName` field. This field should contain the presenter's name as it will be displayed on the site.
 
 For a full listing of all the frontmatter fields, including a detailed description, check the `presenterCollection` schema in `/src/content/config.ts`
 
 #### Adding a New Presenter
 
-To add a new presenter, create a new file in `/src/content/presenters`. The name of the file doesn't matter too much, but it is recommended to stick to something like: `firstName-lastName.mdx`. After creating the file, copy the contents from `_new-presenter.txt` into the blank file you created. Modify the frontmatter. **Ensure the `presenterName` exactly matches the `presenterName` field of the meeting!** Lastly, add the Presenter's Bio below the first-level markdown heading.
+To add a new presenter, copy `/src/content/presenters/_new-presenter.txt` to `/src/content/presenters/presenter-name.mdx`. The name of the file doesn't matter too much, but it is recommended to stick to something like: `firstName-lastName.mdx`. Modify the frontmatter. **Ensure the `presenterName` exactly matches the `presenterName` field of the meeting!** Lastly, add the Presenter's Bio below the first-level markdown heading.
 
 ### Link Presenters to Meetings
 
-On the meeting page, the presenter's name is a hyperlink to the presenter's specific page. Like-wise, on the presenter's page is a list of all the meetings that specific person presented at. In order for these links between the `preseneterCollection` and `meetingCollection` to work, the `presenterName` field must match exactly on the meeting frontmatter and the presenter frontmatter.
+On the meeting page, the presenter's name is a hyperlink to that presenter's page. Like-wise, on the presenter's page is a list of all the meetings that person presented at. In order for these links between the `preseneterCollection` and `meetingCollection` to work, the `presenterName` field must match exactly on the `presenterNames` field in the meeting JSON and the `presenterName` in the fontmatter of the presenter's MDX file.
 
 ## Search Using Pagefind
 
-This site uses [Pagefind](https://pagefind.app/) for search. It was integrated mostly by following this guide ([Video](https://www.youtube.com/watch?v=v79VRrfVau8), [Written](https://chrispennington.blog/blog/pagefind-static-search-for-astro-sites/)).
+This site uses [Pagefind](https://pagefind.app/) for static site search. It was integrated mostly by following this guide ([Video](https://www.youtube.com/watch?v=v79VRrfVau8), [Written](https://chrispennington.blog/blog/pagefind-static-search-for-astro-sites/)).
 
 The minified Pagefind JS and CSS is roughly 85kb. To avoid loading that on every page, it is declared in a separate `<head>` element on the `tags` page. When the site is built, the `Tags <head>` is merged with the `<head>` in `BaseLayout`.
 
@@ -58,8 +58,8 @@ Pagefind is called during the build script (`npm run build`). It scans all the s
 
 To get this to work in dev mode (`npm run dev`) the `/dist/pagefind` directory is copied to `/public/pagefind`. This copying is accomplished using `node -e` which "should" work cross-platform (Windows, Mac, Linux).
 
-One limitation to this implementation is that when you are running in dev mode (`npm run dev`) and you add a new markdown file, it will NOT be included in the Pagefind index. To have the new file included, you will need stop the dev server and run a build (`npm run build`).
+One limitation to this implementation is that when you are running in dev mode (`npm run dev`) and you add a new content file, it will NOT be included in the Pagefind index. To have the new file included in the index, you will need stop the dev server and run a build (`npm run build`). Then, start the dev server again.
 
 ## Linting
 
-Husky is used to run prettier on all staged files prior to commit.
+[Husky](https://typicode.github.io/husky/) is used to run prettier on all staged files prior to commit. This is mostly an attempt to have consistent spacing on all the JSON files, but it seems to work well, so it is ran on all files that prettier knows how to format.
