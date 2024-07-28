@@ -27,7 +27,7 @@ export const presentationSchema = z.object({
     presenterNames: z.array(z.string()),
     abstract: z.string(),
     references: z.array(linkSchema).optional(),
-    tags: z.array(z.string()),
+    tags: z.array(z.string()).optional().default([]),
     tweet: z.string().optional(),
 });
 export type Presentation = z.infer<typeof presentationSchema>;
@@ -46,10 +46,12 @@ const meetingCollection = defineCollection({
             meetupUrl: z.string().optional(),
             youtubeUrl: z.string().optional(),
             youtubeTitle: z.string().optional(),
-            image: z.object({
-                src: image(),
-                alt: z.string(),
-            }),
+            image: z
+                .object({
+                    src: image(),
+                    alt: z.string(),
+                })
+                .optional(),
         }),
 });
 
@@ -64,7 +66,7 @@ export const meetingSchema = z.object({
     youtubeTitle: z.string().optional(),
 });
 export type Meeting = z.infer<typeof meetingSchema> & {
-    image: {
+    image?: {
         src: {
             src: string;
             width: number;

@@ -1,5 +1,5 @@
 ---
-import { getIsoDate } from "@/buildTimeUtils";
+import { getIsoDate, getMeetingLogo } from "@/buildTimeUtils";
 import ConnectionBanner from "@/components/ConnectionBanner.astro";
 import MeetingMaterials from "@/components/MeetingMaterials.astro";
 import MeetingTitle from "@/components/MeetingTitle.astro";
@@ -25,13 +25,17 @@ const {
         data: { meetingType, meetingDate, presentations, image, meetupUrl, youtubeUrl },
     },
 } = Astro.props;
+
+const displayImage = image
+    ? image
+    : { src: { ...getMeetingLogo(meetingType).src, height: 300, width: 300 }, alt: getMeetingLogo(meetingType).alt };
 ---
 
 <head>
     <meta name="twitter:card" content="player" />
-    <meta property="twitter:image" content={Astro.site + image.src.src} />
-    <meta property="og:image" content={Astro.site + image.src.src} />
-    <meta property="og:image:alt" content={Astro.site + image.alt} />
+    <meta property="twitter:image" content={Astro.site + displayImage.src.src} />
+    <meta property="og:image" content={Astro.site + displayImage.src.src} />
+    <meta property="og:image:alt" content={Astro.site + displayImage.alt} />
     <meta property="og:image:width" content="1280" />
     <meta property="og:image:height" content="720" />
     <meta property="og:title" content={presentations[0].title} />
@@ -45,18 +49,19 @@ const {
         {
             youtubeUrl ? (
                 <ResponsiveYouTubeEmbed url={youtubeUrl} />
-            ) : (
-                <Image src={image.src} alt={image.alt} loading="lazy" decoding="async" />
-            )
-        }
-        {
-            presentations.map((presentation: Presentation) => (
-                <div class="mt-8">
-                    <PresentationSection {...presentation} />
-                </div>
-            ))
+            ) : image ? (
+                <Image src={displayImage.src} alt={displayImage.alt} loading="lazy" decoding="async" />
+            ) : null
         }
     </div>
+    {
+        presentations.map((presentation: Presentation) => (
+            <div class="mt-8">
+                <PresentationSection {...presentation} />
+            </div>
+        ))
+    }
+
     <div class="mt-2 mb-8">
         <MeetingMaterials meetingType={meetingType} meetingDate={meetingDate} />
         {meetingType === "SLUUG" && <SluugAgenda />}

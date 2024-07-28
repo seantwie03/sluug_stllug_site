@@ -1,5 +1,5 @@
 ---
-import { getDisplayDate } from "@/buildTimeUtils";
+import { getDisplayDate, getMeetingLogo } from "@/buildTimeUtils";
 import { SLUUG_SITE_URL, STLLUG_SITE_URL } from "@/constants";
 import type { Meeting } from "@/content/config";
 import { Icon } from "astro-icon/components";
@@ -7,26 +7,32 @@ import { Image } from "astro:assets";
 type Props = { url: string; key: number } & Meeting;
 
 const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, youtubeUrl } = Astro.props;
+
+const displayImage = image
+    ? image
+    : { src: { ...getMeetingLogo(meetingType).src, height: 222, width: 222 }, alt: getMeetingLogo(meetingType).alt };
 ---
 
 <div class="flex flex-col mb-4 rounded shadow-lg w-[32rem]">
     <p class="text-txt_subtle-light dark:text-txt_subtle text-md mb-0">
         {meetingType} - {getDisplayDate(meetingDate)}
     </p>
-    <div class="flex-grow">
-        <Image src={image.src} alt={image.alt} loading="lazy" decoding="async" />
-        {
-            presentations.map((presentation) => (
-                <div>
-                    <h3 class="mt-2">{presentation.title}</h3>
-                    <p class="mb-4">
-                        By:
-                        {presentation.presenterNames.join(" & ")}
-                    </p>
-                </div>
-            ))
-        }
+    <div class="flex flex-col flex-grow items-center">
+        <Image src={displayImage.src} alt={displayImage.alt} loading="lazy" decoding="async" />
     </div>
+    {
+        presentations.map((presentation) => (
+            <div>
+                <a href={url} class="text-current no-underline text-txt_normal-light dark:text-txt_normal">
+                    <h3 class="mt-2">{presentation.title}</h3>
+                </a>
+                <p class="mb-4">
+                    By:
+                    {presentation.presenterNames.join(" & ")}
+                </p>
+            </div>
+        ))
+    }
     <div class="flex justify-between m-1">
         <!-- Create a custom element to pass in data from the props into the script tag that runs client-side. 
          This is the method suggested by the Astro documentation (6/30/2024).

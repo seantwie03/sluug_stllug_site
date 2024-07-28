@@ -1,5 +1,5 @@
 ---
-import { getDisplayDate } from "@/buildTimeUtils";
+import { getDisplayDate, getMeetingLogo } from "@/buildTimeUtils";
 import { SLUUG_SITE_URL, STLLUG_SITE_URL } from "@/constants";
 import type { Meeting } from "@/content/config";
 import { Icon } from "astro-icon/components";
@@ -7,14 +7,21 @@ import { Image } from "astro:assets";
 type Props = { key: number; url: string } & Meeting;
 
 const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, youtubeUrl } = Astro.props;
+
+const displayImage = image
+    ? { src: { ...image.src, height: 240, width: 240 }, alt: image.alt }
+    : {
+          src: { ...getMeetingLogo(meetingType).src, height: 126, width: 126 },
+          alt: getMeetingLogo(meetingType).alt,
+      };
 ---
 
 <p class="text-txt_subtle-light dark:text-txt_subtle text-md">
     {meetingType} - {getDisplayDate(meetingDate)}
 </p>
 <div class="flex mb-4 rounded shadow-xl">
-    <a href={image.src.src}
-        ><Image src={image.src} alt={image.alt} height="240" width="240" loading="lazy" decoding="async" /></a
+    <a href={displayImage.src.src}
+        ><Image src={displayImage.src} alt={displayImage.alt} loading="lazy" decoding="async" /></a
     >
     <div class="flex flex-row justify-between w-full">
         {
