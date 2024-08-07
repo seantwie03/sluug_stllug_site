@@ -6,7 +6,7 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-    site: "https://sluug.netlify.app",
+    site: "https://site.sluug.org",
     redirects: {
         "/sluug": "/meetings/sluug/1",
         "/stllug": "/meetings/stllug/1",
