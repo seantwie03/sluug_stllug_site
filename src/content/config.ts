@@ -24,7 +24,7 @@ export type Image = z.infer<typeof imageSchema>;
 
 export const presentationSchema = z.object({
     title: z.string(),
-    presenterNames: z.array(z.string()),
+    presenterNames: z.array(z.string()).min(1),
     abstract: z.string(),
     references: z.array(linkSchema).optional(),
     tags: z.array(z.string()).optional().default([]),

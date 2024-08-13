@@ -28,7 +28,20 @@ The majority of the content on this site is managed using Astro's [Content Colle
 
 ### Meetings
 
-The primary Content Collection is for our Meetings in `/src/content/meetings`. Each file in this collection represents a meeting with one or more presentations. The Meetings collection contains information for both SLUUG and STLLUG. Housing all of our meetings in a single collection allows them to easily be displayed on the 'Home' page in chronological order. Additionally we can [filter](https://docs.astro.build/en/guides/content-collections/#filtering-collection-queries) the collection to only show SLUUG or STLLUG when needed.
+The primary Content Collection is for our Meetings in
+`/src/content/meetings`. Each file in this collection represents a meeting with one or more presentations. The Meetings collection contains information for both SLUUG and STLLUG. Housing all of our meetings in a single collection allows them to easily be displayed on the 'Home' page in chronological order. Additionally, we can [filter](https://docs.astro.build/en/guides/content-collections/#filtering-collection-queries) the collection to only show SLUUG or STLLUG when needed.
+
+#### Adding a New Meeting
+
+To add a new meeting to the site, create a new JSON file somewhere beneath
+`/src/content/meetings`. The JSON file must have the following fields:
+
+-   meetingType
+-   meetingDate
+-   presentations (at least one item in this array)
+    -   title
+    -   presenterNames (at least one item in this array)
+    -   abstract
 
 For a full listing of all the json fields, check the `meetingCollection` schema in `/src/content/config.ts`
 
@@ -42,11 +55,18 @@ For a full listing of all the frontmatter fields, including a detailed descripti
 
 #### Adding a New Presenter
 
-To add a new presenter, copy `/src/content/presenters/_new-presenter.txt` to `/src/content/presenters/presenter-name.mdx`. The name of the file doesn't matter too much, but it is recommended to stick to something like: `firstName-lastName.mdx`. Modify the frontmatter. **Ensure the `presenterName` exactly matches the `presenterName` field of the meeting!** Lastly, add the Presenter's Bio below the first-level markdown heading.
+To add a new presenter, copy
+`/src/content/presenters/_new-presenter.txt` to
+`/src/content/presenters/firstName-lastName.mdx`. The name of the file doesn't matter too much, but it is recommended to stick to something like:
+`firstName-lastName.mdx`. Modify the frontmatter. Lastly, add the Presenter's Bio below the first-level Markdown heading.
 
 ### Link Presenters to Meetings
 
-On the meeting page, the presenter's name is a hyperlink to that presenter's page. Like-wise, on the presenter's page is a list of all the meetings that person presented at. In order for these links between the `preseneterCollection` and `meetingCollection` to work, the `presenterName` field must match exactly on the `presenterNames` field in the meeting JSON and the `presenterName` in the fontmatter of the presenter's MDX file.
+On the meeting page, the presenter's name is a hyperlink to that presenter's page. Like-wise, on the presenter's page is a list of all the meetings that person presented at. In order for these links between the
+`preseneterCollection` and
+`meetingCollection` to work, the
+`presenterName` field in the presenter's Markdown frontmatter must match exactly one of the items in the
+`presenterNames` array in the meeting JSON.
 
 ## Search Using Pagefind
 
