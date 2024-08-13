@@ -1,0 +1,42 @@
+{
+    "meetingDate": "2024-08-14",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Fixing your firewall with ChatGPT!",
+            "presenterNames": ["Lee Lammert"],
+            "abstract": "Have you ever had to fix/update a firewall? Using iptables, perhaps, instead of some vendor GUI?  Any recollection of how complicated it can get, *especially* if you don't do it every day (or every monty or every year)?\nTune in to the SLUUG Main presentation Wednesday to see how it can be done (mostly) PAINLESSLY using Chat GPT!",
+            "references": [
+                {
+                    "linkText": "How To Use iptables",
+                    "url": "https://www.redhat.com/sysadmin/iptables"
+                }
+            ],
+            "tags": ["networking", "security"],
+            "tweet": "🔧 Stuck with complicated firewall updates? Lee Lammert will show us how to simplify it using #ChatGPT on 2024-08-14 at SLUUG's main presentation. Join us for this free and open-to-all event! #Linux #Networking 🔥 https://www.meetup.com/saint-louis-unix-users-group/events/300428325/"
+        },
+        {
+            "title": "KVM for Beginners",
+            "presenterNames": ["Ken Johnson"],
+            "abstract": "Kernel-based Virtual Machine (KVM) is a free and open-source virtualization module in the Linux kernel that allows the kernel to function as a hypervisor.  KVM requires a processor with hardware virtualization extensions, such as Intel VT or AMD-V.  KVM has also been ported to  FreeBSD in the form of loadable kernel modules.  KVM supports hardware-assisted virtualization for a wide variety of guest operating systems including BSD, Solaris, Windows, Haiku, ReactOS, Plan 9, AROS, macOS, and other Linux systems.  (extract from Wikipedia article)\nThis presentation will help you get started with KVM if you have never used it before, or have not used it for a very long time.",
+            "references": [
+                {
+                    "linkText": "What is KVM?",
+                    "url": "https://www.redhat.com/en/topics/virtualization/what-is-KVM"
+                },
+                {
+                    "linkText": "KVM hypervisor: a beginner's guide",
+                    "url": "https://ubuntu.com/blog/kvm-hyphervisor"
+                }
+            ],
+            "tags": ["virtualization"],
+            "tweet": "Join us on 2024-08-14 for 'KVM for Beginners' by Ken Johnson! Learn how to harness the power of Kernel-based Virtual Machine for various OSes. Ideal for those new to KVM or revisiting it after a break. Open to all! #Linux #Virtualization #KVM https://www.meetup.com/saint-louis-unix-users-group/events/300428325/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/300428325/",
+    "youtubeTitle": "Fixing Your Firewall with ChatGPT | SLUUG 2024-08-14",
+    "image": {
+        "src": "./2024-08-14_sluug_create-a-large-captivating-image-for-a-blog-post-the-cente.png",
+        "alt": "Create a large, captivating image for a blog post. The center of the image should contain a sleek depiction of a modern server. Encircling this central server are smaller, recognizable icons that symbolize varying operating systems such as Linux, Windows, macOS, and BSD. The KVM logo should be prominently featured on the server, further complemented with smaller yet visible logos of Intel VT and AMD-V nearby. The backdrop should boast a gradient of gentle lighting effects with embedded circuitry patterns - indicating a sophisticated technological atmosphere. The color scheme of the entire image should be professional in nature, majorly involving hues of blue and gray, contrasted subtly with hints of green and orange. This image must represent the interplay of various elements that embody the theme of virtualization - thus appealing to beginners and tech professionals alike."
+    }
+}
