@@ -1,0 +1,33 @@
+{
+    "meetingDate": "2024-08-22",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Buildah - A Scriptable Way to Build OCI Containers",
+            "presenterNames": ["Andrew Denner"],
+            "abstract": "Buildah can be used to build container images compliant with the Open Container Initiative (OCI) image specification. Images can be built from existing images, from scratch, and using Dockerfiles. OCI images built using the Buildah command line tool (CLI) and the underlying OCI based technologies (e.g. containers/image and containers/storage) are portable, and can therefore run in a Docker environment.",
+            "references": [
+                {
+                    "linkText": "Getting Started with Buildah",
+                    "url": "https://buildah.io/blogs/2017/11/02/getting-started-with-buildah.html"
+                },
+                {
+                    "linkText": "Open Container Initiative (OCI)",
+                    "url": "https://opencontainers.org/"
+                },
+                {
+                    "linkText": "OCI Image Format Spec",
+                    "url": "https://github.com/opencontainers/image-spec"
+                }
+            ],
+            "tags": ["containers", "command-line"],
+            "tweet": "Join us on 2024-08-22 for Andrew Denner's talk on 'Buildah - A Scriptable Way to Build OCI Containers'. Learn how to build container images from scratch or using Dockerfiles! #Buildah #OCI #Containers https://www.meetup.com/saint-louis-unix-users-group/events/290697970/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/290697970/",
+    "youtubeTitle": "Buildah Tutorial: Scriptable OCI Container Builds | STLLUG 2024-08-22",
+    "image": {
+        "src": "./2024-08-22_stllug_create-a-visually-dynamic-image-that-illustrates-the-concept.png",
+        "alt": "Create a visually dynamic image that illustrates the concept of building and containerization in the field of technology. The color palette is primarily blue and white, with secondary colors of light grey and teal. The image includes a background transitioning from a lighter blue at the top to a darker blue at the bottom. The central graphic is a large, stylized container, but not directly a Docker container, which has a robotic arm or gears that appear to build or assemble it. Inside this container is the Buildah logo, designed to look clean and modern. The OCI logo (Open Container Initiative) is subtly incorporated at the bottom right of the image. The design should also include soft, abstract lines or circuit-like patterns in the background and dotted lines sweeping across the image to create a sense of dynamic movement. The visual elements should be a combination of vector art and 3D-like renderings to catch attention immediately."
+    }
+}
