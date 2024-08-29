@@ -25,6 +25,7 @@
         }
     ],
     "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/290697970/",
+    "youtubeUrl": "https://youtu.be/8JJuO9KI3nA",
     "youtubeTitle": "Buildah Tutorial: Scriptable OCI Container Builds | STLLUG 2024-08-22",
     "image": {
         "src": "./2024-08-22_stllug_create-a-visually-dynamic-image-that-illustrates-the-concept.png",
