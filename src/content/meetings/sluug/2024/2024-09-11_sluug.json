@@ -1,0 +1,50 @@
+{
+    "meetingDate": "2024-09-11",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Handling Linux CVEs and Linus Torvalds' Keynote Kubecon 2024",
+            "presenterNames": ["Steven Borrelli"],
+            "abstract": "I'll discuss these 2 presentation from last month's conference.\n1.Linux Kernel CVEs, What Has Caused So Many to Suddenly Show Up? - Greg Kroah-Hartman\n'In Febuary the Linux kernel community took charge of issuing CVEs for any found vulnerability in their codebase. By doing this, they took away the ability for any random company to assign CVEs in order to make their engineering processes run smoother, and instead have set up a structure for everyone to participate equally.\nThis talk will go into how the Linux CVE team works, how CVEs are assigned, and how you can properly handle the huge number of new CVEs happening in a simple and secure way.'\n(SLUUG note:\nCVE =Common Vulnerabilities and Exposures (CVE) numbers are given as names to threats that are used to 'hack', attack, steal, break, ... )\n2.Keynote: Linus Torvalds, Creator of Linux & Git, in Conversation with Dirk Hohndel\nAlso from this conference, I'll discuss, the Keynote Address by Linus Torvalds",
+            "references": [
+                {
+                    "linkText": "Linux Kernel CVEs, What Has Caused So Many to Suddenly Show Up? - Greg Kroah-Hartman",
+                    "url": "https://www.youtube.com/watch?v=at-uDXbX-18"
+                },
+                {
+                    "linkText": "Linus' Keynote - Kubecon 2024",
+                    "url": "https://kccncossaidevchn2024.sched.com/event/8609952b4dfc8cd8fb331ea41c78c39e#video_stream"
+                },
+                {
+                    "linkText": "Kubecon 2024 - Keynote Sessions",
+                    "url": "https://kccncossaidevchn2024.sched.com/type/Keynote+Sessions"
+                }
+            ],
+            "tags": ["security", "linus-torvalds"],
+            "tweet": "Get ready for an exciting session on 2024-09-11! Join Steven Borrelli as he shares insights from KubCon, including Greg's CVE discussion and Linus Torvald's keynote! 🌐 #Linux #CVEs #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/300428326"
+        },
+        {
+            "title": "Gemini Live & V0 by Vercel",
+            "presenterNames": ["Sean Twiehaus"],
+            "abstract": "Sean will demonstrate two brand new AI tools.\nGoogle Gemini Live. This innovative AI application allows users to have a verbal conversation with Google Gemini. With Gemini Live you verbally ask the AI a question. It verbally responds. Then, you can follow up with another verbal question. While the AI is responding, you can interrupt it to change topic or ask even more questions.\nV0 by Vercel. This AI can generate AMAZING UI code. Sean will demonstrate creating a fairly complex User Interface using only English prompts. The V0 AI will take Sean's prompt and generate clean React code.",
+            "references": [
+                {
+                    "linkText": "Gemini Live",
+                    "url": "https://blog.google/products/gemini/made-by-google-gemini-ai-updates/"
+                },
+                {
+                    "linkText": "v0 By Vercel",
+                    "url": "https://v0.dev/chat"
+                }
+            ],
+            "tags": ["ai"],
+            "tweet": "🔧 Ready to see AI in action? Join us on 2024-09-11 for 'AI Show and Tell: Gemini Live & V0 by Vercel' presented by Sean Twiehaus. Witness the future of AI interactions and code generation! Don't miss out! #AI #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/300428326"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/300428326",
+    "youtubeTitle": "Insights from KubCon: Handling Linux CVEs and Linus Torvalds' Keynote | SLUUG 2024-09-11",
+    "image": {
+        "src": "./2024-09-11_sluug_create-a-tech-themed-image-that-beautifully-blends-professio.png",
+        "alt": "Create a tech-themed image that beautifully blends professionalism and modernism. In the core focus, generate two distinct, non-specific tech professionals standing beside each other with a subtle binary code pattern in the background to reflect their technological brilliance. On top, centrally place a friendly penguin to symbolize Linux. Surround it with symbols like a lock or shield signifying security, a small conference logo, a logo representing a popular version control system, and a small microphone icon near the central figures for speeches. To intertwine these elements, create thin, glowing circuit lines spreading from the central figures and logos, forming a network pattern to reflect the interconnected world of technology. Utilize hues of dark blue, white, with delicate accents of yellow or light orange to convey intellect, trust, and innovation. This image represents the anticipation and richness of an upcoming presentation on Linux, open-source security, and other related themes."
+    }
+}
