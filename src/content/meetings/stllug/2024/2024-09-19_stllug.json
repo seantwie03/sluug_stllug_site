@@ -1,0 +1,29 @@
+{
+    "meetingDate": "2024-09-19",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Modern Terminal Showdown: KiTTY vs Wezterm",
+            "presenterNames": ["Sean Twiehaus"],
+            "abstract": "Modern Terminals have an enormous feature set. They can display images, open multiple tabs,panes, multiplex, enable powerful SSH workflows, and much more.\nLet's take an in-depth look at KiTTY and Wezterm, two modern terminal applications, and compare them side-by-side.\nIf you use the default terminal application that comes with your operating system, this talk is for you!",
+            "references": [
+                {
+                    "linkText": "KiTTY",
+                    "url": "https://sw.kovidgoyal.net/kitty/"
+                },
+                {
+                    "linkText": "Wezterm",
+                    "url": "https://wezfurlong.org/wezterm/index.html"
+                }
+            ],
+            "tags": ["command-line"],
+            "tweet": "Join us for 'Modern Terminal Showdown: KiTTY vs Wezterm' with Sean Twiehaus on 2024-09-19. Discover the powerful features of these terminals and how they can transform your workflow! #SLUUG #terminal #KiTTY #Wezterm https://www.meetup.com/saint-louis-unix-users-group/events/302045020/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/302045020/",
+    "youtubeTitle": "Modern Terminal Showdown: KiTTY vs Wezterm | STLLUG 2024-09-19",
+    "image": {
+        "src": "./2024-09-19_stllug_create-an-image-portraying-a-conclusion-between-the-modern-t.png",
+        "alt": "Create an image portraying a conclusion between the modern terminal tools - KiTTY and WezTerm. Place the KiTTY logo on the left and the WezTerm logo on the right, against a neutral gradient background of dark blues and greys, exuding a high-tech feel. Between these logos, include a faint VS symbol to represent the contrast. Complete the image with a subtle representation of a technological terminal interface in the backdrop highlighting colorful lines of code, tabs, and panes. Include small icons, featuring images, multiple tabs, panes, and SSH symbols, scattered around both logos within the lower half of the image, outlining their modern features."
+    }
+}
