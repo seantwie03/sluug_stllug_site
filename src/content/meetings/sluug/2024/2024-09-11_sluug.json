@@ -5,7 +5,7 @@
         {
             "title": "Handling Linux CVEs and Linus Torvalds' Keynote Kubecon 2024",
             "presenterNames": ["Steven Borrelli"],
-            "abstract": "I'll discuss these 2 presentation from last month's conference.\n1.Linux Kernel CVEs, What Has Caused So Many to Suddenly Show Up? - Greg Kroah-Hartman\n'In February the Linux kernel community took charge of issuing CVEs for any found vulnerability in their codebase. By doing this, they took away the ability for any random company to assign CVEs in order to make their engineering processes run smoother, and instead have set up a structure for everyone to participate equally.\nThis talk will go into how the Linux CVE team works, how CVEs are assigned, and how you can properly handle the huge number of new CVEs happening in a simple and secure way.'\n(SLUUG note:\nCVE =Common Vulnerabilities and Exposures (CVE) numbers are given as names to threats that are used to 'hack', attack, steal, break, ... )\n2.Keynote: Linus Torvalds, Creator of Linux & Git, in Conversation with Dirk Hohndel\nAlso from this conference, I'll discuss, the Keynote Address by Linus Torvalds",
+            "abstract": "I'll discuss these 2 presentation from last month's conference.\n1.Linux Kernel CVEs, What Has Caused So Many to Suddenly Show Up? - Greg Kroah-Hartman\n'In February the Linux kernel community took charge of issuing CVEs for any found vulnerability in their codebase. By doing this, they took away the ability for any random company to assign CVEs in order to make their engineering processes run smoother, and instead have set up a structure for everyone to participate equally.\nThis talk will go into how the Linux CVE team works, how CVEs are assigned, and how you can properly handle the huge number of new CVEs happening in a simple and secure way.'\n(SLUUG note:\nCVE =Common Vulnerabilities and Exposures (CVE) numbers are given as names to threats that are used to 'hack', attack, steal, break, ... )\n2.Keynote: Linus Torvalds, Creator of Linux & Git, in Conversation with Dirk Hohndel\nAlso from this conference, I'll discuss, the Keynote Address by Linus Torvalds.",
             "references": [
                 {
                     "linkText": "Linux Kernel CVEs, What Has Caused So Many to Suddenly Show Up? - Greg Kroah-Hartman",
@@ -42,6 +42,7 @@
         }
     ],
     "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/300428326",
+    "youtubeUrl": "https://youtu.be/mtfD7c0BVhg",
     "youtubeTitle": "Insights from KubCon: Handling Linux CVEs and Linus Torvalds' Keynote | SLUUG 2024-09-11",
     "image": {
         "src": "./2024-09-11_sluug_create-a-tech-themed-image-that-beautifully-blends-professio.png",
