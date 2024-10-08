@@ -1,0 +1,37 @@
+{
+    "meetingDate": "2024-10-09",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "BASH for Control Freaks...Job Control Freaks",
+            "presenterNames": ["Steven Lembark"],
+            "abstract": "BASH is a general-purpose tool.\nToday we will look at:\nJob Control: Running background jobs.\nBASH processes can be managed as “jobs”.\nJobs can be:\nPut in the background.\nBrought to the foreground.\nStopped & Started.\nListed & Tracked.\nControl Freaks Welcome",
+            "references": [
+                {
+                    "linkText": "Job Control Basics - Bash Reference Manual",
+                    "url": "https://www.gnu.org/software/bash/manual/html_node/Job-Control-Basics.html"
+                },
+                {
+                    "linkText": "Job Control Command - tldp.org",
+                    "url": "https://tldp.org/LDP/abs/html/x9644.html"
+                }
+            ],
+            "tags": ["command-line"],
+            "tweet": "Join us on 10/09/2024 to dive into 'BASH for Control Freaks...Job Control Freaks' with Steven Lembark! Discover the power of managing BASH processes as jobs. Control freaks won't want to miss this! #BASH #JobControl @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/300428327/"
+        },
+        {
+            "title": "Improve cybersecurity with AI",
+            "presenterNames": ["Tony Zafiropoulos"],
+            "abstract": "Save time with AI in your cybersecurity efforts...\nHow can we use AI for cybersecurity?\nUse AI to improve on our cybersecurity defense, keep up with the challenges, what is the role of AI?\nUse AI to enhance vulnerability assessments, and some predictions within our environment.\nHow can AI help in real-time monitoring and threat intelligence?\nHelp in incident response, behavioral analytics, phishing detection.\nWhat are it's limitations, such as false positives?\nAre there ethical considerations (privacy and data handling).\nFinally discuss a bit of the future of AI in cybersecurity\nQ&A with any time remaining.",
+            "references": [],
+            "tags": ["security"],
+            "tweet": "Tony Zafiropoulos will unveil AI's magic in vulnerability assessments and incident response at our upcoming SLUUG session! Don't miss out on learning the future of cybersecurity. 🌟🔍 #AI #CyberSecurity @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/300428327/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/300428327/",
+    "youtubeTitle": "Mastering Job Control in BASH: Techniques for Control Freaks | SLUUG 2024-10-09",
+    "image": {
+        "src": "./2024-10-09_sluug_imagine-an-image-that-captures-control-and-command-within-ba.png",
+        "alt": "Imagine an image that captures control and command within BASH. The background is a dimly lit yet sleek computer terminal screen in dark shades, representative of Unix/Linux environments at work. The Bash logo, a stylized 'B,' resides in the top left corner of the image. Surrounding the logo are petite symbols of 'play,' 'pause,' 'stop,' and 'list' - like you would see on media control panels. Along the bottom edge, silhouettes of gears and cogs subtly reside to depict control and management. There's a soft light trail that arcs through the icons and plunges into the background, illustrating the concept of seamless process flow and management. The color scheme contains predominantly black, green, and blue hues, reminiscent of classic terminal colors, and a soft glow around icons and edges for a modern touch."
+    }
+}
