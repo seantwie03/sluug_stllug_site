@@ -6,11 +6,23 @@ import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
 type Props = { url: string; key: number } & Meeting;
 
-const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, youtubeUrl } = Astro.props;
+const {
+    key,
+    url,
+    meetingType,
+    meetingDate,
+    presentations,
+    meetupUrl,
+    image,
+    youtubeUrl,
+} = Astro.props;
 
 const displayImage = image
     ? image
-    : { src: { ...getMeetingLogo(meetingType).src, height: 222, width: 222 }, alt: getMeetingLogo(meetingType).alt };
+    : {
+          src: { ...getMeetingLogo(meetingType).src, height: 222, width: 222 },
+          alt: getMeetingLogo(meetingType).alt,
+      };
 ---
 
 <div class="flex flex-col mb-4 rounded shadow-lg w-[32rem]">
@@ -18,12 +30,20 @@ const displayImage = image
         {meetingType} - {getDisplayDate(meetingDate)}
     </p>
     <div class="flex flex-col flex-grow items-center">
-        <Image src={displayImage.src} alt={displayImage.alt} loading="lazy" decoding="async" />
+        <Image
+            src={displayImage.src}
+            alt={displayImage.alt}
+            loading="lazy"
+            decoding="async"
+        />
     </div>
     {
         presentations.map((presentation) => (
             <div>
-                <a href={url} class="text-current no-underline text-txt_normal-light dark:text-txt_normal">
+                <a
+                    href={url}
+                    class="text-current no-underline text-txt_normal-light dark:text-txt_normal"
+                >
                     <h3 class="mt-2">{presentation.title}</h3>
                 </a>
                 <p class="mb-4">
@@ -37,11 +57,18 @@ const displayImage = image
         <!-- Create a custom element to pass in data from the props into the script tag that runs client-side. 
          This is the method suggested by the Astro documentation (6/30/2024).
          https://docs.astro.build/en/guides/client-side-scripts/#pass-frontmatter-variables-to-scripts -->
-        <zoom-link id=`zoom-link-${key}` data-key={key} data-meetingdate={meetingDate}>
+        <zoom-link
+            id=`zoom-link-${key}`
+            data-key={key}
+            data-meetingdate={meetingDate}
+        >
             <a
-                href={meetingType === "SLUUG" ? `${SLUUG_SITE_URL}/next.txt` : `${STLLUG_SITE_URL}/next.txt`}
+                href={meetingType === "SLUUG"
+                    ? `${SLUUG_SITE_URL}/next.txt`
+                    : `${STLLUG_SITE_URL}/next.txt`}
                 target="_blank"
                 rel="noopener noreferrer"
+                class="text-bg_fancy_red"
             >
                 <div
                     class="inline-flex items-center bg-bg_emphasis-light dark:bg-bg_emphasis text-md font-semibold px-4 py-2 rounded-full shadow"
@@ -105,5 +132,6 @@ const displayImage = image
             }
         }
     }
-    customElements.get("zoom-link") || customElements.define("zoom-link", ZoomLink);
+    customElements.get("zoom-link") ||
+        customElements.define("zoom-link", ZoomLink);
 </script>

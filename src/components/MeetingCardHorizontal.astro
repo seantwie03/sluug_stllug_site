@@ -6,7 +6,16 @@ import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
 type Props = { key: number; url: string } & Meeting;
 
-const { key, url, meetingType, meetingDate, presentations, meetupUrl, image, youtubeUrl } = Astro.props;
+const {
+    key,
+    url,
+    meetingType,
+    meetingDate,
+    presentations,
+    meetupUrl,
+    image,
+    youtubeUrl,
+} = Astro.props;
 
 const displayImage = image
     ? { src: { ...image.src, height: 240, width: 240 }, alt: image.alt }
@@ -21,7 +30,12 @@ const displayImage = image
 </p>
 <div class="flex mb-4 rounded shadow-xl">
     <a href={displayImage.src.src}
-        ><Image src={displayImage.src} alt={displayImage.alt} loading="lazy" decoding="async" /></a
+        ><Image
+            src={displayImage.src}
+            alt={displayImage.alt}
+            loading="lazy"
+            decoding="async"
+        /></a
     >
     <div class="flex flex-row justify-between w-full">
         {
@@ -40,7 +54,10 @@ const displayImage = image
                         </h5>
                     </a>
                     {i < presentations.length - 1 && (
-                        <div class="border-r border-gray-300 mx-1" style="height: auto;" />
+                        <div
+                            class="border-r border-gray-300 mx-1"
+                            style="height: auto;"
+                        />
                     )}
                 </>
             ))
@@ -50,11 +67,19 @@ const displayImage = image
             <!-- Create a custom element to pass in data from the props into the script tag that runs client-side. 
              This is the method suggested by the Astro documentation (6/30/2024).
              https://docs.astro.build/en/guides/client-side-scripts/#pass-frontmatter-variables-to-scripts -->
-            <zoom-link id=`zoom-link-${key}` data-key={key} data-meetingdate={meetingDate} class="w-[8.5rem] h-[2rem]">
+            <zoom-link
+                id=`zoom-link-${key}`
+                data-key={key}
+                data-meetingdate={meetingDate}
+                class="w-[8.5rem] h-[2rem]"
+            >
                 <a
-                    href={meetingType === "SLUUG" ? `${SLUUG_SITE_URL}/next.txt` : `${STLLUG_SITE_URL}/next.txt`}
+                    href={meetingType === "SLUUG"
+                        ? `${SLUUG_SITE_URL}/next.txt`
+                        : `${STLLUG_SITE_URL}/next.txt`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    class="text-bg_fancy_red"
                 >
                     <div
                         class="inline-flex justify-center items-center bg-bg_emphasis-light dark:bg-bg_emphasis text-md font-semibold px-4 rounded-full shadow h-full w-full"
@@ -67,7 +92,12 @@ const displayImage = image
 
             {
                 youtubeUrl && (
-                    <a href={youtubeUrl} target="_blank" rel="noopener noreferrer" class="w-[8.5rem] h-[2rem]">
+                    <a
+                        href={youtubeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="w-[8.5rem] h-[2rem]"
+                    >
                         <div class="inline-flex justify-center items-center bg-bg_emphasis-light dark:bg-bg_emphasis text-md font-semibold rounded-full shadow w-full h-full">
                             <Icon name="mdi:youtube" class="mr-1" />
                             YouTube
@@ -77,7 +107,12 @@ const displayImage = image
             }
             {
                 meetupUrl && (
-                    <a href={meetupUrl} target="_blank" rel="noopener noreferrer" class="w-[8.5rem] h-[2rem]">
+                    <a
+                        href={meetupUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="w-[8.5rem] h-[2rem]"
+                    >
                         <div class="inline-flex justify-center items-center bg-bg_emphasis-light dark:bg-bg_emphasis text-md font-semibold px-4 rounded-full shadow w-full h-full">
                             <Icon name="mdi:meetup" class="mr-1" />
                             Meetup
@@ -119,5 +154,6 @@ const displayImage = image
             }
         }
     }
-    customElements.get("zoom-link") || customElements.define("zoom-link", ZoomLink);
+    customElements.get("zoom-link") ||
+        customElements.define("zoom-link", ZoomLink);
 </script>
