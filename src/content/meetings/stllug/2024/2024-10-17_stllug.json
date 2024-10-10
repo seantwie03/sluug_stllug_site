@@ -1,0 +1,20 @@
+{
+    "meetingDate": "2024-10-17",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Automated Code Review",
+            "presenterNames": ["James Conroy"],
+            "abstract": "This talk is on available tools to catch bugs, and enforce styles on a code base before anything is merged.\nIt will cover Linters, formatters, Static application security testing, automated spell checkers, why you can't just rely on a compiler. We will also cover techniques for applying these tools to an already existing code base, and how to integrate them into a CI/CD pipeline.",
+            "references": [],
+            "tags": ["automation"],
+            "tweet": "🛠️🚀 Excited for James Conroy's upcoming talk on Automated Code Review! Learn how #Linters, #StaticTesting, & more can transform your code base and enhance your #CICD pipeline. Mark your calendars! #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/302045023/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/302045023/",
+    "youtubeTitle": "Automated Code Review: Tools and Techniques for CI/CD Integration | STLLUG 2024-10-17",
+    "image": {
+        "src": "./2024-10-17_stllug_create-a-visually-appealing-image-for-a-blog-post-titled-au.png",
+        "alt": "Create a visually appealing image for a blog post titled 'Automated Code Review'. Background should be a subtle gradient from a soft teal to a dark navy blue to represent the levels of complexity in automated code review processes. Overlay an abstract digital grid or circuit board pattern, symbolizing the mechanisms of code review. Incorporate logos of ESLint, Prettier, SonarQube, and Travis CI or Jenkins, using appropriate metaphoric embellishments to signify their roles. Add an abstract code snippet flowing through a funnel or pipeline to denote transformation from raw to refined code. Use grid-like highlights or light beams for emphasis and maintain a color scheme of teal, navy blue, light grey and white with vibrant accents of yellow or green to represent success."
+    }
+}
