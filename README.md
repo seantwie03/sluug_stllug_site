@@ -83,3 +83,22 @@ One limitation to this implementation is that when you are running in dev mode (
 ## Linting
 
 [Husky](https://typicode.github.io/husky/) is used to run prettier on all staged files prior to commit. This is mostly an attempt to have consistent spacing on all the JSON files, but it seems to work well, so it is ran on all files that prettier knows how to format.
+
+## Web CMS
+
+The current content management system (CMS) for the website is completely servicable. In essence, you just need to add a few fields to a JSON file, push that up to GitHub and call it a day.
+
+### Current Workflow
+
+1.  Receive Title, Abstract, and Presenter Name at Steercom email.
+2.  Convert that information to JSON format.
+3.  Run Node.js script to call OpenAI to generate marketing content.
+    0 a. This generates several options
+4.  Select and tweak the best option from what the AI generates by modifying the JSON file.
+5.  Copy JSON file and image to site repo
+6.  Run site in Dev-mode to confirm changes look as expected.
+7.  Push changes to GitHub
+8.  Wait ~5 minutes
+9.  Verify changes on site.sluug.org
+10. Meeting Happens
+11. Download
