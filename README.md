@@ -268,9 +268,6 @@ In this scenario we would continue using JSON and Markdown files as the datastor
 -   POST /presenters
 -   GET /presenters/:id
 -   PUT /presenters/:id
-
-// Not sure if individually addressable presentations are required...
-
 -   GET /presentations
 -   GET /presentations/:id
 -   GET /presentations?meetingId:id
