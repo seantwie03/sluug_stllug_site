@@ -5,17 +5,42 @@ import { Icon } from "astro-icon/components";
 <footer class="w-full bg-bg_emphasis-light dark:bg-bg_emphasis">
     <div class="flex items-center justify-around h-16">
         <div class="flex items-center justify-around w-full lg:w-[75rem]">
-            <a href="https://www.meetup.com/saint-louis-unix-users-group" target="_blank" rel="noopener noreferrer">
+            <a
+                href="https://www.meetup.com/saint-louis-unix-users-group"
+                aria-label="Meetup.com Link"
+                title="meetup.com"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 <Icon name="mdi:meetup" size={50} />
             </a>
-            <a href="https://www.youtube.com/@SluugOrg" target="_blank" rel="noopener noreferrer">
+            <a
+                href="https://www.youtube.com/@SluugOrg"
+                aria-label="Youtube.com Link"
+                title="Youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 <Icon name="mdi:youtube" size={50} />
             </a>
-            <a href="https://twitter.com/sluug_org" target="_blank" rel="noopener noreferrer">
+            <a
+                href="https://x.com/sluug_org"
+                aria-label="x.com Link"
+                title="x.com"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 <Icon name="mdi:twitter" size={50} />
             </a>
-            <a rel="me" href="https://mastodon.social/@SLUUG_Org" target="_blank" rel="noopener noreferrer"><Icon name="mdi:mastodon" size={50} /></a>
-            <a href="/rss.xml">
+            <a
+                rel="me"
+                href="https://mastodon.social/@SLUUG_Org"
+                aria-label="Mastodon Link"
+                title="Mastodon.social"
+                target="_blank"
+                rel="noopener noreferrer"><Icon name="mdi:mastodon" size={50} /></a
+            >
+            <a href="/rss.xml" aria-label="RSS Feed Link" title="RSS Feed">
                 <Icon name="mdi:rss" size={50} class="inline" />
             </a>
         </div>

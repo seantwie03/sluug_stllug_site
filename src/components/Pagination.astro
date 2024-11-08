@@ -9,10 +9,10 @@ interface Props {
 
 const { url, lastPage, currentPage } = Astro.props;
 
-const segments = url.current.split("/");
+const segments = url.current.split("/").filter((segment) => segment.length > 0);
 segments.pop(); // Remove the last segment
-const firstPageUrl = `${segments.join("/")}/1`;
-const lastPageUrl = url.current.slice(0, -1) + lastPage;
+const firstPageUrl = `/${segments.join("/")}/1`;
+let lastPageUrl = `/${segments.join("/")}/${lastPage}`;
 ---
 
 <div class="flex-row justify-evenly mb-4">
@@ -20,7 +20,7 @@ const lastPageUrl = url.current.slice(0, -1) + lastPage;
         <li>
             {
                 url.prev ? (
-                    <a href={firstPageUrl}>
+                    <a href={firstPageUrl} aria-label="Go to first page" title="Go to first page">
                         <Icon name="mdi:arrow-collapse-left" size={25} />
                     </a>
                 ) : null
@@ -29,7 +29,7 @@ const lastPageUrl = url.current.slice(0, -1) + lastPage;
         <li>
             {
                 url.prev ? (
-                    <a href={url.prev}>
+                    <a href={url.prev} aria-label="Go to previous page" title="Go to previous page">
                         <Icon name="mdi:arrow-left" size={25} />
                     </a>
                 ) : null
@@ -39,7 +39,7 @@ const lastPageUrl = url.current.slice(0, -1) + lastPage;
         <li>
             {
                 url.next ? (
-                    <a href={url.next}>
+                    <a href={url.next} aria-label="Go to next page" title="Go to next page">
                         <Icon name="mdi:arrow-right" size={25} />
                     </a>
                 ) : null
@@ -48,7 +48,7 @@ const lastPageUrl = url.current.slice(0, -1) + lastPage;
         <li>
             {
                 url.next ? (
-                    <a href={lastPageUrl}>
+                    <a href={lastPageUrl} aria-label="Go to last page" title="Go to last page">
                         <Icon name="mdi:arrow-collapse-right" size={25} />
                     </a>
                 ) : null
