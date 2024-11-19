@@ -1,0 +1,47 @@
+{
+    "meetingDate": "2024-11-13",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "Unleashing the Power of Podman: A Docker Alternative",
+            "presenterNames": ["Andrew Denner"],
+            "abstract": "In part 2 of my containerization series, we will explore the advantages of Podman as a powerful Docker alternative.\nThis presentation will shed light on Podman's unique features, such as its daemonless architecture, enhanced security, and compatibility with existing Docker images.\nWe will also discuss how Podman integrates with system d, providing a more seamless and efficient container management experience.\nFinally we will cover the ugly parts where there are still warts and room for growth.",
+            "references": [
+                {
+                    "linkText": "Andrew's Containerization Series: Part 1",
+                    "url": "https://site.sluug.org/meetings/stllug/2024/2024-08-22_stllug/"
+                },
+                {
+                    "linkText": "Podman.io",
+                    "url": "https://podman.io/"
+                }
+            ],
+            "tags": ["containers"],
+            "tweet": "🚀 Join us on Nov 13th for Andrew Denner's talk: 'Unleashing the Power of Podman: A Docker Alternative'! Discover how Podman's unique features revolutionize containerization. #Podman #Containerization https://www.meetup.com/saint-louis-unix-users-group/events/304530835/"
+        },
+        {
+            "title": "When IPtables isn't really IPtables",
+            "presenterNames": ["Lee Lammert"],
+            "abstract": "After noticing a \"Let's Encrypt\" cert renewal failing recently, it was a tortuous path to actually identify the problem. I.E.- certbot (ie EFF's tool to obtain certs from Let's Encrypt) did not \"see\" the open port 80 visible in iptables -vnL! (vnL is iptables switches.)\nTune in Wednesday as we:\n... revisit the troubleshooting process,\n... what we found,\n... and how we made it work properly.",
+            "references": [
+                {
+                    "linkText": "IPTables How To",
+                    "url": "https://help.ubuntu.com/community/IptablesHowTo?action=show&redirect=Iptables"
+                },
+                {
+                    "linkText": "Getting started with nftables",
+                    "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/getting-started-with-nftables_configuring-and-managing-networking"
+                }
+            ],
+            "tags": ["networking"],
+            "tweet": "Join us on 11/13 for 'When IPtables isn't really IPtables' with Lee Lammert! 🚀 Delve into the intricacies of IPtables and certbot troubleshooting. Get ready to learn! #iptables #troubleshooting #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/304530835/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/304530835/",
+    "youtubeUrl": "https://youtu.be/U7TrtscrNx4",
+    "youtubeTitle": "Unleashing the Power of Podman: A Docker Alternative | SLUUG 2024-11-13",
+    "image": {
+        "src": "./2024-11-13_sluug_a-high-tech-image-capturing-the-theme-of-containerization-te.png",
+        "alt": "A high tech image capturing the theme of containerization technology. Feature a gradient background blending shades of blue and green for a modern feel. Place a network of interlocking, transparent 3D cubes, indicative of digital containers in the center. Highlight a generic open-source project logo, slightly embossed, occupying the center position while giving reference to a well-known open source whale logo subtly on one side, slightly faded but still visible. Incorporate the logo of a system daemon, seamlessly integrated within the intricate network design. Add motorways of circuits connecting these logos and elements, illustrating their interaction. Place discreet icons resembling security shields around the image to symbolize enhanced security features."
+    }
+}
