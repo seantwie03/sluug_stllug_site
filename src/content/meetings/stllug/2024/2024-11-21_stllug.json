@@ -1,0 +1,25 @@
+{
+    "meetingDate": "2024-11-21",
+    "meetingType": "STLLUG",
+    "presentations": [
+        {
+            "title": "Using BASH's getopt to simplify argument parsing",
+            "presenterNames": ["Steven Lembark"],
+            "abstract": "getopts is a bash built-in that parses options and their arguments passed to a script, processing them sequentially within a while loop. It provides a structured way to handle complex input in BASH shell scripts.\nTypeset is a built-in Bash command. You can use the typeset command to declare variables and set their attributes. If no variable name is specified, it displays their values.",
+            "references": [
+                {
+                    "linkText": "How to Use Bash Getopts With Examples",
+                    "url": "https://kodekloud.com/blog/bash-getopts/"
+                }
+            ],
+            "tags": ["command-line"],
+            "tweet": "Ready to elevate your BASH scripting skills? 📈 Steven Lembark will reveal how to master getopts for seamless option parsing. Mark your calendars for Nov 21, 2024! 🤖 #ParsingPro #SLUUG https://www.meetup.com/saint-louis-unix-users-group/events/302045024/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/302045024/",
+    "youtubeTitle": "BASH Scripting Essentials: How to Use getopt for Argument Parsing | STLLUG 2024-11-21",
+    "image": {
+        "src": "./2024-11-21_stllug_design-an-image-for-a-blog-post-about-bash-scripting-start.png",
+        "alt": "Design an image for a blog post about Bash scripting: Start with a dark gradient background, transitioning from dark blue at the bottom to black at the top. At the center, incorporate an image of a symbolic penguin, indicative of the Linux and Unix ecosystems. To the left, feature the Bash logo. Around the image, integrate symbols representing command-line elements such as arrows, brackets, and underscores. Overlay text lines resembling a script with highlighted sections to denote parsing. Introduce sleek lines, converging towards the Bash logo from various directions to depict data flow and parsing logic. Accentuate these lines with small, glowing, blurred dots representing dynamic data processing. The color accents should be shades of green, resembling the aesthetic of old-school Unix systems. The goal is to embody the processes of script automation and argument parsing in a visually engaging manner."
+    }
+}
