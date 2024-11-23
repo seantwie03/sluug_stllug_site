@@ -17,6 +17,7 @@
         }
     ],
     "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/302045024/",
+    "youtubeUrl": "https://youtu.be/eU4QII1m6io",
     "youtubeTitle": "BASH Scripting Essentials: How to Use getopt for Argument Parsing | STLLUG 2024-11-21",
     "image": {
         "src": "./2024-11-21_stllug_design-an-image-for-a-blog-post-about-bash-scripting-start.png",
