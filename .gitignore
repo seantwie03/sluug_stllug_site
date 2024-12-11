@@ -25,3 +25,5 @@ pnpm-debug.log*
 
 # Pagefind
 public/pagefind
+
+.direnv
