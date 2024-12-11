@@ -1,0 +1,42 @@
+{
+    "meetingDate": "2024-12-11",
+    "meetingType": "SLUUG",
+    "presentations": [
+        {
+            "title": "DistroBox. 'I like turtles'",
+            "presenterNames": ["Tom Clark"],
+            "abstract": "You like Linux distros! Have you ever wanted an easy way to have a distro in your distro with seamless integration with your distro? On an old though stable distro yet crave the newest releases of your favorite tools 'natively'? Tired of having to create virtual machines for conflicting development environments?\nEnter Distrobox! Or was it distrobox enter... anyways... is it turtles all the way down? Come and find out!",
+            "references": [
+                {
+                    "linkText": "Distrobox - Github",
+                    "url": "https://github.com/89luca89/distrobox"
+                },
+                {
+                    "linkText": "Distrobox - ArchWiki",
+                    "url": "https://wiki.archlinux.org/title/Distrobox"
+                }
+            ],
+            "tags": ["desktop", "command-line"],
+            "tweet": "🐧 Want the latest tools on your stable distro? Learn all about DistroBox with Tom Clark on 12/11/24! No more virtual machine woes. Is it turtles all the way down? 💻 #Linux #OpenSource https://www.meetup.com/saint-louis-unix-users-group/events/305021728/"
+        },
+        {
+            "title": "Vulernability scanning the easy way!",
+            "presenterNames": ["Lee Lammert"],
+            "abstract": "It used to take an entire, dedicated system to run a Vulerability scanner, .. but it is now possible with only one hot requiement - Docker!\nThe Docker system has undergone a number of upgrades in the past few years, with the UI now much simpler to use and monthly maintenance [i.e. sync'ing the databases] is quick and easy.\nTune in to the tutorial this month to see how automated scans can check an entire network for malicious network responses, as well as the entire suite of 180K vulnerability tests.",
+            "references": [
+                {
+                    "linkText": "Docker",
+                    "url": "https://www.docker.com/"
+                }
+            ],
+            "tags": ["security"],
+            "tweet": "Join us on Dec 11, 2024, with Lee Lammert to learn how Docker makes vulnerability scanning a breeze! Automate your network security checks with ease. #Security #SLUUG @SLUUG_Org https://www.meetup.com/saint-louis-unix-users-group/events/305021728/"
+        }
+    ],
+    "meetupUrl": "https://www.meetup.com/saint-louis-unix-users-group/events/305021728/",
+    "youtubeTitle": "Exploring DistroBox: The Easiest Way to Run Multiple Linux Distros | SLUUG 2024-12-11",
+    "image": {
+        "src": "./2024-12-11_sluug_design-an-abstract-digital-graphics-collage-for-a-technology.png",
+        "alt": "Design an abstract digital graphics collage for a technology blog announcement on SLUUG presentations, with themes of innovation and integration. The background should consist of intertwining lines, nodes, and futuristic circuit patterns. A central visual element is a turtle made of abstract geometric shapes that appears to emerge from a whirlpool of different Linux distribution logos, such as Ubuntu, Fedora, and Arch Linux. Add an overlay with the Docker logo on the lower right corner, resembling a digital hologram. Scatter iconic symbols of cybersecurity (padlock, shield, magnifying glass) subtly. Use soft lighting effects for cohesiveness."
+    }
+}
